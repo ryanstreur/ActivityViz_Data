@@ -372,6 +372,22 @@
           "datafilecolumns":{"GROUP":"Participant Response","DID_YOU_GO_TO_SCHOOL":"<br>1=No</br><br>2=Yes since left home</br><br>3=Yes before returning home</br>","Count":"Count of participants","CHART_TYPE":"Which grouped chart they belong too"}}
         ]
       }
+    },
+    "TourSummary": {
+      "title": "- Tour Summary",
+      "ScenarioFocus": "transit.json",
+      "visualizations": {      
+        "GroupedCharts": [{"name":"Home Based Tours","config":"OnboardSurvey", "file":"home_based.csv","info":"Home based tours"},
+        {"name":"Drive Transit","config":"TourSummary", "file":"drive_transit.csv","info":"Tours that have drive followed by transit or transit followed by drive mode"},
+        {"name":"Walk or Transit Only","config":"TourSummary", "file":"walk_transit.csv","info":"Tours that only have walk, transit, or both"},
+        {"name":"Not Transit","config":"TourSummary", "file":"non_transit.csv","info":"Tours that do not have a transit mode"},
+        {"name":"Has Work","config":"TourSummary", "file":"has_work.csv","info":"Tours that include work as an activity"},
+        {"name":"Has School","config":"TourSummary", "file":"has_school.csv","info":"Tours that include school as an activity"},
+        {"name":"Has Work and School","config":"TourSummary", "file":"has_work_school.csv","info":"Tours that include work and school as an activity"},
+        {"name":"Has no work or school","config":"TourSummary", "file":"has_neither.csv","info":"Tours that do not include work or school as an activity"},
+        {"name":"Overall","config":"TourSummary", "file":"overall.csv","info":"Overall counts of tours"}
+        ]
+      }
     }
   },
   "RadarCharts": {
@@ -412,6 +428,14 @@
       "ShowAsPercentByDefault": true,
       "ShowAsVerticalByDefault": false,
       "StackAllChartsByDefault": true,
+      "ChartWidthOverride": []
+    },
+    "TourSummary": {
+      "NumberColsGrouped": 1,
+      "SwapLegendByDefault": false,
+      "ShowAsPercentByDefault": false,
+      "ShowAsVerticalByDefault": false,
+      "StackAllChartsByDefault": false,
       "ChartWidthOverride": []
     }
   },
