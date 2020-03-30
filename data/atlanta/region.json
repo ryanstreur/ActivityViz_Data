@@ -117,7 +117,24 @@
           }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
         "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
@@ -229,7 +246,24 @@
           }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
         "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
@@ -338,7 +372,24 @@
           }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
         "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
@@ -450,7 +501,24 @@
           }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
         "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
@@ -562,7 +630,24 @@
           }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
         "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
@@ -674,7 +759,24 @@
           }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
         "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
@@ -786,7 +888,24 @@
           }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
         "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
@@ -898,7 +1017,24 @@
           }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
         "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
@@ -1010,7 +1146,24 @@
           }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ]
       }
