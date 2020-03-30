@@ -51,15 +51,16 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
-              "Origins and destinations of trips by person type."]
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
             }]
           },
           {
             "header": "Instructions",
             "body":[{
               "type": "unorderedList",
-              "content": ["Hover mouse over bars to see detail.",
+              "content": ["Hover mouse over bars to see detail by person type.",
               "Select \"Show Data\" to see tabulation.",
               "Select/deselect bubbles to add/remove trip purposes."]
             }]
@@ -115,8 +116,9 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
-              "Origins and destinations of trips by person type."]
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
             }]
           },
           {
@@ -176,8 +178,9 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
-              "Origins and destinations of trips by person type."]
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
             }]
           },
           {
@@ -240,8 +243,9 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
-              "Origins and destinations of trips by person type."]
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
             }]
           },
           {
@@ -304,8 +308,9 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
-              "Origins and destinations of trips by person type."]
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
             }]
           },
           {
@@ -368,8 +373,9 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
-              "Origins and destinations of trips by person type."]
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
             }]
           },
           {
@@ -432,8 +438,9 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
-              "Origins and destinations of trips by person type."]
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
             }]
           },
           {
@@ -496,8 +503,9 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
-              "Origins and destinations of trips by person type."]
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
             }]
           },
           {
@@ -560,8 +568,9 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
-              "Origins and destinations of trips by person type."]
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
             }]
           },
           {
