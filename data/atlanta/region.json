@@ -47,7 +47,23 @@
         "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
+              "Origins and destinations of trips by person type."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
         "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
@@ -95,7 +111,23 @@
         "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
+              "Origins and destinations of trips by person type."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
         "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
@@ -140,7 +172,23 @@
         "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
+              "Origins and destinations of trips by person type."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
         "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
@@ -188,7 +236,23 @@
         "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
+              "Origins and destinations of trips by person type."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
         "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
@@ -236,7 +300,23 @@
         "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
+              "Origins and destinations of trips by person type."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
         "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
@@ -284,7 +364,23 @@
         "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
+              "Origins and destinations of trips by person type."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
         "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
@@ -332,7 +428,23 @@
         "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
+              "Origins and destinations of trips by person type."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
         "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
@@ -380,7 +492,23 @@
         "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
+              "Origins and destinations of trips by person type."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
         "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
@@ -428,7 +556,23 @@
         "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day (derived from trip purpose and time at destination)",
+              "Origins and destinations of trips by person type."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
         "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
