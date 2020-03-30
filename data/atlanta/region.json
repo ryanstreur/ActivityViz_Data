@@ -20,7 +20,25 @@
       "label":"Travel Model for Base Year 2010",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
         "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
@@ -50,7 +68,25 @@
       "title": "- No-Build 2040",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
         "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
@@ -77,7 +113,25 @@
       "title": "- Regional Plan 2015",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
         "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
@@ -107,7 +161,25 @@
       "title": "- Regional Plan 2017",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
         "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
@@ -137,7 +209,25 @@
       "title": "- Regional Plan 2020",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
         "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
@@ -167,7 +257,25 @@
       "title": "- Regional Plan 2024",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
         "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
@@ -197,7 +305,25 @@
       "title": "- Regional Plan 2030",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
         "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
@@ -227,7 +353,25 @@
       "title": "- Regional Plan 2040",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
         "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
@@ -257,7 +401,25 @@
       "title": "- Regional Plan 2040 minus No-Build 2040",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
         "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
