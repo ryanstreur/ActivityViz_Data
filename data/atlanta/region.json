@@ -97,7 +97,24 @@
           }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
         "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
@@ -192,7 +209,24 @@
           }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
         "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
@@ -284,7 +318,24 @@
           }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
         "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
@@ -379,7 +430,24 @@
           }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
         "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
@@ -474,7 +542,24 @@
           }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
         "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
@@ -569,7 +654,24 @@
           }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
         "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
@@ -664,7 +766,24 @@
           }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
         "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
@@ -759,7 +878,24 @@
           }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
         "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
@@ -854,7 +990,24 @@
           }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
         "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
