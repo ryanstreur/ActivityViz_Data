@@ -140,7 +140,24 @@
         "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
-        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
+        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of daily trips by districts."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle trip types and modes to see trips on chord diagram",
+              "The connections between districts depicts bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
         "datafilecolumns":{"FROM":"Origin district of trip","TO":"Destination district of trip","Trip Type Columns":"Trip purpose and mode"}}
         ]
       }
@@ -266,7 +283,24 @@
           }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
-        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
+        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of daily trips by districts."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle trip types and modes to see trips on chord diagram",
+              "The connections between districts depicts bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
         "datafilecolumns":{"FROM":"Origin district of trip","TO":"Destination district of trip","Trip Type Columns":"Trip purpose and mode"}}
         ]
       }
@@ -395,7 +429,24 @@
         "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
-        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
+        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of daily trips by districts."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle trip types and modes to see trips on chord diagram",
+              "The connections between districts depicts bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
         "datafilecolumns":{"FROM":"Origin district of trip","TO":"Destination district of trip","Trip Type Columns":"Trip purpose and mode"}}
         ]
       }
@@ -524,7 +575,24 @@
         "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
-        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
+        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of daily trips by districts."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle trip types and modes to see trips on chord diagram",
+              "The connections between districts depicts bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
         "datafilecolumns":{"FROM":"Origin district of trip","TO":"Destination district of trip","Trip Type Columns":"Trip purpose and mode"}}
         ]
       }
@@ -653,7 +721,24 @@
         "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
-        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
+        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of daily trips by districts."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle trip types and modes to see trips on chord diagram",
+              "The connections between districts depicts bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
         "datafilecolumns":{"FROM":"Origin district of trip","TO":"Destination district of trip","Trip Type Columns":"Trip purpose and mode"}}
         ]
       }
@@ -782,7 +867,24 @@
         "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
-        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
+        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of daily trips by districts."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle trip types and modes to see trips on chord diagram",
+              "The connections between districts depicts bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
         "datafilecolumns":{"FROM":"Origin district of trip","TO":"Destination district of trip","Trip Type Columns":"Trip purpose and mode"}}
         ]
       }
@@ -911,7 +1013,24 @@
         "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
-        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
+        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of daily trips by districts."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle trip types and modes to see trips on chord diagram",
+              "The connections between districts depicts bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
         "datafilecolumns":{"FROM":"Origin district of trip","TO":"Destination district of trip","Trip Type Columns":"Trip purpose and mode"}}
         ]
       }
@@ -1040,7 +1159,24 @@
         "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
-        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
+        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of daily trips by districts."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle trip types and modes to see trips on chord diagram",
+              "The connections between districts depicts bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
         "datafilecolumns":{"FROM":"Origin district of trip","TO":"Destination district of trip","Trip Type Columns":"Trip purpose and mode"}}
         ]
       }
