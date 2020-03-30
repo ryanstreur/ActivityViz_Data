@@ -19,13 +19,65 @@
       "title": "- Washington DC INRIX Trip Data Processing",
       "visualizations": {
         "BarMap": [
-          {"name": "Daily Truck Trips","file": "BarChartAndMapData.csv","config": "Default", "info":"Truck trips by zone and county"}
+          {"name": "Daily Truck Trips","file": "BarChartAndMapData.csv","config": "Default", "info":"Truck trips by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of truck trips by county.",
+              "Light and Medium Duty Trucks Dominate."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove response categories.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the right graph: Use the drop-down selection to view different modes.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }]}
         ],
         "RadarCharts": [
-          {"name": "Truck VMT","file": "RadarChartsData.csv","config": "Default", "info":"Truck VMT by truck type and county"}
+          {"name": "Truck VMT","file": "RadarChartsData.csv","config": "Default", "info":"Truck VMT by truck type and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Truck type share of VMT by county.",
+              "Prince Georges County has the largest amount of truck VMT for each truck type.",
+              "fairfax County truck VMT is dominated by light duty truck."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the county distribution of truck VMT by truck type.",
+              "Each axis is scaled so the county with the highest value is 100% and the county with the lowest value is 0%.",
+              "County truck VMT can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }]}
         ],
         "Chord": [
-          {"name": "Truck OD Flows","file":"ChordData.csv","config":"Default", "info":"Truck OD flows by county"}
+          {"name": "Truck OD Flows","file":"ChordData.csv","config":"Default", "info":"Truck OD flows by county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of truck trips by county by truck type.",
+              "Fairfax county has significant heavy duty truck travel to Prince Georges County."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graphs to see detail and to display County to County flows.",
+              "Hover moust over County ring to see County truck flows.",
+              "Hover moust over individual County-to-County arc to see percent of regional truck flows.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }]}
         ]
       }
     }
