@@ -59,7 +59,22 @@
           }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
         "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
@@ -139,7 +154,22 @@
           }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
         "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
@@ -216,7 +246,22 @@
           }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
         "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
@@ -296,7 +341,22 @@
           }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
         "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
@@ -376,7 +436,22 @@
           }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
         "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
@@ -456,7 +531,22 @@
           }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
         "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
@@ -536,7 +626,22 @@
           }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
         "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
@@ -616,7 +721,22 @@
           }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
         "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
@@ -696,7 +816,22 @@
           }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
         "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
