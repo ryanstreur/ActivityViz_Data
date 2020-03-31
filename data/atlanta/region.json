@@ -20,28 +20,163 @@
       "label":"Travel Model for Base Year 2010",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
-        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
+        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of persons not at home by Transportation Analysis Zone (TAZ).",
+              "As the day progresses, people leave home, go to work, school, and other locations, and then return home in the evening."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Use the cycle through day button to animate the map.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail by person type.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
-        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
+        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Rail station boardings.",
+              "Includes airport trips in addition to non-airport trips by time-of-day.",
+              "Five points has the most boardings"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove time periods.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the drop-down selection to view different point values and time periods.",
+              "For the map: Color the points by scaled data value size.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
-        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
+        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of daily trips by district, trip purpose, and travel mode."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle trip types and modes to see trips on chord diagram",
+              "The connections between districts depict bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
         "datafilecolumns":{"FROM":"Origin district of trip","TO":"Destination district of trip","Trip Type Columns":"Trip purpose and mode"}}
         ]
       }
@@ -50,25 +185,141 @@
       "title": "- No-Build 2040",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
-        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
+        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of persons not at home by Transportation Analysis Zone (TAZ).",
+              "As the day progresses, people leave home, go to work, school, and other locations, and then return home in the evening."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Use the cycle through day button to animate the map.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
-        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
+        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of daily trips by district, trip purpose, and travel mode."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle trip types and modes to see trips on chord diagram",
+              "The connections between districts depict bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
         "datafilecolumns":{"FROM":"Origin district of trip","TO":"Destination district of trip","Trip Type Columns":"Trip purpose and mode"}}
         ]
       }
@@ -77,28 +328,163 @@
       "title": "- Regional Plan 2015",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
-        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
+        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of persons not at home by Transportation Analysis Zone (TAZ).",
+              "As the day progresses, people leave home, go to work, school, and other locations, and then return home in the evening."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Use the cycle through day button to animate the map.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
-        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
+        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Rail station boardings.",
+              "Includes airport trips in addition to non-airport trips by time-of-day.",
+              "Five points has the most boardings"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove time periods.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the drop-down selection to view different point values and time periods.",
+              "For the map: Color the points by scaled data value size.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
-        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
+        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of daily trips by district, trip purpose, and travel mode."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle trip types and modes to see trips on chord diagram",
+              "The connections between districts depict bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
         "datafilecolumns":{"FROM":"Origin district of trip","TO":"Destination district of trip","Trip Type Columns":"Trip purpose and mode"}}
         ]
       }
@@ -107,28 +493,163 @@
       "title": "- Regional Plan 2017",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
-        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
+        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of persons not at home by Transportation Analysis Zone (TAZ).",
+              "As the day progresses, people leave home, go to work, school, and other locations, and then return home in the evening."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Use the cycle through day button to animate the map.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
-        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
+        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Rail station boardings.",
+              "Includes airport trips in addition to non-airport trips by time-of-day.",
+              "Five points has the most boardings"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove time periods.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the drop-down selection to view different point values and time periods.",
+              "For the map: Color the points by scaled data value size.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
-        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
+        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of daily trips by district, trip purpose, and travel mode."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle trip types and modes to see trips on chord diagram",
+              "The connections between districts depict bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
         "datafilecolumns":{"FROM":"Origin district of trip","TO":"Destination district of trip","Trip Type Columns":"Trip purpose and mode"}}
         ]
       }
@@ -137,28 +658,163 @@
       "title": "- Regional Plan 2020",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
-        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
+        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of persons not at home by Transportation Analysis Zone (TAZ).",
+              "As the day progresses, people leave home, go to work, school, and other locations, and then return home in the evening."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Use the cycle through day button to animate the map.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
-        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
+        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Rail station boardings.",
+              "Includes airport trips in addition to non-airport trips by time-of-day.",
+              "Five points has the most boardings"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove time periods.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the drop-down selection to view different point values and time periods.",
+              "For the map: Color the points by scaled data value size.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
-        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
+        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of daily trips by district, trip purpose, and travel mode."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle trip types and modes to see trips on chord diagram",
+              "The connections between districts depict bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
         "datafilecolumns":{"FROM":"Origin district of trip","TO":"Destination district of trip","Trip Type Columns":"Trip purpose and mode"}}
         ]
       }
@@ -167,28 +823,163 @@
       "title": "- Regional Plan 2024",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
-        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
+        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of persons not at home by Transportation Analysis Zone (TAZ).",
+              "As the day progresses, people leave home, go to work, school, and other locations, and then return home in the evening."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Use the cycle through day button to animate the map.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
-        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
+        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Rail station boardings.",
+              "Includes airport trips in addition to non-airport trips by time-of-day.",
+              "Five points has the most boardings"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove time periods.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the drop-down selection to view different point values and time periods.",
+              "For the map: Color the points by scaled data value size.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
-        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
+        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of daily trips by district, trip purpose, and travel mode."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle trip types and modes to see trips on chord diagram",
+              "The connections between districts depict bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
         "datafilecolumns":{"FROM":"Origin district of trip","TO":"Destination district of trip","Trip Type Columns":"Trip purpose and mode"}}
         ]
       }
@@ -197,28 +988,163 @@
       "title": "- Regional Plan 2030",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
-        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
+        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of persons not at home by Transportation Analysis Zone (TAZ).",
+              "As the day progresses, people leave home, go to work, school, and other locations, and then return home in the evening."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Use the cycle through day button to animate the map.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
-        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
+        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Rail station boardings.",
+              "Includes airport trips in addition to non-airport trips by time-of-day.",
+              "Five points has the most boardings"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove time periods.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the drop-down selection to view different point values and time periods.",
+              "For the map: Color the points by scaled data value size.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
-        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
+        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of daily trips by district, trip purpose, and travel mode."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle trip types and modes to see trips on chord diagram",
+              "The connections between districts depict bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
         "datafilecolumns":{"FROM":"Origin district of trip","TO":"Destination district of trip","Trip Type Columns":"Trip purpose and mode"}}
         ]
       }
@@ -227,28 +1153,163 @@
       "title": "- Regional Plan 2040",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
-        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
+        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of persons not at home by Transportation Analysis Zone (TAZ).",
+              "As the day progresses, people leave home, go to work, school, and other locations, and then return home in the evening."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Use the cycle through day button to animate the map.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
-        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
+        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Rail station boardings.",
+              "Includes airport trips in addition to non-airport trips by time-of-day.",
+              "Five points has the most boardings"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove time periods.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the drop-down selection to view different point values and time periods.",
+              "For the map: Color the points by scaled data value size.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
-        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.",
+        "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of daily trips by district, trip purpose, and travel mode."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle trip types and modes to see trips on chord diagram",
+              "The connections between districts depict bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
         "datafilecolumns":{"FROM":"Origin district of trip","TO":"Destination district of trip","Trip Type Columns":"Trip purpose and mode"}}
         ]
       }
@@ -257,22 +1318,121 @@
       "title": "- Regional Plan 2040 minus No-Build 2040",
       "ScenarioFocus": "transit.json",
       "visualizations": {
-        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county",
+        "BarMap": [{"name":"Trip Mode","config":"Default", "file":"BarChartAndMapData.csv","info":"Trip mode by zone and county", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of trips by mode by county.",
+              "Fulton county has the largest share of transit trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove modes.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the zone drop-down selection to view different trip modes as county colors.",
+              "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different trip modes by county.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone ID","COUNTY":"County Label","TRIP MODE":"Trip Mode","QUANTITY":"Quantity"}}
         ], 
-        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day",
+        "3DMap": [{"name":"Daytime Population","config":"Default","file":"3DAnimatedMapData.csv","info":"People that are not in their home zone by time-of-day", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Frequency of persons not at home by Transportation Analysis Zone (TAZ).",
+              "As the day progresses, people leave home, go to work, school, and other locations, and then return home in the evening."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Use the cycle through day button to animate the map.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"ZONE":"Zone Number","PER":"Time Period","PERSONS NOT AT HOME":"Number of people not at home per zone and period"}}
         ],        
-        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings",
+        "GroupedCharts": [{"name":"Day Patterns","config":"Default", "file":"BarChartData.csv","info":"Day patterns by person groupings", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Day patterns by person type (e.g., employment status, student status, age)"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove person types."]
+            }]
+          }],
           "datafilecolumns":{"PERSON GROUP":"Person type","DAY PATTERN":"Can be Home, Mandatory and Non-Mandatory","Count":"Count of people","CHART":"Which grouped chart they belong too"}}
         ],
-        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+        "TimeUse": [{"name":"Time Use","config":"Default","file":"TimeUseData.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity by time of day",
+              "Derived from trip purpose and time at destination",
+              "Persons tend to be at home or work in the morning versus home, work, or other in the afternoon."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over bars to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "Select/deselect bubbles to add/remove trip purposes."]
+            }]
+          }],
           "datafilecolumns":{"PERSON_TYPE": "Person type","PER": "Time Period","ORIG_PURPOSE":"Purpose for the trip","QUANTITY": "Number of trips for specific purpose and person classification"}}
         ],               
-        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", 
+        "Sunburst": [{"name":"Nested Mode Share","config":"Default","file":"TreeMapData.csv","info":"Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Nested trip mode share",
+              "Majority of travel done by auto modes."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Click a ring area to drill-down into the nest.",
+              "Click the center to go back up the nest.",
+              "Click a legend entry to select just that mode",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"TRIPS BY MODE":"","NEST MODE":"","SIMPLE MODE":"","QUANTITY":""}}
         ],
-        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.",
+        "RadarCharts": [{"name":"Performance Measures","config":"Default","file":"RadarChartsData.csv","info":"Activity centers by four performance measures.  The min/max by measure is scaled to the zone with the highest and lowest value.", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Activity centers by four performance measures.",
+              "The min/max by measure is scaled to the zone with the highest and lowest value.",
+              "For example, City Center does well for transit mode share and accessible employment."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Each radar chart shows the activity center score for each measure.",
+              "Activity centers can be compared across charts by comparing chart area.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ]
       }
@@ -419,7 +1579,8 @@
     "Default":{
       "ZoneFilterFile": "superdistricts.csv",
       "ZoneFile": "superdistricts.json",
-      "DesireLines": "desirelines.geojson" ,
+      "DesireLines": "desirelines.geojson",
+      "LegendText": "Flows",
 	  "ExcludeSameOD": "true"
 	  
 
