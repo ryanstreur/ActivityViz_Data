@@ -137,7 +137,26 @@
           }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
-        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
+        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Rail station boardings.",
+              "Includes airport trips in addition to non-airport trips by time-of-day.",
+              "Five points has the most boardings"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove time periods.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the drop-down selection to view different point values and time periods.",
+              "For the map: Color the points by scaled data value size.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
         "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
@@ -426,7 +445,26 @@
           }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
-        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
+        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Rail station boardings.",
+              "Includes airport trips in addition to non-airport trips by time-of-day.",
+              "Five points has the most boardings"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove time periods.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the drop-down selection to view different point values and time periods.",
+              "For the map: Color the points by scaled data value size.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
         "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
@@ -572,7 +610,26 @@
           }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
-        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
+        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Rail station boardings.",
+              "Includes airport trips in addition to non-airport trips by time-of-day.",
+              "Five points has the most boardings"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove time periods.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the drop-down selection to view different point values and time periods.",
+              "For the map: Color the points by scaled data value size.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
         "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
@@ -718,7 +775,26 @@
           }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
-        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
+        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Rail station boardings.",
+              "Includes airport trips in addition to non-airport trips by time-of-day.",
+              "Five points has the most boardings"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove time periods.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the drop-down selection to view different point values and time periods.",
+              "For the map: Color the points by scaled data value size.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
         "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
@@ -864,7 +940,26 @@
           }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
-        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
+        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Rail station boardings.",
+              "Includes airport trips in addition to non-airport trips by time-of-day.",
+              "Five points has the most boardings"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove time periods.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the drop-down selection to view different point values and time periods.",
+              "For the map: Color the points by scaled data value size.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
         "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
@@ -1010,7 +1105,26 @@
           }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
-        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
+        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Rail station boardings.",
+              "Includes airport trips in addition to non-airport trips by time-of-day.",
+              "Five points has the most boardings"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove time periods.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the drop-down selection to view different point values and time periods.",
+              "For the map: Color the points by scaled data value size.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
         "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
@@ -1156,7 +1270,26 @@
           }],
           "datafilecolumns":{"AXIS":"Performance measure","CHART":"Chart grouping","QUANTITY":"QUANTITY"}}
         ],
-        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data",
+        "POIMap": [{"name":"Rail Stations","config":"Default","file":"TransitStops.csv","info":"Rail station data", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Rail station boardings.",
+              "Includes airport trips in addition to non-airport trips by time-of-day.",
+              "Five points has the most boardings"]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["For the left graph: Select/deselect bubbles to add/remove time periods.",
+              "For the left graph: Hover mouse over graph to see detail.",
+              "For the map: Use the drop-down selection to view different point values and time periods.",
+              "For the map: Color the points by scaled data value size.",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }],
           "datafilecolumns":{"STATION":"Station ID","MODE":"Station Mode","LAT":"Latitude of station","LONG":"Longitude of station","TIMEOFDAY":"Time of day","BOARDINGS":"Number of boardings","ALIGHTINGS":"Number of alightings"}}
         ],        
         "Chord": [{"name":"Trip ODs","config":"Default", "file":"DesireLines.csv","info":"Trips by purpose and mode between super districts.", "explanation":[{
