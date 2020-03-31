@@ -17,7 +17,10 @@
     "SideBarTextRight": "<b>ActivityViz</b> is an interactive travel and activity data visualization tool.  It is built with JavaScript technologies and works with various types of travel and activity data - household travel surveys, trip-based model outputs, activity-based model outputs, disaggregate passive data, freight models, on-board surveys, etc.  The dashboard features several interactive and customizable visualizations for exploring data, such as 3D maps of trips in time and space, time use by person type and activity, radar charts for performance measure analysis, sunburst diagrams for visualizing mode shares, animated bubble maps, chord diagrams for OD data, point-of-interest maps for transit stop data, truck flow data, etc.  </b>ActivityViz</b> is published using <a href='https://pages.github.com/'>GitHub pages</a> which eliminates most of the administrative backend in traditional systems.",
     "SideBarImage":"example.png",
     "scenarios": {
-        "I205": {"title": "- I205","CenterMap": [45.367157,-122.692046],"ScenarioFocus": "I205.json",
+        "I205": {
+            "title": "- I205",
+            "CenterMap": [45.367157,-122.692046],
+            "ScenarioFocus": "I205.json",
             "visualizations": {
                 "GroupedCharts": [{"name":"Benefits","config":"Default", "file":"BarChartData.csv","info":"Monetized project benefits", "explanation":[{
                     "header": "Summary",
@@ -215,7 +218,7 @@
                       "Select \"Show Data\" to see tabulation.",
                       "Select/deselect bubbles to add/remove benefit groups."]
                     }]
-                  }]}],
+                  }]}]
             }
         },
         "Freight": {
