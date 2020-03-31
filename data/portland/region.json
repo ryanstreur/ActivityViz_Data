@@ -26,10 +26,10 @@
                     "header": "Summary",
                     "body":[{
                       "type": "unorderedList",
-                      "content": ["Monetized project benefits",
-                      "Total benefits and benefits per household",
-                      "Some benefits are positive and some benefits are negative",
-                      "Children and seniors benefit the most from the travel options benefit"]
+                      "content": ["Monetized project benefits.",
+                      "Total benefits and benefits per household.",
+                      "Some benefits are positive and some benefits are negative.",
+                      "Children and seniors benefit the most from the travel options benefit."]
                     }]
                   },
                   {
@@ -67,14 +67,14 @@
                       "type": "unorderedList",
                       "content": ["Travel options (accessibility) benefits by zone.",
                       "Benefits by trip purpose and benefit group.",
-                      "Project benefits are near the project"]
+                      "Project benefits are near the project."]
                     }]
                   },
                   {
                     "header": "Instructions",
                     "body":[{
                       "type": "unorderedList",
-                      "content": ["Use the data drop-down selection to display the benefit group",
+                      "content": ["Use the data drop-down selection to display the benefit group.",
                       "Select \"Show Data\" to see tabulation."]
                     }]
                   }]}],
@@ -83,7 +83,7 @@
                     "body":[{
                       "type": "unorderedList",
                       "content": ["Origins and destinations of travel time savings benefit.",
-                      "WestLinnToOregonCity and PortlandCityCenter do well under this scenario"]
+                      "WestLinnToOregonCity and PortlandCityCenter do well under this scenario."]
                     }]
                   },
                   {
@@ -92,7 +92,7 @@
                       "type": "unorderedList",
                       "content": ["Hover mouse over graph to see detail.",
                       "The connections between districts depict bi-directional flows.",
-                      "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+                      "Turn on desire lines in the map layers to see district-to-district trip flow lines.",
                       "Select \"Show Data\" to see tabulation."]
                     }]
                   }]}]
@@ -107,10 +107,10 @@
                     "header": "Summary",
                     "body":[{
                       "type": "unorderedList",
-                      "content": ["Monetized project benefits",
-                      "Total benefits and benefits per household",
-                      "Some benefits are positive and some benefits are negative",
-                      "Low english proficiency group benefits the most from the travel options benefit"]
+                      "content": ["Monetized project benefits.",
+                      "Total benefits and benefits per household.",
+                      "Some benefits are positive and some benefits are negative.",
+                      "Low english proficiency group benefits the most from the travel options benefit."]
                     }]
                   },
                   {
@@ -148,14 +148,14 @@
                       "type": "unorderedList",
                       "content": ["Travel options (accessibility) benefits by zone.",
                       "Benefits by trip purpose and benefit group.",
-                      "Project benefits are near the project"]
+                      "Project benefits are near the project."]
                     }]
                   },
                   {
                     "header": "Instructions",
                     "body":[{
                       "type": "unorderedList",
-                      "content": ["Use the data drop-down selection to display the benefit group",
+                      "content": ["Use the data drop-down selection to display the benefit group.",
                       "Select \"Show Data\" to see tabulation."]
                     }]
                   }]}],
@@ -164,7 +164,7 @@
                     "body":[{
                       "type": "unorderedList",
                       "content": ["Origins and destinations of travel time savings benefit.",
-                      "Gresham, Lents and PortlandCityCenter do well under this scenario"]
+                      "Gresham, Lents and PortlandCityCenter do well under this scenario."]
                     }]
                   },
                   {
@@ -173,7 +173,7 @@
                       "type": "unorderedList",
                       "content": ["Hover mouse over graph to see detail.",
                       "The connections between districts depict bi-directional flows.",
-                      "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+                      "Turn on desire lines in the map layers to see district-to-district trip flow lines.",
                       "Select \"Show Data\" to see tabulation."]
                     }]
                   }]}]
@@ -204,10 +204,10 @@
                     "header": "Summary",
                     "body":[{
                       "type": "unorderedList",
-                      "content": ["Monetized project benefits",
-                      "Total benefits and benefits per household",
-                      "Some benefits are positive and some benefits are negative",
-                      "Children and seniors benefit the most from the travel options benefit"]
+                      "content": ["Monetized project benefits.",
+                      "Total benefits and benefits per household.",
+                      "Some benefits are positive and some benefits are negative.",
+                      "Children and seniors benefit the most from the travel options benefit."]
                     }]
                   },
                   {
@@ -232,7 +232,7 @@
                       "type": "unorderedList",
                       "content": ["Freight flows at points of interest.",
                       "Includes all goods in addition to each individual good.",
-                      "I-5 Southbound carrying the most daily tons and dollars of goods"]
+                      "I-5 Southbound carrying the most daily tons and dollars of goods."]
                     }]
                   },
                   {
@@ -258,10 +258,10 @@
                     "header": "Summary",
                     "body":[{
                       "type": "unorderedList",
-                      "content": ["Monetized project benefits",
-                      "Total benefits and benefits per household",
-                      "Some benefits are positive and some benefits are negative",
-                      "Mixed benefits story by benefit groups"]
+                      "content": ["Monetized project benefits.",
+                      "Total benefits and benefits per household.",
+                      "Some benefits are positive and some benefits are negative.",
+                      "Mixed benefits story by benefit groups."]
                     }]
                   },
                   {
@@ -299,14 +299,14 @@
                       "type": "unorderedList",
                       "content": ["Travel options (accessibility) benefits by zone.",
                       "Benefits by trip purpose and benefit group.",
-                      "Project benefits are focused near the project"]
+                      "Project benefits are focused near the project."]
                     }]
                   },
                   {
                     "header": "Instructions",
                     "body":[{
                       "type": "unorderedList",
-                      "content": ["Use the data drop-down selection to display the benefit group",
+                      "content": ["Use the data drop-down selection to display the benefit group.",
                       "Select \"Show Data\" to see tabulation."]
                     }]
                   }]}],
@@ -315,9 +315,9 @@
                     "body":[{
                       "type": "unorderedList",
                       "content": ["Origins and destinations of travel time savings benefit.",
-                      "Either positive (+) or negative (-) benefits displayed ",
-                      "Vancouver and Clark County do well",
-                      "Portland City Center does not do so well]
+                      "Either positive (+) or negative (-) benefits displayed.",
+                      "Vancouver and Clark County do well.",
+                      "Portland City Center does not do so well."]
                     }]
                   },
                   {
@@ -326,7 +326,7 @@
                       "type": "unorderedList",
                       "content": ["Hover mouse over graph to see detail.",
                       "The connections between districts depict bi-directional flows.",
-                      "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+                      "Turn on desire lines in the map layers to see district-to-district trip flow lines.",
                       "Select \"Show Data\" to see tabulation."]
                     }]
                   }]}]
@@ -342,10 +342,10 @@
                     "header": "Summary",
                     "body":[{
                       "type": "unorderedList",
-                      "content": ["Monetized project benefits",
-                      "Total benefits and benefits per household",
-                      "Some benefits are positive and some benefits are negative",
-                      "Mostly disbenefits for each benefit group"]
+                      "content": ["Monetized project benefits.",
+                      "Total benefits and benefits per household.",
+                      "Some benefits are positive and some benefits are negative.",
+                      "Mostly disbenefits for each benefit group."]
                     }]
                   },
                   {
@@ -383,14 +383,14 @@
                       "type": "unorderedList",
                       "content": ["Travel options (accessibility) benefits by zone.",
                       "Benefits by trip purpose and benefit group.",
-                      "Project disbenefits near the project"]
+                      "Project disbenefits near the project."]
                     }]
                   },
                   {
                     "header": "Instructions",
                     "body":[{
                       "type": "unorderedList",
-                      "content": ["Use the data drop-down selection to display the benefit group",
+                      "content": ["Use the data drop-down selection to display the benefit group.",
                       "Select \"Show Data\" to see tabulation."]
                     }]
                   }]}],
@@ -399,9 +399,9 @@
                     "body":[{
                       "type": "unorderedList",
                       "content": ["Origins and destinations of travel time savings benefit.",
-                      "Either positive (+) or negative (-) benefits displayed ",
+                      "Either positive (+) or negative (-) benefits displayed.",
                       "Vancouver and Clark County do well",
-                      "West Linn to Oregon City, Milwaukie to Lake Oswgo, Portland City Center do not do so well]
+                      "West Linn to Oregon City, Milwaukie to Lake Oswgo, Portland City Center do not do so well."]
                   },
                   {
                     "header": "Instructions",
@@ -409,7 +409,7 @@
                       "type": "unorderedList",
                       "content": ["Hover mouse over graph to see detail.",
                       "The connections between districts depict bi-directional flows.",
-                      "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+                      "Turn on desire lines in the map layers to see district-to-district trip flow lines.",
                       "Select \"Show Data\" to see tabulation."]
                     }]
                   }]}]
