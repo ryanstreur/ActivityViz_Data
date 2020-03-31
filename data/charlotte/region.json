@@ -19,11 +19,93 @@
       "title": "- 2018 Passive Data",
       "visualizations": {
         "Chord": [
-          {"name": "Truck OD Flows","file":"ExpandedATRI.csv","config":"Default", "info":"Truck OD flows by district"},
-          {"name": "Truck OD Flows by Time-of-Day","file":"ExpandedATRI_SBS.csv","config":"SBS", "info":"Truck OD flows by Time-of-Day"},
-          {"name": "LBS OD Flows","file":"ExpandedSafeGraph.csv","config":"Default", "info":"LBS OD flows by district"},
-          {"name": "LBS Resident OD Flows by Time-of-Day","file":"ExpandedSafeGraph_SBS_Res.csv","config":"SBS", "info":"LBS Resident OD flows by Time-of-Day"},
-          {"name": "LBS Visitor OD Flows by Time-of-Day","file":"ExpandedSafeGraph_SBS_Vis.csv","config":"SBS", "info":"LBS Visitor OD flows by Time-of-Day"}
+          {"name": "Truck OD Flows","file":"ExpandedATRI.csv","config":"Default", "info":"Truck OD flows by district", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of truck trips by district and time period."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle time periods to see trips on chord diagram",
+              "The connections between districts depict bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines or zones to see origin-destination",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }]},
+          {"name": "Truck OD Flows by Time-of-Day","file":"ExpandedATRI_SBS.csv","config":"SBS", "info":"Truck OD flows by Time-of-Day", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of truck trips by district by time period.",
+              "Outside Route 4 is a major origin or destination for truck trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "The connections between districts depict bi-directional flows."]
+            }]
+          }]},
+          {"name": "LBS OD Flows","file":"ExpandedSafeGraph.csv","config":"Default", "info":"LBS OD flows by district", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of LBS trips by district and time period."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Toggle time periods to see trips on chord diagram",
+              "The connections between districts depict bi-directional flows.",
+              "Turn on desire lines in the map layers to see district-to-district trip flow lines or zones to see origin-destination",
+              "Select \"Show Data\" to see tabulation."]
+            }]
+          }]},
+          {"name": "LBS Resident OD Flows by Time-of-Day","file":"ExpandedSafeGraph_SBS_Res.csv","config":"SBS", "info":"LBS Resident OD flows by Time-of-Day", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of resident trips by district by time period.",
+              "Outside Route 4 is a major origin or destination for resident trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "The connections between districts depict bi-directional flows."]
+            }]
+          }]},
+          {"name": "LBS Visitor OD Flows by Time-of-Day","file":"ExpandedSafeGraph_SBS_Vis.csv","config":"SBS", "info":"LBS Visitor OD flows by Time-of-Day", "explanation":[{
+            "header": "Summary",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Origins and destinations of visitor trips by district by time period.",
+              "Outside Route 4 is a major origin or destination for visitor trips."]
+            }]
+          },
+          {
+            "header": "Instructions",
+            "body":[{
+              "type": "unorderedList",
+              "content": ["Hover mouse over graph to see detail.",
+              "Select \"Show Data\" to see tabulation.",
+              "The connections between districts depict bi-directional flows."]
+            }]
+          }]}
         ]
       }
     }
