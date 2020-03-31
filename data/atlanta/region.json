@@ -144,7 +144,7 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of daily trips by districts."]
+              "content": ["Origins and destinations of daily trips by district, trip purpose, and travel mode."]
             }]
           },
           {
@@ -287,7 +287,7 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of daily trips by districts."]
+              "content": ["Origins and destinations of daily trips by district, trip purpose, and travel mode."]
             }]
           },
           {
@@ -433,7 +433,7 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of daily trips by districts."]
+              "content": ["Origins and destinations of daily trips by district, trip purpose, and travel mode."]
             }]
           },
           {
@@ -579,7 +579,7 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of daily trips by districts."]
+              "content": ["Origins and destinations of daily trips by district, trip purpose, and travel mode."]
             }]
           },
           {
@@ -725,7 +725,7 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of daily trips by districts."]
+              "content": ["Origins and destinations of daily trips by district, trip purpose, and travel mode."]
             }]
           },
           {
@@ -871,7 +871,7 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of daily trips by districts."]
+              "content": ["Origins and destinations of daily trips by district, trip purpose, and travel mode."]
             }]
           },
           {
@@ -1017,7 +1017,7 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of daily trips by districts."]
+              "content": ["Origins and destinations of daily trips by district, trip purpose, and travel mode."]
             }]
           },
           {
@@ -1163,7 +1163,7 @@
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of daily trips by districts."]
+              "content": ["Origins and destinations of daily trips by district, trip purpose, and travel mode."]
             }]
           },
           {
