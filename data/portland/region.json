@@ -100,10 +100,80 @@
             "CenterMap": [45.512794,-122.679565],
             "ScenarioFocus": "DivisionBRT.json",
             "visualizations": {
-                "GroupedCharts": [{"name":"Benefits","config":"Default", "file":"BarChartData.csv","info":"Monetized project benefits"}],
-                "BarMap": [{"name":"Travel Options Benefit","config":"Default", "file":"BarChartAndMapData.csv","info":"Travel options (accessibility) benefits"}],
-                "3DMap": [{"name":"3D Travel Options Benefit","config":"Default","file":"3DAnimatedMapData.csv","info":"Travel options (accessibility) benefits"}],
-                "Chord": [{"name":"Travel Time Savings","config":"Default", "file":"ChordData.csv","info":"Travel time savings by OD"}]
+                "GroupedCharts": [{"name":"Benefits","config":"Default", "file":"BarChartData.csv","info":"Monetized project benefits", "explanation":[{
+                    "header": "Summary",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Monetized project benefits",
+                      "Total benefits and benefits per household",
+                      "Some benefits are positive and some benefits are negative",
+                      "Children and seniors benefit the most from the travel options benefit"]
+                    }]
+                  },
+                  {
+                    "header": "Instructions",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Hover mouse over bars to see detail.",
+                      "Select \"Show Data\" to see tabulation.",
+                      "Select/deselect bubbles to add/remove benefit groups."]
+                    }]
+                  }]}],
+                "BarMap": [{"name":"Travel Options Benefit","config":"Default", "file":"BarChartAndMapData.csv","info":"Travel options (accessibility) benefits", "explanation":[{
+                    "header": "Summary",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Travel options (accessibility) benefits by county.",
+                      "Benefits by trip purpose and benefit group."]
+                    }]
+                  },
+                  {
+                    "header": "Instructions",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["For the left graph: Select/deselect bubbles to add/remove benefit groups.",
+                      "For the left graph: Hover mouse over graph to see detail.",
+                      "For the map: Use the zone drop-down selection to view different benefit groups as zone colors.",
+                      "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different benefit groups by zone.",
+                      "For the map: Turn on the project focus area and/or the benefit group areas under layers.",
+                      "Select \"Show Data\" to see tabulation."]
+                    }]
+                  }]}],
+                "3DMap": [{"name":"3D Travel Options Benefit","config":"Default","file":"3DAnimatedMapData.csv","info":"Travel options (accessibility) benefits", "explanation":[{
+                    "header": "Summary",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Travel options (accessibility) benefits by zone.",
+                      "Benefits by trip purpose and benefit group.",
+                      "Project benefits are near the project"]
+                    }]
+                  },
+                  {
+                    "header": "Instructions",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Use the data drop-down selection to display the benefit group",
+                      "Select \"Show Data\" to see tabulation."]
+                    }]
+                  }]}],
+                "Chord": [{"name":"Travel Time Savings","config":"Default", "file":"ChordData.csv","info":"Travel time savings by OD", "explanation":[{
+                    "header": "Summary",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Origins and destinations of travel time savings benefit.",
+                      "WestLinnToOregonCity and PortlandCityCenter do well under this scenario"]
+                    }]
+                  },
+                  {
+                    "header": "Instructions",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Hover mouse over graph to see detail.",
+                      "The connections between districts depict bi-directional flows.",
+                      "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+                      "Select \"Show Data\" to see tabulation."]
+                    }]
+                  }]}]
             }
         },
         "Scenarios": {
@@ -111,8 +181,41 @@
             "title": "- I205 versus Division BRT",
             "CenterMap": [45.512794,-122.679565],
             "visualizations": {
-                "Scatter": [{"name":"BC Ratio","config":"Default","file":"Scatter.csv","info":"Scenario benefit / cost"}],
-                "GroupedCharts": [{"name":"Benefits","config":"Default", "file":"BarChartData.csv","info":"Monetized project benefits"}]
+                "Scatter": [{"name":"BC Ratio","config":"Default","file":"Scatter.csv","info":"Scenario benefit / cost", "explanation":[{
+                    "header": "Summary",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Project benefit to cost ratio",
+                      "Division BRT performs better"]
+                    }]
+                  },
+                  {
+                    "header": "Instructions",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Hover mouse over point to see detail.",
+                      "Select \"Show Data\" to see tabulation."]
+                    }]
+                  }]}],
+                "GroupedCharts": [{"name":"Benefits","config":"Default", "file":"BarChartData.csv","info":"Monetized project benefits", "explanation":[{
+                    "header": "Summary",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Monetized project benefits",
+                      "Total benefits and benefits per household",
+                      "Some benefits are positive and some benefits are negative",
+                      "Children and seniors benefit the most from the travel options benefit"]
+                    }]
+                  },
+                  {
+                    "header": "Instructions",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Hover mouse over bars to see detail.",
+                      "Select \"Show Data\" to see tabulation.",
+                      "Select/deselect bubbles to add/remove benefit groups."]
+                    }]
+                  }]}],
             }
         },
         "Freight": {
@@ -120,7 +223,26 @@
             "title": "- Freight Flows",
             "CenterMap": [45.512794,-122.679565],
             "visualizations": {
-                "POIMap": [{"name":"Freight Flows","config":"Default","file":"PointofInterest.csv","info":"Freight model flows"}]
+                "POIMap": [{"name":"Freight Flows","config":"Default","file":"PointofInterest.csv","info":"Freight model flows", "explanation":[{
+                    "header": "Summary",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Freight flows at points of interest.",
+                      "Includes all goods in addition to each individual good.",
+                      "I-5 Southbound carrying the most daily tons and dollars of goods"]
+                    }]
+                  },
+                  {
+                    "header": "Instructions",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["For the left graph: Select/deselect bubbles to add/remove goods.",
+                      "For the left graph: Hover mouse over graph to see detail.",
+                      "For the map: Use the drop-down selections to view different point values and goods.",
+                      "For the map: Color the points by scaled data value size.",
+                      "Select \"Show Data\" to see tabulation."]
+                    }]
+                  }]}]
             }
         },
         "Concept-B": {
@@ -129,10 +251,80 @@
             "CenterMap": [45.512794,-122.679565],
             "ScenarioFocus": "concept-b.json",
             "visualizations": {
-                "GroupedCharts": [{"name":"Benefits","config":"Default", "file":"BarChartData.csv","info":"Monetized project benefits"}],
-                "BarMap": [{"name":"Travel Options Benefit","config":"Default", "file":"BarChartAndMapData.csv","info":"Travel options (accessibility) benefits"}],
-                "3DMap": [{"name":"3D Travel Options Benefit","config":"Default","file":"3DAnimatedMapData.csv","info":"Travel options (accessibility) benefits"}],
-                "Chord": [{"name":"Travel Time Savings","config":"Default", "file":"ChordData.csv","info":"Travel time savings by OD"}]
+                "GroupedCharts": [{"name":"Benefits","config":"Default", "file":"BarChartData.csv","info":"Monetized project benefits", "explanation":[{
+                    "header": "Summary",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Monetized project benefits",
+                      "Total benefits and benefits per household",
+                      "Some benefits are positive and some benefits are negative",
+                      "Children and seniors benefit the most from the travel options benefit"]
+                    }]
+                  },
+                  {
+                    "header": "Instructions",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Hover mouse over bars to see detail.",
+                      "Select \"Show Data\" to see tabulation.",
+                      "Select/deselect bubbles to add/remove benefit groups."]
+                    }]
+                  }]}],
+                "BarMap": [{"name":"Travel Options Benefit","config":"Default", "file":"BarChartAndMapData.csv","info":"Travel options (accessibility) benefits", "explanation":[{
+                    "header": "Summary",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Travel options (accessibility) benefits by county.",
+                      "Benefits by trip purpose and benefit group."]
+                    }]
+                  },
+                  {
+                    "header": "Instructions",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["For the left graph: Select/deselect bubbles to add/remove benefit groups.",
+                      "For the left graph: Hover mouse over graph to see detail.",
+                      "For the map: Use the zone drop-down selection to view different benefit groups as zone colors.",
+                      "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different benefit groups by zone.",
+                      "For the map: Turn on the project focus area and/or the benefit group areas under layers.",
+                      "Select \"Show Data\" to see tabulation."]
+                    }]
+                  }]}],
+                "3DMap": [{"name":"3D Travel Options Benefit","config":"Default","file":"3DAnimatedMapData.csv","info":"Travel options (accessibility) benefits", "explanation":[{
+                    "header": "Summary",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Travel options (accessibility) benefits by zone.",
+                      "Benefits by trip purpose and benefit group.",
+                      "Project benefits are near the project"]
+                    }]
+                  },
+                  {
+                    "header": "Instructions",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Use the data drop-down selection to display the benefit group",
+                      "Select \"Show Data\" to see tabulation."]
+                    }]
+                  }]}],
+                "Chord": [{"name":"Travel Time Savings","config":"Default", "file":"ChordData.csv","info":"Travel time savings by OD", "explanation":[{
+                    "header": "Summary",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Origins and destinations of travel time savings benefit.",
+                      "WestLinnToOregonCity and PortlandCityCenter do well under this scenario"]
+                    }]
+                  },
+                  {
+                    "header": "Instructions",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Hover mouse over graph to see detail.",
+                      "The connections between districts depict bi-directional flows.",
+                      "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+                      "Select \"Show Data\" to see tabulation."]
+                    }]
+                  }]}]
             }
         },
         "Concept-E": {
@@ -141,10 +333,80 @@
             "CenterMap": [45.512794,-122.679565],
             "ScenarioFocus": "concept-e.json",
             "visualizations": {
-                "GroupedCharts": [{"name":"Benefits","config":"Default", "file":"BarChartData.csv","info":"Monetized project benefits"}],
-                "BarMap": [{"name":"Travel Options Benefit","config":"Default", "file":"BarChartAndMapData.csv","info":"Travel options (accessibility) benefits"}],
-                "3DMap": [{"name":"3D Travel Options Benefit","config":"Default","file":"3DAnimatedMapData.csv","info":"Travel options (accessibility) benefits"}],
-                "Chord": [{"name":"Travel Time Savings","config":"Default", "file":"ChordData.csv","info":"Travel time savings by OD"}]
+                "GroupedCharts": [{"name":"Benefits","config":"Default", "file":"BarChartData.csv","info":"Monetized project benefits", "explanation":[{
+                    "header": "Summary",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Monetized project benefits",
+                      "Total benefits and benefits per household",
+                      "Some benefits are positive and some benefits are negative",
+                      "Children and seniors benefit the most from the travel options benefit"]
+                    }]
+                  },
+                  {
+                    "header": "Instructions",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Hover mouse over bars to see detail.",
+                      "Select \"Show Data\" to see tabulation.",
+                      "Select/deselect bubbles to add/remove benefit groups."]
+                    }]
+                  }]}],
+                "BarMap": [{"name":"Travel Options Benefit","config":"Default", "file":"BarChartAndMapData.csv","info":"Travel options (accessibility) benefits", "explanation":[{
+                    "header": "Summary",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Travel options (accessibility) benefits by county.",
+                      "Benefits by trip purpose and benefit group."]
+                    }]
+                  },
+                  {
+                    "header": "Instructions",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["For the left graph: Select/deselect bubbles to add/remove benefit groups.",
+                      "For the left graph: Hover mouse over graph to see detail.",
+                      "For the map: Use the zone drop-down selection to view different benefit groups as zone colors.",
+                      "For the map: Turn on bubbles under layers and use the bubbles drop-down selection to view different benefit groups by zone.",
+                      "For the map: Turn on the project focus area and/or the benefit group areas under layers.",
+                      "Select \"Show Data\" to see tabulation."]
+                    }]
+                  }]}],
+                "3DMap": [{"name":"3D Travel Options Benefit","config":"Default","file":"3DAnimatedMapData.csv","info":"Travel options (accessibility) benefits", "explanation":[{
+                    "header": "Summary",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Travel options (accessibility) benefits by zone.",
+                      "Benefits by trip purpose and benefit group.",
+                      "Project benefits are near the project"]
+                    }]
+                  },
+                  {
+                    "header": "Instructions",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Use the data drop-down selection to display the benefit group",
+                      "Select \"Show Data\" to see tabulation."]
+                    }]
+                  }]}],
+                "Chord": [{"name":"Travel Time Savings","config":"Default", "file":"ChordData.csv","info":"Travel time savings by OD", "explanation":[{
+                    "header": "Summary",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Origins and destinations of travel time savings benefit.",
+                      "WestLinnToOregonCity and PortlandCityCenter do well under this scenario"]
+                    }]
+                  },
+                  {
+                    "header": "Instructions",
+                    "body":[{
+                      "type": "unorderedList",
+                      "content": ["Hover mouse over graph to see detail.",
+                      "The connections between districts depict bi-directional flows.",
+                      "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+                      "Select \"Show Data\" to see tabulation."]
+                    }]
+                  }]}]
             }
         }
     },
