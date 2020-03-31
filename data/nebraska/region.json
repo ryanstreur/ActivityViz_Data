@@ -111,7 +111,7 @@
       "ZoneFile":"ZoneShape.json",
       "DesireLinesOn": true
     },
-        "SideBySide": {
+    "SideBySide": {
       "ZoneFilterFile": "cocs.csv",
       "LabelSize": "14",
       "LegendText": "District Flows",
