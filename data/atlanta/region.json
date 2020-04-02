@@ -2985,7 +2985,7 @@
       }
     },
     "OnboardSurvey": {
-      "title": "- Onboard Survey",
+      "title": "- 2019 Regional Transit On-Board Survey",
       "ScenarioFocus": "transit.json",
       "visualizations": {
         "GroupedCharts": [
@@ -4012,7 +4012,7 @@
       }
     },
     "TourSummary": {
-      "title": "- Tour Summary",
+      "title": "- 2019 Regional One Day Tour Diary Survey",
       "ScenarioFocus": "transit.json",
       "visualizations": {
         "GroupedCharts": [

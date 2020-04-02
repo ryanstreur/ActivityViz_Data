@@ -455,6 +455,25 @@ did_y_school_dt[, `DID_YOU_GO_TO_SCHOOL[Code]`:=NULL]
 output_ls[["did_y_school_dt"]] = did_y_school_dt
 
 
+# Survey Route by Time period
+od_dd_dt[grepl("route", DESCRIPTION, ignore.case = TRUE), .(`FIELD NAME` , DESCRIPTION)]
+od_dd_dt[grepl("time", DESCRIPTION, ignore.case = TRUE), .(`FIELD NAME` , DESCRIPTION)]
+route_period_dt = od_dt[!is.na(`ROUTE_SURVEYED[Code]`)&!is.na(`TIME_ON[Code]`),
+                        .(COUNT = .N,
+                          CHART_TYPE = "ROUTE SURVEYED BY TIME PERIOD"), 
+                        by = .(ROUTE_SURVEYED, `ROUTE_SURVEYED[Code]`,
+                               TIME_ON, `TIME_ON[Code]`)]
+# setorder(route_period_dt, "ROUTE_SURVEYED[Code]", "TIME_ON[Code]")
+route_period_dt[,TIME_ON:=paste0(`TIME_ON[Code]`, " ", TIME_ON)]
+route_period_dt[,`ROUTE_SURVEYED[Code]`:=NULL]
+route_period_dt[,`TIME_ON[Code]`:=NULL]
+route_period_dt[,ROUTE_SURVEYED_LABEL:=gsub("\\s-.*$", "", ROUTE_SURVEYED)]
+route_period_dt = route_period_dt[,.(COUNT=sum(COUNT), CHART_TYPE=unique(CHART_TYPE)),
+                                  by = .(ROUTE_SURVEYED=ROUTE_SURVEYED_LABEL,
+                                         TIME_ON)]
+setorder(route_period_dt, -COUNT)
+output_ls[["route_period_dt"]] = route_period_dt
+
 lapply(output_ls, function(x) {
   if(ncol(x) == 3) {
     x[,GROUP:="PARTICIPANT RESPONSE"]
@@ -472,9 +491,8 @@ for(table_name in names(output_ls)){
   filename = file.path(os_output_dir, paste0(gsub("_dt", "", table_name), ".csv"))
   fwrite(output_ls[[table_name]],
          file = filename)
+  cat(basename(filename), "\n")
 }
-
-
 
 # Function to reformat DESCRIPTION
 formatDescription = function(x){

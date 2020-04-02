@@ -208,6 +208,21 @@ tour_dt[,one_place_all_day:=FALSE]
 tour_dt[nchar(activity_code)==1, one_place_all_day:=TRUE]
 tour_dt[,tourduration:=difftime(dtime,otime,units = "hours")]
 
+# Count number of tours
+ntours_dt = trip_dt[,.(ntours=sum(activity_location=="HOME")-1L*all(is.na(islast_return_home))),
+                    .(per_id, 
+                      start_end_home)]
+ntours_dt[start_end_home == FALSE, ntours:=0L]
+# ntours_dt[,.N,.(start_end_home, ntours)][order(start_end_home, ntours)]
+setkey(ntours_dt, per_id)
+tour_dt[ntours_dt, ntours:=i.ntours]
+nstops_labels = c("0No Stops", "1 Stop", "2 Stops", "3 Stops", "4+ Stops")
+tour_dt[ntours==0, nstops:=0L]
+tour_dt[,nstops_label:=nstops_labels[pmin(nstops,4)+1L]]
+ntour_labels = c("0No Tours", "1 Tour", "2 Tours", "3 Tours", "4+ Tours")
+tour_dt[ntours>3, ntours:=4L]
+tour_dt[,ntours:=ntour_labels[ntours+1L]]
+
 output_ls[["tour_dt"]] = tour_dt
 
 ### Create Summaries #############################################################
@@ -216,58 +231,83 @@ output_ls[["tour_dt"]] = tour_dt
 summary_ls = list()
 
 # Home based Tours
-home_based_dt = tour_dt[,.(COUNT=.N,CHART="HOME BASED"),.(HOME_BASED=as.integer(home_based))]
+home_based_dt = tour_dt[,.(COUNT=.N,CHART="SURVEYED BY NUMBER OF TOURS"),.(NTOURS = ntours)]
 home_based_dt[,GROUP:= "PERSON TOUR"]
+setorder(home_based_dt, NTOURS)
 setcolorder(home_based_dt, "GROUP")
 summary_ls[["home_based_dt"]] = home_based_dt
 
 # Number of Stops
-stops_dt = tour_dt[,.(COUNT=.N, CHART="NUMBER OF STOPS"),.(HOME_BASED=as.integer(home_based), STOPS=nstops)]
-setorder(stops_dt, HOME_BASED, STOPS)
-summary_ls[["home_based_dt"]] = home_based_dt
+stops_dt = tour_dt[,.(COUNT=.N, CHART="NUMBER OF STOPS"),.(NTOURS = ntours, NSTOPS=nstops_label)]
+setorder(stops_dt, NTOURS, NSTOPS)
+# stops_dt = stops_dt[order(match(NTOURS, ntour_labels), STOPS)]
+summary_ls[["stops_dt"]] = stops_dt
 
 # Drive Transit only
-drive_transit_dt = tour_dt[,.(COUNT=.N, CHART="DRIVE TRANSIT ONLY"),.(HOME_BASED=as.integer(home_based), `DRIVE TRANSIT`=as.integer(drive_transit))]
-setorder(drive_transit_dt, HOME_BASED, `DRIVE TRANSIT`)
+drive_transit_dt = tour_dt[,.(COUNT=.N, CHART="DRIVE TRANSIT ONLY"),.(`TOURS AND STOPS` = paste0(ntours, ", ",nstops_label), `DRIVE TRANSIT`=as.character(drive_transit))]
+setorder(drive_transit_dt, `TOURS AND STOPS`, `DRIVE TRANSIT`)
+# drive_transit_dt = drive_transit_dt[order(match(NTOURS, ntour_labels), `DRIVE TRANSIT`)]
 summary_ls[["drive_transit_dt"]] = drive_transit_dt
 
 # Walk Transit only
-walk_transit_dt = tour_dt[,.(COUNT=.N, CHART="WALK TRANSIT ONLY"),.(HOME_BASED=as.integer(home_based), `WALK TRANSIT`=as.integer(walk_transit_only))]
-setorder(walk_transit_dt, HOME_BASED, `WALK TRANSIT`)
+walk_transit_dt = tour_dt[,.(COUNT=.N, CHART="WALK TRANSIT ONLY"),.(`TOURS AND STOPS` = paste0(ntours, ", ",nstops_label), `WALK TRANSIT`=as.character(walk_transit_only))]
+setorder(walk_transit_dt, `TOURS AND STOPS`, `WALK TRANSIT`)
 summary_ls[["walk_transit_dt"]] = walk_transit_dt
 
 # Non Transit only
-non_transit_dt = tour_dt[,.(COUNT=.N, CHART="NON TRANSIT"),.(HOME_BASED=as.integer(home_based), `NON TRANSIT`=as.integer(non_transit))]
-setorder(non_transit_dt, HOME_BASED, `NON TRANSIT`)
+non_transit_dt = tour_dt[,.(COUNT=.N, CHART="NON TRANSIT"),.(`TOURS AND STOPS` = paste0(ntours, ", ",nstops_label), `NON TRANSIT`=as.character(non_transit))]
+setorder(non_transit_dt, `TOURS AND STOPS`, `NON TRANSIT`)
 summary_ls[["non_transit_dt"]] = non_transit_dt
 
 # Has Work
-has_work_dt = tour_dt[,.(COUNT=.N, CHART="HAS WORK"),.(HOME_BASED=as.integer(home_based), `HAS WORK`=as.integer(has_work))]
-setorder(has_work_dt, HOME_BASED, `HAS WORK`)
+has_work_dt = tour_dt[,.(COUNT=.N, CHART="HAS WORK"),.(`TOURS AND STOPS` = paste0(ntours, ", ",nstops_label), `HAS WORK`=as.character(has_work))]
+setorder(has_work_dt, `TOURS AND STOPS`, `HAS WORK`)
 summary_ls[["has_work_dt"]] = has_work_dt
 
 # Has School
-has_school_dt = tour_dt[,.(COUNT=.N, CHART="HAS SCHOOL"),.(HOME_BASED=as.integer(home_based), `HAS SCHOOL`=as.integer(has_school))]
-setorder(has_school_dt, HOME_BASED, `HAS SCHOOL`)
+has_school_dt = tour_dt[,.(COUNT=.N, CHART="HAS SCHOOL"),.(`TOURS AND STOPS` = paste0(ntours, ", ",nstops_label), `HAS SCHOOL`=as.character(has_school))]
+setorder(has_school_dt, `TOURS AND STOPS`, `HAS SCHOOL`)
 summary_ls[["has_school_dt"]] = has_school_dt
 
 # Has Work and school
-has_work_school_dt = tour_dt[,.(COUNT=.N, CHART="HAS WORK AND SCHOOL"),.(HOME_BASED=as.integer(home_based), `HAS WORK SCHOOL`=as.integer(has_work_school))]
-setorder(has_work_school_dt, HOME_BASED, `HAS WORK SCHOOL`)
+has_work_school_dt = tour_dt[,.(COUNT=.N, CHART="HAS WORK AND SCHOOL"),.(`TOURS AND STOPS` = paste0(ntours, ", ",nstops_label), `HAS WORK SCHOOL`=as.character(has_work_school))]
+setorder(has_work_school_dt, `TOURS AND STOPS`, `HAS WORK SCHOOL`)
 summary_ls[["has_work_school_dt"]] = has_work_school_dt
 
 # Has Neither
-has_neither_dt = tour_dt[,.(COUNT=.N, CHART="HAS NEITHER"),.(HOME_BASED=as.integer(home_based), `HAS NEITHER`=as.integer(has_neither))]
-setorder(has_neither_dt, HOME_BASED, `HAS NEITHER`)
+has_neither_dt = tour_dt[,.(COUNT=.N, CHART="HAS NEITHER"),.(`TOURS AND STOPS` = paste0(ntours, ", ",nstops_label), `HAS NEITHER`=as.character(has_neither))]
+setorder(has_neither_dt, `TOURS AND STOPS`, `HAS NEITHER`)
 summary_ls[["has_neither_dt"]] = has_neither_dt
 
 # OVERALL
-overall_dt = tour_dt[,.(COUNT=.N, CHART="OVERALL"),.(HOME_BASED=as.integer(home_based), `OVERALL`=as.integer(overall))]
-setorder(overall_dt, HOME_BASED, `OVERALL`)
+overall_dt = tour_dt[,.(COUNT=.N, CHART="OVERALL"),.(`TOURS AND STOPS` = paste0(ntours, ", ",nstops_label), `OVERALL`=as.character(overall))]
+setorder(overall_dt, `TOURS AND STOPS`, `OVERALL`)
 summary_ls[["overall_dt"]] = overall_dt
 
-home_based_labels = c("NOT HOME BASED", "HOME BASED")
-lapply(summary_ls, function(x) {x[,HOME_BASED:=home_based_labels[HOME_BASED+1L]]; invisible(TRUE)})
+# home_based_labels = c("NOT HOME BASED", "HOME BASED")
+lapply(summary_ls, function(temp_dt){
+  if("NTOURS" %in% names(temp_dt)){
+    temp_dt[,NTOURS:=gsub("^0", "", NTOURS)]
+    cat("Tours Updated", "\n")
+  }
+  if("TOURS AND STOPS" %in% names(temp_dt)){
+    temp_dt[,`TOURS AND STOPS`:=gsub("0", "", `TOURS AND STOPS`)]
+    cat("Stops Updated", "\n")
+  }
+  invisible(TRUE)
+})
+
+lapply(output_ls, function(temp_dt){
+  if("NTOURS" %in% names(temp_dt)){
+    temp_dt[,NTOURS:=gsub("^0", "", NTOURS)]
+    cat("Tours Updated", "\n")
+  }
+  if("NSTOPS" %in% names(temp_dt)){
+    temp_dt[,NSTOPS:=gsub("^0", "", NSTOPS)]
+    cat("Stops Updated", "\n")
+  }
+  invisible(TRUE)
+})
 
 
 ### Write output data ############################################################
@@ -279,6 +319,7 @@ fwrite(output_ls$tour_dt, file = "data/tour.csv")
 # Write the summaries
 lapply(names(summary_ls), function(x){
   fwrite(summary_ls[[x]], file = file.path(ts_output_dir, gsub("_dt",".csv",x)))
+  invisible(TRUE)
 })
 
 
