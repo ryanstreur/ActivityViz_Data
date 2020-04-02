@@ -4046,7 +4046,7 @@
           },
           {
             "name": "Stops on Tours",
-            "config": "OnboardSurvey",
+            "config": "TourSummary",
             "file": "stops.csv",
             "info": "Number of stops by tours",
             "explanation": [

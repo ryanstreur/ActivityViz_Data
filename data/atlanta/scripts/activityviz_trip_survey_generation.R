@@ -294,6 +294,10 @@ lapply(summary_ls, function(temp_dt){
     temp_dt[,`TOURS AND STOPS`:=gsub("0", "", `TOURS AND STOPS`)]
     cat("Stops Updated", "\n")
   }
+  if("NSTOPS" %in% names(temp_dt)){
+    temp_dt[,NSTOPS:=gsub("0", "", NSTOPS)]
+    cat("Stops Updated", "\n")
+  }
   invisible(TRUE)
 })
 
