@@ -4045,6 +4045,34 @@
             ]
           },
           {
+            "name": "Stops on Tours",
+            "config": "OnboardSurvey",
+            "file": "stops.csv",
+            "info": "Number of stops by tours",
+            "explanation": [
+              {
+                "header": "Summary",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Day patterns by person type (e.g., employment status, student status, age)"
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": ["Hover mouse over bars to see detail.", "Select \"Show Data\" to see tabulation.", "Select/deselect bubbles to add/remove person types."]
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "name": "Drive Transit",
             "config": "TourSummary",
             "file": "drive_transit.csv",
