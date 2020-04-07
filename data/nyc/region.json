@@ -1,0 +1,125 @@
+{
+  "Title": "NYC",
+  "CountyFile": "CityShape.json",
+  "Icon": "",
+  "Logo": "logo_sandag.gif",
+  "NavbarTitle": "ActivityViz",
+  "LinkURL": "http://www.sandag.org/",
+  "CenterMap": [32.715738, -117.161083],
+  "FrontPageTitle": "NYC Metro",
+  "FrontPageGraphic": "logo_sandag.gif",
+  "SideBarTextLeft": "<b>ActivityViz</b> was initially funded by the <a href='https://atlantaregional.org/'>Atlanta Regional Commission</a> with additional support from <a href='https://www.oregonmetro.gov/'>Oregon Metro</a> and others.",
+  "SideBarTextRight": "<b>ActivityViz</b> is an interactive travel and activity data visualization tool.  It is built with JavaScript technologies and works with various types of travel and activity data - household travel surveys, trip-based model outputs, activity-based model outputs, disaggregate passive data, freight models, on-board surveys, etc.  The dashboard features several interactive and customizable visualizations for exploring data, such as 3D maps of trips in time and space, time use by person type and activity, radar charts for performance measure analysis, sunburst diagrams for visualizing mode shares, animated bubble maps, chord diagrams for OD data, point-of-interest maps for transit stop data, truck flow data, etc.  </b>ActivityViz</b> is published using <a href='https://pages.github.com/'>GitHub pages</a> which eliminates most of the administrative backend in traditional systems.",
+  "SideBarImage": "example.png",
+  "scenarios": {
+    "covid-data": {
+      "title": "COVID Data",
+      "visualizations": {
+        "TimeUse": [
+          {
+            "name": "Weekday Time Use Pre-COVID-19",
+            "config": "Default",
+            "file": "time-use-weekday-pre.csv",
+            "info": "Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day."
+          },
+          {
+            "name": "Weekday Time Use Post-Covid-19",
+            "config": "Default",
+            "file": "time-use-weekday-post.csv",
+            "info": "Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day."
+          }
+        ]
+      }
+    },
+    "BS2012": {
+      "title": "- Base year 2012 (default)",
+      "visualizations": {
+        "BarMap": [
+          {
+            "name": "Trip Mode",
+            "config": "Default",
+            "file": "BarChartAndMapData.csv",
+            "info": "Trips by mode by city"
+          }
+        ],
+        "RadarCharts": [
+          {
+            "name": "Performance Measures",
+            "config": "Default",
+            "file": "RadarChartsData.csv",
+            "info": "Performance measures by city.  The min/max by measure is scaled to the zone with the highest and lowest value."
+          }
+        ],
+        "Sunburst": [
+          {
+            "name": "Nested Mode Share",
+            "config": "Default",
+            "file": "TreeMapData.csv",
+            "info": "Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest."
+          }
+        ],
+        "3DMap": [
+          {
+            "name": "Daytime Population",
+            "config": "Default",
+            "file": "3DAnimatedMapData.csv",
+            "info": "People that are not in their home zone by time-of-day"
+          }
+        ],
+        "GroupedCharts": [
+          {
+            "name": "Day Pattern",
+            "config": "Default",
+            "file": "BarChartData.csv",
+            "info": "Trips by mode by county"
+          }
+        ],
+        "TimeUse": [
+          {
+            "name": "Time Use",
+            "config": "Default",
+            "file": "TimeUseData.csv",
+            "info": "Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day."
+          }
+        ]
+      }
+    }
+  },
+  "BarMap": {
+    "Default": {
+      "ZoneFile": "ZoneShape.GeoJSON",
+      "CycleMapTools": false
+    }
+  },
+  "RadarCharts": {
+    "Default": {
+      "NumberColsRadar": 4,
+      "IndependentScale": [""],
+      "ConvertAxesToPercent": true
+    }
+  },
+
+  "GroupedCharts": {
+    "Default": {
+      "NumberColsGrouped": 1,
+      "SwapLegendByDefault": true,
+      "ShowAsPercentByDefault": false,
+      "ShowAsVerticalByDefault": false,
+      "StackAllChartsByDefault": false,
+      "ChartWidthOverride": []
+    }
+  },
+  "TimeUse": {
+    "Default": {}
+  },
+  "Sunburst": {
+    "Default": {}
+  },
+  "3DMap": {
+    "Default": {
+      "ZoneFile": "ZoneShape.GeoJSON",
+      "ShowPeriodsAsDropdown": false,
+      "DataHasPeriods": true
+    }
+  }
+}
