@@ -1,85 +1,62 @@
 {
-  "Title": "NYC",
-  "CountyFile": "CityShape.json",
-  "Icon": "",
-  "Logo": "logo_sandag.gif",
-  "NavbarTitle": "ActivityViz",
-  "LinkURL": "http://www.sandag.org/",
-  "CenterMap": [32.715738, -117.161083],
-  "FrontPageTitle": "NYC Metro",
-  "FrontPageGraphic": "logo_sandag.gif",
+  "Title": "New York City Metro Area COVID-19 Travel Metrics",
+  "CountyFile": "",
+  "Icon": "RSG.ico",
+  "Logo": "RSG_400px.jpg",
+  "NavbarTitle": "New York City Metro Area COVID-19 Travel Metrics",
+  "LinkURL": "https://www.rsginc.com",
+  "CenterMap": [38.9072, -77.0369],
+  "FrontPageTitle": "New York City Metro Area COVID-19 Travel Metrics",
+  "FrontPageGraphic": "RSG_400px.jpg",
   "SideBarTextLeft": "<b>ActivityViz</b> was initially funded by the <a href='https://atlantaregional.org/'>Atlanta Regional Commission</a> with additional support from <a href='https://www.oregonmetro.gov/'>Oregon Metro</a> and others.",
   "SideBarTextRight": "<b>ActivityViz</b> is an interactive travel and activity data visualization tool.  It is built with JavaScript technologies and works with various types of travel and activity data - household travel surveys, trip-based model outputs, activity-based model outputs, disaggregate passive data, freight models, on-board surveys, etc.  The dashboard features several interactive and customizable visualizations for exploring data, such as 3D maps of trips in time and space, time use by person type and activity, radar charts for performance measure analysis, sunburst diagrams for visualizing mode shares, animated bubble maps, chord diagrams for OD data, point-of-interest maps for transit stop data, truck flow data, etc.  </b>ActivityViz</b> is published using <a href='https://pages.github.com/'>GitHub pages</a> which eliminates most of the administrative backend in traditional systems.",
   "SideBarImage": "example.png",
   "scenarios": {
     "covid-data": {
-      "title": "COVID Data",
+      "title": "- COVID-19 Travel Metrics",
       "visualizations": {
-        "TimeUse": [
-          {
-            "name": "Weekday Time Use Pre-COVID-19",
-            "config": "Default",
-            "file": "time-use-weekday-pre.csv",
-            "info": "Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day."
-          },
-          {
-            "name": "Weekday Time Use Post-Covid-19",
-            "config": "Default",
-            "file": "time-use-weekday-post.csv",
-            "info": "Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day."
-          }
-        ]
-      }
-    },
-    "BS2012": {
-      "title": "- Base year 2012 (default)",
-      "visualizations": {
-        "BarMap": [
-          {
-            "name": "Trip Mode",
-            "config": "Default",
-            "file": "BarChartAndMapData.csv",
-            "info": "Trips by mode by city"
-          }
-        ],
-        "RadarCharts": [
-          {
-            "name": "Performance Measures",
-            "config": "Default",
-            "file": "RadarChartsData.csv",
-            "info": "Performance measures by city.  The min/max by measure is scaled to the zone with the highest and lowest value."
-          }
-        ],
-        "Sunburst": [
-          {
-            "name": "Nested Mode Share",
-            "config": "Default",
-            "file": "TreeMapData.csv",
-            "info": "Nested Trip Mode Share.  Click a ring area to drill-down into the nest.  Click the center to go back up the nest."
-          }
-        ],
-        "3DMap": [
-          {
-            "name": "Daytime Population",
-            "config": "Default",
-            "file": "3DAnimatedMapData.csv",
-            "info": "People that are not in their home zone by time-of-day"
-          }
-        ],
         "GroupedCharts": [
           {
-            "name": "Day Pattern",
+            "name": "Percent Stay-at-Home by Week",
             "config": "Default",
-            "file": "BarChartData.csv",
-            "info": "Trips by mode by county"
+            "file": "ny_covid_weeklyagg.csv",
+            "info": "Person day pattern by person type",
+            "explanation": [
+              {
+                "header": "Trips Purposes Since January",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "These charts show, for each week since the week of January 27, the percent of time people in the sample were at each location, based on aggregated location data.",
+                      "Note: the numbers on these charts represent the percentages of time spent, not any unit of time."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ],
         "TimeUse": [
           {
-            "name": "Time Use",
+            "name": "Time Use Before COVID-19 and Now",
             "config": "Default",
-            "file": "TimeUseData.csv",
-            "info": "Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day."
+            "file": "ny_covid_timeuse.csv",
+            "info": "Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+            "explanation": [
+              {
+                "header": "Description",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "These charts show, where people in the sample area during the sample period were most likely to be at a given time of day, before and after the outbreak of COVID-19.",
+                      "New York residents and visitors alike showed a marked increase in time spent at home between 10 AM and 8 PM on the weekdays, and between 10 AM and midnight on weekends."
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -104,8 +81,8 @@
       "NumberColsGrouped": 1,
       "SwapLegendByDefault": true,
       "ShowAsPercentByDefault": false,
-      "ShowAsVerticalByDefault": false,
-      "StackAllChartsByDefault": false,
+      "ShowAsVerticalByDefault": true,
+      "StackAllChartsByDefault": true,
       "ChartWidthOverride": []
     }
   },
