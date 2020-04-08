@@ -35,23 +35,10 @@ per_trip_dd_file = file.path(data_dir, "abm_dd_arcga.csv")
 od_file          = file.path(data_dir, "od_20200228_arcga.csv")
 od_dd_file       = file.path(data_dir, "od_data_dictionary.csv")
 
-# Geography input files
-# taz_file       = file.path(getwd(), "tampa2020.json")
-# county_file    = file.path(getwd(), "counties.json")
-# agg_file       = file.path(getwd(), "tampa.csv")
-
 # Output files
 os_output_dir = file.path(getwd(), "OnboardSurvey")
 
 # Onboard Survey
-
-
-# Geography for chord chart (OD)
-# overall_geo_file                    = file.path(getwd(), "overall.json")
-# hillsborough_geo_file               = file.path(getwd(), "hillsborough.json")
-# pinellas_geo_file                   = file.path(getwd(), "pinellas.json")
-# pasco_geo_file                      = file.path(getwd(), "pasco.json")
-# hernando_citrus_geo_file            = file.path(getwd(), "hernandocitrus.json")
 
 ### Load required datasets #######################################################
 ##################################################################################
@@ -68,47 +55,8 @@ if(!file.exists("../abmod.RData")){
   load("../abmod.RData")
 }
 
-# taz_ls = fromJSON(taz_file)
-# county_ls = fromJSON(county_file)
-# taz_sf = geojson_sf(taz_file)
-# taz_dt = data.table(taz_sf)
-# agg_dt = fread(agg_file)
-# agg_dt[,HILLSBOROUGH_LBL_3:=gsub("\\&|\\/","",HILLSBOROUGH_LBL_3)]
-# agg_dt[,HILLSBOROUGH_LBL_3:=gsub("\\s+","_",HILLSBOROUGH_LBL_3)]
-# agg_dt[,PINELLAS_LBL:=gsub("\\&|\\/","",PINELLAS_LBL)]
-# agg_dt[,PINELLAS_LBL:=gsub("\\s+","_",PINELLAS_LBL)]
-# agg_dt[,PASCO_LBL:=gsub("\\&|\\/","",PASCO_LBL)]
-# agg_dt[,PASCO_LBL:=gsub("\\s+","_",PASCO_LBL)]
-# agg_dt[,HERNANDO_CITRUS_LBL_2:=gsub("\\&|\\/","",HERNANDO_CITRUS_LBL_2)]
-# agg_dt[,HERNANDO_CITRUS_LBL_2:=gsub("\\s+","_",HERNANDO_CITRUS_LBL_2)]
-# agg_sf = st_as_sf(merge(as.data.frame(agg_dt), taz_sf, by.x="TAZ", by.y="id",all.x = TRUE))
-# 
-
-
 ### Create output data ###########################################################
 ##################################################################################
-
-# Create districts.json file for OD chord chart
-# # Overall
-# overall_sf = dplyr::summarise(dplyr::group_by(agg_sf, D7_ALL_LBL))
-# names(overall_sf) = c("NAME", "geometry")
-# 
-# # Hillsborough
-# hillsborough_sf = dplyr::summarise(dplyr::group_by(agg_sf, HILLSBOROUGH_LBL_3))
-# names(hillsborough_sf) = c("NAME", "geometry")
-# 
-# # Pinellas
-# pinellas_sf = dplyr::summarise(dplyr::group_by(agg_sf, PINELLAS_LBL))
-# names(pinellas_sf) = c("NAME", "geometry")
-# 
-# # Pasco
-# pasco_sf = dplyr::summarise(dplyr::group_by(agg_sf, PASCO_LBL))
-# names(pasco_sf) = c("NAME", "geometry")
-# 
-# # Hernando/Citrus
-# hernando_citrus_sf = dplyr::summarise(dplyr::group_by(agg_sf, HERNANDO_CITRUS_LBL_2))
-# names(hernando_citrus_sf) = c("NAME", "geometry")
-
 
 ### Onboard Survey ###############################################################
 ##################################################################################
@@ -119,8 +67,8 @@ output_ls = list()
 # Age
 # Check the field name
 # od_dd_dt[grepl("Age", DESCRIPTION, ignore.case = TRUE)]
-age_dt = od_dt[!is.na(`AGE[Code]`) & `AGE[Code]`!=99,.(COUNT = .N,
-                                                       CHART_TYPE = "PARTICIPANT AGE"), by = .(AGE, `AGE[Code]`)]
+age_dt = od_dt[SUBMITTAL!="Dummy",.(COUNT = .N,
+                                    CHART_TYPE = "PARTICIPANT AGE"), by = .(AGE, `AGE[Code]`)]
 setorder(age_dt, "AGE[Code]")
 age_dt[, `AGE[Code]`:=NULL]
 output_ls[["age_dt"]] = age_dt
@@ -128,8 +76,8 @@ output_ls[["age_dt"]] = age_dt
 # Household size
 # Check the field name
 # od_dd_dt[grepl("household", DESCRIPTION, ignore.case = TRUE)]
-hhsize_dt = od_dt[!is.na(`HH_SIZE[Code]`) & `HH_SIZE[Code]`!=99,.(COUNT = .N,
-                                                                  CHART_TYPE = "HOUSEHOLD SIZE"), by = .(HH_SIZE, `HH_SIZE[Code]`)]
+hhsize_dt = od_dt[SUBMITTAL!="Dummy",.(COUNT = .N,
+                                       CHART_TYPE = "HOUSEHOLD SIZE"), by = .(HH_SIZE, `HH_SIZE[Code]`)]
 setorder(hhsize_dt, "HH_SIZE[Code]")
 hhsize_dt[, `HH_SIZE[Code]`:=NULL]
 output_ls[["hhsize_dt"]] = hhsize_dt
@@ -137,7 +85,7 @@ output_ls[["hhsize_dt"]] = hhsize_dt
 # Number employed in household
 # Check the field name
 # od_dd_dt[grepl("household", DESCRIPTION, ignore.case = TRUE)]
-employed_hh_dt = od_dt[!is.na(`EMPLOYED_IN_HH[Code]`) & `EMPLOYED_IN_HH[Code]`!=99,
+employed_hh_dt = od_dt[SUBMITTAL!="Dummy",
                        .(COUNT = .N,
                          CHART_TYPE = "EMPLOYED IN HH"), by = .(EMPLOYED_IN_HH, `EMPLOYED_IN_HH[Code]`)]
 setorder(employed_hh_dt, "EMPLOYED_IN_HH[Code]")
@@ -147,8 +95,8 @@ output_ls[["employed_hh_dt"]] = employed_hh_dt
 # Household Income
 # Check the field name
 # od_dd_dt[grepl("household", DESCRIPTION, ignore.case = TRUE)]
-income_dt = od_dt[!is.na(`INCOME[Code]`) & `INCOME[Code]`!=99,.(COUNT = .N,
-                                                                CHART_TYPE = "HOUSEHOLD INCOME"), 
+income_dt = od_dt[SUBMITTAL!="Dummy",.(COUNT = .N,
+                                       CHART_TYPE = "HOUSEHOLD INCOME"), 
                   by = .(INCOME, `INCOME[Code]`)]
 setorder(income_dt, "INCOME[Code]")
 income_dt[, `INCOME[Code]`:=NULL]
@@ -157,17 +105,19 @@ output_ls[["income_dt"]] = income_dt
 # Gender
 # Check the field name
 # od_dd_dt[grepl("gender", DESCRIPTION, ignore.case = TRUE)]
-gender_dt = od_dt[!is.na(`GENDER_INFO[Code]`),.(COUNT = .N,
-                                                CHART_TYPE = "PARTICIPANT GENDER"), by = .(GENDER_INFO, `GENDER_INFO[Code]`)]
+gender_dt = od_dt[SUBMITTAL!="Dummy",.(COUNT = .N,
+                                       CHART_TYPE = "PARTICIPANT GENDER"), 
+                  by = .(GENDER_INFO, `GENDER_INFO[Code]`)]
 setorder(gender_dt, "GENDER_INFO[Code]")
 gender_dt[, `GENDER_INFO[Code]`:=NULL]
 output_ls[["gender_dt"]] = gender_dt
 
 # Race/Ethnicity
 # Check the field name
-od_dd_dt[grepl("race", `FIELD NAME`, ignore.case = TRUE), .(`FIELD NAME` , DESCRIPTION)]
-race_dt = od_dt[,.SD,.SDcols=c("ID", "LINKED_WGHT_FCTR",
-                               od_dd_dt[grepl("race", `FIELD NAME`, ignore.case = TRUE),`FIELD NAME`])]
+# od_dd_dt[grepl("race", `FIELD NAME`, ignore.case = TRUE), .(`FIELD NAME` , DESCRIPTION)]
+race_dt = od_dt[SUBMITTAL!="Dummy",.SD,.SDcols=c("ID", "LINKED_WGHT_FCTR",
+                                                 od_dd_dt[grepl("race", `FIELD NAME`, ignore.case = TRUE),
+                                                          `FIELD NAME`])]
 race_long_dt = melt.data.table(race_dt, id.vars = c("ID", "LINKED_WGHT_FCTR"))
 race_long_dt =  race_long_dt[!value %in% c("", "No")]
 race_long_dt[variable == "RACE [1]",     RACE:="American Indian / Alaska Native"]
@@ -187,8 +137,9 @@ output_ls[["race_dt"]] = race_dt
 # Number of vehicles in the household
 # Check the field name
 # od_dd_dt[grepl("household", DESCRIPTION, ignore.case = TRUE), .(`FIELD NAME` , DESCRIPTION)]
-num_veh_dt = od_dt[!is.na(`COUNT_VH_HH[Code]`),.(COUNT = .N,
-                                                 CHART_TYPE = "HOUSEHOLD VEH"), by = .(COUNT_VH_HH, `COUNT_VH_HH[Code]`)]
+num_veh_dt = od_dt[SUBMITTAL!="Dummy",.(COUNT = .N,
+                                        CHART_TYPE = "HOUSEHOLD VEH"), 
+                   by = .(COUNT_VH_HH, `COUNT_VH_HH[Code]`)]
 setorder(num_veh_dt, "COUNT_VH_HH[Code]")
 num_veh_dt[, `COUNT_VH_HH[Code]`:=NULL]
 output_ls[["num_veh_dt"]] = num_veh_dt
@@ -196,18 +147,19 @@ output_ls[["num_veh_dt"]] = num_veh_dt
 # If household vehicle could be used for the trip
 # Check the field name
 # od_dd_dt[grepl("household", DESCRIPTION, ignore.case = TRUE), .(`FIELD NAME` , DESCRIPTION)]
-used_veh_dt = od_dt[!is.na(`USED_VEH_TRIP[Code]`) & `USED_VEH_TRIP[Code]`!= "",
+used_veh_dt = od_dt[SUBMITTAL!="Dummy",
                     .(COUNT = .N,
                       CHART_TYPE = "VEH USED"), by = .(USED_VEH_TRIP, `USED_VEH_TRIP[Code]`)]
 setorder(used_veh_dt, "USED_VEH_TRIP[Code]")
 used_veh_dt[, `USED_VEH_TRIP[Code]`:=NULL]
+used_veh_dt[USED_VEH_TRIP=="",USED_VEH_TRIP:="ZERO VEH HH"]
 output_ls[["used_veh_dt"]] = used_veh_dt
 
 # Has a driver's license
 # Check the field name
 # od_dd_dt[grepl("license", DESCRIPTION, ignore.case = TRUE), .(`FIELD NAME` , DESCRIPTION)]
-have_dl_dt = od_dt[!is.na(`HAVE_DL[Code]`) & `HAVE_DL[Code]`!= "",.(COUNT = .N,
-                                                                    CHART_TYPE = "DRIVERS LICENSE"), by = .(HAVE_DL, `HAVE_DL[Code]`)]
+have_dl_dt = od_dt[SUBMITTAL!="Dummy",.(COUNT = .N,
+                                        CHART_TYPE = "DRIVERS LICENSE"), by = .(HAVE_DL, `HAVE_DL[Code]`)]
 setorder(have_dl_dt, "HAVE_DL[Code]")
 have_dl_dt[, `HAVE_DL[Code]`:=NULL]
 output_ls[["have_dl_dt"]] = have_dl_dt
@@ -229,8 +181,7 @@ output_ls[["have_dl_dt"]] = have_dl_dt
 # Transfer from and transfer to
 # Check the field name
 # od_dd_dt[grepl("transfer", DESCRIPTION, ignore.case = TRUE), .(`FIELD NAME` , DESCRIPTION)]
-transfers_od_dt = od_dt[(!is.na(`PREV_TRANSFERS[Code]`) & `PREV_TRANSFERS[Code]`!= "") & 
-                          (!is.na(`NEXT_TRANSFERS[Code]`) & `NEXT_TRANSFERS[Code]`!= ""),
+transfers_od_dt = od_dt[SUBMITTAL!="Dummy",
                         .(COUNT = .N,
                           CHART_TYPE = "TRANSFER FROM_TO"), 
                         by = .(PREV_TRANSFERS, `PREV_TRANSFERS[Code]`,
@@ -243,7 +194,7 @@ output_ls[["transfers_od_dt"]] = transfers_od_dt
 # Origin Transport mode
 # Check the field name
 # od_dd_dt[grepl("origin", DESCRIPTION, ignore.case = TRUE), .(`FIELD NAME` , DESCRIPTION)]
-origin_transport_dt = od_dt[!is.na(`ORIGIN_TRANSPORT[Code]`) & `ORIGIN_TRANSPORT[Code]`!= "",
+origin_transport_dt = od_dt[SUBMITTAL!="Dummy",
                             .(COUNT = .N,
                               CHART_TYPE = "ORIGIN TRANSPORT MODE"), by = .(ORIGIN_TRANSPORT, `ORIGIN_TRANSPORT[Code]`)]
 setorder(origin_transport_dt, "ORIGIN_TRANSPORT[Code]")
@@ -253,7 +204,7 @@ output_ls[["origin_transport_dt"]] = origin_transport_dt
 # Origin Place Type
 # Check the field name
 # od_dd_dt[grepl("origin", DESCRIPTION, ignore.case = TRUE), .(`FIELD NAME` , DESCRIPTION)]
-origin_place_type_dt = od_dt[!is.na(`ORIGIN_PLACE_TYPE[Code]`) & `ORIGIN_PLACE_TYPE[Code]`!= "",
+origin_place_type_dt = od_dt[SUBMITTAL!="Dummy",
                              .(COUNT = .N,
                                CHART_TYPE = "ORIGIN PLACE TYPE"), by = .(ORIGIN_PLACE_TYPE, `ORIGIN_PLACE_TYPE[Code]`)]
 setorder(origin_place_type_dt, "ORIGIN_PLACE_TYPE[Code]")
@@ -264,7 +215,7 @@ output_ls[["origin_place_type_dt"]] = origin_place_type_dt
 # Resident or Visitor
 # Check the field name
 # od_dd_dt[grepl("resident", DESCRIPTION, ignore.case = TRUE), .(`FIELD NAME` , DESCRIPTION)]
-res_vis_dt = od_dt[!is.na(`RESIDENT_OR_VISITOR[Code]`) & `RESIDENT_OR_VISITOR[Code]`!= "",
+res_vis_dt = od_dt[SUBMITTAL!="Dummy",
                    .(COUNT = .N,
                      CHART_TYPE = "RESIDENT_VISITOR"), by = .(RESIDENT_OR_VISITOR, `RESIDENT_OR_VISITOR[Code]`)]
 setorder(res_vis_dt, "RESIDENT_OR_VISITOR[Code]")
@@ -274,7 +225,7 @@ output_ls[["res_vis_dt"]] = res_vis_dt
 # Trip in OPPO DIR
 # Check the field name
 # od_dd_dt[grepl("trip", DESCRIPTION, ignore.case = TRUE), .(`FIELD NAME` , DESCRIPTION)]
-trip_oppo_dt = od_dt[!is.na(`TRIP_IN_OPPO_DIR[Code]`) & `TRIP_IN_OPPO_DIR[Code]`!= "",
+trip_oppo_dt = od_dt[SUBMITTAL!="Dummy",
                      .(COUNT = .N,
                        CHART_TYPE = "TRIP IN OPPO DIR"), by = .(TRIP_IN_OPPO_DIR, `TRIP_IN_OPPO_DIR[Code]`)]
 setorder(trip_oppo_dt, "TRIP_IN_OPPO_DIR[Code]")
@@ -284,7 +235,7 @@ output_ls[["trip_oppo_dt"]] = trip_oppo_dt
 # Trip in OPPO DIR Time
 # Check the field name
 # od_dd_dt[grepl("trip", DESCRIPTION, ignore.case = TRUE), .(`FIELD NAME` , DESCRIPTION)]
-trip_oppo_time_dt = od_dt[!is.na(`OPPO_DIR_TRIP_TIME[Code]`) & `OPPO_DIR_TRIP_TIME[Code]`!= "",
+trip_oppo_time_dt = od_dt[SUBMITTAL!="Dummy",
                           .(COUNT = .N,
                             CHART_TYPE = "TRIP IN OPPO DIR TIME"), by = .(OPPO_DIR_TRIP_TIME, `OPPO_DIR_TRIP_TIME[Code]`)]
 setorder(trip_oppo_time_dt, "OPPO_DIR_TRIP_TIME[Code]")
@@ -436,7 +387,7 @@ output_ls[["hhpl_dt"]] = hhpl_dt
 
 # Did you go to work
 # Check the field name
-od_dd_dt[grepl("work", DESCRIPTION, ignore.case = TRUE), .(`FIELD NAME` , DESCRIPTION)]
+# od_dd_dt[grepl("work", DESCRIPTION, ignore.case = TRUE), .(`FIELD NAME` , DESCRIPTION)]
 did_y_work_dt = od_dt[!is.na(`DID_YOU_GO_2_WORK[Code]`) & `DID_YOU_GO_2_WORK[Code]`!= "",
                       .(COUNT = .N,
                         CHART_TYPE = "GO TO WORK"), by = .(DID_YOU_GO_2_WORK, `DID_YOU_GO_2_WORK[Code]`)]

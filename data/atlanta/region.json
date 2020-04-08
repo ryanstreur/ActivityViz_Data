@@ -3007,7 +3007,9 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Day patterns by person type (e.g., employment status, student status, age)"
+                      "Age of respondent",
+                      "There are a total of 42,045 participants",
+                      "Around 50% of participants were aged 25-44"
                     ]
                   }
                 ]
@@ -3017,7 +3019,7 @@
                 "body": [
                   {
                     "type": "unorderedList",
-                    "content": ["Hover mouse over bars to see detail.", "Select \"Show Data\" to see tabulation.", "Select/deselect bubbles to add/remove person types."]
+                    "content": ["Hover mouse over bars to see detail.", "Select \"Show Data\" to see tabulation."]
                   }
                 ]
               }
@@ -3041,7 +3043,8 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Day patterns by person type (e.g., employment status, student status, age)"
+                      "Including respondent, the Number of members in respondent's household",
+                      "Around 65% of participants have household size 3 or less"
                     ]
                   }
                 ]
@@ -3074,7 +3077,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Day patterns by person type (e.g., employment status, student status, age)"
+                      "Survey Question: How many people age 15 and older in the household are employed?"
                     ]
                   }
                 ]
@@ -3108,7 +3111,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Day patterns by person type (e.g., employment status, student status, age)"
+                      "Total annual household income"
                     ]
                   }
                 ]
@@ -3142,7 +3145,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Day patterns by person type (e.g., employment status, student status, age)"
+                      "Respondent's gender"
                     ]
                   }
                 ]
@@ -3176,7 +3179,8 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Day patterns by person type (e.g., employment status, student status, age)"
+                      "Respondent's race",
+                      "More than 70% of respondents are African American"
                     ]
                   }
                 ]
@@ -3210,7 +3214,8 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Day patterns by person type (e.g., employment status, student status, age)"
+                      "Number of vehicles in respondent's household",
+                      "40% of respondents do not have a vehicle in household"
                     ]
                   }
                 ]
@@ -3244,7 +3249,8 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Day patterns by person type (e.g., employment status, student status, age)"
+                      "If respondent could have used one of their household vehicles for their trip",
+                      "Almost equal proportion of respondents could or could not have used the household vehicles if available"
                     ]
                   }
                 ]
@@ -4017,6 +4023,35 @@
       "visualizations": {
         "GroupedCharts": [
           {
+            "name": "Overall",
+            "config": "TourSummary",
+            "file": "overall.csv",
+            "info": "Overall counts of tours",
+            "explanation": [
+              {
+                "header": "Summary",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "A total of 1,000 participants were surveyed",
+                      "The count represent the number of participants"
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": ["Hover mouse over bars to see detail.", "Select \"Show Data\" to see tabulation.", "Select/deselect bubbles to add/remove person types."]
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "name": "Home Based Tours",
             "config": "OnboardSurvey",
             "file": "home_based.csv",
@@ -4073,7 +4108,7 @@
             ]
           },
           {
-            "name": "Drive Transit",
+            "name": "Drive To/From Transit",
             "config": "TourSummary",
             "file": "drive_transit.csv",
             "info": "Tours that have drive followed by transit or transit followed by drive mode",
@@ -4129,7 +4164,7 @@
             ]
           },
           {
-            "name": "Not Transit",
+            "name": "Tours with no transit",
             "config": "TourSummary",
             "file": "non_transit.csv",
             "info": "Tours that do not have a transit mode",
@@ -4269,10 +4304,150 @@
             ]
           },
           {
-            "name": "Overall",
-            "config": "TourSummary",
-            "file": "overall.csv",
-            "info": "Overall counts of tours",
+            "name": "Household Vehicles",
+            "config": "Frequency",
+            "file": "hh_veh.csv",
+            "info": "Tours and stops by number of household vehicles",
+            "explanation": [
+              {
+                "header": "Summary",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Day patterns by person type (e.g., employment status, student status, age)"
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": ["Hover mouse over bars to see detail.", "Select \"Show Data\" to see tabulation.", "Select/deselect bubbles to add/remove person types."]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Household Vehicles Availability",
+            "config": "Frequency",
+            "file": "can_use_hhveh.csv",
+            "info": "Tours and stops by number of household vehicles available for the tour",
+            "explanation": [
+              {
+                "header": "Summary",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Day patterns by person type (e.g., employment status, student status, age)"
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": ["Hover mouse over bars to see detail.", "Select \"Show Data\" to see tabulation.", "Select/deselect bubbles to add/remove person types."]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Household Size",
+            "config": "Frequency",
+            "file": "hh_size.csv",
+            "info": "Tours and stops by household size",
+            "explanation": [
+              {
+                "header": "Summary",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Day patterns by person type (e.g., employment status, student status, age)"
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": ["Hover mouse over bars to see detail.", "Select \"Show Data\" to see tabulation.", "Select/deselect bubbles to add/remove person types."]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Household Income",
+            "config": "Frequency",
+            "file": "income.csv",
+            "info": "Tours and stops by household income",
+            "explanation": [
+              {
+                "header": "Summary",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Day patterns by person type (e.g., employment status, student status, age)"
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": ["Hover mouse over bars to see detail.", "Select \"Show Data\" to see tabulation.", "Select/deselect bubbles to add/remove person types."]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Gender",
+            "config": "Frequency",
+            "file": "gender.csv",
+            "info": "Tours and stops by gender of person",
+            "explanation": [
+              {
+                "header": "Summary",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Day patterns by person type (e.g., employment status, student status, age)"
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": ["Hover mouse over bars to see detail.", "Select \"Show Data\" to see tabulation.", "Select/deselect bubbles to add/remove person types."]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Age",
+            "config": "Frequency",
+            "file": "age.csv",
+            "info": "Tours and stops by age of person",
             "explanation": [
               {
                 "header": "Summary",
