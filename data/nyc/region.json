@@ -1,11 +1,11 @@
 {
   "Title": "New York City Metro Area COVID-19 Travel Metrics",
-  "CountyFile": "",
+  "CountyFile": "ZoneShape.json",
   "Icon": "RSG.ico",
   "Logo": "RSG_400px.jpg",
   "NavbarTitle": "New York City Metro Area COVID-19 Travel Metrics",
   "LinkURL": "https://www.rsginc.com",
-  "CenterMap": [38.9072, -77.0369],
+  "CenterMap": [40.656852, -74.028204],
   "FrontPageTitle": "New York City Metro Area COVID-19 Travel Metrics",
   "FrontPageGraphic": "RSG_400px.jpg",
   "SideBarTextLeft": "<b>ActivityViz</b> was initially funded by the <a href='https://atlantaregional.org/'>Atlanta Regional Commission</a> with additional support from <a href='https://www.oregonmetro.gov/'>Oregon Metro</a> and others.",
@@ -15,28 +15,6 @@
     "covid-data": {
       "title": "- COVID-19 Travel Metrics",
       "visualizations": {
-        "GroupedCharts": [
-          {
-            "name": "Percent Stay-at-Home by Week",
-            "config": "Default",
-            "file": "ny_covid_weeklyagg.csv",
-            "info": "Person day pattern by person type",
-            "explanation": [
-              {
-                "header": "Trips Purposes Since January",
-                "body": [
-                  {
-                    "type": "unorderedList",
-                    "content": [
-                      "These charts show, for each week since the week of January 27, the percent of time people in the sample were at each location, based on aggregated location data.",
-                      "Note: the numbers on these charts represent the percentages of time spent, not any unit of time."
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ],
         "TimeUse": [
           {
             "name": "Time Use Before COVID-19 and Now",
@@ -58,13 +36,101 @@
               }
             ]
           }
+        ],
+        "BarMap": [
+          {
+            "name": "Home Device Counts 2-13-2020",
+            "file": "BarChartMap_nyc_home_tracts_feb13.csv",
+            "config": "Default",
+            "info": "Truck trips by zone and county",
+            "explanation": [
+              {
+                "header": "Summary",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Counts of phones pinged at home on February 13, 2020"
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "For the left graph: Select/deselect bubbles to add/remove response categories.",
+                      "For the left graph: Hover mouse over graph to see detail.",
+                      "For the right graph: Use the drop-down selection to view different modes."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Home Device Counts 3-26-2020",
+            "file": "BarChartMap_nyc_home_tracts_mar26.csv",
+            "config": "Default",
+            "info": "Truck trips by zone and county",
+            "explanation": [
+              {
+                "header": "Summary",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Counts of phones pinged at home on March 26, 2020"
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "For the left graph: Select/deselect bubbles to add/remove response categories.",
+                      "For the left graph: Hover mouse over graph to see detail.",
+                      "For the right graph: Use the drop-down selection to view different modes."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "GroupedCharts": [
+          {
+            "name": "Percent Stay-at-Home by Week",
+            "config": "Default",
+            "file": "ny_covid_weeklyagg.csv",
+            "info": "Person day pattern by person type",
+            "explanation": [
+              {
+                "header": "Trips Purposes Since January",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "These charts show, for each week since the week of January 27, the percent of time people in the sample were at each location, based on aggregated location data.",
+                      "Note: the numbers on these charts represent the percentages of time spent, not any unit of time."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       }
     }
   },
   "BarMap": {
     "Default": {
-      "ZoneFile": "ZoneShape.GeoJSON",
+      "ZoneFile": "ZoneShape.json",
       "CycleMapTools": false
     }
   },
