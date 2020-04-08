@@ -39,8 +39,8 @@
         ],
         "BarMap": [
           {
-            "name": "Home Device Counts 2-13-2020",
-            "file": "BarChartMap_nyc_home_tracts_feb13.csv",
+            "name": "Home Device Counts for 2-13-2020 and 3-26-2020",
+            "file": "home-device-counts.csv",
             "config": "Default",
             "info": "Truck trips by zone and county",
             "explanation": [
@@ -50,39 +50,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Counts of phones pinged at home on February 13, 2020"
-                    ]
-                  }
-                ]
-              },
-              {
-                "header": "Instructions",
-                "body": [
-                  {
-                    "type": "unorderedList",
-                    "content": [
-                      "For the left graph: Select/deselect bubbles to add/remove response categories.",
-                      "For the left graph: Hover mouse over graph to see detail.",
-                      "For the right graph: Use the drop-down selection to view different modes."
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Home Device Counts 3-26-2020",
-            "file": "BarChartMap_nyc_home_tracts_mar26.csv",
-            "config": "Default",
-            "info": "Truck trips by zone and county",
-            "explanation": [
-              {
-                "header": "Summary",
-                "body": [
-                  {
-                    "type": "unorderedList",
-                    "content": [
-                      "Counts of phones pinged at home on March 26, 2020"
+                      "Counts of phones pinged at home on February 13, 2020 versus on March 26, 2020"
                     ]
                   }
                 ]
