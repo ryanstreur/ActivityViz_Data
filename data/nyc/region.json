@@ -99,7 +99,9 @@
   "BarMap": {
     "Default": {
       "ZoneFile": "ZoneShape.json",
-      "CycleMapTools": false
+      "CycleMapTools": false,
+      "DefaultMapDisplay": "bubbles",
+      "DefaultBubbleSize": 2
     }
   },
   "RadarCharts": {
