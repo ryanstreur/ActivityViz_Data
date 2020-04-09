@@ -1,26 +1,26 @@
 {
-  "Title": "New York City Metro Area COVID-19 Travel Metrics",
+  "Title": "COVID-19 Travel Metrics",
   "CountyFile": "ZoneShape.json",
   "Icon": "RSG.ico",
   "Logo": "RSG_400px.jpg",
-  "NavbarTitle": "New York City Metro Area COVID-19 Travel Metrics",
+  "NavbarTitle": "COVID-19 Travel Metrics",
   "LinkURL": "https://www.rsginc.com",
   "CenterMap": [40.656852, -74.028204],
-  "FrontPageTitle": "New York City Metro Area COVID-19 Travel Metrics",
+  "FrontPageTitle": "COVID-19 Travel Metrics",
   "FrontPageGraphic": "RSG_400px.jpg",
   "SideBarTextLeft": "<b>ActivityViz</b> was initially funded by the <a href='https://atlantaregional.org/'>Atlanta Regional Commission</a> with additional support from <a href='https://www.oregonmetro.gov/'>Oregon Metro</a> and others.",
   "SideBarTextRight": "<b>ActivityViz</b> is an interactive travel and activity data visualization tool.  It is built with JavaScript technologies and works with various types of travel and activity data - household travel surveys, trip-based model outputs, activity-based model outputs, disaggregate passive data, freight models, on-board surveys, etc.  The dashboard features several interactive and customizable visualizations for exploring data, such as 3D maps of trips in time and space, time use by person type and activity, radar charts for performance measure analysis, sunburst diagrams for visualizing mode shares, animated bubble maps, chord diagrams for OD data, point-of-interest maps for transit stop data, truck flow data, etc.  </b>ActivityViz</b> is published using <a href='https://pages.github.com/'>GitHub pages</a> which eliminates most of the administrative backend in traditional systems.",
   "SideBarImage": "example.png",
   "scenarios": {
     "covid-data": {
-      "title": "- COVID-19 Travel Metrics",
+      "title": "New York Metro Region",
       "visualizations": {
         "TimeUse": [
           {
             "name": "Time Use Before COVID-19 and Now",
             "config": "Default",
             "file": "ny_covid_timeuse.csv",
-            "info": "Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+            "info": "Displays activity estimates based on SafeGraph location data. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
             "explanation": [
               {
                 "header": "Description",
@@ -28,7 +28,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "These charts show, where people in the sample area during the sample period were most likely to be at a given time of day, before and after the outbreak of COVID-19.",
+                      "These charts show where people in the sample area during the sample period were most likely to be at a given time of day, before and after the outbreak of COVID-19.",
                       "New York residents and visitors alike showed a marked increase in time spent at home between 10 AM and 8 PM on the weekdays, and between 10 AM and midnight on weekends."
                     ]
                   }
@@ -42,7 +42,7 @@
             "name": "Home Device Counts for 2-13-2020 and 3-26-2020",
             "file": "home-device-counts.csv",
             "config": "Default",
-            "info": "Truck trips by zone and county",
+            "info": "Phones detected at home by Date",
             "explanation": [
               {
                 "header": "Summary",
@@ -50,7 +50,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Counts of phones pinged at home on February 13, 2020 versus on March 26, 2020"
+                      "Counts of phones detected at home on February 13, 2020 versus on March 26, 2020"
                     ]
                   }
                 ]
@@ -73,7 +73,7 @@
         ],
         "GroupedCharts": [
           {
-            "name": "Percent Stay-at-Home by Week",
+            "name": "Stay-at-Home Percentage by Week",
             "config": "Default",
             "file": "ny_covid_weeklyagg.csv",
             "info": "Person day pattern by person type",

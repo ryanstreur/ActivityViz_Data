@@ -1,109 +1,109 @@
-activity,week,per_time_at_home,chart
-home,27-Jan,77.1117725,ny_resident_weekend
-home,3-Feb,76.6074592,ny_resident_weekend
-home,10-Feb,72.7419492,ny_resident_weekend
-home,17-Feb,75.0198473,ny_resident_weekend
-home,24-Feb,75.4121616,ny_resident_weekend
-home,2-Mar,73.9239317,ny_resident_weekend
-home,9-Mar,79.1777118,ny_resident_weekend
-home,16-Mar,83.9818628,ny_resident_weekend
-home,23-Mar,87.2603381,ny_resident_weekend
-home,27-Jan,68.8641834,ny_resident_weekday
-home,3-Feb,67.6543574,ny_resident_weekday
-home,10-Feb,67.5743957,ny_resident_weekday
-home,17-Feb,66.2030043,ny_resident_weekday
-home,24-Feb,65.3205888,ny_resident_weekday
-home,2-Mar,68.3101758,ny_resident_weekday
-home,9-Mar,78.5665843,ny_resident_weekday
-home,16-Mar,83.5176762,ny_resident_weekday
-home,23-Mar,83.4990881,ny_resident_weekday
-home,27-Jan,69.0794483,ny_visitor_weekend
-home,3-Feb,67.7650352,ny_visitor_weekend
-home,10-Feb,63.4818388,ny_visitor_weekend
-home,17-Feb,66.0483466,ny_visitor_weekend
-home,24-Feb,66.4542226,ny_visitor_weekend
-home,2-Mar,63.0895391,ny_visitor_weekend
-home,9-Mar,68.7036306,ny_visitor_weekend
-home,16-Mar,73.2025605,ny_visitor_weekend
-home,23-Mar,76.3325619,ny_visitor_weekend
-home,27-Jan,61.3116218,ny_visitor_weekday
-home,3-Feb,59.9758845,ny_visitor_weekday
-home,10-Feb,59.7255269,ny_visitor_weekday
-home,17-Feb,59.3732583,ny_visitor_weekday
-home,24-Feb,56.8368562,ny_visitor_weekday
-home,2-Mar,59.6345585,ny_visitor_weekday
-home,9-Mar,68.480358,ny_visitor_weekday
-home,16-Mar,72.1619955,ny_visitor_weekday
-home,23-Mar,72.1564334,ny_visitor_weekday
-work,27-Jan,6.3596562,ny_resident_weekend
-work,3-Feb,6.7205165,ny_resident_weekend
-work,10-Feb,6.8877768,ny_resident_weekend
-work,17-Feb,6.6943972,ny_resident_weekend
-work,24-Feb,6.6056668,ny_resident_weekend
-work,2-Mar,7.4332024,ny_resident_weekend
-work,9-Mar,6.6864761,ny_resident_weekend
-work,16-Mar,6.6053687,ny_resident_weekend
-work,23-Mar,5.5407932,ny_resident_weekend
-work,27-Jan,19.1873636,ny_resident_weekday
-work,3-Feb,19.6301292,ny_resident_weekday
-work,10-Feb,16.6854682,ny_resident_weekday
-work,17-Feb,20.5455351,ny_resident_weekday
-work,24-Feb,20.4825205,ny_resident_weekday
-work,2-Mar,18.9812858,ny_resident_weekday
-work,9-Mar,12.49734,ny_resident_weekday
-work,16-Mar,9.4834439,ny_resident_weekday
-work,23-Mar,9.2709485,ny_resident_weekday
-work,27-Jan,6.6860441,ny_visitor_weekend
-work,3-Feb,7.4140926,ny_visitor_weekend
-work,10-Feb,7.6765311,ny_visitor_weekend
-work,17-Feb,7.324928,ny_visitor_weekend
-work,24-Feb,6.8554997,ny_visitor_weekend
-work,2-Mar,8.8851048,ny_visitor_weekend
-work,9-Mar,8.1783495,ny_visitor_weekend
-work,16-Mar,8.7608162,ny_visitor_weekend
-work,23-Mar,8.3606088,ny_visitor_weekend
-work,27-Jan,18.5580783,ny_visitor_weekday
-work,3-Feb,18.7621416,ny_visitor_weekday
-work,10-Feb,17.6323992,ny_visitor_weekday
-work,17-Feb,18.7157702,ny_visitor_weekday
-work,24-Feb,19.6071103,ny_visitor_weekday
-work,2-Mar,18.4015409,ny_visitor_weekday
-work,9-Mar,14.3576293,ny_visitor_weekday
-work,16-Mar,12.8184821,ny_visitor_weekday
-work,23-Mar,12.8018562,ny_visitor_weekday
-other,27-Jan,16.5285712,ny_resident_weekend
-other,3-Feb,16.6720242,ny_resident_weekend
-other,10-Feb,20.370274,ny_resident_weekend
-other,17-Feb,18.2857556,ny_resident_weekend
-other,24-Feb,17.9821717,ny_resident_weekend
-other,2-Mar,18.6428658,ny_resident_weekend
-other,9-Mar,14.135812,ny_resident_weekend
-other,16-Mar,9.4127685,ny_resident_weekend
-other,23-Mar,7.1988687,ny_resident_weekend
-other,27-Jan,11.948453,ny_resident_weekday
-other,3-Feb,12.7155134,ny_resident_weekday
-other,10-Feb,15.7401362,ny_resident_weekday
-other,17-Feb,13.2514607,ny_resident_weekday
-other,24-Feb,14.1968906,ny_resident_weekday
-other,2-Mar,12.7085384,ny_resident_weekday
-other,9-Mar,8.9360757,ny_resident_weekday
-other,16-Mar,6.9988798,ny_resident_weekday
-other,23-Mar,7.2299635,ny_resident_weekday
-other,27-Jan,24.2345076,ny_visitor_weekend
-other,3-Feb,24.8208722,ny_visitor_weekend
-other,10-Feb,28.8416301,ny_visitor_weekend
-other,17-Feb,26.6267254,ny_visitor_weekend
-other,24-Feb,26.6902777,ny_visitor_weekend
-other,2-Mar,28.0253561,ny_visitor_weekend
-other,9-Mar,23.1180199,ny_visitor_weekend
-other,16-Mar,18.0366234,ny_visitor_weekend
-other,23-Mar,15.3068293,ny_visitor_weekend
-other,27-Jan,20.1303,ny_visitor_weekday
-other,3-Feb,21.261974,ny_visitor_weekday
-other,10-Feb,22.6420739,ny_visitor_weekday
-other,17-Feb,21.9109715,ny_visitor_weekday
-other,24-Feb,23.5560335,ny_visitor_weekday
-other,2-Mar,21.9639006,ny_visitor_weekday
-other,9-Mar,17.1620128,ny_visitor_weekday
-other,16-Mar,15.0195224,ny_visitor_weekday
-other,23-Mar,15.0417103,ny_visitor_weekday
+Location,Week,Percent Time Spent at Location,chart
+Home,27-Jan,68.8641834,NY Resident- Weekday
+Home,3-Feb,67.6543574,NY Resident- Weekday
+Home,10-Feb,67.5743957,NY Resident- Weekday
+Home,17-Feb,66.2030043,NY Resident- Weekday
+Home,24-Feb,65.3205888,NY Resident- Weekday
+Home,2-Mar,68.3101758,NY Resident- Weekday
+Home,9-Mar,78.5665843,NY Resident- Weekday
+Home,16-Mar,83.5176762,NY Resident- Weekday
+Home,23-Mar,83.4990881,NY Resident- Weekday
+Home,27-Jan,77.1117725,NY Resident- Weekend
+Home,3-Feb,76.6074592,NY Resident- Weekend
+Home,10-Feb,72.7419492,NY Resident- Weekend
+Home,17-Feb,75.0198473,NY Resident- Weekend
+Home,24-Feb,75.4121616,NY Resident- Weekend
+Home,2-Mar,73.9239317,NY Resident- Weekend
+Home,9-Mar,79.1777118,NY Resident- Weekend
+Home,16-Mar,83.9818628,NY Resident- Weekend
+Home,23-Mar,87.2603381,NY Resident- Weekend
+Home,27-Jan,61.3116218,NY Visitor - Weekday
+Home,3-Feb,59.9758845,NY Visitor - Weekday
+Home,10-Feb,59.7255269,NY Visitor - Weekday
+Home,17-Feb,59.3732583,NY Visitor - Weekday
+Home,24-Feb,56.8368562,NY Visitor - Weekday
+Home,2-Mar,59.6345585,NY Visitor - Weekday
+Home,9-Mar,68.480358,NY Visitor - Weekday
+Home,16-Mar,72.1619955,NY Visitor - Weekday
+Home,23-Mar,72.1564334,NY Visitor - Weekday
+Work,27-Jan,6.3596562,NY Resident- Weekend
+Work,3-Feb,6.7205165,NY Resident- Weekend
+Work,10-Feb,6.8877768,NY Resident- Weekend
+Work,17-Feb,6.6943972,NY Resident- Weekend
+Work,24-Feb,6.6056668,NY Resident- Weekend
+Work,2-Mar,7.4332024,NY Resident- Weekend
+Work,9-Mar,6.6864761,NY Resident- Weekend
+Work,16-Mar,6.6053687,NY Resident- Weekend
+Work,23-Mar,5.5407932,NY Resident- Weekend
+Work,27-Jan,19.1873636,NY Resident- Weekday
+Work,3-Feb,19.6301292,NY Resident- Weekday
+Work,10-Feb,16.6854682,NY Resident- Weekday
+Work,17-Feb,20.5455351,NY Resident- Weekday
+Work,24-Feb,20.4825205,NY Resident- Weekday
+Work,2-Mar,18.9812858,NY Resident- Weekday
+Work,9-Mar,12.49734,NY Resident- Weekday
+Work,16-Mar,9.4834439,NY Resident- Weekday
+Work,23-Mar,9.2709485,NY Resident- Weekday
+Work,27-Jan,6.6860441,NY Visitor - Weekend
+Work,3-Feb,7.4140926,NY Visitor - Weekend
+Work,10-Feb,7.6765311,NY Visitor - Weekend
+Work,17-Feb,7.324928,NY Visitor - Weekend
+Work,24-Feb,6.8554997,NY Visitor - Weekend
+Work,2-Mar,8.8851048,NY Visitor - Weekend
+Work,9-Mar,8.1783495,NY Visitor - Weekend
+Work,16-Mar,8.7608162,NY Visitor - Weekend
+Work,23-Mar,8.3606088,NY Visitor - Weekend
+Work,27-Jan,18.5580783,NY Visitor - Weekday
+Work,3-Feb,18.7621416,NY Visitor - Weekday
+Work,10-Feb,17.6323992,NY Visitor - Weekday
+Work,17-Feb,18.7157702,NY Visitor - Weekday
+Work,24-Feb,19.6071103,NY Visitor - Weekday
+Work,2-Mar,18.4015409,NY Visitor - Weekday
+Work,9-Mar,14.3576293,NY Visitor - Weekday
+Work,16-Mar,12.8184821,NY Visitor - Weekday
+Work,23-Mar,12.8018562,NY Visitor - Weekday
+Other,27-Jan,16.5285712,NY Resident- Weekend
+Other,3-Feb,16.6720242,NY Resident- Weekend
+Other,10-Feb,20.370274,NY Resident- Weekend
+Other,17-Feb,18.2857556,NY Resident- Weekend
+Other,24-Feb,17.9821717,NY Resident- Weekend
+Other,2-Mar,18.6428658,NY Resident- Weekend
+Other,9-Mar,14.135812,NY Resident- Weekend
+Other,16-Mar,9.4127685,NY Resident- Weekend
+Other,23-Mar,7.1988687,NY Resident- Weekend
+Other,27-Jan,11.948453,NY Resident- Weekday
+Other,3-Feb,12.7155134,NY Resident- Weekday
+Other,10-Feb,15.7401362,NY Resident- Weekday
+Other,17-Feb,13.2514607,NY Resident- Weekday
+Other,24-Feb,14.1968906,NY Resident- Weekday
+Other,2-Mar,12.7085384,NY Resident- Weekday
+Other,9-Mar,8.9360757,NY Resident- Weekday
+Other,16-Mar,6.9988798,NY Resident- Weekday
+Other,23-Mar,7.2299635,NY Resident- Weekday
+Other,27-Jan,24.2345076,NY Visitor - Weekend
+Other,3-Feb,24.8208722,NY Visitor - Weekend
+Other,10-Feb,28.8416301,NY Visitor - Weekend
+Other,17-Feb,26.6267254,NY Visitor - Weekend
+Other,24-Feb,26.6902777,NY Visitor - Weekend
+Other,2-Mar,28.0253561,NY Visitor - Weekend
+Other,9-Mar,23.1180199,NY Visitor - Weekend
+Other,16-Mar,18.0366234,NY Visitor - Weekend
+Other,23-Mar,15.3068293,NY Visitor - Weekend
+Other,27-Jan,20.1303,NY Visitor - Weekday
+Other,3-Feb,21.261974,NY Visitor - Weekday
+Other,10-Feb,22.6420739,NY Visitor - Weekday
+Other,17-Feb,21.9109715,NY Visitor - Weekday
+Other,24-Feb,23.5560335,NY Visitor - Weekday
+Other,2-Mar,21.9639006,NY Visitor - Weekday
+Other,9-Mar,17.1620128,NY Visitor - Weekday
+Other,16-Mar,15.0195224,NY Visitor - Weekday
+Other,23-Mar,15.0417103,NY Visitor - Weekday
+Home,27-Jan,69.0794483,NY Visitor - Weekend
+Home,3-Feb,67.7650352,NY Visitor - Weekend
+Home,10-Feb,63.4818388,NY Visitor - Weekend
+Home,17-Feb,66.0483466,NY Visitor - Weekend
+Home,24-Feb,66.4542226,NY Visitor - Weekend
+Home,2-Mar,63.0895391,NY Visitor - Weekend
+Home,9-Mar,68.7036306,NY Visitor - Weekend
+Home,16-Mar,73.2025605,NY Visitor - Weekend
+Home,23-Mar,76.3325619,NY Visitor - Weekend
