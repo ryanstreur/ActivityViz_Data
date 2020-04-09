@@ -101,6 +101,7 @@
       "ZoneFile": "ZoneShape.json",
       "CycleMapTools": false,
       "DefaultMapDisplay": "bubbles",
+      "StackAllChartsByDefault": false,
       "DefaultBubbleSize": 2
     }
   },
