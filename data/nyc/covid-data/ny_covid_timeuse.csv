@@ -1,388 +1,388 @@
 PERSON_TYPE_scenario,period,DWELL_LOCATION,percent_active_devices
-NY Resident - Weekday-before,1,HOME,0.895215847
-NY Resident - Weekday-before,2,HOME,0.902649904
-NY Resident - Weekday-before,3,HOME,0.909082247
-NY Resident - Weekday-before,4,HOME,0.912930873
-NY Resident - Weekday-before,5,HOME,0.915651947
-NY Resident - Weekday-before,6,HOME,0.917900172
-NY Resident - Weekday-before,7,HOME,0.919685328
-NY Resident - Weekday-before,8,HOME,0.919685835
-NY Resident - Weekday-before,9,HOME,0.917805214
-NY Resident - Weekday-before,10,HOME,0.913542192
-NY Resident - Weekday-before,11,HOME,0.903887695
-NY Resident - Weekday-before,12,HOME,0.888932351
-NY Resident - Weekday-before,13,HOME,0.863118496
-NY Resident - Weekday-before,14,HOME,0.830778071
-NY Resident - Weekday-before,15,HOME,0.772348067
-NY Resident - Weekday-before,16,HOME,0.691247041
-NY Resident - Weekday-before,17,HOME,0.604828479
-NY Resident - Weekday-before,18,HOME,0.53877685
-NY Resident - Weekday-before,19,HOME,0.486393352
-NY Resident - Weekday-before,20,HOME,0.452785485
-NY Resident - Weekday-before,21,HOME,0.428308474
-NY Resident - Weekday-before,22,HOME,0.412336585
-NY Resident - Weekday-before,23,HOME,0.400813731
-NY Resident - Weekday-before,24,HOME,0.393050454
-NY Resident - Weekday-before,25,HOME,0.39152556
-NY Resident - Weekday-before,26,HOME,0.387105872
-NY Resident - Weekday-before,27,HOME,0.387947364
-NY Resident - Weekday-before,28,HOME,0.389722264
-NY Resident - Weekday-before,29,HOME,0.396155596
-NY Resident - Weekday-before,30,HOME,0.413706214
-NY Resident - Weekday-before,31,HOME,0.446021386
-NY Resident - Weekday-before,32,HOME,0.476764796
-NY Resident - Weekday-before,33,HOME,0.504614645
-NY Resident - Weekday-before,34,HOME,0.536285937
-NY Resident - Weekday-before,35,HOME,0.576829213
-NY Resident - Weekday-before,36,HOME,0.614872147
-NY Resident - Weekday-before,37,HOME,0.644129108
-NY Resident - Weekday-before,38,HOME,0.665191418
-NY Resident - Weekday-before,39,HOME,0.684453606
-NY Resident - Weekday-before,40,HOME,0.697788242
-NY Resident - Weekday-before,41,HOME,0.723338696
-NY Resident - Weekday-before,42,HOME,0.749469196
-NY Resident - Weekday-before,43,HOME,0.779527596
-NY Resident - Weekday-before,44,HOME,0.802921203
-NY Resident - Weekday-before,45,HOME,0.827431594
-NY Resident - Weekday-before,46,HOME,0.842680751
-NY Resident - Weekday-before,47,HOME,0.861669807
-NY Resident - Weekday-before,48,HOME,0.871189699
-NY Resident - Weekday-before,1,WORK,0.032899278
-NY Resident - Weekday-before,2,WORK,0.030136658
-NY Resident - Weekday-before,3,WORK,0.027939902
-NY Resident - Weekday-before,4,WORK,0.026631953
-NY Resident - Weekday-before,5,WORK,0.02591983
-NY Resident - Weekday-before,6,WORK,0.025360574
-NY Resident - Weekday-before,7,WORK,0.024993213
-NY Resident - Weekday-before,8,WORK,0.02535234
-NY Resident - Weekday-before,9,WORK,0.026552743
-NY Resident - Weekday-before,10,WORK,0.028595755
-NY Resident - Weekday-before,11,WORK,0.033016667
-NY Resident - Weekday-before,12,WORK,0.040498567
-NY Resident - Weekday-before,13,WORK,0.056785014
-NY Resident - Weekday-before,14,WORK,0.078689133
-NY Resident - Weekday-before,15,WORK,0.125043986
-NY Resident - Weekday-before,16,WORK,0.193021002
-NY Resident - Weekday-before,17,WORK,0.26887534
-NY Resident - Weekday-before,18,WORK,0.325755345
-NY Resident - Weekday-before,19,WORK,0.373426281
-NY Resident - Weekday-before,20,WORK,0.397892533
-NY Resident - Weekday-before,21,WORK,0.413856284
-NY Resident - Weekday-before,22,WORK,0.424171063
-NY Resident - Weekday-before,23,WORK,0.43139142
-NY Resident - Weekday-before,24,WORK,0.435999064
-NY Resident - Weekday-before,25,WORK,0.434419555
-NY Resident - Weekday-before,26,WORK,0.433963274
-NY Resident - Weekday-before,27,WORK,0.434128676
-NY Resident - Weekday-before,28,WORK,0.432595796
-NY Resident - Weekday-before,29,WORK,0.428589006
-NY Resident - Weekday-before,30,WORK,0.410810293
-NY Resident - Weekday-before,31,WORK,0.380155653
-NY Resident - Weekday-before,32,WORK,0.346725807
-NY Resident - Weekday-before,33,WORK,0.312500113
-NY Resident - Weekday-before,34,WORK,0.275891644
-NY Resident - Weekday-before,35,WORK,0.226663251
-NY Resident - Weekday-before,36,WORK,0.185730607
-NY Resident - Weekday-before,37,WORK,0.152244853
-NY Resident - Weekday-before,38,WORK,0.128841964
-NY Resident - Weekday-before,39,WORK,0.110154406
-NY Resident - Weekday-before,40,WORK,0.098277664
-NY Resident - Weekday-before,41,WORK,0.086532502
-NY Resident - Weekday-before,42,WORK,0.078036952
-NY Resident - Weekday-before,43,WORK,0.069520783
-NY Resident - Weekday-before,44,WORK,0.063210484
-NY Resident - Weekday-before,45,WORK,0.055300512
-NY Resident - Weekday-before,46,WORK,0.049988153
-NY Resident - Weekday-before,47,WORK,0.043296345
-NY Resident - Weekday-before,48,WORK,0.039435987
-NY Resident - Weekday-before,1,OTHER,0.071884876
-NY Resident - Weekday-before,2,OTHER,0.067213438
-NY Resident - Weekday-before,3,OTHER,0.062977851
-NY Resident - Weekday-before,4,OTHER,0.060437174
-NY Resident - Weekday-before,5,OTHER,0.058428223
-NY Resident - Weekday-before,6,OTHER,0.056739254
-NY Resident - Weekday-before,7,OTHER,0.055321459
-NY Resident - Weekday-before,8,OTHER,0.054961825
-NY Resident - Weekday-before,9,OTHER,0.055642042
-NY Resident - Weekday-before,10,OTHER,0.057862053
-NY Resident - Weekday-before,11,OTHER,0.063095639
-NY Resident - Weekday-before,12,OTHER,0.070569081
-NY Resident - Weekday-before,13,OTHER,0.08009649
-NY Resident - Weekday-before,14,OTHER,0.090532796
-NY Resident - Weekday-before,15,OTHER,0.102607947
-NY Resident - Weekday-before,16,OTHER,0.115731957
-NY Resident - Weekday-before,17,OTHER,0.126296182
-NY Resident - Weekday-before,18,OTHER,0.135467804
-NY Resident - Weekday-before,19,OTHER,0.140180366
-NY Resident - Weekday-before,20,OTHER,0.149321982
-NY Resident - Weekday-before,21,OTHER,0.157835242
-NY Resident - Weekday-before,22,OTHER,0.163492353
-NY Resident - Weekday-before,23,OTHER,0.167794849
-NY Resident - Weekday-before,24,OTHER,0.170950482
-NY Resident - Weekday-before,25,OTHER,0.174054885
-NY Resident - Weekday-before,26,OTHER,0.178930854
-NY Resident - Weekday-before,27,OTHER,0.17792396
-NY Resident - Weekday-before,28,OTHER,0.177681941
-NY Resident - Weekday-before,29,OTHER,0.175255398
-NY Resident - Weekday-before,30,OTHER,0.175483493
-NY Resident - Weekday-before,31,OTHER,0.173822961
-NY Resident - Weekday-before,32,OTHER,0.176509397
-NY Resident - Weekday-before,33,OTHER,0.182885242
-NY Resident - Weekday-before,34,OTHER,0.18782242
-NY Resident - Weekday-before,35,OTHER,0.196507536
-NY Resident - Weekday-before,36,OTHER,0.199397245
-NY Resident - Weekday-before,37,OTHER,0.203626038
-NY Resident - Weekday-before,38,OTHER,0.205966618
-NY Resident - Weekday-before,39,OTHER,0.205391988
-NY Resident - Weekday-before,40,OTHER,0.203934094
-NY Resident - Weekday-before,41,OTHER,0.190128802
-NY Resident - Weekday-before,42,OTHER,0.172493852
-NY Resident - Weekday-before,43,OTHER,0.150951622
-NY Resident - Weekday-before,44,OTHER,0.133868314
-NY Resident - Weekday-before,45,OTHER,0.117267894
-NY Resident - Weekday-before,46,OTHER,0.107331097
-NY Resident - Weekday-before,47,OTHER,0.095033848
-NY Resident - Weekday-before,48,OTHER,0.089374314
-NY Resident - Weekday-before,1,SCHOOL,0
-NY Resident - Weekday-before,2,SCHOOL,0
-NY Resident - Weekday-before,3,SCHOOL,0
-NY Resident - Weekday-before,4,SCHOOL,0
-NY Resident - Weekday-before,5,SCHOOL,0
-NY Resident - Weekday-before,6,SCHOOL,0
-NY Resident - Weekday-before,7,SCHOOL,0
-NY Resident - Weekday-before,8,SCHOOL,0
-NY Resident - Weekday-before,9,SCHOOL,0
-NY Resident - Weekday-before,10,SCHOOL,0
-NY Resident - Weekday-before,11,SCHOOL,0
-NY Resident - Weekday-before,12,SCHOOL,0
-NY Resident - Weekday-before,13,SCHOOL,0
-NY Resident - Weekday-before,14,SCHOOL,0
-NY Resident - Weekday-before,15,SCHOOL,0
-NY Resident - Weekday-before,16,SCHOOL,0
-NY Resident - Weekday-before,17,SCHOOL,0
-NY Resident - Weekday-before,18,SCHOOL,0
-NY Resident - Weekday-before,19,SCHOOL,0
-NY Resident - Weekday-before,20,SCHOOL,0
-NY Resident - Weekday-before,21,SCHOOL,0
-NY Resident - Weekday-before,22,SCHOOL,0
-NY Resident - Weekday-before,23,SCHOOL,0
-NY Resident - Weekday-before,24,SCHOOL,0
-NY Resident - Weekday-before,25,SCHOOL,0
-NY Resident - Weekday-before,26,SCHOOL,0
-NY Resident - Weekday-before,27,SCHOOL,0
-NY Resident - Weekday-before,28,SCHOOL,0
-NY Resident - Weekday-before,29,SCHOOL,0
-NY Resident - Weekday-before,30,SCHOOL,0
-NY Resident - Weekday-before,31,SCHOOL,0
-NY Resident - Weekday-before,32,SCHOOL,0
-NY Resident - Weekday-before,33,SCHOOL,0
-NY Resident - Weekday-before,34,SCHOOL,0
-NY Resident - Weekday-before,35,SCHOOL,0
-NY Resident - Weekday-before,36,SCHOOL,0
-NY Resident - Weekday-before,37,SCHOOL,0
-NY Resident - Weekday-before,38,SCHOOL,0
-NY Resident - Weekday-before,39,SCHOOL,0
-NY Resident - Weekday-before,40,SCHOOL,0
-NY Resident - Weekday-before,41,SCHOOL,0
-NY Resident - Weekday-before,42,SCHOOL,0
-NY Resident - Weekday-before,43,SCHOOL,0
-NY Resident - Weekday-before,44,SCHOOL,0
-NY Resident - Weekday-before,45,SCHOOL,0
-NY Resident - Weekday-before,46,SCHOOL,0
-NY Resident - Weekday-before,47,SCHOOL,0
-NY Resident - Weekday-before,48,SCHOOL,0
-NY Resident - Weekday-now,1,HOME,0.914677892
-NY Resident - Weekday-now,2,HOME,0.916777496
-NY Resident - Weekday-now,3,HOME,0.921658218
-NY Resident - Weekday-now,4,HOME,0.923177262
-NY Resident - Weekday-now,5,HOME,0.925574652
-NY Resident - Weekday-now,6,HOME,0.926244127
-NY Resident - Weekday-now,7,HOME,0.927950413
-NY Resident - Weekday-now,8,HOME,0.927777953
-NY Resident - Weekday-now,9,HOME,0.927259388
-NY Resident - Weekday-now,10,HOME,0.92500798
-NY Resident - Weekday-now,11,HOME,0.920580344
-NY Resident - Weekday-now,12,HOME,0.912052675
-NY Resident - Weekday-now,13,HOME,0.895279556
-NY Resident - Weekday-now,14,HOME,0.876404034
-NY Resident - Weekday-now,15,HOME,0.851270639
-NY Resident - Weekday-now,16,HOME,0.830948133
-NY Resident - Weekday-now,17,HOME,0.807935646
-NY Resident - Weekday-now,18,HOME,0.788906231
-NY Resident - Weekday-now,19,HOME,0.774043573
-NY Resident - Weekday-now,20,HOME,0.763534328
-NY Resident - Weekday-now,21,HOME,0.756055848
-NY Resident - Weekday-now,22,HOME,0.750390077
-NY Resident - Weekday-now,23,HOME,0.748936054
-NY Resident - Weekday-now,24,HOME,0.744271251
-NY Resident - Weekday-now,25,HOME,0.742098291
-NY Resident - Weekday-now,26,HOME,0.741113783
-NY Resident - Weekday-now,27,HOME,0.744337146
-NY Resident - Weekday-now,28,HOME,0.74306712
-NY Resident - Weekday-now,29,HOME,0.745898222
-NY Resident - Weekday-now,30,HOME,0.748193346
-NY Resident - Weekday-now,31,HOME,0.756226773
-NY Resident - Weekday-now,32,HOME,0.76667532
-NY Resident - Weekday-now,33,HOME,0.781918455
-NY Resident - Weekday-now,34,HOME,0.797066267
-NY Resident - Weekday-now,35,HOME,0.815459949
-NY Resident - Weekday-now,36,HOME,0.827333978
-NY Resident - Weekday-now,37,HOME,0.838529496
-NY Resident - Weekday-now,38,HOME,0.844447001
-NY Resident - Weekday-now,39,HOME,0.851926845
-NY Resident - Weekday-now,40,HOME,0.851603716
-NY Resident - Weekday-now,41,HOME,0.870154092
-NY Resident - Weekday-now,42,HOME,0.873963523
-NY Resident - Weekday-now,43,HOME,0.881280876
-NY Resident - Weekday-now,44,HOME,0.884706192
-NY Resident - Weekday-now,45,HOME,0.892845886
-NY Resident - Weekday-now,46,HOME,0.895183706
-NY Resident - Weekday-now,47,HOME,0.901951945
-NY Resident - Weekday-now,48,HOME,0.905225813
-NY Resident - Weekday-now,1,WORK,0.037102799
-NY Resident - Weekday-now,2,WORK,0.035759894
-NY Resident - Weekday-now,3,WORK,0.034201981
-NY Resident - Weekday-now,4,WORK,0.033318752
-NY Resident - Weekday-now,5,WORK,0.032333598
-NY Resident - Weekday-now,6,WORK,0.031990768
-NY Resident - Weekday-now,7,WORK,0.031498872
-NY Resident - Weekday-now,8,WORK,0.031494284
-NY Resident - Weekday-now,9,WORK,0.032069113
-NY Resident - Weekday-now,10,WORK,0.033441211
-NY Resident - Weekday-now,11,WORK,0.036362971
-NY Resident - Weekday-now,12,WORK,0.041183785
-NY Resident - Weekday-now,13,WORK,0.052805097
-NY Resident - Weekday-now,14,WORK,0.06622907
-NY Resident - Weekday-now,15,WORK,0.086006359
-NY Resident - Weekday-now,16,WORK,0.101010938
-NY Resident - Weekday-now,17,WORK,0.119315439
-NY Resident - Weekday-now,18,WORK,0.133479724
-NY Resident - Weekday-now,19,WORK,0.147069729
-NY Resident - Weekday-now,20,WORK,0.153983587
-NY Resident - Weekday-now,21,WORK,0.159757045
-NY Resident - Weekday-now,22,WORK,0.162593417
-NY Resident - Weekday-now,23,WORK,0.164221216
-NY Resident - Weekday-now,24,WORK,0.166591522
-NY Resident - Weekday-now,25,WORK,0.167513087
-NY Resident - Weekday-now,26,WORK,0.16726925
-NY Resident - Weekday-now,27,WORK,0.165786275
-NY Resident - Weekday-now,28,WORK,0.165169236
-NY Resident - Weekday-now,29,WORK,0.163204563
-NY Resident - Weekday-now,30,WORK,0.159539763
-NY Resident - Weekday-now,31,WORK,0.153019818
-NY Resident - Weekday-now,32,WORK,0.142734696
-NY Resident - Weekday-now,33,WORK,0.13016204
-NY Resident - Weekday-now,34,WORK,0.116151871
-NY Resident - Weekday-now,35,WORK,0.098468798
-NY Resident - Weekday-now,36,WORK,0.087378628
-NY Resident - Weekday-now,37,WORK,0.07885209
-NY Resident - Weekday-now,38,WORK,0.073490569
-NY Resident - Weekday-now,39,WORK,0.068667776
-NY Resident - Weekday-now,40,WORK,0.066652859
-NY Resident - Weekday-now,41,WORK,0.060481351
-NY Resident - Weekday-now,42,WORK,0.058152246
-NY Resident - Weekday-now,43,WORK,0.054622142
-NY Resident - Weekday-now,44,WORK,0.052401948
-NY Resident - Weekday-now,45,WORK,0.048382906
-NY Resident - Weekday-now,46,WORK,0.046792304
-NY Resident - Weekday-now,47,WORK,0.04327655
-NY Resident - Weekday-now,48,WORK,0.041053753
-NY Resident - Weekday-now,1,OTHER,0.048219308
-NY Resident - Weekday-now,2,OTHER,0.04746261
-NY Resident - Weekday-now,3,OTHER,0.044139801
-NY Resident - Weekday-now,4,OTHER,0.043503986
-NY Resident - Weekday-now,5,OTHER,0.04209175
-NY Resident - Weekday-now,6,OTHER,0.041765106
-NY Resident - Weekday-now,7,OTHER,0.040550715
-NY Resident - Weekday-now,8,OTHER,0.040727763
-NY Resident - Weekday-now,9,OTHER,0.040671499
-NY Resident - Weekday-now,10,OTHER,0.041550809
-NY Resident - Weekday-now,11,OTHER,0.043056685
-NY Resident - Weekday-now,12,OTHER,0.046763539
-NY Resident - Weekday-now,13,OTHER,0.051915347
-NY Resident - Weekday-now,14,OTHER,0.057366895
-NY Resident - Weekday-now,15,OTHER,0.062723002
-NY Resident - Weekday-now,16,OTHER,0.068040929
-NY Resident - Weekday-now,17,OTHER,0.072748915
-NY Resident - Weekday-now,18,OTHER,0.077614045
-NY Resident - Weekday-now,19,OTHER,0.078886698
-NY Resident - Weekday-now,20,OTHER,0.082482085
-NY Resident - Weekday-now,21,OTHER,0.084187106
-NY Resident - Weekday-now,22,OTHER,0.087016507
-NY Resident - Weekday-now,23,OTHER,0.08684273
-NY Resident - Weekday-now,24,OTHER,0.089137227
-NY Resident - Weekday-now,25,OTHER,0.090388622
-NY Resident - Weekday-now,26,OTHER,0.091616967
-NY Resident - Weekday-now,27,OTHER,0.089876579
-NY Resident - Weekday-now,28,OTHER,0.091763644
-NY Resident - Weekday-now,29,OTHER,0.090897215
-NY Resident - Weekday-now,30,OTHER,0.09226689
-NY Resident - Weekday-now,31,OTHER,0.090753409
-NY Resident - Weekday-now,32,OTHER,0.090589984
-NY Resident - Weekday-now,33,OTHER,0.087919505
-NY Resident - Weekday-now,34,OTHER,0.086781862
-NY Resident - Weekday-now,35,OTHER,0.086071253
-NY Resident - Weekday-now,36,OTHER,0.085287394
-NY Resident - Weekday-now,37,OTHER,0.082618414
-NY Resident - Weekday-now,38,OTHER,0.08206243
-NY Resident - Weekday-now,39,OTHER,0.079405379
-NY Resident - Weekday-now,40,OTHER,0.081743425
-NY Resident - Weekday-now,41,OTHER,0.069364557
-NY Resident - Weekday-now,42,OTHER,0.067884231
-NY Resident - Weekday-now,43,OTHER,0.064096983
-NY Resident - Weekday-now,44,OTHER,0.06289186
-NY Resident - Weekday-now,45,OTHER,0.058771208
-NY Resident - Weekday-now,46,OTHER,0.05802399
-NY Resident - Weekday-now,47,OTHER,0.054771506
-NY Resident - Weekday-now,48,OTHER,0.053720434
-NY Resident - Weekday-now,1,SCHOOL,0
-NY Resident - Weekday-now,2,SCHOOL,0
-NY Resident - Weekday-now,3,SCHOOL,0
-NY Resident - Weekday-now,4,SCHOOL,0
-NY Resident - Weekday-now,5,SCHOOL,0
-NY Resident - Weekday-now,6,SCHOOL,0
-NY Resident - Weekday-now,7,SCHOOL,0
-NY Resident - Weekday-now,8,SCHOOL,0
-NY Resident - Weekday-now,9,SCHOOL,0
-NY Resident - Weekday-now,10,SCHOOL,0
-NY Resident - Weekday-now,11,SCHOOL,0
-NY Resident - Weekday-now,12,SCHOOL,0
-NY Resident - Weekday-now,13,SCHOOL,0
-NY Resident - Weekday-now,14,SCHOOL,0
-NY Resident - Weekday-now,15,SCHOOL,0
-NY Resident - Weekday-now,16,SCHOOL,0
-NY Resident - Weekday-now,17,SCHOOL,0
-NY Resident - Weekday-now,18,SCHOOL,0
-NY Resident - Weekday-now,19,SCHOOL,0
-NY Resident - Weekday-now,20,SCHOOL,0
-NY Resident - Weekday-now,21,SCHOOL,0
-NY Resident - Weekday-now,22,SCHOOL,0
-NY Resident - Weekday-now,23,SCHOOL,0
-NY Resident - Weekday-now,24,SCHOOL,0
-NY Resident - Weekday-now,25,SCHOOL,0
-NY Resident - Weekday-now,26,SCHOOL,0
-NY Resident - Weekday-now,27,SCHOOL,0
-NY Resident - Weekday-now,28,SCHOOL,0
-NY Resident - Weekday-now,29,SCHOOL,0
-NY Resident - Weekday-now,30,SCHOOL,0
-NY Resident - Weekday-now,31,SCHOOL,0
-NY Resident - Weekday-now,32,SCHOOL,0
-NY Resident - Weekday-now,33,SCHOOL,0
-NY Resident - Weekday-now,34,SCHOOL,0
-NY Resident - Weekday-now,35,SCHOOL,0
-NY Resident - Weekday-now,36,SCHOOL,0
-NY Resident - Weekday-now,37,SCHOOL,0
-NY Resident - Weekday-now,38,SCHOOL,0
-NY Resident - Weekday-now,39,SCHOOL,0
-NY Resident - Weekday-now,40,SCHOOL,0
-NY Resident - Weekday-now,41,SCHOOL,0
-NY Resident - Weekday-now,42,SCHOOL,0
-NY Resident - Weekday-now,43,SCHOOL,0
-NY Resident - Weekday-now,44,SCHOOL,0
-NY Resident - Weekday-now,45,SCHOOL,0
-NY Resident - Weekday-now,46,SCHOOL,0
-NY Resident - Weekday-now,47,SCHOOL,0
-NY Resident - Weekday-now,48,SCHOOL,0
+NY Resident - Weekday - Before,1,HOME,0.895215847
+NY Resident - Weekday - Before,2,HOME,0.902649904
+NY Resident - Weekday - Before,3,HOME,0.909082247
+NY Resident - Weekday - Before,4,HOME,0.912930873
+NY Resident - Weekday - Before,5,HOME,0.915651947
+NY Resident - Weekday - Before,6,HOME,0.917900172
+NY Resident - Weekday - Before,7,HOME,0.919685328
+NY Resident - Weekday - Before,8,HOME,0.919685835
+NY Resident - Weekday - Before,9,HOME,0.917805214
+NY Resident - Weekday - Before,10,HOME,0.913542192
+NY Resident - Weekday - Before,11,HOME,0.903887695
+NY Resident - Weekday - Before,12,HOME,0.888932351
+NY Resident - Weekday - Before,13,HOME,0.863118496
+NY Resident - Weekday - Before,14,HOME,0.830778071
+NY Resident - Weekday - Before,15,HOME,0.772348067
+NY Resident - Weekday - Before,16,HOME,0.691247041
+NY Resident - Weekday - Before,17,HOME,0.604828479
+NY Resident - Weekday - Before,18,HOME,0.53877685
+NY Resident - Weekday - Before,19,HOME,0.486393352
+NY Resident - Weekday - Before,20,HOME,0.452785485
+NY Resident - Weekday - Before,21,HOME,0.428308474
+NY Resident - Weekday - Before,22,HOME,0.412336585
+NY Resident - Weekday - Before,23,HOME,0.400813731
+NY Resident - Weekday - Before,24,HOME,0.393050454
+NY Resident - Weekday - Before,25,HOME,0.39152556
+NY Resident - Weekday - Before,26,HOME,0.387105872
+NY Resident - Weekday - Before,27,HOME,0.387947364
+NY Resident - Weekday - Before,28,HOME,0.389722264
+NY Resident - Weekday - Before,29,HOME,0.396155596
+NY Resident - Weekday - Before,30,HOME,0.413706214
+NY Resident - Weekday - Before,31,HOME,0.446021386
+NY Resident - Weekday - Before,32,HOME,0.476764796
+NY Resident - Weekday - Before,33,HOME,0.504614645
+NY Resident - Weekday - Before,34,HOME,0.536285937
+NY Resident - Weekday - Before,35,HOME,0.576829213
+NY Resident - Weekday - Before,36,HOME,0.614872147
+NY Resident - Weekday - Before,37,HOME,0.644129108
+NY Resident - Weekday - Before,38,HOME,0.665191418
+NY Resident - Weekday - Before,39,HOME,0.684453606
+NY Resident - Weekday - Before,40,HOME,0.697788242
+NY Resident - Weekday - Before,41,HOME,0.723338696
+NY Resident - Weekday - Before,42,HOME,0.749469196
+NY Resident - Weekday - Before,43,HOME,0.779527596
+NY Resident - Weekday - Before,44,HOME,0.802921203
+NY Resident - Weekday - Before,45,HOME,0.827431594
+NY Resident - Weekday - Before,46,HOME,0.842680751
+NY Resident - Weekday - Before,47,HOME,0.861669807
+NY Resident - Weekday - Before,48,HOME,0.871189699
+NY Resident - Weekday - Before,1,WORK,0.032899278
+NY Resident - Weekday - Before,2,WORK,0.030136658
+NY Resident - Weekday - Before,3,WORK,0.027939902
+NY Resident - Weekday - Before,4,WORK,0.026631953
+NY Resident - Weekday - Before,5,WORK,0.02591983
+NY Resident - Weekday - Before,6,WORK,0.025360574
+NY Resident - Weekday - Before,7,WORK,0.024993213
+NY Resident - Weekday - Before,8,WORK,0.02535234
+NY Resident - Weekday - Before,9,WORK,0.026552743
+NY Resident - Weekday - Before,10,WORK,0.028595755
+NY Resident - Weekday - Before,11,WORK,0.033016667
+NY Resident - Weekday - Before,12,WORK,0.040498567
+NY Resident - Weekday - Before,13,WORK,0.056785014
+NY Resident - Weekday - Before,14,WORK,0.078689133
+NY Resident - Weekday - Before,15,WORK,0.125043986
+NY Resident - Weekday - Before,16,WORK,0.193021002
+NY Resident - Weekday - Before,17,WORK,0.26887534
+NY Resident - Weekday - Before,18,WORK,0.325755345
+NY Resident - Weekday - Before,19,WORK,0.373426281
+NY Resident - Weekday - Before,20,WORK,0.397892533
+NY Resident - Weekday - Before,21,WORK,0.413856284
+NY Resident - Weekday - Before,22,WORK,0.424171063
+NY Resident - Weekday - Before,23,WORK,0.43139142
+NY Resident - Weekday - Before,24,WORK,0.435999064
+NY Resident - Weekday - Before,25,WORK,0.434419555
+NY Resident - Weekday - Before,26,WORK,0.433963274
+NY Resident - Weekday - Before,27,WORK,0.434128676
+NY Resident - Weekday - Before,28,WORK,0.432595796
+NY Resident - Weekday - Before,29,WORK,0.428589006
+NY Resident - Weekday - Before,30,WORK,0.410810293
+NY Resident - Weekday - Before,31,WORK,0.380155653
+NY Resident - Weekday - Before,32,WORK,0.346725807
+NY Resident - Weekday - Before,33,WORK,0.312500113
+NY Resident - Weekday - Before,34,WORK,0.275891644
+NY Resident - Weekday - Before,35,WORK,0.226663251
+NY Resident - Weekday - Before,36,WORK,0.185730607
+NY Resident - Weekday - Before,37,WORK,0.152244853
+NY Resident - Weekday - Before,38,WORK,0.128841964
+NY Resident - Weekday - Before,39,WORK,0.110154406
+NY Resident - Weekday - Before,40,WORK,0.098277664
+NY Resident - Weekday - Before,41,WORK,0.086532502
+NY Resident - Weekday - Before,42,WORK,0.078036952
+NY Resident - Weekday - Before,43,WORK,0.069520783
+NY Resident - Weekday - Before,44,WORK,0.063210484
+NY Resident - Weekday - Before,45,WORK,0.055300512
+NY Resident - Weekday - Before,46,WORK,0.049988153
+NY Resident - Weekday - Before,47,WORK,0.043296345
+NY Resident - Weekday - Before,48,WORK,0.039435987
+NY Resident - Weekday - Before,1,OTHER,0.071884876
+NY Resident - Weekday - Before,2,OTHER,0.067213438
+NY Resident - Weekday - Before,3,OTHER,0.062977851
+NY Resident - Weekday - Before,4,OTHER,0.060437174
+NY Resident - Weekday - Before,5,OTHER,0.058428223
+NY Resident - Weekday - Before,6,OTHER,0.056739254
+NY Resident - Weekday - Before,7,OTHER,0.055321459
+NY Resident - Weekday - Before,8,OTHER,0.054961825
+NY Resident - Weekday - Before,9,OTHER,0.055642042
+NY Resident - Weekday - Before,10,OTHER,0.057862053
+NY Resident - Weekday - Before,11,OTHER,0.063095639
+NY Resident - Weekday - Before,12,OTHER,0.070569081
+NY Resident - Weekday - Before,13,OTHER,0.08009649
+NY Resident - Weekday - Before,14,OTHER,0.090532796
+NY Resident - Weekday - Before,15,OTHER,0.102607947
+NY Resident - Weekday - Before,16,OTHER,0.115731957
+NY Resident - Weekday - Before,17,OTHER,0.126296182
+NY Resident - Weekday - Before,18,OTHER,0.135467804
+NY Resident - Weekday - Before,19,OTHER,0.140180366
+NY Resident - Weekday - Before,20,OTHER,0.149321982
+NY Resident - Weekday - Before,21,OTHER,0.157835242
+NY Resident - Weekday - Before,22,OTHER,0.163492353
+NY Resident - Weekday - Before,23,OTHER,0.167794849
+NY Resident - Weekday - Before,24,OTHER,0.170950482
+NY Resident - Weekday - Before,25,OTHER,0.174054885
+NY Resident - Weekday - Before,26,OTHER,0.178930854
+NY Resident - Weekday - Before,27,OTHER,0.17792396
+NY Resident - Weekday - Before,28,OTHER,0.177681941
+NY Resident - Weekday - Before,29,OTHER,0.175255398
+NY Resident - Weekday - Before,30,OTHER,0.175483493
+NY Resident - Weekday - Before,31,OTHER,0.173822961
+NY Resident - Weekday - Before,32,OTHER,0.176509397
+NY Resident - Weekday - Before,33,OTHER,0.182885242
+NY Resident - Weekday - Before,34,OTHER,0.18782242
+NY Resident - Weekday - Before,35,OTHER,0.196507536
+NY Resident - Weekday - Before,36,OTHER,0.199397245
+NY Resident - Weekday - Before,37,OTHER,0.203626038
+NY Resident - Weekday - Before,38,OTHER,0.205966618
+NY Resident - Weekday - Before,39,OTHER,0.205391988
+NY Resident - Weekday - Before,40,OTHER,0.203934094
+NY Resident - Weekday - Before,41,OTHER,0.190128802
+NY Resident - Weekday - Before,42,OTHER,0.172493852
+NY Resident - Weekday - Before,43,OTHER,0.150951622
+NY Resident - Weekday - Before,44,OTHER,0.133868314
+NY Resident - Weekday - Before,45,OTHER,0.117267894
+NY Resident - Weekday - Before,46,OTHER,0.107331097
+NY Resident - Weekday - Before,47,OTHER,0.095033848
+NY Resident - Weekday - Before,48,OTHER,0.089374314
+NY Resident - Weekday - Before,1,SCHOOL,0
+NY Resident - Weekday - Before,2,SCHOOL,0
+NY Resident - Weekday - Before,3,SCHOOL,0
+NY Resident - Weekday - Before,4,SCHOOL,0
+NY Resident - Weekday - Before,5,SCHOOL,0
+NY Resident - Weekday - Before,6,SCHOOL,0
+NY Resident - Weekday - Before,7,SCHOOL,0
+NY Resident - Weekday - Before,8,SCHOOL,0
+NY Resident - Weekday - Before,9,SCHOOL,0
+NY Resident - Weekday - Before,10,SCHOOL,0
+NY Resident - Weekday - Before,11,SCHOOL,0
+NY Resident - Weekday - Before,12,SCHOOL,0
+NY Resident - Weekday - Before,13,SCHOOL,0
+NY Resident - Weekday - Before,14,SCHOOL,0
+NY Resident - Weekday - Before,15,SCHOOL,0
+NY Resident - Weekday - Before,16,SCHOOL,0
+NY Resident - Weekday - Before,17,SCHOOL,0
+NY Resident - Weekday - Before,18,SCHOOL,0
+NY Resident - Weekday - Before,19,SCHOOL,0
+NY Resident - Weekday - Before,20,SCHOOL,0
+NY Resident - Weekday - Before,21,SCHOOL,0
+NY Resident - Weekday - Before,22,SCHOOL,0
+NY Resident - Weekday - Before,23,SCHOOL,0
+NY Resident - Weekday - Before,24,SCHOOL,0
+NY Resident - Weekday - Before,25,SCHOOL,0
+NY Resident - Weekday - Before,26,SCHOOL,0
+NY Resident - Weekday - Before,27,SCHOOL,0
+NY Resident - Weekday - Before,28,SCHOOL,0
+NY Resident - Weekday - Before,29,SCHOOL,0
+NY Resident - Weekday - Before,30,SCHOOL,0
+NY Resident - Weekday - Before,31,SCHOOL,0
+NY Resident - Weekday - Before,32,SCHOOL,0
+NY Resident - Weekday - Before,33,SCHOOL,0
+NY Resident - Weekday - Before,34,SCHOOL,0
+NY Resident - Weekday - Before,35,SCHOOL,0
+NY Resident - Weekday - Before,36,SCHOOL,0
+NY Resident - Weekday - Before,37,SCHOOL,0
+NY Resident - Weekday - Before,38,SCHOOL,0
+NY Resident - Weekday - Before,39,SCHOOL,0
+NY Resident - Weekday - Before,40,SCHOOL,0
+NY Resident - Weekday - Before,41,SCHOOL,0
+NY Resident - Weekday - Before,42,SCHOOL,0
+NY Resident - Weekday - Before,43,SCHOOL,0
+NY Resident - Weekday - Before,44,SCHOOL,0
+NY Resident - Weekday - Before,45,SCHOOL,0
+NY Resident - Weekday - Before,46,SCHOOL,0
+NY Resident - Weekday - Before,47,SCHOOL,0
+NY Resident - Weekday - Before,48,SCHOOL,0
+NY Resident - Weekday - Now,1,HOME,0.914677892
+NY Resident - Weekday - Now,2,HOME,0.916777496
+NY Resident - Weekday - Now,3,HOME,0.921658218
+NY Resident - Weekday - Now,4,HOME,0.923177262
+NY Resident - Weekday - Now,5,HOME,0.925574652
+NY Resident - Weekday - Now,6,HOME,0.926244127
+NY Resident - Weekday - Now,7,HOME,0.927950413
+NY Resident - Weekday - Now,8,HOME,0.927777953
+NY Resident - Weekday - Now,9,HOME,0.927259388
+NY Resident - Weekday - Now,10,HOME,0.92500798
+NY Resident - Weekday - Now,11,HOME,0.920580344
+NY Resident - Weekday - Now,12,HOME,0.912052675
+NY Resident - Weekday - Now,13,HOME,0.895279556
+NY Resident - Weekday - Now,14,HOME,0.876404034
+NY Resident - Weekday - Now,15,HOME,0.851270639
+NY Resident - Weekday - Now,16,HOME,0.830948133
+NY Resident - Weekday - Now,17,HOME,0.807935646
+NY Resident - Weekday - Now,18,HOME,0.788906231
+NY Resident - Weekday - Now,19,HOME,0.774043573
+NY Resident - Weekday - Now,20,HOME,0.763534328
+NY Resident - Weekday - Now,21,HOME,0.756055848
+NY Resident - Weekday - Now,22,HOME,0.750390077
+NY Resident - Weekday - Now,23,HOME,0.748936054
+NY Resident - Weekday - Now,24,HOME,0.744271251
+NY Resident - Weekday - Now,25,HOME,0.742098291
+NY Resident - Weekday - Now,26,HOME,0.741113783
+NY Resident - Weekday - Now,27,HOME,0.744337146
+NY Resident - Weekday - Now,28,HOME,0.74306712
+NY Resident - Weekday - Now,29,HOME,0.745898222
+NY Resident - Weekday - Now,30,HOME,0.748193346
+NY Resident - Weekday - Now,31,HOME,0.756226773
+NY Resident - Weekday - Now,32,HOME,0.76667532
+NY Resident - Weekday - Now,33,HOME,0.781918455
+NY Resident - Weekday - Now,34,HOME,0.797066267
+NY Resident - Weekday - Now,35,HOME,0.815459949
+NY Resident - Weekday - Now,36,HOME,0.827333978
+NY Resident - Weekday - Now,37,HOME,0.838529496
+NY Resident - Weekday - Now,38,HOME,0.844447001
+NY Resident - Weekday - Now,39,HOME,0.851926845
+NY Resident - Weekday - Now,40,HOME,0.851603716
+NY Resident - Weekday - Now,41,HOME,0.870154092
+NY Resident - Weekday - Now,42,HOME,0.873963523
+NY Resident - Weekday - Now,43,HOME,0.881280876
+NY Resident - Weekday - Now,44,HOME,0.884706192
+NY Resident - Weekday - Now,45,HOME,0.892845886
+NY Resident - Weekday - Now,46,HOME,0.895183706
+NY Resident - Weekday - Now,47,HOME,0.901951945
+NY Resident - Weekday - Now,48,HOME,0.905225813
+NY Resident - Weekday - Now,1,WORK,0.037102799
+NY Resident - Weekday - Now,2,WORK,0.035759894
+NY Resident - Weekday - Now,3,WORK,0.034201981
+NY Resident - Weekday - Now,4,WORK,0.033318752
+NY Resident - Weekday - Now,5,WORK,0.032333598
+NY Resident - Weekday - Now,6,WORK,0.031990768
+NY Resident - Weekday - Now,7,WORK,0.031498872
+NY Resident - Weekday - Now,8,WORK,0.031494284
+NY Resident - Weekday - Now,9,WORK,0.032069113
+NY Resident - Weekday - Now,10,WORK,0.033441211
+NY Resident - Weekday - Now,11,WORK,0.036362971
+NY Resident - Weekday - Now,12,WORK,0.041183785
+NY Resident - Weekday - Now,13,WORK,0.052805097
+NY Resident - Weekday - Now,14,WORK,0.06622907
+NY Resident - Weekday - Now,15,WORK,0.086006359
+NY Resident - Weekday - Now,16,WORK,0.101010938
+NY Resident - Weekday - Now,17,WORK,0.119315439
+NY Resident - Weekday - Now,18,WORK,0.133479724
+NY Resident - Weekday - Now,19,WORK,0.147069729
+NY Resident - Weekday - Now,20,WORK,0.153983587
+NY Resident - Weekday - Now,21,WORK,0.159757045
+NY Resident - Weekday - Now,22,WORK,0.162593417
+NY Resident - Weekday - Now,23,WORK,0.164221216
+NY Resident - Weekday - Now,24,WORK,0.166591522
+NY Resident - Weekday - Now,25,WORK,0.167513087
+NY Resident - Weekday - Now,26,WORK,0.16726925
+NY Resident - Weekday - Now,27,WORK,0.165786275
+NY Resident - Weekday - Now,28,WORK,0.165169236
+NY Resident - Weekday - Now,29,WORK,0.163204563
+NY Resident - Weekday - Now,30,WORK,0.159539763
+NY Resident - Weekday - Now,31,WORK,0.153019818
+NY Resident - Weekday - Now,32,WORK,0.142734696
+NY Resident - Weekday - Now,33,WORK,0.13016204
+NY Resident - Weekday - Now,34,WORK,0.116151871
+NY Resident - Weekday - Now,35,WORK,0.098468798
+NY Resident - Weekday - Now,36,WORK,0.087378628
+NY Resident - Weekday - Now,37,WORK,0.07885209
+NY Resident - Weekday - Now,38,WORK,0.073490569
+NY Resident - Weekday - Now,39,WORK,0.068667776
+NY Resident - Weekday - Now,40,WORK,0.066652859
+NY Resident - Weekday - Now,41,WORK,0.060481351
+NY Resident - Weekday - Now,42,WORK,0.058152246
+NY Resident - Weekday - Now,43,WORK,0.054622142
+NY Resident - Weekday - Now,44,WORK,0.052401948
+NY Resident - Weekday - Now,45,WORK,0.048382906
+NY Resident - Weekday - Now,46,WORK,0.046792304
+NY Resident - Weekday - Now,47,WORK,0.04327655
+NY Resident - Weekday - Now,48,WORK,0.041053753
+NY Resident - Weekday - Now,1,OTHER,0.048219308
+NY Resident - Weekday - Now,2,OTHER,0.04746261
+NY Resident - Weekday - Now,3,OTHER,0.044139801
+NY Resident - Weekday - Now,4,OTHER,0.043503986
+NY Resident - Weekday - Now,5,OTHER,0.04209175
+NY Resident - Weekday - Now,6,OTHER,0.041765106
+NY Resident - Weekday - Now,7,OTHER,0.040550715
+NY Resident - Weekday - Now,8,OTHER,0.040727763
+NY Resident - Weekday - Now,9,OTHER,0.040671499
+NY Resident - Weekday - Now,10,OTHER,0.041550809
+NY Resident - Weekday - Now,11,OTHER,0.043056685
+NY Resident - Weekday - Now,12,OTHER,0.046763539
+NY Resident - Weekday - Now,13,OTHER,0.051915347
+NY Resident - Weekday - Now,14,OTHER,0.057366895
+NY Resident - Weekday - Now,15,OTHER,0.062723002
+NY Resident - Weekday - Now,16,OTHER,0.068040929
+NY Resident - Weekday - Now,17,OTHER,0.072748915
+NY Resident - Weekday - Now,18,OTHER,0.077614045
+NY Resident - Weekday - Now,19,OTHER,0.078886698
+NY Resident - Weekday - Now,20,OTHER,0.082482085
+NY Resident - Weekday - Now,21,OTHER,0.084187106
+NY Resident - Weekday - Now,22,OTHER,0.087016507
+NY Resident - Weekday - Now,23,OTHER,0.08684273
+NY Resident - Weekday - Now,24,OTHER,0.089137227
+NY Resident - Weekday - Now,25,OTHER,0.090388622
+NY Resident - Weekday - Now,26,OTHER,0.091616967
+NY Resident - Weekday - Now,27,OTHER,0.089876579
+NY Resident - Weekday - Now,28,OTHER,0.091763644
+NY Resident - Weekday - Now,29,OTHER,0.090897215
+NY Resident - Weekday - Now,30,OTHER,0.09226689
+NY Resident - Weekday - Now,31,OTHER,0.090753409
+NY Resident - Weekday - Now,32,OTHER,0.090589984
+NY Resident - Weekday - Now,33,OTHER,0.087919505
+NY Resident - Weekday - Now,34,OTHER,0.086781862
+NY Resident - Weekday - Now,35,OTHER,0.086071253
+NY Resident - Weekday - Now,36,OTHER,0.085287394
+NY Resident - Weekday - Now,37,OTHER,0.082618414
+NY Resident - Weekday - Now,38,OTHER,0.08206243
+NY Resident - Weekday - Now,39,OTHER,0.079405379
+NY Resident - Weekday - Now,40,OTHER,0.081743425
+NY Resident - Weekday - Now,41,OTHER,0.069364557
+NY Resident - Weekday - Now,42,OTHER,0.067884231
+NY Resident - Weekday - Now,43,OTHER,0.064096983
+NY Resident - Weekday - Now,44,OTHER,0.06289186
+NY Resident - Weekday - Now,45,OTHER,0.058771208
+NY Resident - Weekday - Now,46,OTHER,0.05802399
+NY Resident - Weekday - Now,47,OTHER,0.054771506
+NY Resident - Weekday - Now,48,OTHER,0.053720434
+NY Resident - Weekday - Now,1,SCHOOL,0
+NY Resident - Weekday - Now,2,SCHOOL,0
+NY Resident - Weekday - Now,3,SCHOOL,0
+NY Resident - Weekday - Now,4,SCHOOL,0
+NY Resident - Weekday - Now,5,SCHOOL,0
+NY Resident - Weekday - Now,6,SCHOOL,0
+NY Resident - Weekday - Now,7,SCHOOL,0
+NY Resident - Weekday - Now,8,SCHOOL,0
+NY Resident - Weekday - Now,9,SCHOOL,0
+NY Resident - Weekday - Now,10,SCHOOL,0
+NY Resident - Weekday - Now,11,SCHOOL,0
+NY Resident - Weekday - Now,12,SCHOOL,0
+NY Resident - Weekday - Now,13,SCHOOL,0
+NY Resident - Weekday - Now,14,SCHOOL,0
+NY Resident - Weekday - Now,15,SCHOOL,0
+NY Resident - Weekday - Now,16,SCHOOL,0
+NY Resident - Weekday - Now,17,SCHOOL,0
+NY Resident - Weekday - Now,18,SCHOOL,0
+NY Resident - Weekday - Now,19,SCHOOL,0
+NY Resident - Weekday - Now,20,SCHOOL,0
+NY Resident - Weekday - Now,21,SCHOOL,0
+NY Resident - Weekday - Now,22,SCHOOL,0
+NY Resident - Weekday - Now,23,SCHOOL,0
+NY Resident - Weekday - Now,24,SCHOOL,0
+NY Resident - Weekday - Now,25,SCHOOL,0
+NY Resident - Weekday - Now,26,SCHOOL,0
+NY Resident - Weekday - Now,27,SCHOOL,0
+NY Resident - Weekday - Now,28,SCHOOL,0
+NY Resident - Weekday - Now,29,SCHOOL,0
+NY Resident - Weekday - Now,30,SCHOOL,0
+NY Resident - Weekday - Now,31,SCHOOL,0
+NY Resident - Weekday - Now,32,SCHOOL,0
+NY Resident - Weekday - Now,33,SCHOOL,0
+NY Resident - Weekday - Now,34,SCHOOL,0
+NY Resident - Weekday - Now,35,SCHOOL,0
+NY Resident - Weekday - Now,36,SCHOOL,0
+NY Resident - Weekday - Now,37,SCHOOL,0
+NY Resident - Weekday - Now,38,SCHOOL,0
+NY Resident - Weekday - Now,39,SCHOOL,0
+NY Resident - Weekday - Now,40,SCHOOL,0
+NY Resident - Weekday - Now,41,SCHOOL,0
+NY Resident - Weekday - Now,42,SCHOOL,0
+NY Resident - Weekday - Now,43,SCHOOL,0
+NY Resident - Weekday - Now,44,SCHOOL,0
+NY Resident - Weekday - Now,45,SCHOOL,0
+NY Resident - Weekday - Now,46,SCHOOL,0
+NY Resident - Weekday - Now,47,SCHOOL,0
+NY Resident - Weekday - Now,48,SCHOOL,0
 NY Resident- Weekend - Before,1,HOME,0.830602078
 NY Resident- Weekend - Before,2,HOME,0.843723758
 NY Resident- Weekend - Before,3,HOME,0.856541248
