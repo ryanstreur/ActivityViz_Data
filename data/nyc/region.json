@@ -29,7 +29,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "These charts show where people in the sample area during the sample period were most likely to be at a given time of day, before and after the outbreak of COVID-19.",
+                      "Person location during the day, before and after the outbreak of COVID-19.",
                       "New York residents and visitors alike showed a marked increase in time spent at home between 10 AM and 8 PM on the weekdays, and between 10 AM and midnight on weekends."
                     ]
                   }
@@ -52,7 +52,7 @@
         ],
         "GroupedCharts": [
           {
-            "name": "Stay-at-Home Percentage by Week",
+            "name": "Stay-at-Home by Week",
             "config": "Default",
             "file": "ny_covid_weeklyagg.csv",
             "info": "The percent of time people spent at home, at work, or somewhere else, by week",
@@ -63,8 +63,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "These charts show, for each week since the week of January 27, the percent of time people in the sample were at each location, based on aggregated location data.",
-                      "Note: the numbers on these charts represent the percentages of time spent, not any unit of time."
+                      "“Person location during the day, before and after the outbreak of COVID-19."
                     ]
                   }
                 ]

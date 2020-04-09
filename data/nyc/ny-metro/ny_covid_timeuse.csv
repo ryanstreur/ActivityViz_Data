@@ -1,4 +1,4 @@
-PERSON_TYPE_scenario,period,DWELL_LOCATION,percent_active_devices
+Person Type - Scenario,Period,Location,Percent Active Devices
 NY Resident - Weekday - Before,1,HOME,0.895215847
 NY Resident - Weekday - Before,2,HOME,0.902649904
 NY Resident - Weekday - Before,3,HOME,0.909082247
