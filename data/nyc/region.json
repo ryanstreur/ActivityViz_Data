@@ -76,7 +76,7 @@
             "name": "Stay-at-Home Percentage by Week",
             "config": "Default",
             "file": "ny_covid_weeklyagg.csv",
-            "info": "Person day pattern by person type",
+            "info": "The percent of time people spent at home, at work, or somewhere else, by week",
             "explanation": [
               {
                 "header": "Trips Purposes Since January",
