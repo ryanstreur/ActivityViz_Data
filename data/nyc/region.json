@@ -12,37 +12,16 @@
   "SideBarTextRight": "<b>ActivityViz</b> is an interactive travel and activity data visualization tool.  It is built with JavaScript technologies and works with various types of travel and activity data - household travel surveys, trip-based model outputs, activity-based model outputs, disaggregate passive data, freight models, on-board surveys, etc.  The dashboard features several interactive and customizable visualizations for exploring data, such as 3D maps of trips in time and space, time use by person type and activity, radar charts for performance measure analysis, sunburst diagrams for visualizing mode shares, animated bubble maps, chord diagrams for OD data, point-of-interest maps for transit stop data, truck flow data, etc.  </b>ActivityViz</b> is published using <a href='https://pages.github.com/'>GitHub pages</a> which eliminates most of the administrative backend in traditional systems.",
   "SideBarImage": "example.png",
   "scenarios": {
-    "covid-data": {
+    "ny-metro": {
       "title": "New York Metro Region",
       "visualizations": {
         "TimeUse": [
           {
-            "name": "Time Use Before COVID-19 and Now",
+            "name": "Person Location by Day",
+            "title": "Person Location by Day",
             "config": "Default",
             "file": "ny_covid_timeuse.csv",
             "info": "Displays activity estimates based on SafeGraph location data. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
-            "explanation": [
-              {
-                "header": "Description",
-                "body": [
-                  {
-                    "type": "unorderedList",
-                    "content": [
-                      "These charts show where people in the sample area during the sample period were most likely to be at a given time of day, before and after the outbreak of COVID-19.",
-                      "New York residents and visitors alike showed a marked increase in time spent at home between 10 AM and 8 PM on the weekdays, and between 10 AM and midnight on weekends."
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "BarMap": [
-          {
-            "name": "Home Device Counts for 2-13-2020 and 3-26-2020",
-            "file": "home-device-counts.csv",
-            "config": "Default",
-            "info": "Phones detected at home by Date",
             "explanation": [
               {
                 "header": "Summary",
@@ -50,7 +29,8 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Counts of phones detected at home on February 13, 2020 versus on March 26, 2020"
+                      "These charts show where people in the sample area during the sample period were most likely to be at a given time of day, before and after the outbreak of COVID-19.",
+                      "New York residents and visitors alike showed a marked increase in time spent at home between 10 AM and 8 PM on the weekdays, and between 10 AM and midnight on weekends."
                     ]
                   }
                 ]
@@ -61,9 +41,8 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "For the left graph: Select/deselect bubbles to add/remove response categories.",
-                      "For the left graph: Hover mouse over graph to see detail.",
-                      "For the right graph: Use the drop-down selection to view different modes."
+                      "Hover the mouse over each label under \"Person type and purpose\" to update the chart with the corresponding data set.",
+                      "Hover the mouse over the chart to see percentages for each location."
                     ]
                   }
                 ]
@@ -79,13 +58,58 @@
             "info": "The percent of time people spent at home, at work, or somewhere else, by week",
             "explanation": [
               {
-                "header": "Trips Purposes Since January",
+                "header": "Summary",
                 "body": [
                   {
                     "type": "unorderedList",
                     "content": [
                       "These charts show, for each week since the week of January 27, the percent of time people in the sample were at each location, based on aggregated location data.",
                       "Note: the numbers on these charts represent the percentages of time spent, not any unit of time."
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Hover the mouse over each bar to see the percentage value that bar represents."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "BarMap": [
+          {
+            "name": "Counts of Devices at Home by Zone",
+            "file": "home-device-counts.csv",
+            "config": "Default",
+            "info": "Phones detected at home by Date",
+            "explanation": [
+              {
+                "header": "Summary",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Counts of devices detected at home on February 13, 2020 versus on March 26, 2020"
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "For the left graph: Select/deselect bubbles to add/remove response categories.",
+                      "For the left graph: Hover mouse over graph to see detail.",
+                      "For the right graph: Use the drop-down selection to view different modes."
                     ]
                   }
                 ]
