@@ -10,106 +10,117 @@
   "FrontPageGraphic": "RSG_400px.jpg",
   "SideBarTextLeft": "<br>The Tampa Bay Regional Travel Surveys (TBRTS) program is a comprehensive data collection program designed to support regional and local transportation modeling and transportation planning decisions. This visualization tool is provided regional stakeholders to explore and understand the regional Household Travel Survey and passive data Origin-Destination Tables – two components of the TBRTS.</br><br>The 2018-2019 Tampa Bay Regional Household Travel Survey collected data on daily travel throughout the five-county Tampa Bay region. Over 4,500 households and 9,000 people in Citrus, Hernando, Hillsborough, Pasco and Pinellas counties participated. Two-thirds of households were randomly invited through a mailed invitation (probability sample) and one-third through email, advertising, and community outreach efforts. Data were collected between October 2018 and April 2019, when both year-round and seasonal residents are in the region. Participants provided basic demographic details, answered questions about typical travel, and provided a one-day (online / telephone participants) or five-day (smartphone app participants) diary of all household travel.</br><br>The Origin-Destination Tables are derived from passively collected GPS and wifi-beacon location data known as Location Based Services (LBS). Raw LBS data consists of millions of device (typically smartphone) locations and timestamps without demographic or other details of the device owners. The raw data is processed by first cleaning, filtering, and analyzing the location data to identify trips, then crossing with other regional data sources such as surveys and traffic counts to estimate detailed regional travel patterns.</br><br>All data is shown as expanded and weighted to match a typical weekday of travel in 2018.</br><br>To learn more about the survey and its results please contact the <a href='https://www.fdot.gov/info/moredot/districts/dist7.shtm'>Florida Department of Transportation, District 7</a>.</br><br><b>ActivityViz</b> was initially funded by the <a href='https://atlantaregional.org/'>Atlanta Regional Commission</a> with additional support from <a href='https://www.oregonmetro.gov/'>Oregon Metro</a> and others.</br>",
   "SideBarTextRight": "<br>The survey was conducted by the <a href='https://www.fdot.gov/'>Florida Department of Transportation District Seven</a> with support from the region’s four metropolitan planning organizations (MPOs): <a href='https://www.hernandocounty.us/departments/departments-f-m/metropolitan-planning-organization'>Hernando-Citrus MPO</a>, <a href='http://www.planhillsborough.org/metropolitan-planning-organization-mpo/'>Hillsborough MPO</a>, <a href='https://www.pascocountyfl.net/323/MPOTransportation-Planning'>Pasco County MPO</a> and <a href='https://forwardpinellas.org/'>Forward Pinellas</a>.</br><br><img src='https://raw.githubusercontent.com/goreaditya/ActivityViz_Data/master/data/tampa/img/sponsor_by_logo.png' height='100%' width='100%' alt='Sponsor by'></br><br> </br><br> </br>",
+  "SideBarLogo":"",
   "SideBarImage":"tampa.png",
   "scenarios":{
     "Executive_Summary": {
       "title": "- Executive Summary: Surveys & O-D Data",
       "visualizations": {
         "GroupedCharts": [
-          {"name":"Typical Travel", "config":"Travel", "file":"trips_period.csv", "info":"When people make trips in the region", "explanation":[{
+          {"name":"Typical Travel", "config":"Travel", "file":"trips_period.csv", "info":"This information shows the time of day people travel during a typical weekday.", 
+          "title":"Trip start and end times on typical weekday (Tuesday-Thursday)", 
+          "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Typical trip start and end based on observed (smartphone GPS diary) or reported (online diary) trips.",
-              "Based on trips observed / reported on Tuesdays, Wednesdays, or Thursdays only.",
-              "Peaks observed at 7-8am and 4-6pm (typical work commute times)."]
+              "content": ["Typical trip start and end time based on observed (smartphone GPS diary) or reported (online diary) trips.",
+              "Limited to trips observed / reported on Tuesdays, Wednesdays, or Thursdays only.",
+              "Peaks observed between 7-8 AM and 4-6 PM (typical work commute times)."]
             }]
           },
           {
             "header": "Instructions",
             "body":[{
               "type": "unorderedList",
-              "content": ["Hover mouse over bars to see detail.",
-              "Mark checkboxes to swap bars and legend, show graph as percentage, vertical, or stacked.",
-              "Select \"Show Data\" to see tabulation."]
+              "content": ["Hover mouse over chart bars to see individual values.",
+              "Toggle (i.e., check and uncheck) legend boxes to change graph views.",
+              "Select \"Show Data\" (lower left) to  view data in a table format."]
             }]
           }] },
-          {"name":"Trip Destination Activity", "config":"Destination", "file":"trips_destination.csv", "info":"Destination Activities for daily trips made", "explanation":[{
+          {"name":"Trip Destination Activity", "config":"Destination", "file":"trips_destination.csv", "info":"This information explains where people ended their trips.", 
+          "title":"Planned activity at trip destination", 
+          "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Survey question (asked for each trip taken): \"Why did you stop at ___?\"",
-              "Trips to home, for shopping / erands, or to work account for over 70% of all trips."]
+              "content": ["<b>Survey question:</b>  \"Why did you stop at ___?\" <br><b>Survey logic:</b> Asked for each trip taken.</br>",
+              "<b>Observation:</b> 45% of all trips end at home or work."]
             }]
           },
           {
             "header": "Instructions",
             "body":[{
               "type": "unorderedList",
-              "content": ["Hover mouse over bars to see detail.",
-              "Select \"Show Data\" to see tabulation.",
-              "Select/deselect bubbles to add/remove response categories."]
+              "content": ["Hover mouse over chart bars to see individual values.",
+              "Select \"Show Data\" (lower left) to see tabulation.",
+              "Click on the activity name in the legend to toggle it on and off."]
             }]
           }]},
-          {"name":"Telecommute Frequency", "config":"Frequency", "file":"telecommute_freq_age.csv", "info":"Telecommute frequency by age", "explanation":[{
+          {"name":"Telecommute Frequency", "config":"Frequency", "file":"telecommute_freq_age.csv", "info":"Categorized by age, this explains the frequency of people telecommuting.", 
+          "title":"Telecommute frequency by age",
+          "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Survey question (asked once per participant, if person is employed and has one work location or work location regularly varies): \"How often do you typically telework (instead of going to work that day)?\"",
-              "Over 30% of 18-34 year-olds telecommute at least once per week."]
+              "content": ["<b>Survey question:</b> \"How often do you typically telework (instead of going to work that day)?\"  <br><b>Survey logic:</b> Asked once per employed person that has one or more work locations.</br>",
+              "<b>Observation:</b> Over 30% of 18-34 year-olds telecommute at least once per week."]
             }]
           },
           {
             "header": "Instructions",
             "body":[{
               "type": "unorderedList",
-              "content": ["Hover mouse over bars to see detail.",
-              "Select \"Show Data\" to see tabulation.",
-              "Select/deselect bubbles to add/remove response categories."]
+              "content": ["Hover mouse over chart bars to see individual values.",
+              "Select \"Show Data\" (lower left) to see tabulation.",
+              "Click on the frequency bubbles in the legend to toggle them on and off."]
             }]
           }]},
-          {"name":"Bike Use Frequency", "config":"Frequency", "file":"bike_freq_age.csv", "info":"Bike use frequency by age", "explanation":[{
+          {"name":"Bike Use Frequency", "config":"Frequency", "file":"bike_freq_age.csv", "info":"Categorized by age, this explains the frequency of people riding bicycles.", 
+          "title":"Bicycle use frequency by age", 
+          "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Survey question (asked once per participant): \"How often do you use a bicycle?\"",
-              "35-54 year-olds report the most frequent bike usage."]
+              "content": ["<b>Survey question:</b> \"How often do you use a bicycle?\"",
+              "<b>Observation:</b> 35-54 year-olds report the most frequent bike usage."]
             }]
           },
           {
             "header": "Instructions",
             "body":[{
               "type": "unorderedList",
-              "content": ["Hover mouse over bars to see detail.",
-              "Select \"Show Data\" to see tabulation.",
-              "Select/deselect bubbles to add/remove response categories."]
+              "content": ["Hover mouse over chart bars to see individual values.",
+              "Select \"Show Data\" (lower left) to see tabulation.",
+              "Click on the frequency bubbles in the legend to toggle them on and off."]
             }]
           }]},
-          {"name":"Survey Participant Age", "config":"ParticipantAge", "file":"age_distribution.csv", "info":"Age of survey participants", "explanation":[{
+          {"name":"Age", "config":"ParticipantAge", "file":"age_distribution.csv", "info":"Showing the age of the people in the survey region.", 
+          "title":"Age of persons in survey region", 
+          "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Age of survey participants.",
-              "55% of participants were 18-54 years old, while 45% were 55+ years old."]
+              "content": ["<b>Observation:</b> 55% of participants were 18-54 years old, while 45% were 55+ years old."]
             }]
           },
           {
             "header": "Instructions",
             "body":[{
               "type": "unorderedList",
-              "content": ["Hover mouse over bars to see detail.",
-              "Select \"Show Data\" to see tabulation.",
-              "Select/deselect bubbles to add/remove response categories."]
+              "content": ["Hover mouse over chart bars to see individual values.",
+              "Select \"Show Data\" (lower left) to see tabulation.",
+              "Click on the age bubbles in the legend to toggle them on and off."]
             }]
           }]}
            ],
         "Sunburst": [
-            {"name":"Survey Participant Gender", "config":"Pie", "file":"gender_distribution.csv", "info":"Gender of survey participants", "explanation":[{
+            {"name":"Gender", "config":"Pie", "file":"gender_distribution.csv", "info":"Showing the gender of the people in the survey region.", 
+            "title":"Gender of persons in survey region", 
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Gender of survey participants.",
-              "Slightly more women than men participated in the survey."]
+              "content": ["<b>Observation:</b> Slightly more women than men live in the region.."]
             }]
           },
           {
@@ -117,15 +128,17 @@
             "body":[{
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail.",
-              "Select \"Show Data\" to see tabulation."]
+              "Select \"Show Data\" (lower left) to see tabulation."]
             }]
           }]},
-            {"name":"Work Trip Mode", "config":"Default", "file":"work_mode.csv", "info":"Usual way commutes to work", "explanation":[{
+            {"name":"Work Trip Mode", "config":"Default", "file":"work_mode.csv", "info":"This shows how people traveled to work.", 
+            "title":"Typical mode of travel to work",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Survey question (asked once per participant, if person is employed and has one work location or work location regularly varies): \"How do you typically travel to your primary job?\"",
-              "93% of people typically use cars to commute to work."]
+              "content": ["<b>Survey question:</b> \"How do you typically travel to your primary job?\"",
+              "<b>Observation:</b> 93% of people typically use cars to commute to work."]
             }]
           },
           {
@@ -133,19 +146,21 @@
             "body":[{
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail.",
-              "Select \"Show Data\" to see tabulation.",
+              "Select \"Show Data\" (lower left) to see tabulation.",
               "Each square in the graph represents 1% of the population."]
             }]
           }]}
             ] ,
         "Chord": [
-            {"name":"Daily OD Flows","config":"SideBySide","file":"trip_od_overall.csv","info":"Daily trips OD by Districts for Passive and Survey Data", "explanation":[{
+            {"name":"Daily OD Flows","config":"SideBySide","file":"trip_od_overall.csv","info":"These graphs show the origin and destination points for both passive and survey data.", 
+            "title":"Origins and destinations of daily trips by activity zones",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of daily trips by Districts for passive and survey data.",
-              "Unsurprisingly, most inter-District trips were between Tampa and Hillsborough-Other.",
-              "Hillsborough County had the highest volume of trips overall."]
+              "content": ["Origins and destinations of daily trips by activity zones from passive and survey data.",
+              "<b>Observation:</b> Most inter-district trips were between Tampa and Hillsborough-Other.",
+              "<b>Observation:</b> Hillsborough County had the highest volume of trips overall."]
             }]
           },
           {
@@ -153,8 +168,8 @@
             "body":[{
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail.",
-              "Select \"Show Data\" to see tabulation.",
-              "The color of connections between Districts depicts net travel (e.g., in the passive dataset, there were more trips from Tampa to Hillsborough-Other than there were in the opposite direction)."]
+              "Select \"Show Data\" (lower left) to see tabulation.",
+              "The color of connections between activity zones depicts net travel (e.g., in the passive dataset, there were more trips from Tampa to Hillsborough-Other than there were in the opposite direction)."]
             }]
           }]}
             ]
@@ -164,11 +179,13 @@
       "title": "- Household Travel Survey",
       "visualizations": {
         "3DMap": [
-            {"name":"Trips by Mode","config":"Default","file":"trips_zone.csv","info":"Trips by Mode", "explanation":[{
+            {"name":"Trips by Mode","config":"Default","file":"trips_zone.csv","info":"Trips by Mode", 
+            "title":"Trips by travel mode",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Frequency of trip modes by Transportation Analysis Zone (TAZ).",
+              "content": ["<b>Survey question:</b> \"How did you travel?\"",
               "Tampa International Airport observed a high frequency of TNC trips.",
               "The area around University of South Florida observed a high frequency of walk trips."]
             }]
@@ -184,12 +201,14 @@
           }]}
             ],
         "BarMap": [
-          {"name":"Trip Mode by County","config":"Default", "file":"trip_mode_zone.csv", "info":"Trips by mode by county", "explanation":[{
+          {"name":"Trip Mode by County","config":"Default", "file":"trip_mode_zone.csv", "info":"Categorized by county, this shows what modes people are using to travel.", 
+          "title":"Daily trips per county by mode", 
+          "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Frequency of trip modes by county.",
-              "Over 80% of trips are car trips in all counties."]
+              "content": ["<b>Survey question:</b> \"How did you travel?\"",
+              "<b>Observation:</b> Over 80% of trips are car trips across all counties."]
             }]
           },
           {
@@ -198,15 +217,19 @@
               "type": "unorderedList",
               "content": ["For the left graph: Select/deselect bubbles to add/remove response categories.",
               "For the left graph: Hover mouse over graph to see detail.",
-              "For the right graph: Use the drop-down selection to view different modes."]
+              "For the right graph: Use the drop-downs below the map to filter and classify the data.",
+              "For the right graph: Toggle between Zones and Bubbles by selecting the Map Layer button in the top right corner."]
             }]
           }]},
-          {"name":"Trip Mode for Seasonal Households", "config":"Default", "file":"seasonal_trip_mode_zone.csv", "info":"Trips by mode by county for seasonal households", "explanation":[{
+          {"name":"Trip Mode for Seasonal Households", "config":"Default", "file":"seasonal_trip_mode_zone.csv", "info":"This shows what modes seasonal households are using to travel.", 
+          "title":"Daily trips per county by mode -  seasonal households only",
+          "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Frequency of trip modes by county for seasonal residents (those who report living in the region for fewer than 12 months per year).",
-              "Over 15% of seasonal residents' trips in Hillsborough and Pinellas counties are walking trips."]
+              "content": ["<b>Survey question:</b> \"How did you travel?\"",
+              "Type of trip modes by county for seasonal residents (those who report living in the region for fewer than 12 months per year).",
+              "<b>Observation:</b> Over 15% of seasonal residents' trips in Hillsborough and Pinellas counties are walking trips."]
             }]
           },
           {
@@ -215,14 +238,18 @@
               "type": "unorderedList",
               "content": ["For the left graph: Select/deselect bubbles to add/remove response categories.",
               "For the left graph: Hover mouse over graph to see detail.",
-              "For the right graph: Use the drop-down selection to view different modes."]
+              "For the right graph: Use the drop-downs below the map to filter and classify the data.",
+              "For the right graph: Toggle between Zones and Bubbles by selecting the Map Layer button in the top right corner."]
             }]
           }]},
-          {"name":"Trip Mode for University Students","config":"Default", "file":"uni_trip_mode_zone.csv", "info":"Trips by mode by county for university students", "explanation":[{
+          {"name":"Trip Mode for University Students","config":"Default", "file":"uni_trip_mode_zone.csv", "info":"This shows what modes university students are using to travel.", 
+          "title":"Daily trips per county by mode - university students only",
+          "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Frequency of trip modes by county for university students."]
+              "content": ["<b>Survey question:</b> \"How did you travel?\"",
+              "Type of trip modes by county for university students."]
             }]
           },
           {
@@ -231,12 +258,15 @@
               "type": "unorderedList",
               "content": ["For the left graph: Select/deselect bubbles to add/remove response categories.",
               "For the left graph: Hover mouse over graph to see detail.",
-              "For the right graph: Use the drop-down selection to view different modes."]
+              "For the right graph: Use the drop-downs below the map to filter and classify the data.",
+              "For the right graph: Toggle between Zones and Bubbles by selecting the Map Layer button in the top right corner."]
             }]
           }]}
           ],
         "GroupedCharts": [
-          {"name":"Day Pattern","config":"Frequency","file":"day_pattern.csv","info":"Person day pattern by person type", "explanation":[{
+          {"name":"Day Pattern","config":"Frequency","file":"day_pattern.csv","info":"Daily patterns, categorized by the type of person, showing where people spend their time.",
+          "title":"Typical weekday activity pattern by person type",
+          "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
@@ -247,19 +277,21 @@
             "header": "Instructions",
             "body":[{
               "type": "unorderedList",
-              "content": ["Hover mouse over bars to see detail.",
-              "Select \"Show Data\" to see tabulation.",
-              "Select/deselect bubbles to add/remove response categories."]
+              "content": ["Hover mouse over chart bars to see individual values.",
+              "Select \"Show Data\" (lower left) to see tabulation.",
+              "Click on the category bubbles in the legend to toggle them on and off."]
             }]
           }]}
             ],
         "TimeUse": [
-            {"name":"Time Use","config":"Default","file":"time_use.csv","info":"Displays person out-of-home travel purpose by time of day. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day", "explanation":[{
+            {"name":"Time Use","config":"Default","file":"time_use.csv","info":"Daily activity categorized by the type of person.", 
+            "title":"Activity by time of day",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
               "content": ["Activity by time of day (derived from trip purpose and time at destination)",
-              "Origins and destinations of trips by Districts for survey data.",
+              "<b>Observation:</b> Nonworkers and seasonal residents spend more time shopping than other groups.",
               "Nonworkers and seasonal residents spend more time shopping than other groups."]
             }]
           },
@@ -267,35 +299,39 @@
             "header": "Instructions",
             "body":[{
               "type": "unorderedList",
-              "content": ["Hover mouse over bars to see detail.",
-              "Select \"Show Data\" to see tabulation.",
+              "content": ["Hover mouse over graph to see detail.",
+              "Select \"Show Data\" (lower left) to see tabulation.",
               "Select/deselect bubbles to add/remove response categories.",
               "Toggle between \"Stacked\" and \"Expanded\" to view sum of trips and percent of trips, respectively."]
             }]
           }]}
             ],
         "Chord": [
-            {"name":"Overall OD Flows","config":"Overall","file":"trip_od_overall.csv","info":"Daily trips OD", "explanation":[{
+            {"name":"Overall OD Flows","config":"Overall","file":"trip_od_overall.csv","info":"This graph show the origin and destination points by activity zone from survey data.", 
+            "title":"Origins and destinations of trips by activity zones from survey data",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of trips by Districts for survey data."]
+              "content": ["Origins and destinations of trips by activity zones from survey data."]
             }]
           },
           {
             "header": "Instructions",
             "body":[{
               "type": "unorderedList",
-              "content": ["Hover mouse over graph to see detail and to display District flows on the map.",
+              "content": ["Hover mouse over graph to see detail and to display activity zone flows on the map.",
               "Select \"Show Data\" to see tabulation.",
               "For the left graph: The color of connections between Districts depicts net travel (e.g., there were more trips from Hillsborough-Other to Tampa than there were in the opposite direction)."]
             }]
           }]},
-            {"name":"Hillsborough OD Flows","config":"Hillsborough","file":"trip_od_hillsborough.csv","info":"Daily trips OD", "explanation":[{
+            {"name":"Hillsborough OD Flows","config":"Hillsborough","file":"trip_od_hillsborough.csv","info":"This graph show the origin and destination points of Hillsborough County trips from survey data.", 
+            "title":"Origins and destinations of trips in Hillsborough County from survey data",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of trips in Hillsborough County for survey data."]
+              "content": ["Origins and destinations of trips in Hillsborough County from survey data."]
             }]
           },
           {
@@ -307,11 +343,13 @@
               "For the left graph: The color of connections between Districts depicts net travel."]
             }]
           }]},
-            {"name":"Pinellas OD Flows","config":"Pinellas","file":"trip_od_pinellas.csv","info":"Daily trips OD", "explanation":[{
+            {"name":"Pinellas OD Flows","config":"Pinellas","file":"trip_od_pinellas.csv","info":"This graph show the origin and destination points of Pinellas County from survey data.", 
+            "title":"Origins and destinations of trips in Pinellas County from survey data",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of trips in Pinellas County for survey data."]
+              "content": ["Origins and destinations of trips in Pinellas County from survey data."]
             }]
           },
           {
@@ -323,11 +361,13 @@
               "For the left graph: The color of connections between Districts depicts net travel."]
             }]
           }]},
-            {"name":"Pasco OD Flows","config":"Pasco","file":"trip_od_pasco.csv","info":"Daily trips OD", "explanation":[{
+            {"name":"Pasco OD Flows","config":"Pasco","file":"trip_od_pasco.csv","info":"This graph show the origin and destination points of Pasco County from survey data.",
+            "title":"Origins and destinations of trips in Pasco County from survey data", 
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of trips in Pasco County for survey data."]
+              "content": ["Origins and destinations of trips in Pasco County from survey data."]
             }]
           },
           {
@@ -339,11 +379,13 @@
               "For the left graph: The color of connections between Districts depicts net travel."]
             }]
           }]},
-            {"name":"Hernando and Citrus OD Flows","config":"Hernando","file":"trip_od_hernando_citrus.csv","info":"Daily trips OD", "explanation":[{
+            {"name":"Hernando and Citrus OD Flows","config":"Hernando","file":"trip_od_hernando_citrus.csv","info":"This graph show the origin and destination points of Hernando and Citrus Counties from survey data.",
+            "title":"Origins and destinations of trips in Hernando and Citrus Counties from survey data",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of trips in Hernando County and Citrus County for survey data."]
+              "content": ["Origins and destinations of trips in Hernando County and Citrus County from survey data."]
             }]
           },
           {
@@ -362,11 +404,13 @@
       "title": "- Origin-Destination Tables",
       "visualizations": {
         "Chord": [
-            {"name":"Overall OD Flows","config":"Overall","file":"trip_daily_pod_overall.csv","info":"Daily trips OD", "explanation":[{
+            {"name":"Overall OD Flows","config":"Overall","file":"trip_daily_pod_overall.csv","info":"This graph show the origin and destination points by activity zone from passive data.",
+            "title":"Origins and destinations of trips by activity zones from passive data",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of trips by Districts for passive data."]
+              "content": ["Origins and destinations of trips by activity zones from passive data."]
             }]
           },
           {
@@ -378,11 +422,13 @@
               "For the left graph: The color of connections between Districts depicts net travel (e.g., there were more trips from Tampa to Hillsborough-Other than there were in the opposite direction)."]
             }]
           }]},
-            {"name":"Hillsborough OD Flows","config":"Hillsborough","file":"trip_daily_pod_hillsborough.csv","info":"Daily trips OD", "explanation":[{
+            {"name":"Hillsborough OD Flows","config":"Hillsborough","file":"trip_daily_pod_hillsborough.csv","info":"This graph show the origin and destination points of Hillsborough County from passive data.",
+            "title":"Origins and destinations of trips in Hillsborough County from passive data",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of trips in Hillsborough County for passive data."]
+              "content": ["Origins and destinations of trips in Hillsborough County from passive data."]
             }]
           },
           {
@@ -394,11 +440,13 @@
               "For the left graph: The color of connections between Districts depicts net travel."]
             }]
           }]},
-            {"name":"Pinellas OD Flows","config":"Pinellas","file":"trip_daily_pod_pinellas.csv","info":"Daily trips OD", "explanation":[{
+            {"name":"Pinellas OD Flows","config":"Pinellas","file":"trip_daily_pod_pinellas.csv","info":"This graph show the origin and destination points of Pinellas County from passive data.",
+            "title":"Origins and destinations of trips in Pinellas County from passive data",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of trips in Pinellas County for passive data."]
+              "content": ["Origins and destinations of trips in Pinellas County from passive data."]
             }]
           },
           {
@@ -410,11 +458,13 @@
               "For the left graph: The color of connections between Districts depicts net travel."]
             }]
           }]},
-            {"name":"Pasco OD Flows","config":"Pasco","file":"trip_daily_pod_pasco.csv","info":"Daily trips OD", "explanation":[{
+            {"name":"Pasco OD Flows","config":"Pasco","file":"trip_daily_pod_pasco.csv","info":"This graph show the origin and destination points of Pasco County from passive data.",
+            "title":"Origins and destinations of trips in Pasco County from passive data",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of trips in Pasco County for passive data."]
+              "content": ["Origins and destinations of trips in Pasco County from passive data."]
             }]
           },
           {
@@ -426,11 +476,13 @@
               "For the left graph: The color of connections between Districts depicts net travel."]
             }]
           }]},
-            {"name":"Hernando and Citrus OD Flows","config":"Hernando","file":"trip_daily_pod_hernando_citrus.csv","info":"Daily trips OD", "explanation":[{
+            {"name":"Hernando and Citrus OD Flows","config":"Hernando","file":"trip_daily_pod_hernando_citrus.csv","info":"This graph show the origin and destination points of Hernando and Citrus Counties from passive data.",
+            "title":"Origins and destinations of trips in Hernando County and Citrus County from passive data",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of trips in Hernando County and Citrus County for passive data."]
+              "content": ["Origins and destinations of trips in Hernando County and Citrus County from passive data."]
             }]
           },
           {
@@ -442,11 +494,13 @@
               "For the left graph: The color of connections between Districts depicts net travel."]
             }]
           }]},
-            {"name":"Overall OD Flows by Residency","config":"SideBySide","file":"trip_res_vis_pod_overall.csv","info":"Daily trips OD for residents and visitors", "explanation":[{
+            {"name":"Overall OD Flows by Residency","config":"SideBySide","file":"trip_res_vis_pod_overall.csv","info":"These graphs show the origin and destination points by activity zones for residents and visitors from passive data.",
+            "title":"Origins and destinations of trips by activity zones for residents and visitors from passive data",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of trips by Districts for residents and visitors (passive data)."]
+              "content": ["Origins and destinations of trips by activity zones for residents and visitors from passive data."]
             }]
           },
           {
@@ -458,12 +512,14 @@
               "The color of connections between Districts depicts net travel."]
             }]
           }]},
-            {"name":"Hillsborough OD Flows by Residency","config":"SideBySide","file":"trip_res_vis_pod_hillsborough.csv","info":"Daily trips OD for residents and visitors", "explanation":[{
+            {"name":"Hillsborough OD Flows by Residency","config":"SideBySide","file":"trip_res_vis_pod_hillsborough.csv","info":"These graphs show the origin and destination points of Hillsborough County for residents and visitors from passive data.",
+            "title":"Origins and destinations of trips in Hillsborough County for residents and visitors from passive data",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of trips in Hillsborough County for residents and visitors (passive data).",
-              "Tampa Central is an origin or destination of 20% of resident trips in Hillsborough, compared to only 12% of visitor trips."]
+              "content": ["Origins and destinations of trips in Hillsborough County for residents and visitors from passive data.",
+              "<b>Observation:</b> Tampa Central is an origin or destination of 20% of resident trips in Hillsborough, compared to only 12% of visitor trips."]
             }]
           },
           {
@@ -475,11 +531,13 @@
               "The color of connections between Districts depicts net travel."]
             }]
           }]},
-            {"name":"Pinellas OD Flows by Residency","config":"SideBySide","file":"trip_res_vis_pod_pinellas.csv","info":"Daily trips OD for residents and visitors", "explanation":[{
+            {"name":"Pinellas OD Flows by Residency","config":"SideBySide","file":"trip_res_vis_pod_pinellas.csv","info":"These graphs show the origin and destination points of Pinellas County for residents and visitors from passive data.",
+            "title":"Origins and destinations of trips in Pinellas County for residents and visitors from passive data",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of trips in Pinellas County for residents and visitors (passive data)."]
+              "content": ["Origins and destinations of trips in Pinellas County for residents and visitors from passive data."]
             }]
           },
           {
@@ -491,11 +549,13 @@
               "The color of connections between Districts depicts net travel."]
             }]
           }]},
-            {"name":"Pasco OD Flows by Residency","config":"SideBySide","file":"trip_res_vis_pod_pasco.csv","info":"Daily trips OD for residents and visitors", "explanation":[{
+            {"name":"Pasco OD Flows by Residency","config":"SideBySide","file":"trip_res_vis_pod_pasco.csv","info":"These graphs show the origin and destination points of Pasco County for residents and visitors from passive data.",
+            "title":"Origins and destinations of trips in Pasco County for residents and visitors from passive data",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of trips in Pasco County for residents and visitors (passive data)."]
+              "content": ["Origins and destinations of trips in Pasco County for residents and visitors from passive data."]
             }]
           },
           {
@@ -507,11 +567,13 @@
               "The color of connections between Districts depicts net travel."]
             }]
           }]},
-            {"name":"Hernando and Citrus OD Flows by Residency","config":"SideBySide","file":"trip_res_vis_pod_hernando_citrus.csv","info":"Daily trips OD for residents and visitors", "explanation":[{
+            {"name":"Hernando and Citrus OD Flows by Residency","config":"SideBySide","file":"trip_res_vis_pod_hernando_citrus.csv","info":"These graphs show the origin and destination points of Hernando and Citrus Counties for residents and visitors from passive data.",
+            "title":"Origins and destinations of trips in Hernando County and Citrus County for residents and visitors from passive data",
+            "explanation":[{
             "header": "Summary",
             "body":[{
               "type": "unorderedList",
-              "content": ["Origins and destinations of trips in Hernando County and Citrus County for residents and visitors (passive data)."]
+              "content": ["Origins and destinations of trips in Hernando County and Citrus County for residents and visitors from passive data."]
             }]
           },
           {

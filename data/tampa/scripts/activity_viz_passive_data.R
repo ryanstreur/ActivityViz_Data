@@ -132,14 +132,16 @@ daily_overall_trip_dt         = trip_est_dt[,.(TRIPS = sum(Daily)),.(FROM = D7_A
 daily_overall_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FROM),
                             TO   = ifelse(is.na(TO), "External", TO))]
 setkey(daily_overall_trip_dt, FROM, TO)
-daily_overall_trip_dt = daily_overall_trip_dt[CJ(agg_dt$D7_ALL_LBL, agg_dt$D7_ALL_LBL, unique = TRUE)]
-daily_overall_trip_dt[is.na(TRIPS), TRIPS:=0]
+daily_overall_trip_dt = daily_overall_trip_dt[CJ(c(agg_dt$D7_ALL_LBL,"External"),
+                                                 c(agg_dt$D7_ALL_LBL,"External"), unique = TRUE)]
+daily_overall_trip_dt[is.na(TRIPS), TRIPS := 0]
+# daily_overall_trip_dt = daily_overall_trip_dt[TRIPS!=0]
 ## Residents/Visitors
 res_vis_overall_trip_dt         = trip_est_dt[,.(`RESIDENT TRIPS` = sum(Residents),
                                                    `VISITOR TRIPS` = sum(Visitors)),.(FROM = D7_ALL_LBL_O,
                                                                      TO = D7_ALL_LBL_D)]
 res_vis_overall_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FROM),
-                            TO   = ifelse(is.na(TO), "External", TO))]
+                              TO   = ifelse(is.na(TO), "External", TO))]
 
 # Hillsborough
 ## Daily
@@ -151,10 +153,12 @@ daily_hillsborough_trip_dt         = trip_est_dt[grepl("Hillsborough", COUNTY_NA
 daily_hillsborough_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FROM),
                             TO   = ifelse(is.na(TO), "External", TO))]
 setkey(daily_hillsborough_trip_dt, FROM, TO)
-daily_hillsborough_trip_dt = daily_hillsborough_trip_dt[CJ(agg_dt$HILLSBOROUGH_LBL_3, 
-                                                           agg_dt$HILLSBOROUGH_LBL_3, 
+HILLSBOROUGH_LBL_3 = c(agg_dt[!is.na(HILLSBOROUGH_LBL_3), unique(HILLSBOROUGH_LBL_3)], "External")
+daily_hillsborough_trip_dt = daily_hillsborough_trip_dt[CJ(c(HILLSBOROUGH_LBL_3),
+                                                           c(HILLSBOROUGH_LBL_3),
                                                            unique = TRUE)]
 daily_hillsborough_trip_dt[is.na(TRIPS), TRIPS:=0]
+# daily_hillsborough_trip_dt = daily_hillsborough_trip_dt[TRIPS>0]
 ## Residents/Visitors
 res_vis_hillsborough_trip_dt         = trip_est_dt[grepl("Hillsborough", COUNTY_NAME_O)|
                                                   grepl("Hillsborough", COUNTY_NAME_D),
@@ -173,8 +177,9 @@ daily_pinellas_trip_dt         = trip_est_dt[grepl("Pinellas", COUNTY_NAME_O)|
 daily_pinellas_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FROM),
                                  TO   = ifelse(is.na(TO), "External", TO))]
 setkey(daily_pinellas_trip_dt, FROM, TO)
-daily_pinellas_trip_dt = daily_pinellas_trip_dt[CJ(agg_dt$PINELLAS_LBL, 
-                                                   agg_dt$PINELLAS_LBL, 
+PINELLAS_LBL = c(agg_dt[!is.na(PINELLAS_LBL), unique(PINELLAS_LBL)], "External")
+daily_pinellas_trip_dt = daily_pinellas_trip_dt[CJ(c(PINELLAS_LBL),
+                                                   c(PINELLAS_LBL),
                                                    unique = TRUE)]
 daily_pinellas_trip_dt[is.na(TRIPS), TRIPS:=0]
 ## Residents/Visitors
@@ -195,8 +200,9 @@ daily_pasco_trip_dt         = trip_est_dt[grepl("Pasco", COUNTY_NAME_O)|
 daily_pasco_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FROM),
                              TO   = ifelse(is.na(TO), "External", TO))]
 setkey(daily_pasco_trip_dt, FROM, TO)
-daily_pasco_trip_dt = daily_pasco_trip_dt[CJ(agg_dt$PASCO_LBL, 
-                                             agg_dt$PASCO_LBL, 
+PASCO_LBL = c(agg_dt[!is.na(PASCO_LBL), unique(PASCO_LBL)], "External")
+daily_pasco_trip_dt = daily_pasco_trip_dt[CJ(c(PASCO_LBL),
+                                             c(PASCO_LBL),
                                              unique = TRUE)]
 daily_pasco_trip_dt[is.na(TRIPS), TRIPS:=0]
 ## Residents/Visitors
@@ -219,8 +225,9 @@ daily_hernando_citrus_trip_dt         = trip_est_dt[grepl("Hernando", COUNTY_NAM
 daily_hernando_citrus_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FROM),
                           TO   = ifelse(is.na(TO), "External", TO))]
 setkey(daily_hernando_citrus_trip_dt, FROM, TO)
-daily_hernando_citrus_trip_dt = daily_hernando_citrus_trip_dt[CJ(agg_dt$HERNANDO_CITRUS_LBL_2, 
-                                                                 agg_dt$HERNANDO_CITRUS_LBL_2, 
+HERNANDO_CITRUS_LBL_2 = c(agg_dt[!is.na(HERNANDO_CITRUS_LBL_2), unique(HERNANDO_CITRUS_LBL_2)], "External")
+daily_hernando_citrus_trip_dt = daily_hernando_citrus_trip_dt[CJ(c(HERNANDO_CITRUS_LBL_2),
+                                                                 c(HERNANDO_CITRUS_LBL_2),
                                                                  unique = TRUE)]
 daily_hernando_citrus_trip_dt[is.na(TRIPS), TRIPS:=0]
 ## Residents/Visitors
