@@ -365,7 +365,7 @@ gender_labels_ar = c(
 
 person_dt[,gender_label:=names(gender_labels_ar)[match(gender,
                                                        gender_labels_ar)]]
-gender_dt = person_dt[gender %in% c(1,2), .(PERSON=sum(weight_household)),
+gender_dt = person_dt[gender %in% c(1,2,3), .(PERSON=sum(weight_household)),
                       by=.(GENDER=gender_label)]
 setorder(gender_dt, GENDER)
 

@@ -30,7 +30,8 @@ library(omxr)
 data_dir   = getwd()
 
 survey_trip_od = file.path(data_dir, "Executive_Summary", "trip_od_overall.csv")
-trip_file      = file.path(data_dir, "Tampa.omx")
+trip_ii_file      = file.path(data_dir, "Tampa_Internals.omx")
+trip_ie_file      = file.path(data_dir, "Tampa.omx")
 
 # Geography input files
 taz_file       = file.path(getwd(), "tampa2020.json")
@@ -76,14 +77,27 @@ pd_trip_res_vis_od_hernando_citrus_file = file.path(pd_output_dir,
 #   household_dt = fread(household_file)
 #   person_dt    = fread(person_file)
 #   day_dt       = fread(day_file)
-#   trip_dt      = fread(trip_file)
+#   trip_dt      = fread(trip_ii_file)
 #   save(household_dt, person_dt, day_dt, trip_dt,
 #        file = "hts_data.RData")
 # } else {
 #   load("../hts_data.RData")
 # }
 
-trip_dt = setDT(read_all_omx(trip_file))
+trip_ii_dt = setDT(read_all_omx(trip_ii_file))
+trip_taz = read_lookup(trip_ii_file, "Rows")$Lookup
+trip_ii_dt[,":="(oTAZ=trip_taz[origin], dTAZ=trip_taz[destination])]
+trip_ie_dt = setDT(read_all_omx(trip_ie_file))
+trip_taz = read_lookup(trip_ie_file, "Rows")$Lookup
+trip_ie_dt[,":="(oTAZ=trip_taz[origin], dTAZ=trip_taz[destination])]
+trip_ie_dt[,Residents:=Residents_AM+Residents_MD+Residents_NT+Residents_PM]
+trip_ie_dt[,Visitors:=Visitors_AM+Visitors_MD+Visitors_NT+Visitors_PM]
+# trip_dt = merge(trip_ii_dt, trip_ie_dt, by=c("origin", "destination",
+#                                              "oTAZ", "dTAZ"),
+#                 suffixes = c("_II", "_IE"))
+trip_ii_dt[,Type:="Internal"]
+trip_ie_dt[,Type:="External"]
+trip_dt = rbindlist(list(trip_ii_dt, trip_ie_dt), use.names = TRUE, fill = TRUE)
 trip_od_survey = fread(file = survey_trip_od)
 
 taz_ls = fromJSON(taz_file)
@@ -112,10 +126,13 @@ agg_sf = st_as_sf(merge(as.data.frame(agg_dt), taz_sf, by.x="TAZ", by.y="id",all
 ##################################################################################
 
 # Chord Diagram
-trip_dt[,Residents:=Residents_AM+Residents_MD+Residents_NT+Residents_PM]
-trip_dt[,Visitors:=Visitors_AM+Visitors_MD+Visitors_NT+Visitors_PM]
+trip_dt[trip_dt<0] = 0
+# trip_ii_dt[,Residents:=Residents_AM+Residents_MD+Residents_NT+Residents_PM]
+# trip_ii_dt[,Visitors:=Visitors_AM+Visitors_MD+Visitors_NT+Visitors_PM]
+# trip_ii_dt[,Residents:=Residents_AM+Residents_MD+Residents_OP+Residents_PM]
+# trip_ii_dt[,Visitors:=Visitors_AM+Visitors_MD+Visitors_OP+Visitors_PM]
 
-trip_est_dt = trip_dt[,.(OTAZ = origin, DTAZ = destination, Daily, Residents, Visitors)]
+trip_est_dt = trip_dt[,.(OTAZ = oTAZ, DTAZ = dTAZ, Type, Daily, Residents, Visitors)]
 trip_est_dt =  merge(trip_est_dt, agg_dt[,.(TAZ, DISTRICT, HILLSBOROUGH_LBL_3, PINELLAS_LBL, PASCO_LBL,
                                             HERNANDO_CITRUS_LBL_2, D7_ALL_LBL, 
                                             COUNTY_NAME=`COUNTY NAME`)],
@@ -125,6 +142,11 @@ trip_est_dt =  merge(trip_est_dt, agg_dt[,.(TAZ, DISTRICT, HILLSBOROUGH_LBL_3, P
                                             COUNTY_NAME=`COUNTY NAME`)],
                      by.x = "DTAZ", by.y="TAZ", all.x = TRUE,
                      suffixes = c("_O", "_D"))
+label_names = paste0(rep(c("D7_ALL_LBL", "HILLSBOROUGH_LBL_3", "PINELLAS_LBL", 
+                "PASCO_LBL", "HERNANDO_CITRUS_LBL_2"),each=2), rep(c("_O", "_D"),5))
+trip_est_dt[Type=="External", c(label_names):=lapply(.SD,function(x) ifelse(is.na(x),"External", x)),
+            .SDcols = label_names]
+trip_est_dt = trip_est_dt[Daily > 0]
 # Overall
 ## Daily
 daily_overall_trip_dt         = trip_est_dt[,.(TRIPS = sum(Daily)),.(FROM = D7_ALL_LBL_O,
@@ -246,11 +268,12 @@ res_vis_hernando_citrus_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FRO
 ### Executive Summary ############################################################
 ##################################################################################
 # Trip OD
-es_trip_overall_od = merge(daily_overall_trip_dt,
+es_trip_overall_od = merge(res_vis_overall_trip_dt[,.(FROM, TO, TRIPS = `RESIDENT TRIPS`)],
                            trip_od_survey,
                            by = c("FROM", "TO"),
                            all = TRUE,
                            suffixes = c("_PASSIVE", "_SURVEY"))
+es_trip_overall_od = es_trip_overall_od[!(FROM == "External" & TO == "External")]
 setnames(es_trip_overall_od, names(es_trip_overall_od), 
          gsub("TRIPS_","",names(es_trip_overall_od)))
 es_trip_overall_od[is.na(PASSIVE), PASSIVE:=0]

@@ -178,28 +178,6 @@
     "Travel_Survey": {
       "title": "- Household Travel Survey",
       "visualizations": {
-        "3DMap": [
-            {"name":"Trips by Mode","config":"Default","file":"trips_zone.csv","info":"Trips by Mode", 
-            "title":"Trips by travel mode",
-            "explanation":[{
-            "header": "Summary",
-            "body":[{
-              "type": "unorderedList",
-              "content": ["<b>Survey question:</b> \"How did you travel?\"",
-              "Tampa International Airport observed a high frequency of TNC trips.",
-              "The area around University of South Florida observed a high frequency of walk trips."]
-            }]
-          },
-          {
-            "header": "Instructions",
-            "body":[{
-              "type": "unorderedList",
-              "content": ["Use the drop-down selection to view different modes.",
-              "Use the control buttons to move around the map region.",
-              "Select \"Show Data\" to see tabulation."]
-            }]
-          }]}
-            ],
         "BarMap": [
           {"name":"Trip Mode by County","config":"Default", "file":"trip_mode_zone.csv", "info":"Categorized by county, this shows what modes people are using to travel.", 
           "title":"Daily trips per county by mode", 
@@ -208,6 +186,7 @@
             "body":[{
               "type": "unorderedList",
               "content": ["<b>Survey question:</b> \"How did you travel?\"",
+              "Trips mode by county based on trip destination",
               "<b>Observation:</b> Over 80% of trips are car trips across all counties."]
             }]
           },
@@ -229,6 +208,7 @@
               "type": "unorderedList",
               "content": ["<b>Survey question:</b> \"How did you travel?\"",
               "Type of trip modes by county for seasonal residents (those who report living in the region for fewer than 12 months per year).",
+              "Trips mode by county based on trip destination",
               "<b>Observation:</b> Over 15% of seasonal residents' trips in Hillsborough and Pinellas counties are walking trips."]
             }]
           },
@@ -249,6 +229,7 @@
             "body":[{
               "type": "unorderedList",
               "content": ["<b>Survey question:</b> \"How did you travel?\"",
+              "Trips mode by county based on trip destination",
               "Type of trip modes by county for university students."]
             }]
           },
