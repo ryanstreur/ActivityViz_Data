@@ -54,7 +54,7 @@
           {
             "name": "Stay-at-Home by Week",
             "config": "Default",
-            "file": "ny_covid_weeklyagg.csv",
+            "file": "ny_covid_barcharts.csv",
             "info": "The percent of time people spent at home, at work, or somewhere else, by week",
             "explanation": [
               {
@@ -85,7 +85,7 @@
         "BarMap": [
           {
             "name": "Change in Percent of Devices at Home by Time of Day",
-            "file": "nyc_covid_map.csv",
+            "file": "ny_covid_map_weekday.csv",
             "config": "Default",
             "aggregationMethod": "average",
             "info": "Devices detected at home by county and time of day",
