@@ -85,7 +85,7 @@
         "BarMap": [
           {
             "name": "Change in Percent of Devices at Home by Time of Day",
-            "file": "ny_covid_map_weekday.csv",
+            "file": "ny_covid_map.csv",
             "config": "Default",
             "aggregationMethod": "average",
             "info": "Devices detected at home by county and time of day",
