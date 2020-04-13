@@ -599,7 +599,7 @@
       "RotateLabels": 90,
       "SwapLegendByDefault": "N/A",
       "ShowAsPercentByDefault": true,
-      "ShowAsVerticalByDefault": "N/A",
+      "ShowAsVerticalByDefault": true,
       "StackAllChartsByDefault": "N/A",
       "ChartWidthOverride": []
     },
