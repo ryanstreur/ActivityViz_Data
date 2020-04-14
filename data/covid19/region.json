@@ -113,9 +113,10 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "For the left graph: Select/deselect bubbles to add/remove response categories.",
+                      "For the left graph: Select/deselect bubbles to add/remove day types.",
                       "For the left graph: Hover mouse over graph to see detail.",
-                      "For the right graph: Use the drop-down selection to view different modes."
+                      "For the right map: Use the drop-down selection to view different day types.",
+                      "For the right map: Use the layer menu in the top right to select different layers."
                     ]
                   }
                 ]
@@ -130,7 +131,6 @@
     "Default": {
       "ZoneFile": "ZoneShape.json",
       "CycleMapTools": false,
-      "DefaultMapDisplay": "bubbles",
       "StackAllChartsByDefault": false,
       "DefaultBubbleSize": 3
     }
