@@ -43,7 +43,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Hover the mouse over each label under \"Person type and purpose\" to update the chart with the corresponding data set.",
+                      "Hover the mouse over each label above the graph to update the chart with the corresponding data set.",
                       "Hover the mouse over the chart to see percentages for each location."
                     ]
                   }
