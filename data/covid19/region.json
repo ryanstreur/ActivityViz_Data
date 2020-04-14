@@ -132,7 +132,7 @@
       "CycleMapTools": false,
       "DefaultMapDisplay": "bubbles",
       "StackAllChartsByDefault": false,
-      "DefaultBubbleSize": 2
+      "DefaultBubbleSize": 3
     }
   },
   "RadarCharts": {
