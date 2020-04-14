@@ -1,30 +1,9 @@
 FROM,TO,TRIPS
-,,0
-,Clearwater Dwntwn,0
-,Clearwater Mall,0
-,Countryside Mall,0
-,Dwntwn USF Albert Whitted Airport,0
-,Gateway Area,0
-,Grand Central Area,0
-,Hernando  Citrus,0
-,Hillsborough,0
-,Manatee Spur,0
-,Mid-Cnty Ind Area,0
-,Oldsmar Ind Area,0
-,Pasco,0
-,Pinellas Beaches,0
-,Pinellas Central,0
-,Pinellas North,0
-,Pinellas North Central,0
-,Pinellas South,0
-,St Petersburg Clearwater Area,0
-,Tarpon Springs Area,0
-,Tyrone Square Area,0
-Clearwater Dwntwn,,0
 Clearwater Dwntwn,Clearwater Dwntwn,11857.57872
 Clearwater Dwntwn,Clearwater Mall,484.10794
 Clearwater Dwntwn,Countryside Mall,0
 Clearwater Dwntwn,Dwntwn USF Albert Whitted Airport,0
+Clearwater Dwntwn,External,431.16557
 Clearwater Dwntwn,Gateway Area,0
 Clearwater Dwntwn,Grand Central Area,0
 Clearwater Dwntwn,Hernando  Citrus,98.27294
@@ -41,11 +20,11 @@ Clearwater Dwntwn,Pinellas South,2746.13394
 Clearwater Dwntwn,St Petersburg Clearwater Area,0
 Clearwater Dwntwn,Tarpon Springs Area,0
 Clearwater Dwntwn,Tyrone Square Area,0
-Clearwater Mall,,0
 Clearwater Mall,Clearwater Dwntwn,26.40749
 Clearwater Mall,Clearwater Mall,244.98691
 Clearwater Mall,Countryside Mall,123.48603
 Clearwater Mall,Dwntwn USF Albert Whitted Airport,0
+Clearwater Mall,External,0
 Clearwater Mall,Gateway Area,0
 Clearwater Mall,Grand Central Area,0
 Clearwater Mall,Hernando  Citrus,0
@@ -62,11 +41,11 @@ Clearwater Mall,Pinellas South,1002.09438
 Clearwater Mall,St Petersburg Clearwater Area,0
 Clearwater Mall,Tarpon Springs Area,0
 Clearwater Mall,Tyrone Square Area,0
-Countryside Mall,,0
 Countryside Mall,Clearwater Dwntwn,0
 Countryside Mall,Clearwater Mall,0
 Countryside Mall,Countryside Mall,115.62569
 Countryside Mall,Dwntwn USF Albert Whitted Airport,0
+Countryside Mall,External,0
 Countryside Mall,Gateway Area,0
 Countryside Mall,Grand Central Area,0
 Countryside Mall,Hernando  Citrus,0
@@ -83,11 +62,11 @@ Countryside Mall,Pinellas South,0
 Countryside Mall,St Petersburg Clearwater Area,0
 Countryside Mall,Tarpon Springs Area,0
 Countryside Mall,Tyrone Square Area,0
-Dwntwn USF Albert Whitted Airport,,0
 Dwntwn USF Albert Whitted Airport,Clearwater Dwntwn,0
 Dwntwn USF Albert Whitted Airport,Clearwater Mall,0
 Dwntwn USF Albert Whitted Airport,Countryside Mall,0
 Dwntwn USF Albert Whitted Airport,Dwntwn USF Albert Whitted Airport,52538.40315
+Dwntwn USF Albert Whitted Airport,External,1469.75351
 Dwntwn USF Albert Whitted Airport,Gateway Area,5699.11565
 Dwntwn USF Albert Whitted Airport,Grand Central Area,2219.05892
 Dwntwn USF Albert Whitted Airport,Hernando  Citrus,0
@@ -104,11 +83,32 @@ Dwntwn USF Albert Whitted Airport,Pinellas South,50217.7834
 Dwntwn USF Albert Whitted Airport,St Petersburg Clearwater Area,0
 Dwntwn USF Albert Whitted Airport,Tarpon Springs Area,0
 Dwntwn USF Albert Whitted Airport,Tyrone Square Area,466.51458
-Gateway Area,,0
+External,Clearwater Dwntwn,366.93497
+External,Clearwater Mall,0
+External,Countryside Mall,0
+External,Dwntwn USF Albert Whitted Airport,734.71942
+External,External,0
+External,Gateway Area,0
+External,Grand Central Area,98.32953
+External,Hernando  Citrus,0
+External,Hillsborough,0
+External,Manatee Spur,0
+External,Mid-Cnty Ind Area,241.18776
+External,Oldsmar Ind Area,0
+External,Pasco,0
+External,Pinellas Beaches,644.36543
+External,Pinellas Central,2697.74187
+External,Pinellas North,1561.8158
+External,Pinellas North Central,1415.058
+External,Pinellas South,8348.06859
+External,St Petersburg Clearwater Area,0
+External,Tarpon Springs Area,0
+External,Tyrone Square Area,3114.7902
 Gateway Area,Clearwater Dwntwn,0
 Gateway Area,Clearwater Mall,0
 Gateway Area,Countryside Mall,0
 Gateway Area,Dwntwn USF Albert Whitted Airport,7782.43589
+Gateway Area,External,0
 Gateway Area,Gateway Area,28471.02664
 Gateway Area,Grand Central Area,0
 Gateway Area,Hernando  Citrus,0
@@ -125,11 +125,11 @@ Gateway Area,Pinellas South,32678.7001
 Gateway Area,St Petersburg Clearwater Area,0
 Gateway Area,Tarpon Springs Area,0
 Gateway Area,Tyrone Square Area,0
-Grand Central Area,,0
 Grand Central Area,Clearwater Dwntwn,0
 Grand Central Area,Clearwater Mall,0
 Grand Central Area,Countryside Mall,0
 Grand Central Area,Dwntwn USF Albert Whitted Airport,2220.2571
+Grand Central Area,External,0
 Grand Central Area,Gateway Area,0
 Grand Central Area,Grand Central Area,6764.34753
 Grand Central Area,Hernando  Citrus,0
@@ -146,11 +146,11 @@ Grand Central Area,Pinellas South,8704.63828
 Grand Central Area,St Petersburg Clearwater Area,0
 Grand Central Area,Tarpon Springs Area,0
 Grand Central Area,Tyrone Square Area,0
-Hernando  Citrus,,0
 Hernando  Citrus,Clearwater Dwntwn,0
 Hernando  Citrus,Clearwater Mall,0
 Hernando  Citrus,Countryside Mall,0
 Hernando  Citrus,Dwntwn USF Albert Whitted Airport,0
+Hernando  Citrus,External,0
 Hernando  Citrus,Gateway Area,0
 Hernando  Citrus,Grand Central Area,0
 Hernando  Citrus,Hernando  Citrus,0
@@ -167,11 +167,11 @@ Hernando  Citrus,Pinellas South,1275.97518
 Hernando  Citrus,St Petersburg Clearwater Area,0
 Hernando  Citrus,Tarpon Springs Area,0
 Hernando  Citrus,Tyrone Square Area,0
-Hillsborough,,0
 Hillsborough,Clearwater Dwntwn,727.84808
 Hillsborough,Clearwater Mall,579.88932
 Hillsborough,Countryside Mall,0
 Hillsborough,Dwntwn USF Albert Whitted Airport,10976.78551
+Hillsborough,External,0
 Hillsborough,Gateway Area,10749.21049
 Hillsborough,Grand Central Area,888.63573
 Hillsborough,Hernando  Citrus,0
@@ -188,11 +188,11 @@ Hillsborough,Pinellas South,35925.75493
 Hillsborough,St Petersburg Clearwater Area,191.29275
 Hillsborough,Tarpon Springs Area,0
 Hillsborough,Tyrone Square Area,156.42089
-Manatee Spur,,0
 Manatee Spur,Clearwater Dwntwn,0
 Manatee Spur,Clearwater Mall,0
 Manatee Spur,Countryside Mall,0
 Manatee Spur,Dwntwn USF Albert Whitted Airport,0
+Manatee Spur,External,0
 Manatee Spur,Gateway Area,0
 Manatee Spur,Grand Central Area,0
 Manatee Spur,Hernando  Citrus,0
@@ -209,11 +209,11 @@ Manatee Spur,Pinellas South,0
 Manatee Spur,St Petersburg Clearwater Area,0
 Manatee Spur,Tarpon Springs Area,0
 Manatee Spur,Tyrone Square Area,0
-Mid-Cnty Ind Area,,0
 Mid-Cnty Ind Area,Clearwater Dwntwn,192.28313
 Mid-Cnty Ind Area,Clearwater Mall,537.45107
 Mid-Cnty Ind Area,Countryside Mall,0
 Mid-Cnty Ind Area,Dwntwn USF Albert Whitted Airport,5788.24055
+Mid-Cnty Ind Area,External,0
 Mid-Cnty Ind Area,Gateway Area,3542.90755
 Mid-Cnty Ind Area,Grand Central Area,0
 Mid-Cnty Ind Area,Hernando  Citrus,40.24512
@@ -230,11 +230,11 @@ Mid-Cnty Ind Area,Pinellas South,20965.29492
 Mid-Cnty Ind Area,St Petersburg Clearwater Area,5.62148
 Mid-Cnty Ind Area,Tarpon Springs Area,0
 Mid-Cnty Ind Area,Tyrone Square Area,0
-Oldsmar Ind Area,,0
 Oldsmar Ind Area,Clearwater Dwntwn,0
 Oldsmar Ind Area,Clearwater Mall,0
 Oldsmar Ind Area,Countryside Mall,0
 Oldsmar Ind Area,Dwntwn USF Albert Whitted Airport,0
+Oldsmar Ind Area,External,0
 Oldsmar Ind Area,Gateway Area,0
 Oldsmar Ind Area,Grand Central Area,0
 Oldsmar Ind Area,Hernando  Citrus,98.3691
@@ -251,11 +251,11 @@ Oldsmar Ind Area,Pinellas South,0
 Oldsmar Ind Area,St Petersburg Clearwater Area,0
 Oldsmar Ind Area,Tarpon Springs Area,0
 Oldsmar Ind Area,Tyrone Square Area,0
-Pasco,,0
 Pasco,Clearwater Dwntwn,569.03561
 Pasco,Clearwater Mall,141.42344
 Pasco,Countryside Mall,98.27294
 Pasco,Dwntwn USF Albert Whitted Airport,0
+Pasco,External,0
 Pasco,Gateway Area,149.7468
 Pasco,Grand Central Area,0
 Pasco,Hernando  Citrus,0
@@ -272,11 +272,11 @@ Pasco,Pinellas South,1331.84342
 Pasco,St Petersburg Clearwater Area,0
 Pasco,Tarpon Springs Area,20.83524
 Pasco,Tyrone Square Area,0
-Pinellas Beaches,,0
 Pinellas Beaches,Clearwater Dwntwn,780.13207
 Pinellas Beaches,Clearwater Mall,0
 Pinellas Beaches,Countryside Mall,0
 Pinellas Beaches,Dwntwn USF Albert Whitted Airport,2331.19006
+Pinellas Beaches,External,511.82362
 Pinellas Beaches,Gateway Area,0
 Pinellas Beaches,Grand Central Area,39.74852
 Pinellas Beaches,Hernando  Citrus,0
@@ -293,11 +293,11 @@ Pinellas Beaches,Pinellas South,20838.54123
 Pinellas Beaches,St Petersburg Clearwater Area,0
 Pinellas Beaches,Tarpon Springs Area,18.28361
 Pinellas Beaches,Tyrone Square Area,495.76472
-Pinellas Central,,0
 Pinellas Central,Clearwater Dwntwn,3722.87478
 Pinellas Central,Clearwater Mall,2605.44034
 Pinellas Central,Countryside Mall,0
 Pinellas Central,Dwntwn USF Albert Whitted Airport,5911.93513
+Pinellas Central,External,3366.79674
 Pinellas Central,Gateway Area,12963.73503
 Pinellas Central,Grand Central Area,0
 Pinellas Central,Hernando  Citrus,79.11249
@@ -314,11 +314,11 @@ Pinellas Central,Pinellas South,53284.6592
 Pinellas Central,St Petersburg Clearwater Area,809.64541
 Pinellas Central,Tarpon Springs Area,0
 Pinellas Central,Tyrone Square Area,2046.64262
-Pinellas North,,0
 Pinellas North,Clearwater Dwntwn,772.38304
 Pinellas North,Clearwater Mall,149.95343
 Pinellas North,Countryside Mall,251.70312
 Pinellas North,Dwntwn USF Albert Whitted Airport,360.05797
+Pinellas North,External,4053.97817
 Pinellas North,Gateway Area,893.49573
 Pinellas North,Grand Central Area,0
 Pinellas North,Hernando  Citrus,159.67064
@@ -335,11 +335,11 @@ Pinellas North,Pinellas South,2848.79707
 Pinellas North,St Petersburg Clearwater Area,4661.99748
 Pinellas North,Tarpon Springs Area,727.0245
 Pinellas North,Tyrone Square Area,0
-Pinellas North Central,,0
 Pinellas North Central,Clearwater Dwntwn,24436.99893
 Pinellas North Central,Clearwater Mall,14287.99513
 Pinellas North Central,Countryside Mall,9216.85154
 Pinellas North Central,Dwntwn USF Albert Whitted Airport,17417.16758
+Pinellas North Central,External,2901.8682
 Pinellas North Central,Gateway Area,3173.17283
 Pinellas North Central,Grand Central Area,0
 Pinellas North Central,Hernando  Citrus,819.80234
@@ -356,11 +356,11 @@ Pinellas North Central,Pinellas South,32051.85677
 Pinellas North Central,St Petersburg Clearwater Area,6.33345
 Pinellas North Central,Tarpon Springs Area,19017.16844
 Pinellas North Central,Tyrone Square Area,536.95298
-Pinellas South,,0
 Pinellas South,Clearwater Dwntwn,1659.29998
 Pinellas South,Clearwater Mall,26.41161
 Pinellas South,Countryside Mall,330.62108
 Pinellas South,Dwntwn USF Albert Whitted Airport,52360.5653
+Pinellas South,External,12446.45613
 Pinellas South,Gateway Area,33551.28924
 Pinellas South,Grand Central Area,7289.33407
 Pinellas South,Hernando  Citrus,902.79766
@@ -377,11 +377,11 @@ Pinellas South,Pinellas South,598379.043789999
 Pinellas South,St Petersburg Clearwater Area,301.90531
 Pinellas South,Tarpon Springs Area,0
 Pinellas South,Tyrone Square Area,33919.9064
-St Petersburg Clearwater Area,,0
 St Petersburg Clearwater Area,Clearwater Dwntwn,0
 St Petersburg Clearwater Area,Clearwater Mall,0
 St Petersburg Clearwater Area,Countryside Mall,0
 St Petersburg Clearwater Area,Dwntwn USF Albert Whitted Airport,0
+St Petersburg Clearwater Area,External,115.70621
 St Petersburg Clearwater Area,Gateway Area,0
 St Petersburg Clearwater Area,Grand Central Area,0
 St Petersburg Clearwater Area,Hernando  Citrus,0
@@ -398,11 +398,11 @@ St Petersburg Clearwater Area,Pinellas South,32.02904
 St Petersburg Clearwater Area,St Petersburg Clearwater Area,39.96822
 St Petersburg Clearwater Area,Tarpon Springs Area,0
 St Petersburg Clearwater Area,Tyrone Square Area,0
-Tarpon Springs Area,,0
 Tarpon Springs Area,Clearwater Dwntwn,0
 Tarpon Springs Area,Clearwater Mall,0
 Tarpon Springs Area,Countryside Mall,0
 Tarpon Springs Area,Dwntwn USF Albert Whitted Airport,0
+Tarpon Springs Area,External,0
 Tarpon Springs Area,Gateway Area,0
 Tarpon Springs Area,Grand Central Area,0
 Tarpon Springs Area,Hernando  Citrus,6.09454
@@ -419,11 +419,11 @@ Tarpon Springs Area,Pinellas South,0
 Tarpon Springs Area,St Petersburg Clearwater Area,0
 Tarpon Springs Area,Tarpon Springs Area,13.46489
 Tarpon Springs Area,Tyrone Square Area,0
-Tyrone Square Area,,0
 Tyrone Square Area,Clearwater Dwntwn,0
 Tyrone Square Area,Clearwater Mall,0
 Tyrone Square Area,Countryside Mall,0
 Tyrone Square Area,Dwntwn USF Albert Whitted Airport,329.003
+Tyrone Square Area,External,0
 Tyrone Square Area,Gateway Area,0
 Tyrone Square Area,Grand Central Area,0
 Tyrone Square Area,Hernando  Citrus,0

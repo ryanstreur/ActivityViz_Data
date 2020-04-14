@@ -1,6 +1,7 @@
 FROM,TO,TRIPS
 Citrus,Citrus,482334.083610001
 Citrus,Clearwater,32.83955
+Citrus,External,14368.05794
 Citrus,Hernando Other,3320.82231
 Citrus,Hillsborough Other,149.7468
 Citrus,Manatee Spur,0
@@ -15,6 +16,7 @@ Citrus,Tampa,93.2939
 Citrus,USF  Hosp  Busch,4145.50713
 Clearwater,Citrus,513.07672
 Clearwater,Clearwater,496991.4224
+Clearwater,External,2172.17052
 Clearwater,Hernando Other,182.28911
 Clearwater,Hillsborough Other,8046.9546
 Clearwater,Manatee Spur,0
@@ -27,8 +29,24 @@ Clearwater,Spring_Hill,199.70575
 Clearwater,St_Petersburg,21242.9024
 Clearwater,Tampa,14081.06542
 Clearwater,USF  Hosp  Busch,4891.78708
+External,Citrus,10511.93275
+External,Clearwater,1568.39841
+External,External,210053.41661
+External,Hernando Other,310.06856
+External,Hillsborough Other,26235.85204
+External,Manatee Spur,0
+External,New_Port_Richey,0
+External,Pasco Other,3792.45779
+External,Pinellas Other,8501.59217
+External,Pinellas_Beaches,644.36543
+External,Plant City,4089.7345
+External,Spring_Hill,2449.21328
+External,St_Petersburg,8508.65556
+External,Tampa,28777.58166
+External,USF  Hosp  Busch,148.15938
 Hernando Other,Citrus,2419.18912
 Hernando Other,Clearwater,223.55673
+Hernando Other,External,575.40322
 Hernando Other,Hernando Other,143997.05488
 Hernando Other,Hillsborough Other,5633.82767
 Hernando Other,Manatee Spur,0
@@ -43,6 +61,7 @@ Hernando Other,Tampa,310.4792
 Hernando Other,USF  Hosp  Busch,0
 Hillsborough Other,Citrus,42.11615
 Hillsborough Other,Clearwater,28273.15723
+Hillsborough Other,External,30814.91581
 Hillsborough Other,Hernando Other,5824.92691
 Hillsborough Other,Hillsborough Other,3132130.98435999
 Hillsborough Other,Manatee Spur,379.94622
@@ -57,6 +76,7 @@ Hillsborough Other,Tampa,425630.07088
 Hillsborough Other,USF  Hosp  Busch,76172.82674
 Manatee Spur,Citrus,0
 Manatee Spur,Clearwater,0
+Manatee Spur,External,0
 Manatee Spur,Hernando Other,0
 Manatee Spur,Hillsborough Other,520.73905
 Manatee Spur,Manatee Spur,306.29832
@@ -71,6 +91,7 @@ Manatee Spur,Tampa,153.14916
 Manatee Spur,USF  Hosp  Busch,0
 New_Port_Richey,Citrus,0
 New_Port_Richey,Clearwater,484.63928
+New_Port_Richey,External,0
 New_Port_Richey,Hernando Other,0
 New_Port_Richey,Hillsborough Other,1008.07865
 New_Port_Richey,Manatee Spur,0
@@ -85,6 +106,7 @@ New_Port_Richey,Tampa,1960.3148
 New_Port_Richey,USF  Hosp  Busch,1824.4349
 Pasco Other,Citrus,2455.25106
 Pasco Other,Clearwater,18800.00792
+Pasco Other,External,5970.96797
 Pasco Other,Hernando Other,17924.59231
 Pasco Other,Hillsborough Other,93797.91084
 Pasco Other,Manatee Spur,0
@@ -99,6 +121,7 @@ Pasco Other,Tampa,76272.53333
 Pasco Other,USF  Hosp  Busch,7297.45766
 Pinellas Other,Citrus,0
 Pinellas Other,Clearwater,201201.12451
+Pinellas Other,External,16206.98355
 Pinellas Other,Hernando Other,216.77212
 Pinellas Other,Hillsborough Other,93185.61387
 Pinellas Other,Manatee Spur,0
@@ -113,6 +136,7 @@ Pinellas Other,Tampa,33294.41541
 Pinellas Other,USF  Hosp  Busch,6257.07639
 Pinellas_Beaches,Citrus,0
 Pinellas_Beaches,Clearwater,1804.22531
+Pinellas_Beaches,External,511.82362
 Pinellas_Beaches,Hernando Other,0
 Pinellas_Beaches,Hillsborough Other,7227.21849
 Pinellas_Beaches,Manatee Spur,546.63962
@@ -127,6 +151,7 @@ Pinellas_Beaches,Tampa,3042.62578
 Pinellas_Beaches,USF  Hosp  Busch,0
 Plant City,Citrus,0
 Plant City,Clearwater,0
+Plant City,External,5493.47467
 Plant City,Hernando Other,0
 Plant City,Hillsborough Other,23427.15583
 Plant City,Manatee Spur,0
@@ -141,6 +166,7 @@ Plant City,Tampa,5323.51629
 Plant City,USF  Hosp  Busch,0
 Spring_Hill,Citrus,3551.86841
 Spring_Hill,Clearwater,123.80286
+Spring_Hill,External,1098.02328
 Spring_Hill,Hernando Other,55893.69863
 Spring_Hill,Hillsborough Other,2195.33749
 Spring_Hill,Manatee Spur,0
@@ -155,6 +181,7 @@ Spring_Hill,Tampa,2290.37142
 Spring_Hill,USF  Hosp  Busch,32.51243
 St_Petersburg,Citrus,0
 St_Petersburg,Clearwater,28995.61927
+St_Petersburg,External,6406.57046
 St_Petersburg,Hernando Other,0
 St_Petersburg,Hillsborough Other,21254.5385
 St_Petersburg,Manatee Spur,0
@@ -169,6 +196,7 @@ St_Petersburg,Tampa,23730.48137
 St_Petersburg,USF  Hosp  Busch,9661.96973
 Tampa,Citrus,37.83016
 Tampa,Clearwater,15445.76931
+Tampa,External,34102.84803
 Tampa,Hernando Other,1067.32835
 Tampa,Hillsborough Other,398067.75793
 Tampa,Manatee Spur,292.50139
@@ -183,6 +211,7 @@ Tampa,Tampa,1235027.79187
 Tampa,USF  Hosp  Busch,69656.22249
 USF  Hosp  Busch,Citrus,3508.01957
 USF  Hosp  Busch,Clearwater,397.6489
+USF  Hosp  Busch,External,151.00017
 USF  Hosp  Busch,Hernando Other,0
 USF  Hosp  Busch,Hillsborough Other,61041.73711
 USF  Hosp  Busch,Manatee Spur,0

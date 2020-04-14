@@ -1,392 +1,405 @@
 FROM,TO,RESIDENT TRIPS,VISITOR TRIPS
-Pinellas North,Hillsborough,243559.087633576,13929.1120337844
-Tarpon Springs Area,Hillsborough,4582.45384562016,180.176844596863
-Pinellas Beaches,Hillsborough,34334.7262519249,2391.62041759491
-Pinellas North Central,Hillsborough,169666.519210561,8831.40608489513
-Oldsmar Ind Area,Hillsborough,6655.00025332347,385.015409469605
-Countryside Mall,Hillsborough,805.620648264885,278.464641571045
-Clearwater Dwntwn,Hillsborough,11967.4309672855,417.829432487488
-Clearwater Mall,Hillsborough,1192.12344026566,32.760308265686
-Pinellas Central,Hillsborough,139341.001066748,8268.31072044373
-Mid-Cnty Ind Area,Hillsborough,47209.6933290013,1859.22754001617
-St Petersburg Clearwater Area,Hillsborough,1393.25372160506,40.9554109573364
-Pinellas South,Hillsborough,280939.401234609,11673.3165277839
-Gateway Area,Hillsborough,8730.16226914339,507.796281814575
-Tyrone Square Area,Hillsborough,1549.96398769319,32.7601127624512
-Dwntwn USF Albert Whitted Airport,Hillsborough,30957.6310538184,1124.21793037653
-Grand Central Area,Hillsborough,878.257489204407,32.7737150192261
-External,Hillsborough,304045.853292871,11724.9747644067
-Hillsborough,Pinellas North,248550.460160121,12923.4589284658
-Pinellas North,Pinellas North,463251.331908978,48165.5663080216
-Tarpon Springs Area,Pinellas North,6564.47073513269,458.716080665588
-Pinellas Beaches,Pinellas North,14267.3038671166,900.980096817017
-Pinellas North Central,Pinellas North,176963.549627014,9950.01774907112
-Oldsmar Ind Area,Pinellas North,7285.41267323494,491.529532432556
-Countryside Mall,Pinellas North,295.635688304901,196.563619613647
-Clearwater Dwntwn,Pinellas North,8825.65490766708,245.721868515015
-Clearwater Mall,Pinellas North,1245.2984790802,73.7016801834107
-Pinellas Central,Pinellas North,42501.3100735336,1924.6936340332
-Mid-Cnty Ind Area,Pinellas North,10755.1340087829,401.39469242096
-St Petersburg Clearwater Area,Pinellas North,379.547802448273,8.19535255432129
-Pinellas South,Pinellas North,38628.9895732582,1564.49610519409
-Gateway Area,Pinellas North,1395.35454511642,40.9465837478638
-Tyrone Square Area,Pinellas North,678.324553966522,8.19086647033691
-Dwntwn USF Albert Whitted Airport,Pinellas North,3932.73619912099,147.429507255554
-Grand Central Area,Pinellas North,30.3143229484558,16.3817329406738
-External,Pinellas North,9041.78250516788,499.765153884888
-Pasco,Pinellas North,4429.67144126445,421.19459271431
-Hernando  Citrus,Pinellas North,1369.02207673731,2534.99681027187
-Hillsborough,Tarpon Springs Area,4248.33703401359,171.997561454773
-Pinellas North,Tarpon Springs Area,7029.99488663673,434.117671966553
-Tarpon Springs Area,Tarpon Springs Area,2573.9625120163,114.67106628418
-Pinellas Beaches,Tarpon Springs Area,203.918149471283,0
-Pinellas North Central,Tarpon Springs Area,1520.53660106659,81.9013061523438
-Oldsmar Ind Area,Tarpon Springs Area,115.18965959549,0
-Countryside Mall,Tarpon Springs Area,0,0
-Clearwater Dwntwn,Tarpon Springs Area,125.988366127014,0
-Clearwater Mall,Tarpon Springs Area,8.18985939025879,0
-Pinellas Central,Tarpon Springs Area,618.702743530274,57.3284826278687
-Mid-Cnty Ind Area,Tarpon Springs Area,98.3669691085816,8.19073295593262
-St Petersburg Clearwater Area,Tarpon Springs Area,24.9580192565918,0
-Pinellas South,Tarpon Springs Area,1007.30155110359,16.3817329406738
-Gateway Area,Tarpon Springs Area,0,0
-Tyrone Square Area,Tarpon Springs Area,0,0
-Dwntwn USF Albert Whitted Airport,Tarpon Springs Area,65.5157613754273,0
-Grand Central Area,Tarpon Springs Area,124.455192565918,0
-External,Tarpon Springs Area,241.536487102509,0
-Pasco,Tarpon Springs Area,160.790785521269,0
-Hernando  Citrus,Tarpon Springs Area,23.8755444012932,50.687485445058
-Hillsborough,Pinellas Beaches,35883.1605168156,2234.13419252634
-Pinellas North,Pinellas Beaches,13640.3112934948,1138.53840732574
-Tarpon Springs Area,Pinellas Beaches,239.301008224487,8.19086647033691
-Pinellas Beaches,Pinellas Beaches,96585.1772074699,4912.34800946713
-Pinellas North Central,Pinellas Beaches,88849.3688344794,4546.11805820465
-Oldsmar Ind Area,Pinellas Beaches,1023.50815272331,49.146614074707
-Countryside Mall,Pinellas Beaches,624.944858074188,204.760793685913
-Clearwater Dwntwn,Pinellas Beaches,10525.5495662689,180.181785583496
-Clearwater Mall,Pinellas Beaches,2560.61322975159,122.970264434814
-Pinellas Central,Pinellas Beaches,85131.7085504995,3931.4994726181
-Mid-Cnty Ind Area,Pinellas Beaches,17692.8058969798,573.434562683106
-St Petersburg Clearwater Area,Pinellas Beaches,532.994506835938,32.7575798034668
-Pinellas South,Pinellas Beaches,116032.412761888,4136.83378982544
-Gateway Area,Pinellas Beaches,14550.1376750222,393.263521194458
-Tyrone Square Area,Pinellas Beaches,2191.91313934326,49.1409568786621
-Dwntwn USF Albert Whitted Airport,Pinellas Beaches,483.655370235443,49.1502418518066
-Grand Central Area,Pinellas Beaches,8.18658447265625,8.18845176696777
-External,Pinellas Beaches,2157.95225679874,147.446362495422
-Pasco,Pinellas Beaches,1417.27658733726,94.5871646404266
-Hernando  Citrus,Pinellas Beaches,1103.16340592568,1278.97535454528
-Hillsborough,Pinellas North Central,165632.447591662,7410.4613301754
-Pinellas North,Pinellas North Central,172871.510564572,9851.63642191887
-Tarpon Springs Area,Pinellas North Central,1448.0463142395,114.660477638245
-Pinellas Beaches,Pinellas North Central,89212.8584884022,4431.56811618805
-Pinellas North Central,Pinellas North Central,1045327.19950003,50419.59049052
-Oldsmar Ind Area,Pinellas North Central,17660.0115125179,835.620227813721
-Countryside Mall,Pinellas North Central,2989.62768125534,1277.62905979157
-Clearwater Dwntwn,Pinellas North Central,73294.177410282,1999.06034469605
-Clearwater Mall,Pinellas North Central,15103.9719157219,688.097380638123
-Pinellas Central,Pinellas North Central,218974.106946455,9910.90289974213
-Mid-Cnty Ind Area,Pinellas North Central,41002.6900478643,950.10503578186
-St Petersburg Clearwater Area,Pinellas North Central,2114.92826592922,32.7634658813477
-Pinellas South,Pinellas North Central,88741.5525643679,2875.10333538055
-Gateway Area,Pinellas North Central,5976.13599755429,147.411611557007
-Tyrone Square Area,Pinellas North Central,1268.92130851746,40.96373462677
-Dwntwn USF Albert Whitted Airport,Pinellas North Central,3487.1526331678,73.726508140564
-Grand Central Area,Pinellas North Central,40.2592434883118,0
-External,Pinellas North Central,7830.99724171567,393.189805030823
-Pasco,Pinellas North Central,4889.97229148878,333.409385856241
-Hernando  Citrus,Pinellas North Central,2776.48553826986,2886.4207458669
-Hillsborough,Oldsmar Ind Area,5757.97679173946,245.714940071106
-Pinellas North,Oldsmar Ind Area,7718.22617192962,426.016257286072
-Tarpon Springs Area,Oldsmar Ind Area,147.832813739777,8.19073295593262
-Pinellas Beaches,Oldsmar Ind Area,1178.87281370163,57.3417625427246
-Pinellas North Central,Oldsmar Ind Area,17746.3720897436,901.154408454895
-Oldsmar Ind Area,Oldsmar Ind Area,2447.06548118591,131.116563796997
-Countryside Mall,Oldsmar Ind Area,8.19086647033691,0
-Clearwater Dwntwn,Oldsmar Ind Area,526.047538280487,8.19086647033691
-Clearwater Mall,Oldsmar Ind Area,59.5923018455505,16.3826370239258
-Pinellas Central,Oldsmar Ind Area,1840.22023410443,40.9520225524902
-Mid-Cnty Ind Area,Oldsmar Ind Area,622.35258102417,16.3995218276978
-St Petersburg Clearwater Area,Oldsmar Ind Area,0,0
-Pinellas South,Oldsmar Ind Area,1170.52038860321,16.3909749984741
-Gateway Area,Oldsmar Ind Area,215.492812156677,0
-Tyrone Square Area,Oldsmar Ind Area,98.326244354248,0
-Dwntwn USF Albert Whitted Airport,Oldsmar Ind Area,65.3360161781311,0
-Grand Central Area,Oldsmar Ind Area,0,0
-External,Oldsmar Ind Area,226.852292060852,8.19086647033691
-Pasco,Oldsmar Ind Area,99.2171149253845,0
-Hernando  Citrus,Oldsmar Ind Area,66.768130516808,68.5111309796339
-Hillsborough,Countryside Mall,710.285027563572,188.351524353027
-Pinellas North,Countryside Mall,232.150979995728,180.166116714478
-Tarpon Springs Area,Countryside Mall,0,0
-Pinellas Beaches,Countryside Mall,551.780610471964,131.055679321289
-Pinellas North Central,Countryside Mall,3221.79510980914,1539.76693725586
-Oldsmar Ind Area,Countryside Mall,0,0
-Countryside Mall,Countryside Mall,1629.18486595154,1031.86329650879
-Clearwater Dwntwn,Countryside Mall,128.525984108448,8.19086647033691
-Clearwater Mall,Countryside Mall,72.0990266799927,16.3781585693359
-Pinellas Central,Countryside Mall,2947.53331804276,450.534731864929
-Mid-Cnty Ind Area,Countryside Mall,200.569429397583,8.18729209899902
-St Petersburg Clearwater Area,Countryside Mall,0,0
-Pinellas South,Countryside Mall,385.98546475172,122.90518283844
-Gateway Area,Countryside Mall,62.6818346977234,0
-Tyrone Square Area,Countryside Mall,0,0
-Dwntwn USF Albert Whitted Airport,Countryside Mall,38.7733454704285,0
-Grand Central Area,Countryside Mall,0,0
-External,Countryside Mall,24.3480625152588,8.19086647033691
-Pasco,Countryside Mall,48.0381593704224,0
-Hernando  Citrus,Countryside Mall,16.9939378839918,62.9311001803726
-Hillsborough,Clearwater Dwntwn,11716.2304666669,311.314065933228
-Pinellas North,Clearwater Dwntwn,8215.13549783709,155.643836975098
-Tarpon Springs Area,Clearwater Dwntwn,73.5015082359314,0
-Pinellas Beaches,Clearwater Dwntwn,10875.5849884748,245.704579353333
-Pinellas North Central,Clearwater Dwntwn,73913.1537640379,1982.85830593109
-Oldsmar Ind Area,Clearwater Dwntwn,564.712718725205,8.19124031066895
-Countryside Mall,Clearwater Dwntwn,154.379155576229,8.19086647033691
-Clearwater Dwntwn,Clearwater Dwntwn,30746.464987576,983.011878967285
-Clearwater Mall,Clearwater Dwntwn,2543.32342576981,122.878252983093
-Pinellas Central,Clearwater Dwntwn,26310.5294043082,557.145323753357
-Mid-Cnty Ind Area,Clearwater Dwntwn,5204.17662102566,73.7202911376953
-St Petersburg Clearwater Area,Clearwater Dwntwn,136.572928905487,0
-Pinellas South,Clearwater Dwntwn,7500.55008111568,139.238886833191
-Gateway Area,Clearwater Dwntwn,640.429533248767,8.19086647033691
-Tyrone Square Area,Clearwater Dwntwn,84.5754628181458,0
-Dwntwn USF Albert Whitted Airport,Clearwater Dwntwn,335.549793720245,0
-Grand Central Area,Clearwater Dwntwn,5.65135335922241,0
-External,Clearwater Dwntwn,562.420653343201,8.19086647033691
-Pasco,Clearwater Dwntwn,278.322813361883,0
-Hernando  Citrus,Clearwater Dwntwn,190.686135889555,141.11655232613
-Hillsborough,Clearwater Mall,1211.79111326672,24.5691919326782
-Pinellas North,Clearwater Mall,1198.84841156006,65.520959854126
-Tarpon Springs Area,Clearwater Mall,0,0
-Pinellas Beaches,Clearwater Mall,3095.05188798904,122.951668739319
-Pinellas North Central,Clearwater Mall,15542.3572872877,778.214629173279
-Oldsmar Ind Area,Clearwater Mall,60.8924465179443,8.1931037902832
-Countryside Mall,Clearwater Mall,64.4852180480957,32.7563171386719
-Clearwater Dwntwn,Clearwater Mall,2280.19957685471,131.067052841187
-Clearwater Mall,Clearwater Mall,3696.28656005859,229.350952148438
-Pinellas Central,Clearwater Mall,6599.32644558558,253.899438858032
-Mid-Cnty Ind Area,Clearwater Mall,553.079932689667,8.19086647033691
-St Petersburg Clearwater Area,Clearwater Mall,25.0182447433472,0
-Pinellas South,Clearwater Mall,1435.06528925896,24.5723152160645
-Gateway Area,Clearwater Mall,123.634141921997,0
-Tyrone Square Area,Clearwater Mall,16.3788204193115,0
-Dwntwn USF Albert Whitted Airport,Clearwater Mall,8.18824291229248,8.18851566314697
-Grand Central Area,Clearwater Mall,0,0
-External,Clearwater Mall,14.7348742485046,0
-Pasco,Clearwater Mall,47.4368863105774,0
-Hernando  Citrus,Clearwater Mall,44.5721864218358,28.7463698585052
-Hillsborough,Pinellas Central,130621.987562913,7101.13545322418
-Pinellas North,Pinellas Central,40014.7146027809,1703.59631252289
-Tarpon Springs Area,Pinellas Central,486.988596200943,40.948184967041
-Pinellas Beaches,Pinellas Central,85922.1858970808,3898.82978725433
-Pinellas North Central,Pinellas Central,212279.614136092,9818.92722678185
-Oldsmar Ind Area,Pinellas Central,1726.65877581481,49.1566152572632
-Countryside Mall,Pinellas Central,2656.38321685791,409.550834655762
-Clearwater Dwntwn,Pinellas Central,24978.7050515055,622.687003135681
-Clearwater Mall,Pinellas Central,6210.29116492812,172.011184692383
-Pinellas Central,Pinellas Central,1011747.67884798,66961.0870655179
-Mid-Cnty Ind Area,Pinellas Central,168391.957968347,4365.7011384964
-St Petersburg Clearwater Area,Pinellas Central,13155.5261687636,155.624028205872
-Pinellas South,Pinellas Central,318009.136707571,11998.0451712608
-Gateway Area,Pinellas Central,21816.3381657619,557.044830322266
-Tyrone Square Area,Pinellas Central,5391.83182859421,122.866066932678
-Dwntwn USF Albert Whitted Airport,Pinellas Central,2545.32095376262,122.875712394714
-Grand Central Area,Pinellas Central,0,16.3769035339355
-External,Pinellas Central,8438.90601848438,401.329092979431
-Pasco,Pinellas Central,5220.01125374762,203.553438708186
-Hernando  Citrus,Pinellas Central,3769.80825387884,4652.97100789205
-Hillsborough,Mid-Cnty Ind Area,46462.825540564,1740.39785432816
-Pinellas North,Mid-Cnty Ind Area,10972.5768463612,352.17729473114
-Tarpon Springs Area,Mid-Cnty Ind Area,139.501242637634,8.19086647033691
-Pinellas Beaches,Mid-Cnty Ind Area,16929.9663390964,704.446929931641
-Pinellas North Central,Mid-Cnty Ind Area,40000.9915782223,843.710862159729
-Oldsmar Ind Area,Mid-Cnty Ind Area,741.267654418945,24.5762462615967
-Countryside Mall,Mid-Cnty Ind Area,255.404909133911,8.18729209899902
-Clearwater Dwntwn,Mid-Cnty Ind Area,4753.1509933467,106.489562988281
-Clearwater Mall,Mid-Cnty Ind Area,612.512972831726,0
-Pinellas Central,Mid-Cnty Ind Area,171731.583176345,4390.26723194122
-Mid-Cnty Ind Area,Mid-Cnty Ind Area,188883.583915968,4688.45920050144
-St Petersburg Clearwater Area,Mid-Cnty Ind Area,6468.79762363434,90.0908966064453
-Pinellas South,Mid-Cnty Ind Area,118171.134218558,2629.79336833954
-Gateway Area,Mid-Cnty Ind Area,8419.67611829937,188.396099090576
-Tyrone Square Area,Mid-Cnty Ind Area,2123.1478065555,16.3779134750366
-Dwntwn USF Albert Whitted Airport,Mid-Cnty Ind Area,610.910026975907,8.226149559021
-Grand Central Area,Mid-Cnty Ind Area,0,0
-External,Mid-Cnty Ind Area,1903.33568382263,57.3574600219727
-Pasco,Mid-Cnty Ind Area,1367.44749038876,34.3305041790009
-Hernando  Citrus,Mid-Cnty Ind Area,1460.25161802239,986.741760481673
-Hillsborough,St Petersburg Clearwater Area,1215.57100761961,32.7595615386963
-Pinellas North,St Petersburg Clearwater Area,364.457646369934,24.5840730667114
-Tarpon Springs Area,St Petersburg Clearwater Area,12.4790096282959,0
-Pinellas Beaches,St Petersburg Clearwater Area,616.085107326508,32.7577686309814
-Pinellas North Central,St Petersburg Clearwater Area,2030.62798631191,16.3821992874146
-Oldsmar Ind Area,St Petersburg Clearwater Area,0,0
-Countryside Mall,St Petersburg Clearwater Area,0,0
-Clearwater Dwntwn,St Petersburg Clearwater Area,126.547817707062,0
-Clearwater Mall,St Petersburg Clearwater Area,37.0106534957886,0
-Pinellas Central,St Petersburg Clearwater Area,13225.6573190689,155.617528915405
-Mid-Cnty Ind Area,St Petersburg Clearwater Area,6037.71839618683,90.0967531204224
-St Petersburg Clearwater Area,St Petersburg Clearwater Area,3695.76250839233,163.818121910095
-Pinellas South,St Petersburg Clearwater Area,3786.09030818939,90.1112880706787
-Gateway Area,St Petersburg Clearwater Area,300.65168762207,0
-Tyrone Square Area,St Petersburg Clearwater Area,90.2403116226196,0
-Dwntwn USF Albert Whitted Airport,St Petersburg Clearwater Area,22.1902570724487,0
-Grand Central Area,St Petersburg Clearwater Area,0,0
-External,St Petersburg Clearwater Area,19.8098621368408,16.3817329406738
-Pasco,St Petersburg Clearwater Area,56.0514894723892,0
-Hernando  Citrus,St Petersburg Clearwater Area,44.985329445044,18.5685920980759
-Hillsborough,Pinellas South,291259.579760189,10519.5124998093
-Pinellas North,Pinellas South,40311.5224376658,1441.67502212524
-Tarpon Springs Area,Pinellas South,1212.06015896797,16.3817329406738
-Pinellas Beaches,Pinellas South,120463.993929608,4136.79847812653
-Pinellas North Central,Pinellas South,90045.7673662261,3071.80339241028
-Oldsmar Ind Area,Pinellas South,1158.04437506199,24.5839223861694
-Countryside Mall,Pinellas South,415.169187963009,98.3312740325928
-Clearwater Dwntwn,Pinellas South,7992.09623090597,196.609642028809
-Clearwater Mall,Pinellas South,1467.78120398521,65.5227518081665
-Pinellas Central,Pinellas South,321718.747533842,12483.2898902893
-Mid-Cnty Ind Area,Pinellas South,118837.863254813,2744.37402629852
-St Petersburg Clearwater Area,Pinellas South,4117.12941288948,57.3308773040772
-Pinellas South,Pinellas South,2468362.00433632,80322.4540311694
-Gateway Area,Pinellas South,98218.7724056412,2728.15572166443
-Tyrone Square Area,Pinellas South,50355.1406233553,810.833455085754
-Dwntwn USF Albert Whitted Airport,Pinellas South,244877.105824008,6200.60020256043
-Grand Central Area,Pinellas South,8223.51082229614,245.70742893219
-External,Pinellas South,149417.684055617,4159.75914931297
-Pasco,Pinellas South,56455.9716712958,1582.34811580181
-Hernando  Citrus,Pinellas South,7266.80933807884,7243.10693003953
-Hillsborough,Gateway Area,8572.6927090222,466.828899383545
-Pinellas North,Gateway Area,1423.45047235489,8.18779468536377
-Tarpon Springs Area,Gateway Area,0,0
-Pinellas Beaches,Gateway Area,13891.2956660131,303.122344970703
-Pinellas North Central,Gateway Area,5440.80288268393,202.675487756729
-Oldsmar Ind Area,Gateway Area,193.001468658447,0
-Countryside Mall,Gateway Area,26.2935485839844,0
-Clearwater Dwntwn,Gateway Area,512.092082774267,8.20300197601318
-Clearwater Mall,Gateway Area,170.280673503876,0
-Pinellas Central,Gateway Area,21505.0880536118,507.874462127686
-Mid-Cnty Ind Area,Gateway Area,8646.68915150315,131.061841964722
-St Petersburg Clearwater Area,Gateway Area,482.84913444519,0
-Pinellas South,Gateway Area,94836.4098427962,2760.9703168869
-Gateway Area,Gateway Area,29727.0015940517,728.961729049683
-Tyrone Square Area,Gateway Area,2026.76171875,8.19086647033691
-Dwntwn USF Albert Whitted Airport,Gateway Area,79.7335286140442,0
-Grand Central Area,Gateway Area,0,0
-External,Gateway Area,556.303333297372,0
-Pasco,Gateway Area,357.008200120181,16.9117584228516
-Hernando  Citrus,Gateway Area,799.34455701604,423.127590681019
-Hillsborough,Tyrone Square Area,2125.41497983784,32.7630348205566
-Pinellas North,Tyrone Square Area,851.206218242645,8.19086647033691
-Tarpon Springs Area,Tyrone Square Area,0,0
-Pinellas Beaches,Tyrone Square Area,2302.36570644379,40.9602146148682
-Pinellas North Central,Tyrone Square Area,1469.60241097212,32.7575931549072
-Oldsmar Ind Area,Tyrone Square Area,40.9589195251465,0
-Countryside Mall,Tyrone Square Area,0,0
-Clearwater Dwntwn,Tyrone Square Area,100.45006275177,0
-Clearwater Mall,Tyrone Square Area,39.471851348877,0
-Pinellas Central,Tyrone Square Area,6331.47087875381,171.999680519104
-Mid-Cnty Ind Area,Tyrone Square Area,2343.64019408869,8.187424659729
-St Petersburg Clearwater Area,Tyrone Square Area,140.968430519104,0
-Pinellas South,Tyrone Square Area,52389.0314706685,728.921418190002
-Gateway Area,Tyrone Square Area,1950.53336828947,16.3774909973145
-Tyrone Square Area,Tyrone Square Area,12964.5467605591,163.799187660217
-Dwntwn USF Albert Whitted Airport,Tyrone Square Area,18.5878314971924,0
-Grand Central Area,Tyrone Square Area,0,0
-External,Tyrone Square Area,58.5374722480774,0
-Pasco,Tyrone Square Area,4.87080812454224,0
-Hernando  Citrus,Tyrone Square Area,114.785087470489,59.0369797585881
-Hillsborough,Dwntwn USF Albert Whitted Airport,33402.1591958231,972.957518696785
-Pinellas North,Dwntwn USF Albert Whitted Airport,4655.7726719752,139.245603561401
-Tarpon Springs Area,Dwntwn USF Albert Whitted Airport,55.5964865684509,0
-Pinellas Beaches,Dwntwn USF Albert Whitted Airport,625.81681060791,24.5745573043823
-Pinellas North Central,Dwntwn USF Albert Whitted Airport,3919.84447050002,49.1371688842774
-Oldsmar Ind Area,Dwntwn USF Albert Whitted Airport,58.4217419624329,0
-Countryside Mall,Dwntwn USF Albert Whitted Airport,40.9388637542725,0
-Clearwater Dwntwn,Dwntwn USF Albert Whitted Airport,293.250586867332,0
-Clearwater Mall,Dwntwn USF Albert Whitted Airport,0,8.19086647033691
-Pinellas Central,Dwntwn USF Albert Whitted Airport,2682.45981454849,106.517489433289
-Mid-Cnty Ind Area,Dwntwn USF Albert Whitted Airport,859.270238494966,8.19003868103027
-St Petersburg Clearwater Area,Dwntwn USF Albert Whitted Airport,21.6013221740723,0
-Pinellas South,Dwntwn USF Albert Whitted Airport,240427.191326973,6075.20179086924
-Gateway Area,Dwntwn USF Albert Whitted Airport,163.225020885468,0
-Tyrone Square Area,Dwntwn USF Albert Whitted Airport,18.5878314971924,0
-Dwntwn USF Albert Whitted Airport,Dwntwn USF Albert Whitted Airport,224304.906604129,5206.80706572533
-Grand Central Area,Dwntwn USF Albert Whitted Airport,2923.68200492859,65.5356750488281
-External,Dwntwn USF Albert Whitted Airport,63410.0045892713,1621.99065208435
-Pasco,Dwntwn USF Albert Whitted Airport,22255.4451460615,704.487958908081
-Hernando  Citrus,Dwntwn USF Albert Whitted Airport,626.785211021779,358.35823450936
-Hillsborough,Grand Central Area,947.838430404663,40.9520025253296
-Pinellas North,Grand Central Area,62.2721107006073,24.5718975067139
-Tarpon Springs Area,Grand Central Area,62.0687484741211,0
-Pinellas Beaches,Grand Central Area,8.18658447265625,8.18845176696777
-Pinellas North Central,Grand Central Area,58.3751430511475,8.19086647033691
-Oldsmar Ind Area,Grand Central Area,0,0
-Countryside Mall,Grand Central Area,0,0
-Clearwater Dwntwn,Grand Central Area,0,0
-Clearwater Mall,Grand Central Area,0,0
-Pinellas Central,Grand Central Area,37.9647216796875,16.3769035339355
-Mid-Cnty Ind Area,Grand Central Area,19.5027389526367,0
-St Petersburg Clearwater Area,Grand Central Area,0,0
-Pinellas South,Grand Central Area,7625.62413899228,311.231217384338
-Gateway Area,Grand Central Area,0,0
-Tyrone Square Area,Grand Central Area,0,0
-Dwntwn USF Albert Whitted Airport,Grand Central Area,2813.64649391174,98.299488067627
-Grand Central Area,Grand Central Area,2249.92956542969,32.7636871337891
-External,Grand Central Area,3517.08442020416,40.9581089019775
-Pasco,Grand Central Area,898.443593561649,0
-Hernando  Citrus,Grand Central Area,17.2313021605369,6.37535021430813
-Hillsborough,External,321401.967114186,10912.3763055801
-Pinellas North,External,9517.51366093947,464.889608860016
-Tarpon Springs Area,External,271.367466449738,16.3746843338013
-Pinellas Beaches,External,2212.74313223362,131.073999166489
-Pinellas North Central,External,8372.1713177627,409.573679924011
-Oldsmar Ind Area,External,318.986992120743,8.1904354095459
-Countryside Mall,External,11.5648591518402,0
-Clearwater Dwntwn,External,723.464901685715,32.7922468185425
-Clearwater Mall,External,40.1852612495422,0
-Pinellas Central,External,8320.71695617214,326.270497322083
-Mid-Cnty Ind Area,External,1875.84605452418,24.569372177124
-St Petersburg Clearwater Area,External,67.1386108398438,16.3817329406738
-Pinellas South,External,145322.479311994,4190.46030718088
-Gateway Area,External,607.634865775704,8.19086647033691
-Tyrone Square Area,External,46.3418526649475,0
-Dwntwn USF Albert Whitted Airport,External,62861.1810935373,1564.72527313232
-Grand Central Area,External,3585.58596515656,106.48487663269
-External,External,1021105.8658963,39341.1946802735
-Pasco,External,283588.489564491,8773.06867063046
-Hernando  Citrus,External,4517.35798978026,3868.44746720308
-Pinellas North,Pasco,4637.18436398823,362.480429589748
-Tarpon Springs Area,Pasco,213.794643190224,0
-Pinellas Beaches,Pasco,1425.93528081011,79.9727825522423
-Pinellas North Central,Pasco,5182.79606631954,241.29884582758
-Oldsmar Ind Area,Pasco,113.617758274078,8.19086647033691
-Countryside Mall,Pasco,51.8187305927277,0
-Clearwater Dwntwn,Pasco,273.471960902214,22.5179317593575
-Clearwater Mall,Pasco,57.4091470241547,0
-Pinellas Central,Pasco,4738.75382065447,184.805868655443
-Mid-Cnty Ind Area,Pasco,1607.41732686386,37.9254754185677
-St Petersburg Clearwater Area,Pasco,38.7370609175414,0
-Pinellas South,Pasco,56650.3414076661,1776.59798745811
-Gateway Area,Pasco,406.364084534347,0
-Tyrone Square Area,Pasco,60.2022218704224,0
-Dwntwn USF Albert Whitted Airport,Pasco,23024.3281317905,655.445681571961
-Grand Central Area,Pasco,848.894611597061,0
-External,Pasco,284066.977294131,8412.22904634476
-Pinellas North,Hernando  Citrus,1297.21866948548,2502.23624713672
-Tarpon Springs Area,Hernando  Citrus,23.8755444012932,50.687485445058
-Pinellas Beaches,Hernando  Citrus,1213.25982981984,1295.35363518493
-Pinellas North Central,Hernando  Citrus,2612.27491005929,2837.26630498708
-Oldsmar Ind Area,Hernando  Citrus,75.7140743492055,52.1293980389601
-Countryside Mall,Hernando  Citrus,16.9939378839918,62.9311001803726
-Clearwater Dwntwn,Hernando  Citrus,182.486946703459,132.925685855793
-Clearwater Mall,Hernando  Citrus,37.4977459425572,28.7463698585052
-Pinellas Central,Hernando  Citrus,3822.60186135222,4589.44357330457
-Mid-Cnty Ind Area,Hernando  Citrus,1353.23396459344,1027.72521804698
-St Petersburg Clearwater Area,Hernando  Citrus,40.7664038497605,18.5685920980759
-Pinellas South,Hernando  Citrus,7405.20272521768,7128.4745419246
-Gateway Area,Hernando  Citrus,810.597953527118,423.119196439686
-Tyrone Square Area,Hernando  Citrus,106.596697692352,50.8461132882512
-Dwntwn USF Albert Whitted Airport,Hernando  Citrus,614.757181103109,358.35823450936
-Grand Central Area,Hernando  Citrus,7.30631436756812,6.37535021430813
-External,Hernando  Citrus,4438.39167308027,3832.37333261484
+Pinellas North,Hillsborough,13419.560094172,618.89549690485
+Tarpon Springs Area,Hillsborough,254.91310229589,50.2930034399033
+Pinellas North Central,Hillsborough,31063.6930752075,1669.78114581108
+Oldsmar Ind Area,Hillsborough,5663.2147392187,195.771600157022
+Clearwater Dwntwn,Hillsborough,1118.89014117548,107.56613689661
+Pinellas Beaches,Hillsborough,5915.04900292704,1955.65837699175
+Pinellas Central,Hillsborough,16194.6504652461,755.33030384779
+Mid-Cnty Ind Area,Hillsborough,7223.4617428911,325.723069250584
+Pinellas South,Hillsborough,44294.8422441495,2283.5230974406
+Tyrone Square Area,Hillsborough,454.811228491366,43.9325404763222
+Dwntwn USF Albert Whitted Airport,Hillsborough,7812.99826692689,733.17258399725
+Countryside Mall,Hillsborough,479.147159457207,45.3844100236893
+St Petersburg Clearwater Area,Hillsborough,441.791950792074,125.112689733505
+Gateway Area,Hillsborough,3834.31085279299,167.840941280127
+Clearwater Mall,Hillsborough,354.36831626296,37.8911545276642
+Grand Central Area,Hillsborough,125.63335198164,2.75786709785461
+Hillsborough,Pinellas North,13461.7052419727,576.75038677454
+Pinellas North,Pinellas North,158385.088533557,5608.27484548092
+Tarpon Springs Area,Pinellas North,4273.61039799452,182.883834540844
+Pinellas North Central,Pinellas North,47971.9020288593,1662.90651515126
+Oldsmar Ind Area,Pinellas North,2072.91849458218,45.5090804696083
+Countryside Mall,Pinellas North,1717.24661976099,98.1876009106636
+Pinellas Beaches,Pinellas North,1547.12991473079,171.604817211628
+Clearwater Dwntwn,Pinellas North,778.533576361835,9.50649732351303
+Clearwater Mall,Pinellas North,214.249587357044,11.5429652929306
+Pinellas Central,Pinellas North,6359.27786705596,121.085681855679
+Mid-Cnty Ind Area,Pinellas North,3225.08850865811,69.4199985265732
+Pinellas South,Pinellas North,3789.3489328287,88.8229699730873
+Tyrone Square Area,Pinellas North,128.662608712912,0.579315304756165
+Dwntwn USF Albert Whitted Airport,Pinellas North,864.475059866905,24.5074777007103
+Pasco,Pinellas North,27032.9956337871,734.509742468596
+Hernando  Citrus,Pinellas North,862.012739278667,35.076419532299
+External,Pinellas North,1061.49864451838,1055.3828117525
+Gateway Area,Pinellas North,878.411993721733,8.23365253210068
+Manatee Spur,Pinellas North,25.3360736370087,4.04236936569214
+Hillsborough,Tarpon Springs Area,247.378756490245,57.8273482322693
+Pinellas North,Tarpon Springs Area,4245.23651582003,211.257636427879
+Tarpon Springs Area,Tarpon Springs Area,739.125877380371,97.0449449419975
+Pinellas Beaches,Tarpon Springs Area,48.5353500247002,47.0573171079159
+Pinellas North Central,Tarpon Springs Area,436.083830922842,89.3042604327202
+Oldsmar Ind Area,Tarpon Springs Area,4.63763201236725,2.98616653680801
+Countryside Mall,Tarpon Springs Area,17.8713853359222,4.89171648025513
+Clearwater Dwntwn,Tarpon Springs Area,20.0583770275116,2.11260986328125
+Pinellas Central,Tarpon Springs Area,128.243848860264,12.1603381633759
+Mid-Cnty Ind Area,Tarpon Springs Area,29.3691185116768,3.43044728040695
+Pinellas South,Tarpon Springs Area,88.904193341732,6.34083479642868
+Gateway Area,Tarpon Springs Area,3.76204013824463,0
+Dwntwn USF Albert Whitted Airport,Tarpon Springs Area,0.675417959690094,0
+Pasco,Tarpon Springs Area,1867.3756201198,191.697365701199
+Hernando  Citrus,Tarpon Springs Area,61.332439891994,20.8527483344078
+External,Tarpon Springs Area,15.0970236161957,121.255980959395
+Clearwater Mall,Tarpon Springs Area,1.49120032787323,0
+St Petersburg Clearwater Area,Tarpon Springs Area,0,0.856054484844208
+Tyrone Square Area,Tarpon Springs Area,2.68231809139252,0
+Grand Central Area,Tarpon Springs Area,0.630097568035126,0
+Manatee Spur,Tarpon Springs Area,1.02330315113068,0
+St Petersburg Clearwater Area,Pinellas North,152.997711241245,4.37751835584641
+Grand Central Area,Pinellas North,7.85834991931915,0
+Hillsborough,Pinellas Beaches,5982.41776111374,1888.28963553905
+Pinellas North,Pinellas Beaches,1533.00683945417,185.727899968624
+Tarpon Springs Area,Pinellas Beaches,50.3856105208397,45.2070598304272
+Pinellas Beaches,Pinellas Beaches,37402.5010267561,18933.2000563145
+Pinellas North Central,Pinellas Beaches,10525.177439631,1453.62110352516
+Oldsmar Ind Area,Pinellas Beaches,39.4302288889885,14.0320110321045
+Countryside Mall,Pinellas Beaches,110.918677568436,21.8001347184181
+Clearwater Dwntwn,Pinellas Beaches,1671.47312039137,232.833709895611
+Clearwater Mall,Pinellas Beaches,78.0022044942016,37.4813455939293
+Pinellas Central,Pinellas Beaches,25830.992438983,2935.33914968371
+Mid-Cnty Ind Area,Pinellas Beaches,1972.02698925138,240.400701224804
+Pinellas South,Pinellas Beaches,26094.7643967435,2882.38998672366
+Gateway Area,Pinellas Beaches,493.226125175133,50.6266987621784
+Dwntwn USF Albert Whitted Airport,Pinellas Beaches,1594.49727620557,582.908104389906
+Pasco,Pinellas Beaches,1695.1018449387,243.683627516031
+Hernando  Citrus,Pinellas Beaches,237.344464171634,59.0478233993053
+Manatee Spur,Pinellas Beaches,37.7951686382294,11.5861826837063
+External,Pinellas Beaches,745.938433976902,3458.32492623827
+Hillsborough,Pinellas North Central,31156.3351342063,1577.13911390305
+Pinellas North,Pinellas North Central,48072.6284838772,1562.17986765504
+Tarpon Springs Area,Pinellas North Central,421.528404504061,103.859691083431
+Pinellas Beaches,Pinellas North Central,10398.4380831079,1580.36039447784
+Pinellas North Central,Pinellas North Central,372522.132145546,12388.5004118681
+Oldsmar Ind Area,Pinellas North Central,6835.18738859892,245.811929166317
+Countryside Mall,Pinellas North Central,7036.04540073872,326.684973955154
+Clearwater Dwntwn,Pinellas North Central,17530.7158954889,506.298006922007
+Clearwater Mall,Pinellas North Central,3523.45133823156,275.596660614014
+Pinellas Central,Pinellas North Central,54718.649159172,1223.57721979916
+Mid-Cnty Ind Area,Pinellas North Central,13547.3737146814,385.288857534528
+St Petersburg Clearwater Area,Pinellas North Central,510.139066070318,57.229832470417
+Pinellas South,Pinellas North Central,17749.3402890151,421.84378990531
+Gateway Area,Pinellas North Central,3724.05398483636,27.2969316840172
+Dwntwn USF Albert Whitted Airport,Pinellas North Central,2792.79310477007,144.482794135809
+Pasco,Pinellas North Central,13456.5414882461,407.021137923002
+Hernando  Citrus,Pinellas North Central,987.785691913989,62.3147645294666
+External,Pinellas North Central,2254.39765432793,2562.91752048896
+Tyrone Square Area,Pinellas North Central,265.278591930866,7.63136494159699
+Grand Central Area,Pinellas North Central,48.2573218792677,0.628906488418579
+Manatee Spur,Pinellas North Central,85.2592488527298,19.975353717804
+Hillsborough,Oldsmar Ind Area,5678.81131776457,180.174980163574
+Pinellas North,Oldsmar Ind Area,2028.37388193607,90.0536739230156
+Tarpon Springs Area,Oldsmar Ind Area,5.42687380313873,2.19692438840866
+Pinellas Beaches,Oldsmar Ind Area,41.6269952654839,11.8352451324463
+Pinellas North Central,Oldsmar Ind Area,6841.85483163595,239.144562900066
+Oldsmar Ind Area,Oldsmar Ind Area,1903.43828582764,73.6414865851402
+Countryside Mall,Oldsmar Ind Area,124.726650714874,6.38441753387451
+Clearwater Dwntwn,Oldsmar Ind Area,84.5679247379303,0
+Clearwater Mall,Oldsmar Ind Area,19.5861930847168,0
+Pinellas Central,Oldsmar Ind Area,607.018012225628,11.7946634590626
+Mid-Cnty Ind Area,Oldsmar Ind Area,239.312006175518,0.710888624191284
+St Petersburg Clearwater Area,Oldsmar Ind Area,0,1.17794525623322
+Pinellas South,Oldsmar Ind Area,582.767595678568,4.88793486356735
+Gateway Area,Oldsmar Ind Area,139.594700992107,0
+Dwntwn USF Albert Whitted Airport,Oldsmar Ind Area,34.9279021024704,6.38389325141907
+Pasco,Oldsmar Ind Area,1823.16417757289,15.4282482564449
+Hernando  Citrus,Oldsmar Ind Area,209.02178171277,0
+External,Oldsmar Ind Area,85.7904333366314,83.5912857204094
+Grand Central Area,Oldsmar Ind Area,3.23954296112061,0
+Hillsborough,Countryside Mall,475.03758764267,49.4939752221108
+Pinellas North,Countryside Mall,1753.14851731062,62.2857158780098
+Tarpon Springs Area,Countryside Mall,22.7631015777588,0
+Pinellas Beaches,Countryside Mall,116.150830924511,16.5679807066917
+Pinellas North Central,Countryside Mall,7055.41132748127,307.318963348866
+Oldsmar Ind Area,Countryside Mall,131.11107301712,0
+Countryside Mall,Countryside Mall,443.095153808594,19.4833278656006
+Clearwater Dwntwn,Countryside Mall,122.395341098309,2.94066715240479
+Clearwater Mall,Countryside Mall,25.3815174102783,0
+Pinellas Central,Countryside Mall,622.756405785767,35.25248503685
+Mid-Cnty Ind Area,Countryside Mall,175.433448970318,2.55294758081436
+St Petersburg Clearwater Area,Countryside Mall,7.12007474899292,3.30330181121826
+Pinellas South,Countryside Mall,267.894627630711,4.96490228176117
+Gateway Area,Countryside Mall,36.789687037468,0
+Tyrone Square Area,Countryside Mall,6.87389832735062,0
+Dwntwn USF Albert Whitted Airport,Countryside Mall,27.0358703583479,1.39230895042419
+Pasco,Countryside Mall,506.988960904069,5.08814281225205
+Hernando  Citrus,Countryside Mall,11.9707037806511,0
+External,Countryside Mall,14.2827138597495,17.5778800651897
+Tyrone Square Area,Pinellas Beaches,806.560486674309,180.751662015915
+St Petersburg Clearwater Area,Pinellas Beaches,79.3127016723156,67.1509183049202
+Grand Central Area,Pinellas Beaches,192.314458817244,10.4089221954346
+Hillsborough,Clearwater Dwntwn,1116.44690840074,110.009375452995
+Pinellas North,Clearwater Dwntwn,780.355730228126,7.684346139431
+Pinellas Beaches,Clearwater Dwntwn,1624.24564439058,280.061190485954
+Pinellas North Central,Clearwater Dwntwn,17539.4910810143,497.522810131311
+Oldsmar Ind Area,Clearwater Dwntwn,84.5679230690003,0
+Countryside Mall,Clearwater Dwntwn,125.336012661457,0
+Clearwater Dwntwn,Clearwater Dwntwn,7435.58072566986,601.163866877556
+Clearwater Mall,Clearwater Dwntwn,93.1940479278565,0
+Pinellas Central,Clearwater Dwntwn,7155.86982102692,167.562347948551
+Mid-Cnty Ind Area,Clearwater Dwntwn,675.619087606669,9.53860354423523
+St Petersburg Clearwater Area,Clearwater Dwntwn,15.486096739769,3.18557417392731
+Pinellas South,Clearwater Dwntwn,1455.60985051096,28.9511072039604
+Gateway Area,Clearwater Dwntwn,185.42410209775,2.05491375923157
+Pasco,Clearwater Dwntwn,592.865926801576,13.8857476115227
+Hernando  Citrus,Clearwater Dwntwn,58.1142208874226,0.66159588098526
+External,Clearwater Dwntwn,79.5145214574586,176.951616286882
+Tarpon Springs Area,Clearwater Dwntwn,20.0583770275116,2.11260986328125
+Dwntwn USF Albert Whitted Airport,Clearwater Dwntwn,128.193192958832,16.254874765873
+Tyrone Square Area,Clearwater Dwntwn,9.62404847145081,0
+Grand Central Area,Clearwater Dwntwn,2.46523660421371,0
+Manatee Spur,Clearwater Dwntwn,2.53616189956665,0
+Hillsborough,Clearwater Mall,368.987683564425,23.2717855572701
+Pinellas North,Clearwater Mall,224.822450578213,0.970102071762085
+Tarpon Springs Area,Clearwater Mall,1.49120032787323,0
+Pinellas Beaches,Clearwater Mall,82.1893957420252,33.2941517829895
+Pinellas North Central,Clearwater Mall,3552.23571223021,246.812283635139
+Oldsmar Ind Area,Clearwater Mall,19.5861930847168,0
+Countryside Mall,Clearwater Mall,23.9267196655273,1.45480072498322
+Clearwater Dwntwn,Clearwater Mall,89.6802396774292,3.51380658149719
+Clearwater Mall,Clearwater Mall,210.579147338867,32.9123458862305
+Pinellas Central,Clearwater Mall,1244.06908497214,39.8921295702457
+Mid-Cnty Ind Area,Clearwater Mall,166.573139309883,2.8278760612011
+St Petersburg Clearwater Area,Clearwater Mall,3.19697189331055,0.834230601787567
+Pinellas South,Clearwater Mall,254.289055969566,16.6194264292717
+Gateway Area,Clearwater Mall,37.0845913887024,0
+Tyrone Square Area,Clearwater Mall,5.78311866521835,0
+Dwntwn USF Albert Whitted Airport,Clearwater Mall,13.5287699699402,4.05621957778931
+Grand Central Area,Clearwater Mall,0.878101110458374,0
+Pasco,Clearwater Mall,111.661223202944,6.32529544830322
+Hernando  Citrus,Clearwater Mall,2.4791556596756,0.708459079265595
+Manatee Spur,Clearwater Mall,3.14588737487793,0
+External,Clearwater Mall,18.8196792865638,47.0890342062339
+Hillsborough,Pinellas Central,16232.0273347315,717.953438937664
+Pinellas North,Pinellas Central,6341.93723622686,138.426321238279
+Pinellas North Central,Pinellas Central,54765.8827857884,1176.34351368248
+Oldsmar Ind Area,Pinellas Central,604.927054941654,13.8856303989887
+Countryside Mall,Pinellas Central,643.959589317528,14.0493081212044
+Pinellas Beaches,Pinellas Central,25712.6165459862,3053.71487286687
+Clearwater Dwntwn,Pinellas Central,7178.57934124768,144.852828860283
+Clearwater Mall,Pinellas Central,1224.82493755221,59.1362999975681
+Pinellas Central,Pinellas Central,338292.794769348,10312.0407048464
+Mid-Cnty Ind Area,Pinellas Central,44836.0134396461,1041.49189299345
+Pinellas South,Pinellas Central,64825.5595756318,1606.82736483216
+Gateway Area,Pinellas Central,5971.40839236676,249.327033162117
+Tyrone Square Area,Pinellas Central,2631.11069762707,68.7271776199341
+Dwntwn USF Albert Whitted Airport,Pinellas Central,4613.52175992337,225.6812748909
+Grand Central Area,Pinellas Central,128.174194514751,3.05298399925232
+Pasco,Pinellas Central,4609.02667138114,154.338867604733
+Hernando  Citrus,Pinellas Central,485.177512003109,16.2161553800106
+Manatee Spur,Pinellas Central,171.134049373679,6.59208965301514
+External,Pinellas Central,2229.93674587925,2333.46390698504
+Tarpon Springs Area,Pinellas Central,127.977564692497,12.4266220927238
+St Petersburg Clearwater Area,Pinellas Central,1008.34708026052,150.365227520466
+Hillsborough,Mid-Cnty Ind Area,7218.20598051311,330.978827953339
+Pinellas North,Mid-Cnty Ind Area,3220.67187487334,73.8366347551346
+Pinellas North Central,Mid-Cnty Ind Area,13584.4748846329,348.187695339322
+Oldsmar Ind Area,Mid-Cnty Ind Area,239.312000691891,0.710888624191284
+Pinellas Beaches,Mid-Cnty Ind Area,1961.39533627033,251.032365173101
+Pinellas Central,Mid-Cnty Ind Area,44725.2412906495,1152.26426127553
+Mid-Cnty Ind Area,Mid-Cnty Ind Area,31333.8752931939,1122.34508353472
+Pinellas South,Mid-Cnty Ind Area,33102.6397953015,768.456254154444
+Dwntwn USF Albert Whitted Airport,Mid-Cnty Ind Area,1820.71496128722,155.662003040314
+Pasco,Mid-Cnty Ind Area,2911.04449411808,48.2755739092827
+External,Mid-Cnty Ind Area,641.716365606597,1149.20840491036
+Clearwater Dwntwn,Mid-Cnty Ind Area,675.538286358118,9.61940211057663
+Clearwater Mall,Mid-Cnty Ind Area,167.881244421005,1.51977989077568
+Gateway Area,Mid-Cnty Ind Area,2796.24486204982,208.047418415546
+Hernando  Citrus,Mid-Cnty Ind Area,265.814619761659,3.23732715845108
+Countryside Mall,Mid-Cnty Ind Area,174.526786029339,3.45960932970047
+St Petersburg Clearwater Area,Mid-Cnty Ind Area,620.474816143513,87.8586699664593
+Tyrone Square Area,Mid-Cnty Ind Area,260.063302844763,9.06616342067719
+Grand Central Area,Mid-Cnty Ind Area,121.275076925755,3.40440273284912
+Tarpon Springs Area,Mid-Cnty Ind Area,28.2078294157982,4.59173518419266
+Hillsborough,St Petersburg Clearwater Area,463.002541214228,103.902098566294
+Tarpon Springs Area,St Petersburg Clearwater Area,0,0.856054484844208
+Pinellas North,St Petersburg Clearwater Area,150.7753277421,6.59990215301514
+Pinellas North Central,St Petersburg Clearwater Area,475.064072817564,92.3048290610313
+Countryside Mall,St Petersburg Clearwater Area,7.12007474899292,3.30330181121826
+Pinellas Beaches,St Petersburg Clearwater Area,66.4165761172772,80.0470443367958
+Clearwater Dwntwn,St Petersburg Clearwater Area,16.793140411377,1.87853050231934
+Clearwater Mall,St Petersburg Clearwater Area,3.19697189331055,0.834230601787567
+Pinellas Central,St Petersburg Clearwater Area,968.11521306634,190.597144305706
+Mid-Cnty Ind Area,St Petersburg Clearwater Area,619.789632380009,88.5438307821751
+St Petersburg Clearwater Area,St Petersburg Clearwater Area,220.958515167236,52.2189283370972
+Pinellas South,St Petersburg Clearwater Area,708.959963612957,73.0201568603516
+Gateway Area,St Petersburg Clearwater Area,79.1789371967316,26.4031038284302
+Dwntwn USF Albert Whitted Airport,St Petersburg Clearwater Area,29.1119725704193,22.0342655181885
+Pasco,St Petersburg Clearwater Area,224.46956256032,35.6874949932098
+Hernando  Citrus,St Petersburg Clearwater Area,38.2102099657059,8.15880110859871
+External,St Petersburg Clearwater Area,24.5201154454844,212.393996882834
+Manatee Spur,Mid-Cnty Ind Area,129.258161962032,11.635339319706
+Oldsmar Ind Area,St Petersburg Clearwater Area,0,1.17794525623322
+Tyrone Square Area,St Petersburg Clearwater Area,2.87156009674072,0
+Manatee Spur,St Petersburg Clearwater Area,73.1566171646118,12.962516784668
+Hillsborough,Pinellas South,44408.3332507311,2170.03211586177
+Pinellas North,Pinellas South,3790.52544933179,87.6464474797249
+Tarpon Springs Area,Pinellas South,88.4314591884613,6.81356948614121
+Pinellas North Central,Pinellas South,17769.5920541096,401.592019766569
+Oldsmar Ind Area,Pinellas South,584.023694068193,3.63182502985001
+Countryside Mall,Pinellas South,271.478210270405,1.38131582736969
+Pinellas Beaches,Pinellas South,26037.9819749758,2939.17247343063
+Clearwater Dwntwn,Pinellas South,1456.08077202737,28.4801943898201
+Clearwater Mall,Pinellas South,242.996800806373,27.9116822481155
+Pinellas Central,Pinellas South,64759.6279618944,1672.7589597702
+Mid-Cnty Ind Area,Pinellas South,32982.1693275513,888.926735371351
+St Petersburg Clearwater Area,Pinellas South,696.236188583775,85.7439274787903
+Pinellas South,Pinellas South,741517.256821774,18198.1471350491
+Gateway Area,Pinellas South,19928.5900827099,654.079459428787
+Tyrone Square Area,Pinellas South,13588.6144969612,304.714722812176
+Dwntwn USF Albert Whitted Airport,Pinellas South,54460.7506198007,2692.71518358588
+Grand Central Area,Pinellas South,6012.75278264284,85.607299476862
+Pasco,Pinellas South,5844.91789892496,154.290043324232
+Hernando  Citrus,Pinellas South,676.919563803414,21.8239164352417
+Manatee Spur,Pinellas South,913.267617442936,111.499320268631
+External,Pinellas South,6558.21333318597,5867.10645454389
+Hillsborough,Gateway Area,3835.28041037725,166.871392756701
+Pinellas North,Gateway Area,862.455304602394,24.1903435587883
+Pinellas North Central,Gateway Area,3720.30739104017,31.0435567498207
+Oldsmar Ind Area,Gateway Area,132.164126574993,7.43057441711426
+Clearwater Dwntwn,Gateway Area,185.424101859331,2.05491399765015
+Pinellas Beaches,Gateway Area,494.203640932217,49.6491909325123
+Clearwater Mall,Gateway Area,37.0845921039581,0
+Pinellas Central,Gateway Area,5935.16958909925,285.56594824791
+Mid-Cnty Ind Area,Gateway Area,2709.10779222846,295.184473097324
+Pinellas South,Gateway Area,20021.9952193836,560.674170017242
+Gateway Area,Gateway Area,6365.70120815281,329.674020290375
+Tyrone Square Area,Gateway Area,165.970405519009,8.69467735290527
+Dwntwn USF Albert Whitted Airport,Gateway Area,1111.66902950534,124.155954778194
+Grand Central Area,Gateway Area,75.6656005382538,0
+Pasco,Gateway Area,1102.31357109826,32.8155875205994
+Hernando  Citrus,Gateway Area,49.6162256002426,0.373316526412964
+External,Gateway Area,226.161702140525,617.843148866901
+Countryside Mall,Gateway Area,36.7896865606308,0
+St Petersburg Clearwater Area,Gateway Area,86.4573409557343,19.124698638916
+Manatee Spur,Gateway Area,82.2223918437958,14.2766929864883
+Tarpon Springs Area,Gateway Area,3.76204013824463,0
+Hillsborough,Tyrone Square Area,449.702397800982,49.0413700342178
+Pinellas North,Tyrone Square Area,127.442013591528,1.79991006851196
+Pinellas North Central,Tyrone Square Area,267.887479484081,5.02247560024262
+Countryside Mall,Tyrone Square Area,6.87389832735062,0
+Pinellas Beaches,Tyrone Square Area,796.519529461861,190.792629539967
+Clearwater Dwntwn,Tyrone Square Area,9.62404847145081,0
+Clearwater Mall,Tyrone Square Area,5.78311866521835,0
+Pinellas Central,Tyrone Square Area,2610.16195821762,89.6759432554245
+Mid-Cnty Ind Area,Tyrone Square Area,260.937851637602,8.19161117076874
+St Petersburg Clearwater Area,Tyrone Square Area,2.87156009674072,0
+Pinellas South,Tyrone Square Area,13544.1580186635,349.171212494373
+Gateway Area,Tyrone Square Area,164.901245772839,9.76383781433105
+Tyrone Square Area,Tyrone Square Area,2005.63437652588,74.3684778213501
+Dwntwn USF Albert Whitted Airport,Tyrone Square Area,468.413805991411,48.6606193482876
+Grand Central Area,Tyrone Square Area,62.7638187408447,1.01265609264374
+Pasco,Tyrone Square Area,57.8397115468979,0.815297842025757
+Hernando  Citrus,Tyrone Square Area,4.35315823554993,0.666652917861939
+Manatee Spur,Tyrone Square Area,7.01537370681763,0.448380321264267
+External,Tyrone Square Area,52.21272165142,115.19448628393
+Tarpon Springs Area,Tyrone Square Area,2.68231785297394,0
+Hillsborough,Dwntwn USF Albert Whitted Airport,7789.94584237591,756.224994659424
+Pinellas North,Dwntwn USF Albert Whitted Airport,864.475065648556,24.5074778199196
+Pinellas North Central,Dwntwn USF Albert Whitted Airport,2820.48432815302,116.791572123766
+Countryside Mall,Dwntwn USF Albert Whitted Airport,27.0358703583479,1.39230895042419
+Pinellas Beaches,Dwntwn USF Albert Whitted Airport,1625.56487103179,551.840507477522
+Clearwater Dwntwn,Dwntwn USF Albert Whitted Airport,128.19319653511,16.254874765873
+Pinellas Central,Dwntwn USF Albert Whitted Airport,4623.66567773843,215.53735011816
+Mid-Cnty Ind Area,Dwntwn USF Albert Whitted Airport,1839.81296431704,136.564000070095
+Pinellas South,Dwntwn USF Albert Whitted Airport,54615.1552473218,2538.31076726317
+Gateway Area,Dwntwn USF Albert Whitted Airport,1099.72672692069,136.098260581493
+Tyrone Square Area,Dwntwn USF Albert Whitted Airport,473.443940073252,43.6304888427258
+Dwntwn USF Albert Whitted Airport,Dwntwn USF Albert Whitted Airport,23261.8448397517,3057.52367943525
+Grand Central Area,Dwntwn USF Albert Whitted Airport,1241.8989470005,24.0785069465637
+Pasco,Dwntwn USF Albert Whitted Airport,1382.27321841996,53.6783436536789
+Hernando  Citrus,Dwntwn USF Albert Whitted Airport,183.838288366795,4.54996854066849
+Manatee Spur,Dwntwn USF Albert Whitted Airport,247.431753337383,112.74729603529
+External,Dwntwn USF Albert Whitted Airport,551.134948158622,2120.26731878519
+Oldsmar Ind Area,Dwntwn USF Albert Whitted Airport,38.5338324308395,2.77796387672424
+Clearwater Mall,Dwntwn USF Albert Whitted Airport,13.5287702083588,4.05621957778931
+St Petersburg Clearwater Area,Dwntwn USF Albert Whitted Airport,29.1119730472565,22.0342655181885
+Hillsborough,Grand Central Area,125.322918117046,3.06830155849457
+Tarpon Springs Area,Grand Central Area,0.630097568035126,0
+Pinellas North,Grand Central Area,7.85834991931915,0
+Pinellas North Central,Grand Central Area,48.2573222368956,0.628906488418579
+Oldsmar Ind Area,Grand Central Area,3.23954296112061,0
+Pinellas Beaches,Grand Central Area,191.54118129611,11.1822053790092
+Clearwater Dwntwn,Grand Central Area,2.46523660421371,0
+Clearwater Mall,Grand Central Area,0.878101110458374,0
+Pinellas Central,Grand Central Area,128.791074872017,2.43610000610352
+Mid-Cnty Ind Area,Grand Central Area,123.862882733345,0.816589593887329
+Pinellas South,Grand Central Area,5974.84256792069,123.517541378737
+Gateway Area,Grand Central Area,75.6656000614166,0
+Tyrone Square Area,Grand Central Area,63.7764720916748,0
+Dwntwn USF Albert Whitted Airport,Grand Central Area,1215.17341065407,50.8040127754212
+Grand Central Area,Grand Central Area,160.582702636719,13.0044765472412
+Pasco,Grand Central Area,12.8838264942169,0
+Hernando  Citrus,Grand Central Area,0.332230865955353,0
+External,Grand Central Area,23.8501458989922,35.8572480520234
+Tarpon Springs Area,Dwntwn USF Albert Whitted Airport,0.675417959690094,0
+Pinellas North,Pasco,27084.6729619622,682.832403302193
+Tarpon Springs Area,Pasco,1873.38204782509,185.69090539217
+Pinellas North Central,Pasco,13478.9354963307,384.627133995295
+Oldsmar Ind Area,Pasco,1821.28143397586,17.3109864890575
+Clearwater Dwntwn,Pasco,592.865929781809,13.8857476115227
+Pinellas Central,Pasco,4609.57263922831,153.792904496193
+Mid-Cnty Ind Area,Pasco,2908.89137658058,50.4286768436432
+Pinellas South,Pasco,5845.0030874628,154.204837173224
+Pinellas Beaches,Pasco,1693.77210727544,245.013375252485
+Gateway Area,Pasco,1104.02263391297,31.106516122818
+Dwntwn USF Albert Whitted Airport,Pasco,1389.92823674958,46.0233200192452
+Countryside Mall,Pasco,508.204485935159,3.87261044979095
+Clearwater Mall,Pasco,111.492349296808,6.4941713809967
+St Petersburg Clearwater Area,Pasco,225.043516248465,35.1135432720184
+Grand Central Area,Pasco,12.8838264942169,0
+Tyrone Square Area,Pasco,57.8397120237351,0.815297842025757
+Pinellas North,Hernando  Citrus,862.012733884447,35.076419532299
+Pinellas North Central,Hernando  Citrus,987.785694104474,62.3147645294666
+Pinellas Central,Hernando  Citrus,485.17750534229,16.2161553502083
+Pinellas South,Hernando  Citrus,679.069898251037,19.6735812425613
+Countryside Mall,Hernando  Citrus,11.9707037806511,0
+Pinellas Beaches,Hernando  Citrus,236.932695109354,59.4595912992954
+Dwntwn USF Albert Whitted Airport,Hernando  Citrus,183.838286280632,4.54996854066849
+Tarpon Springs Area,Hernando  Citrus,61.3324403688312,20.8527483344078
+Mid-Cnty Ind Area,Hernando  Citrus,265.814621787984,3.23732715845108
+Gateway Area,Hernando  Citrus,49.6162254810333,0.373316526412964
+Clearwater Dwntwn,Hernando  Citrus,58.1142208576202,0.66159588098526
+St Petersburg Clearwater Area,Hernando  Citrus,38.2102085351944,8.15880110859871
+Clearwater Mall,Hernando  Citrus,2.4791556596756,0.708459079265595
+Oldsmar Ind Area,Hernando  Citrus,209.021785289049,0
+Tyrone Square Area,Hernando  Citrus,4.35315823554993,0.666652917861939
+Grand Central Area,Hernando  Citrus,0.332230865955353,0
+Tarpon Springs Area,Manatee Spur,1.02330315113068,0
+Pinellas North,Manatee Spur,25.3360738754273,4.04236936569214
+Pinellas North Central,Manatee Spur,84.4096443653107,20.8249583244324
+Pinellas Beaches,Manatee Spur,35.7419488430023,13.6394029557705
+Pinellas Central,Manatee Spur,171.134051519446,6.59208965301514
+St Petersburg Clearwater Area,Manatee Spur,77.689640045166,8.42949390411377
+Mid-Cnty Ind Area,Manatee Spur,121.918788850307,18.9747157692909
+Pinellas South,Manatee Spur,913.420765632123,111.346168398857
+Dwntwn USF Albert Whitted Airport,Manatee Spur,238.055756747723,122.123283565044
+Gateway Area,Manatee Spur,82.2223947048187,14.2766929864883
+Tyrone Square Area,Manatee Spur,7.01537346839905,0.448380321264267
+Clearwater Mall,Manatee Spur,3.14588737487793,0
+Clearwater Dwntwn,Manatee Spur,2.53616189956665,0
+Pinellas North,External,1061.49864451838,1055.3828117525
+Tarpon Springs Area,External,15.0970236161957,121.255980959395
+Pinellas Beaches,External,745.938433976902,3458.32492623827
+Pinellas North Central,External,2254.39765432793,2562.91752048896
+Oldsmar Ind Area,External,85.7904333366314,83.5912857204094
+Countryside Mall,External,14.2827138597495,17.5778800651897
+Clearwater Dwntwn,External,79.5145214574586,176.951616286882
+Clearwater Mall,External,18.8196792865638,47.0890342062339
+Pinellas Central,External,2229.93674587925,2333.46390698504
+Mid-Cnty Ind Area,External,641.716365606597,1149.20840491036
+St Petersburg Clearwater Area,External,24.5201154454844,212.393996882834
+Pinellas South,External,6558.21333318597,5867.10645454389
+Gateway Area,External,226.161702140525,617.843148866901
+Tyrone Square Area,External,52.21272165142,115.19448628393
+Dwntwn USF Albert Whitted Airport,External,551.134948158622,2120.26731878519
+Grand Central Area,External,23.8501458989922,35.8572480520234
