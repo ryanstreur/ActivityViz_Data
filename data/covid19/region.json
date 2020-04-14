@@ -86,7 +86,7 @@
         ],
         "BarMap": [
           {
-            "name": "Devices at Home By County",
+            "name": "Devices at Home by County",
             "file": "ny_covid_map.csv",
             "config": "Default",
             "aggregationMethod": "average",
