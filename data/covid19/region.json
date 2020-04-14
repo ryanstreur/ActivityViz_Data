@@ -90,6 +90,7 @@
             "file": "ny_covid_map.csv",
             "config": "Default",
             "aggregationMethod": "average",
+            "barGroupSortMethod": "firstBar",
             "info": "Devices detected at home by county and time of day",
             "explanation": [
               {
