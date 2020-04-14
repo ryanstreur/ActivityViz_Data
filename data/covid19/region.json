@@ -29,7 +29,9 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Person location during the day, before and after the outbreak of COVID-19.",
+                      "Average time use by location (at home, at work, and other) for resident of and visitors to the New York Metropolitan in February and March 2020.",
+                      "“Before” represents average behavior prior to the COVID-19 pandemic, defined as February 1st – March 9th, 2020",
+                      "“Now” represents average behavior during the COVID-19 pandemic, defined as after March 16th, 2020",
                       "New York residents and visitors alike showed a marked increase in time spent at home between 10 AM and 8 PM on the weekdays, and between 10 AM and midnight on weekends."
                     ]
                   }
@@ -63,7 +65,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Person location during the day, before and after the outbreak of COVID-19."
+                      "Proportion of New York Metropolitan area residents at home, work, and other locations between 9am-6pm during weekdays and weekends average by week, from the first week of February 2020 to the last week of March."
                     ]
                   }
                 ]
@@ -84,7 +86,7 @@
         ],
         "BarMap": [
           {
-            "name": "Change in Percent of Devices at Home by Time of Day",
+            "name": "Devices at Home By County",
             "file": "ny_covid_map.csv",
             "config": "Default",
             "aggregationMethod": "average",
@@ -96,8 +98,10 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "The lengths of the bars and sizes of the bubbles show the percent change of counts of devices detected at home before and after the outbreak of COVID-19.",
-                      "Dates Compared: 2/13/2020, 3/26/2020"
+                      "Average change in time spent at home between 9am-6pm now relative to before the COVID-19 pandemic, summarized by each device’s inferred home Census tract location. The size of the bubbles on the map show how the magnitude of change in time spent at home varies over the region.",
+                      "The bar graph depicts county summarizes of these data",
+                      "“Before” the COVID-19 pandemic is defined as February 1st – March 9th, 2020",
+                      "“Now” is defined as after March 16th, 2020"
                     ]
                   }
                 ]
