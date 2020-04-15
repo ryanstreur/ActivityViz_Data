@@ -150,6 +150,7 @@
       "ShowAsPercentByDefault": false,
       "ShowAsVerticalByDefault": true,
       "StackAllChartsByDefault": true,
+      "HideControls": true,
       "ChartWidthOverride": []
     }
   },
