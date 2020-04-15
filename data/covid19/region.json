@@ -1,0 +1,170 @@
+{
+  "Title": "COVID-19 Travel Metrics",
+  "CountyFile": "ZoneShape.json",
+  "Icon": "RSG.ico",
+  "Logo": "RSG_400px.jpg",
+  "NavbarTitle": "COVID-19 Travel Metrics",
+  "LinkURL": "https://www.rsginc.com",
+  "CenterMap": [40.656852, -74.028204],
+  "FrontPageTitle": "COVID-19 Travel Metrics",
+  "FrontPageGraphic": "RSG_400px.jpg",
+  "SideBarTextLeft": "<b>ActivityViz</b> was initially funded by the <a href='https://atlantaregional.org/'>Atlanta Regional Commission</a> with additional support from <a href='https://www.oregonmetro.gov/'>Oregon Metro</a> and others.",
+  "SideBarTextRight": "<b>ActivityViz</b> is an interactive travel and activity data visualization tool.  It is built with JavaScript technologies and works with various types of travel and activity data - household travel surveys, trip-based model outputs, activity-based model outputs, disaggregate passive data, freight models, on-board surveys, etc.  The dashboard features several interactive and customizable visualizations for exploring data, such as 3D maps of trips in time and space, time use by person type and activity, radar charts for performance measure analysis, sunburst diagrams for visualizing mode shares, animated bubble maps, chord diagrams for OD data, point-of-interest maps for transit stop data, truck flow data, etc.  </b>ActivityViz</b> is published using <a href='https://pages.github.com/'>GitHub pages</a> which eliminates most of the administrative backend in traditional systems.",
+  "SideBarImage": "example.png",
+  "scenarios": {
+    "ny-metro": {
+      "title": "New York Metro Region",
+      "visualizations": {
+        "TimeUse": [
+          {
+            "name": "Person Location During the Day",
+            "title": "Person Location During the Day",
+            "config": "Default",
+            "file": "ny_covid_timeuse.csv",
+            "info": "Displays activity estimates based on SafeGraph location data. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
+            "explanation": [
+              {
+                "header": "Summary",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Average time use by location (at home, at work, and other) for resident of and visitors to the New York Metropolitan in February and March 2020.",
+                      "“Before” represents average behavior prior to the COVID-19 pandemic, defined as February 1st – March 9th, 2020",
+                      "“Now” represents average behavior during the COVID-19 pandemic, defined as after March 16th, 2020",
+                      "New York residents and visitors alike showed a marked increase in time spent at home between 10 AM and 8 PM on the weekdays, and between 10 AM and midnight on weekends."
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Hover the mouse over each label above the graph to update the chart with the corresponding data set.",
+                      "Hover the mouse over the chart to see percentages for each location."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "GroupedCharts": [
+          {
+            "name": "Stay-at-Home by Week",
+            "config": "Default",
+            "file": "ny_covid_barcharts.csv",
+            "info": "The percent of time people spent at home, at work, or somewhere else, by week",
+            "explanation": [
+              {
+                "header": "Summary",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Proportion of New York Metropolitan area residents at home, work, and other locations between 9am-6pm during weekdays and weekends average by week, from the first week of February 2020 to the last week of March."
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Hover the mouse over each bar to see the percentage value that bar represents."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "BarMap": [
+          {
+            "name": "Devices at Home by County",
+            "file": "ny_covid_map.csv",
+            "config": "Default",
+            "aggregationMethod": "average",
+            "barGroupSortMethod": "firstBar",
+            "info": "Devices detected at home by county and time of day",
+            "explanation": [
+              {
+                "header": "Summary",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "Average change in time spent at home between 9am-6pm now relative to before the COVID-19 pandemic, summarized by each device’s inferred home Census tract location. The size of the bubbles on the map show how the magnitude of change in time spent at home varies over the region.",
+                      "The bar graph depicts county summarizes of these data",
+                      "“Before” the COVID-19 pandemic is defined as February 1st – March 9th, 2020",
+                      "“Now” is defined as after March 16th, 2020"
+                    ]
+                  }
+                ]
+              },
+              {
+                "header": "Instructions",
+                "body": [
+                  {
+                    "type": "unorderedList",
+                    "content": [
+                      "For the left graph: Select/deselect bubbles to add/remove day types.",
+                      "For the left graph: Hover mouse over graph to see detail.",
+                      "For the right map: Use the drop-down selection to view different day types.",
+                      "For the right map: Use the layer menu in the top right to select different layers."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "BarMap": {
+    "Default": {
+      "ZoneFile": "ZoneShape.json",
+      "CycleMapTools": false,
+      "StackAllChartsByDefault": false,
+      "DefaultBubbleSize": 3
+    }
+  },
+  "RadarCharts": {
+    "Default": {
+      "NumberColsRadar": 4,
+      "IndependentScale": [""],
+      "ConvertAxesToPercent": true
+    }
+  },
+
+  "GroupedCharts": {
+    "Default": {
+      "NumberColsGrouped": 1,
+      "SwapLegendByDefault": true,
+      "ShowAsPercentByDefault": false,
+      "ShowAsVerticalByDefault": true,
+      "StackAllChartsByDefault": true,
+      "HideControls": true,
+      "ChartWidthOverride": []
+    }
+  },
+  "TimeUse": {
+    "Default": {}
+  },
+  "Sunburst": {
+    "Default": {}
+  },
+  "3DMap": {
+    "Default": {
+      "ZoneFile": "ZoneShape.GeoJSON",
+      "ShowPeriodsAsDropdown": false,
+      "DataHasPeriods": true
+    }
+  }
+}

@@ -1,0 +1,47 @@
+CountyID,County,Day Type,"Change in percent devices at home, midday"
+Bergen,Bergen,Weekday,36.75%
+Bronx,Bronx,Weekday,22.51%
+Essex,Essex,Weekday,27.95%
+Hudson,Hudson,Weekday,28.63%
+Hunterdon,Hunterdon,Weekday,33.44%
+Kings,Kings,Weekday,27.25%
+Middlesex,Middlesex,Weekday,31.69%
+Monmouth,Monmouth,Weekday,33.37%
+Morris,Morris,Weekday,36.35%
+Nassau,Nassau,Weekday,36.56%
+New York,New York,Weekday,16.46%
+Ocean,Ocean,Weekday,28.38%
+Passaic,Passaic,Weekday,28.35%
+Pike,Pike,Weekday,23.50%
+Putnam,Putnam,Weekday,30.90%
+Queens,Queens,Weekday,31.02%
+Richmond,Richmond,Weekday,31.37%
+Rockland,Rockland,Weekday,32.88%
+Somerset,Somerset,Weekday,35.87%
+Suffolk,Suffolk,Weekday,32.59%
+Sussex,Sussex,Weekday,29.91%
+Union,Union,Weekday,31.96%
+Westchester,Westchester,Weekday,31.31%
+Bergen,Bergen,Weekend,21.29%
+Bronx,Bronx,Weekend,13.78%
+Essex,Essex,Weekend,16.89%
+Hudson,Hudson,Weekend,14.72%
+Hunterdon,Hunterdon,Weekend,21.10%
+Kings,Kings,Weekend,14.16%
+Middlesex,Middlesex,Weekend,18.63%
+Monmouth,Monmouth,Weekend,21.03%
+Morris,Morris,Weekend,20.39%
+Nassau,Nassau,Weekend,20.87%
+New York,New York,Weekend,3.92%
+Ocean,Ocean,Weekend,18.77%
+Passaic,Passaic,Weekend,17.32%
+Pike,Pike,Weekend,17.40%
+Putnam,Putnam,Weekend,19.29%
+Queens,Queens,Weekend,18.12%
+Richmond,Richmond,Weekend,18.92%
+Rockland,Rockland,Weekend,19.58%
+Somerset,Somerset,Weekend,20.98%
+Suffolk,Suffolk,Weekend,20.53%
+Sussex,Sussex,Weekend,18.96%
+Union,Union,Weekend,19.45%
+Westchester,Westchester,Weekend,17.54%
