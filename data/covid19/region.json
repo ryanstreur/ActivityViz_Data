@@ -17,8 +17,8 @@
       "visualizations": {
         "TimeUse": [
           {
-            "name": "Person Location During the Day",
-            "title": "Person Location During the Day",
+            "name": "Location During the Day",
+            "title": "Location During the Day",
             "config": "Default",
             "file": "ny_covid_timeuse.csv",
             "info": "Displays activity estimates based on SafeGraph location data. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
