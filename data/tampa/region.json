@@ -160,7 +160,8 @@
               "type": "unorderedList",
               "content": ["Origins and destinations of daily trips by activity zones from passive and survey data.",
               "<b>Observation:</b> Most inter-district trips were between Tampa and Hillsborough-Other.",
-              "<b>Observation:</b> Hillsborough County had the highest volume of trips overall."]
+              "<b>Observation:</b> Hillsborough County had the highest volume of trips overall.",
+              "<b>Note:</b> Non-resident travel exluded from passive data here for comparability to the survey data"]
             }]
           },
           {
