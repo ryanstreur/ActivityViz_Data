@@ -581,9 +581,9 @@
     "Travel": {
       "NumberColsGrouped": 1,
       "SwapLegendByDefault": true,
-      "ShowAsPercentByDefault": false,
+      "ShowAsPercentByDefault": "N/A",
       "ShowAsVerticalByDefault": true,
-      "StackAllChartsByDefault": false,
+      "StackAllChartsByDefault": "N/A",
       "ChartWidthOverride": []
     },
     "Destination": {
