@@ -6,14 +6,14 @@
   "NavbarTitle": "COVID-19 Travel Metrics",
   "LinkURL": "https://www.rsginc.com",
   "CenterMap": [40.656852, -74.028204],
-  "FrontPageTitle": "COVID-19 Travel Metrics",
+  "FrontPageTitle": "Vanishing Travel",
+  "FrontPageSubtitle": "New York City Metro Area Before and During the COVID-19 Outbreak",
+  "HeroImageLayout": true,
+  "HeroImage": "charles-forerunner-small.jpg",
   "FrontPageGraphic": "RSG_400px.jpg",
-  "SideBarTextLeft": "<b>ActivityViz</b> was initially funded by the <a href='https://atlantaregional.org/'>Atlanta Regional Commission</a> with additional support from <a href='https://www.oregonmetro.gov/'>Oregon Metro</a> and others.",
-  "SideBarTextRight": "<b>ActivityViz</b> is an interactive travel and activity data visualization tool.  It is built with JavaScript technologies and works with various types of travel and activity data - household travel surveys, trip-based model outputs, activity-based model outputs, disaggregate passive data, freight models, on-board surveys, etc.  The dashboard features several interactive and customizable visualizations for exploring data, such as 3D maps of trips in time and space, time use by person type and activity, radar charts for performance measure analysis, sunburst diagrams for visualizing mode shares, animated bubble maps, chord diagrams for OD data, point-of-interest maps for transit stop data, truck flow data, etc.  </b>ActivityViz</b> is published using <a href='https://pages.github.com/'>GitHub pages</a> which eliminates most of the administrative backend in traditional systems.",
-  "SideBarImage": "example.png",
   "scenarios": {
     "ny-metro": {
-      "title": "New York Metro Region",
+      "title": "New York Metro Region Dashboard",
       "visualizations": {
         "TimeUse": [
           {
