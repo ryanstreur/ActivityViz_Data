@@ -275,7 +275,10 @@ telecommute_total = data.table() #person_dt[!telework_freq %in% c(995) &
                               # by = .(FREQUENCY = telework_labels)]
 telecommute_freq_dt = rbindlist(list(telecommute_freq_dt, telecommute_total), use.names = TRUE)
 
-setorder(telecommute_freq_dt, AGE_GROUP, -PERSON)
+# setorder(telecommute_freq_dt, AGE_GROUP, -PERSON)
+telecommute_freq_dt = telecommute_freq_dt[order(AGE_GROUP, 
+                                                match(FREQUENCY,
+                                                      rev(unique(names(telecommute_labels_ar)))))]
 telecommute_freq_dt[,CHART:="TELECOMMUTE_FREQUENCY"]
 
 # telecommute_freq_dt[,.(FREQUENCY, PERSON, PERCENT = scales::percent(prop.table(PERSON))),
@@ -313,7 +316,10 @@ bike_total = data.table() #person_dt[!bike_freq %in% c(995, -9998) &
                               # by = .(FREQUENCY = bike_labels)]
 bike_freq_dt = rbindlist(list(bike_freq_dt, bike_total), use.names = TRUE)
 
-setorder(bike_freq_dt, AGE_GROUP, -PERSON)
+# setorder(bike_freq_dt, AGE_GROUP, -PERSON)
+bike_freq_dt = bike_freq_dt[order(AGE_GROUP,
+                                  match(FREQUENCY,
+                                        rev(unique(names(bike_labels_ar)))))]
 bike_freq_dt[,CHART:="BIKE_USE_FREQUENCY"]
 
 commute_frequency_dt = rbindlist(list(telecommute_freq_dt, bike_freq_dt), use.names = TRUE)
@@ -334,15 +340,19 @@ age_labels_ar = c(
   "75+" = 11
 )
 
+age_labels_order = c("Under 5", "5 to 15", "16-17", "18-24", "25-34", 
+                     "35-44", "45-54", "55-64", "65-74", "75+")
+
 person_dt[,age_group:=names(age_labels_ar)[match(age,
                                                  age_labels_ar)]]
-age_group_dt = person_dt[age > 4, .(PERSON=.N),
+age_group_dt = person_dt[, .(PERSON=sum(weight_household)),
                          by=.(AGE_GROUP=age_group)]
 
-setorder(age_group_dt, AGE_GROUP)
+# setorder(age_group_dt, AGE_GROUP)
+age_group_dt = age_group_dt[order(match(AGE_GROUP, age_labels_order))]
 age_group_dt[,CHART:="AGE DISTRIBUTION"]
-age_group_dt[,PARTICIPANT_TYPE:="SURVEY"]
-setcolorder(age_group_dt, c("PARTICIPANT_TYPE"))
+age_group_dt[,RESPONSE:="AGE GROUP"]
+setcolorder(age_group_dt, c("RESPONSE"))
 
 
 gender_labels_ar = c(
@@ -355,7 +365,7 @@ gender_labels_ar = c(
 
 person_dt[,gender_label:=names(gender_labels_ar)[match(gender,
                                                        gender_labels_ar)]]
-gender_dt = person_dt[gender %in% c(1,2), .(PERSON=.N),
+gender_dt = person_dt[gender %in% c(1,2,3), .(PERSON=sum(weight_household)),
                       by=.(GENDER=gender_label)]
 setorder(gender_dt, GENDER)
 
@@ -381,7 +391,8 @@ overall_trip_dt         = trip_est_dt[,.(TRIPS = sum(TRIPS)),.(FROM = D7_ALL_LBL
 overall_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FROM),
                       TO   = ifelse(is.na(TO), "External", TO))]
 setkey(overall_trip_dt, FROM, TO)
-overall_trip_dt = overall_trip_dt[CJ(agg_dt$D7_ALL_LBL, agg_dt$D7_ALL_LBL, unique = TRUE)]
+overall_trip_dt = overall_trip_dt[CJ(c(agg_dt$D7_ALL_LBL,"External"), 
+                                     c(agg_dt$D7_ALL_LBL,"External"), unique = TRUE)]
 overall_trip_dt[is.na(TRIPS), TRIPS := 0]
 
 # Hillsborough
@@ -392,8 +403,9 @@ hillsborough_trip_dt    = trip_est_dt[grepl("Hillsborough", COUNTY_NAME_O)|
 hillsborough_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FROM),
                            TO   = ifelse(is.na(TO), "External", TO))]
 setkey(hillsborough_trip_dt, FROM, TO)
-hillsborough_trip_dt = hillsborough_trip_dt[CJ(agg_dt$HILLSBOROUGH_LBL_3,
-                                               agg_dt$HILLSBOROUGH_LBL_3,
+HILLSBOROUGH_LBL_3 = c(agg_dt[!is.na(HILLSBOROUGH_LBL_3), unique(HILLSBOROUGH_LBL_3)], "External")
+hillsborough_trip_dt = hillsborough_trip_dt[CJ(c(HILLSBOROUGH_LBL_3),
+                                               c(HILLSBOROUGH_LBL_3),
                                                unique = TRUE)]
 hillsborough_trip_dt[is.na(TRIPS), TRIPS := 0]
 
@@ -405,8 +417,9 @@ pinellas_trip_dt        = trip_est_dt[grepl("Pinellas", COUNTY_NAME_O)|
 pinellas_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FROM),
                        TO   = ifelse(is.na(TO), "External", TO))]
 setkey(pinellas_trip_dt, FROM, TO)
-pinellas_trip_dt = pinellas_trip_dt[CJ(agg_dt$PINELLAS_LBL,
-                                       agg_dt$PINELLAS_LBL,
+PINELLAS_LBL = c(agg_dt[!is.na(PINELLAS_LBL), unique(PINELLAS_LBL)], "External")
+pinellas_trip_dt = pinellas_trip_dt[CJ(c(PINELLAS_LBL),
+                                       c(PINELLAS_LBL),
                                        unique = TRUE)]
 pinellas_trip_dt[is.na(TRIPS), TRIPS := 0]
 # Pasco
@@ -417,8 +430,9 @@ pasco_trip_dt           = trip_est_dt[grepl("Pasco", COUNTY_NAME_O)|
 pasco_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FROM),
                     TO   = ifelse(is.na(TO), "External", TO))]
 setkey(pasco_trip_dt, FROM, TO)
-pasco_trip_dt = pasco_trip_dt[CJ(agg_dt$PASCO_LBL,
-                                 agg_dt$PASCO_LBL,
+PASCO_LBL = c(agg_dt[!is.na(PASCO_LBL), unique(PASCO_LBL)], "External")
+pasco_trip_dt = pasco_trip_dt[CJ(c(PASCO_LBL),
+                                 c(PASCO_LBL),
                                  unique = TRUE)]
 pasco_trip_dt[is.na(TRIPS), TRIPS := 0]
 
@@ -432,8 +446,9 @@ hernando_citrus_trip_dt = trip_est_dt[grepl("Hernando", COUNTY_NAME_O)|
 hernando_citrus_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FROM),
                               TO   = ifelse(is.na(TO), "External", TO))]
 setkey(hernando_citrus_trip_dt, FROM, TO)
-hernando_citrus_trip_dt = hernando_citrus_trip_dt[CJ(agg_dt$HERNANDO_CITRUS_LBL_2,
-                                                     agg_dt$HERNANDO_CITRUS_LBL_2,
+HERNANDO_CITRUS_LBL_2 = c(agg_dt[!is.na(HERNANDO_CITRUS_LBL_2), unique(HERNANDO_CITRUS_LBL_2)], "External")
+hernando_citrus_trip_dt = hernando_citrus_trip_dt[CJ(c(HERNANDO_CITRUS_LBL_2),
+                                                     c(HERNANDO_CITRUS_LBL_2),
                                                      unique = TRUE)]
 hernando_citrus_trip_dt[is.na(TRIPS), TRIPS := 0]
 
@@ -476,16 +491,21 @@ trip_dt[, mode := names(modes)[match(mode_type,modes)]]
 trip_dt[, mode := str_to_upper(mode)]
 trip_dt[mode=="CAR", mode:="AUTO"]
 setkey(trip_dt, d_taz_2020, mode)
-trips_mode = trip_dt[
-  !(is.na(d_taz_2020) | is.na(mode))
-  ][CJ(taz_dt$id,
-       mode,
-       unique = TRUE)][, .(TRIPS = sum(trip_weight_household)),
-                       by = .(ZONE = d_taz_2020,
-                              MODE = mode)][order(ZONE, MODE)]
+# trips_mode = trip_dt[
+#   !(is.na(d_taz_2020) | is.na(mode))
+#   ][CJ(taz_dt$id,
+#        mode,
+#        unique = TRUE)][, .(TRIPS = sum(trip_weight_household)),
+#                        by = .(ZONE = d_taz_2020,
+#                               MODE = mode)][order(ZONE, MODE)]
+trips_mode = trip_dt[, .(TRIPS = sum(trip_weight_household)),
+                     by = .(ZONE = d_taz_2020,
+                            MODE = mode)][order(ZONE, MODE)]
+# trips_mode[is.na(ZONE), ZONE:="External"]
 trips_mode[is.na(TRIPS), TRIPS:=0]
 setkey(taz_dt, id)
 trips_mode[,COUNTY:=taz_dt[.(ZONE),Cnty_Nm]]
+trips_mode[is.na(COUNTY), COUNTY:="External"]
 setcolorder(trips_mode, c("ZONE", "COUNTY"))
 
 trip_total = data.table() #trips_mode[,.(TRIPS=sum(TRIPS), MODE = "ALL_MODES"),.(ZONE, COUNTY)]
@@ -494,13 +514,16 @@ trips_mode = trips_mode[order(ZONE, COUNTY, MODE)]
 trips_mode = trips_mode[TRIPS!=0]
 
 # Trip mode by zone
-trip_zone = trip_dt[
-  !(is.na(d_taz_2020) | is.na(mode))
-  ][CJ(d_taz_2020,
-       mode,
-       unique = TRUE)][, .(TRIPS = sum(trip_weight_household)),
-                       by = .(ZONE = d_taz_2020,
-                              MODE = mode)][order(ZONE, MODE)]
+# trip_zone = trip_dt[
+#   !(is.na(d_taz_2020) | is.na(mode))
+#   ][CJ(d_taz_2020,
+#        mode,
+#        unique = TRUE)][, .(TRIPS = sum(trip_weight_household)),
+#                        by = .(ZONE = d_taz_2020,
+#                               MODE = mode)][order(ZONE, MODE)]
+trip_zone = trip_dt[, .(TRIPS = sum(trip_weight_household)),
+                    by = .(ZONE = d_taz_2020,
+                           MODE = mode)][order(ZONE, MODE)]
 trip_zone[is.na(TRIPS), TRIPS:=0]
 trip_zone = trip_zone[order(ZONE, MODE)]
 trip_zone = trip_zone[TRIPS!=0]
@@ -510,15 +533,19 @@ trip_zone = trip_zone[TRIPS!=0]
 trip_dt[,is_seasonal:=0L]
 trip_dt[household_dt[seasonal_household==1,.(hh_id)],is_seasonal:=1L,on=.(hh_id)]
 
-seasonal_trips_mode = trip_dt[
-  !(is.na(d_taz_2020) | is.na(mode)) & is_seasonal==1
-  ][CJ(taz_dt$id,
-       mode,
-       unique = TRUE)][, .(TRIPS = sum(trip_weight_household)),
-                       by = .(ZONE = d_taz_2020,
-                              MODE = mode)][order(ZONE, MODE)]
+# seasonal_trips_mode = trip_dt[
+#   !(is.na(d_taz_2020) | is.na(mode)) & is_seasonal==1
+#   ][CJ(taz_dt$id,
+#        mode,
+#        unique = TRUE)][, .(TRIPS = sum(trip_weight_household)),
+#                        by = .(ZONE = d_taz_2020,
+#                               MODE = mode)][order(ZONE, MODE)]
+seasonal_trips_mode = trip_dt[is_seasonal == 1, .(TRIPS = sum(trip_weight_household)),
+                              by = .(ZONE = d_taz_2020,
+                                     MODE = mode)][order(ZONE, MODE)]
 seasonal_trips_mode[is.na(TRIPS), TRIPS:=0]
 seasonal_trips_mode[,COUNTY:=taz_dt[.(ZONE),Cnty_Nm]]
+seasonal_trips_mode[is.na(COUNTY), COUNTY:="External"]
 setcolorder(seasonal_trips_mode, c("ZONE", "COUNTY"))
 
 trip_total = data.table() #seasonal_trips_mode[,.(TRIPS=sum(TRIPS), MODE = "ALL_MODES"),.(ZONE, COUNTY)]
@@ -530,15 +557,19 @@ seasonal_trips_mode = seasonal_trips_mode[TRIPS!=0]
 trip_dt[,uni_student:=0L]
 trip_dt[person_dt[university_student==1,.(personid)],uni_student:=1L,on=.(personid)]
 
-uni_trips_mode = trip_dt[
-  !(is.na(d_taz_2020) | is.na(mode)) & uni_student==1
-  ][CJ(taz_dt$id,
-       mode,
-       unique = TRUE)][, .(TRIPS = sum(trip_weight_household)),
-                       by = .(ZONE = d_taz_2020,
-                              MODE = mode)][order(ZONE, MODE)]
+# uni_trips_mode = trip_dt[
+#   !(is.na(d_taz_2020) | is.na(mode)) & uni_student==1
+#   ][CJ(taz_dt$id,
+#        mode,
+#        unique = TRUE)][, .(TRIPS = sum(trip_weight_household)),
+#                        by = .(ZONE = d_taz_2020,
+#                               MODE = mode)][order(ZONE, MODE)]
+uni_trips_mode = trip_dt[uni_student == 1, .(TRIPS = sum(trip_weight_household)),
+                         by = .(ZONE = d_taz_2020,
+                                MODE = mode)][order(ZONE, MODE)]
 uni_trips_mode[is.na(TRIPS), TRIPS:=0]
 uni_trips_mode[,COUNTY:=taz_dt[.(ZONE),Cnty_Nm]]
+uni_trips_mode[is.na(COUNTY), COUNTY:="External"]
 setcolorder(uni_trips_mode, c("ZONE", "COUNTY"))
 
 trip_total = data.table() #uni_trips_mode[,.(TRIPS=sum(TRIPS), MODE = "ALL_MODES"),.(ZONE, COUNTY)]
@@ -566,7 +597,7 @@ categories_ar = c(
 
 day_pattern_dt[,c(names(categories_ar)):=0L]
 day_pattern_dt[seasonal_household==1,                                   cat9:=1L]
-day_pattern_dt[hh_recruitment==6,                                       cat8:=1L]
+day_pattern_dt[university_student==1,                                   cat8:=1L]
 day_pattern_dt[age==3 & cat8==0 & cat9==0,                              cat1:=1L]
 day_pattern_dt[age==4 & cat8==0 & cat9==0,                              cat2:=1L]
 day_pattern_dt[age==1 & cat8==0 & cat9==0,                              cat3:=1L]
@@ -616,6 +647,14 @@ day_pattern_dt = day_pattern_dt[CJ(person_group,
                   CHART = "Day Pattern"),
                by = .(`PERSON GROUP`=person_group,
                       `DAY ACTIVITY` =day_pattern)]
+
+person_group_order = c("ALL", "CHILD AGE 0 TO 4", "CHILD AGE 5 TO 15", "CHILD AGE 16 PLUS",
+                       "FULL TIME WORKER", "PART TIME WORKER", "NON WORKER AGE 65 PLUS",
+                       "OTHER NON WORKING ADULT",
+                       "SEASONAL RESIDENT", "UNIVERSITY STUDENT")
+day_activity_order = c("Home All Day", "Work and/or School Travel", "Other Travel")
+day_pattern_dt = day_pattern_dt[order(match(`PERSON GROUP`, person_group_order),
+                                      match(`DAY ACTIVITY`, day_activity_order))]
 
 # Time Use
 
@@ -710,7 +749,7 @@ time_use_dt = household_dt[,.(hh_id, seasonal_household, hh_recruitment)][
 
 time_use_dt[,c(names(categories_ar)):=0L]
 time_use_dt[seasonal_household==1,                                   cat9:=1L]
-time_use_dt[hh_recruitment==6,                                       cat8:=1L]
+time_use_dt[university_student==1,                                   cat8:=1L]
 time_use_dt[age==3 & cat8==0 & cat9==0,                              cat1:=1L]
 time_use_dt[age==4 & cat8==0 & cat9==0,                              cat2:=1L]
 time_use_dt[age==1 & cat8==0 & cat9==0,                              cat3:=1L]
@@ -814,6 +853,9 @@ time_use_dt = tmp2[,.(TIME_USE=(sum(TIME_USE))),.(PERSON_TYPE, PER, ORIG_PURPOSE
 setkey(time_use_dt, PERSON_TYPE, PER, ORIG_PURPOSE)
 time_use_dt = time_use_dt[CJ(PERSON_TYPE, PER, ORIG_PURPOSE, unique = TRUE)]
 time_use_dt[is.na(TIME_USE), TIME_USE:=0]
+time_use_dt = time_use_dt[order(match(PERSON_TYPE, person_group_order),
+                                PER,
+                                ORIG_PURPOSE)]
 
 ### Write output data ############################################################
 ##################################################################################

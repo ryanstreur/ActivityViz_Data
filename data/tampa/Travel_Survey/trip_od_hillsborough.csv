@@ -1,37 +1,11 @@
 FROM,TO,TRIPS
-,,0
-,Apollo Beach  Ruskin,0
-,CZ2,0
-,CZ4,0
-,Citrus Park,0
-,Downtown,0
-,East Town,0
-,Gibsonton,0
-,Harney Canal,0
-,Hernando  Citrus,0
-,MacDill AFB,0
-,Manatee Spur,0
-,NE Hilsborough,0
-,NW Hilsborough,0
-,New Tampa,0
-,Pasco,0
-,Pinellas,0
-,Plant City Area,0
-,Port of Tampa  50th St Corridor,0
-,SE Hillsborough,0
-,SW Hillsborough,0
-,TPA  Anderson Rd,0
-,Tampa Central,0
-,USF  Hosp  Busch,0
-,West Brandon,0
-,Westshore  Rocky Point,0
-Apollo Beach  Ruskin,,0
 Apollo Beach  Ruskin,Apollo Beach  Ruskin,81692.84742
 Apollo Beach  Ruskin,CZ2,6.09454
 Apollo Beach  Ruskin,CZ4,12089.67823
 Apollo Beach  Ruskin,Citrus Park,0
 Apollo Beach  Ruskin,Downtown,1764.84368
 Apollo Beach  Ruskin,East Town,388.89111
+Apollo Beach  Ruskin,External,1293.15244
 Apollo Beach  Ruskin,Gibsonton,5592.84066
 Apollo Beach  Ruskin,Harney Canal,0
 Apollo Beach  Ruskin,Hernando  Citrus,0
@@ -51,13 +25,13 @@ Apollo Beach  Ruskin,Tampa Central,1035.37015
 Apollo Beach  Ruskin,USF  Hosp  Busch,0
 Apollo Beach  Ruskin,West Brandon,505.76723
 Apollo Beach  Ruskin,Westshore  Rocky Point,158.10216
-CZ2,,0
 CZ2,Apollo Beach  Ruskin,43.39697
 CZ2,CZ2,79613.37026
 CZ2,CZ4,520.66313
 CZ2,Citrus Park,0
 CZ2,Downtown,4109.31313
 CZ2,East Town,2292.47124
+CZ2,External,1194.60893
 CZ2,Gibsonton,3584.48538
 CZ2,Harney Canal,47.16231
 CZ2,Hernando  Citrus,831.7589
@@ -77,13 +51,13 @@ CZ2,Tampa Central,1548.95213
 CZ2,USF  Hosp  Busch,0
 CZ2,West Brandon,4140.58404
 CZ2,Westshore  Rocky Point,156.08316
-CZ4,,0
 CZ4,Apollo Beach  Ruskin,18350.81906
 CZ4,CZ2,426.89225
 CZ4,CZ4,160337.14805
 CZ4,Citrus Park,0
 CZ4,Downtown,727.5381
 CZ4,East Town,145.34611
+CZ4,External,7368.24403
 CZ4,Gibsonton,25040.51306
 CZ4,Harney Canal,139.3082
 CZ4,Hernando  Citrus,0
@@ -103,13 +77,13 @@ CZ4,Tampa Central,4129.18048
 CZ4,USF  Hosp  Busch,2277.0071
 CZ4,West Brandon,5522.90275
 CZ4,Westshore  Rocky Point,1909.8401
-Citrus Park,,0
 Citrus Park,Apollo Beach  Ruskin,0
 Citrus Park,CZ2,0
 Citrus Park,CZ4,0
 Citrus Park,Citrus Park,402.6972
 Citrus Park,Downtown,0
 Citrus Park,East Town,0
+Citrus Park,External,0
 Citrus Park,Gibsonton,0
 Citrus Park,Harney Canal,0
 Citrus Park,Hernando  Citrus,0
@@ -129,13 +103,13 @@ Citrus Park,Tampa Central,654.82967
 Citrus Park,USF  Hosp  Busch,0
 Citrus Park,West Brandon,0
 Citrus Park,Westshore  Rocky Point,213.30432
-Downtown,,0
 Downtown,Apollo Beach  Ruskin,748.19096
 Downtown,CZ2,2594.28205
 Downtown,CZ4,249.93529
 Downtown,Citrus Park,117.75852
 Downtown,Downtown,100638.65216
 Downtown,East Town,863.6455
+Downtown,External,9032.18218
 Downtown,Gibsonton,968.3348
 Downtown,Harney Canal,1377.57904
 Downtown,Hernando  Citrus,196.75523
@@ -155,13 +129,13 @@ Downtown,Tampa Central,28120.5891
 Downtown,USF  Hosp  Busch,2115.24
 Downtown,West Brandon,4746.40125
 Downtown,Westshore  Rocky Point,13196.06098
-East Town,,0
 East Town,Apollo Beach  Ruskin,22.72942
 East Town,CZ2,2270.43586
 East Town,CZ4,0
 East Town,Citrus Park,170.65101
 East Town,Downtown,1579.72049
 East Town,East Town,10487.83434
+East Town,External,606.7843
 East Town,Gibsonton,395.11747
 East Town,Harney Canal,18.59597
 East Town,Hernando  Citrus,0
@@ -181,13 +155,39 @@ East Town,Tampa Central,5369.67875
 East Town,USF  Hosp  Busch,506.92396
 East Town,West Brandon,3083.79548
 East Town,Westshore  Rocky Point,1956.39456
-Gibsonton,,0
+External,Apollo Beach  Ruskin,879.82934
+External,CZ2,145.31217
+External,CZ4,7830.91304
+External,Citrus Park,0
+External,Downtown,6110.0562
+External,East Town,110.54857
+External,External,0
+External,Gibsonton,6297.5943
+External,Harney Canal,0
+External,Hernando  Citrus,0
+External,MacDill AFB,0
+External,Manatee Spur,0
+External,NE Hilsborough,4282.41271
+External,NW Hilsborough,554.00227
+External,New Tampa,0
+External,Pasco,0
+External,Pinellas,0
+External,Plant City Area,3166.30634
+External,Port of Tampa  50th St Corridor,3854.26068
+External,SE Hillsborough,4700.53564
+External,SW Hillsborough,639.72715
+External,TPA  Anderson Rd,6231.64201
+External,Tampa Central,13026.50499
+External,USF  Hosp  Busch,148.15938
+External,West Brandon,617.06736
+External,Westshore  Rocky Point,656.45543
 Gibsonton,Apollo Beach  Ruskin,1007.87109
 Gibsonton,CZ2,6296.46028
 Gibsonton,CZ4,25979.22086
 Gibsonton,Citrus Park,0
 Gibsonton,Downtown,3546.47743
 Gibsonton,East Town,730.28788
+Gibsonton,External,8006.59823
 Gibsonton,Gibsonton,63734.21048
 Gibsonton,Harney Canal,0
 Gibsonton,Hernando  Citrus,0
@@ -207,13 +207,13 @@ Gibsonton,Tampa Central,4374.32487
 Gibsonton,USF  Hosp  Busch,152.16574
 Gibsonton,West Brandon,9230.70462
 Gibsonton,Westshore  Rocky Point,60.34471
-Harney Canal,,0
 Harney Canal,Apollo Beach  Ruskin,0
 Harney Canal,CZ2,47.16231
 Harney Canal,CZ4,98.56549
 Harney Canal,Citrus Park,0
 Harney Canal,Downtown,696.50568
 Harney Canal,East Town,26.34014
+Harney Canal,External,4163.32737
 Harney Canal,Gibsonton,2.89899
 Harney Canal,Harney Canal,4977.56734
 Harney Canal,Hernando  Citrus,0
@@ -233,13 +233,13 @@ Harney Canal,Tampa Central,6947.3097
 Harney Canal,USF  Hosp  Busch,12.66879
 Harney Canal,West Brandon,804.63669
 Harney Canal,Westshore  Rocky Point,509.89729
-Hernando  Citrus,,0
 Hernando  Citrus,Apollo Beach  Ruskin,0
 Hernando  Citrus,CZ2,0
 Hernando  Citrus,CZ4,0
 Hernando  Citrus,Citrus Park,79.1301
 Hernando  Citrus,Downtown,150.04624
 Hernando  Citrus,East Town,0
+Hernando  Citrus,External,0
 Hernando  Citrus,Gibsonton,0
 Hernando  Citrus,Harney Canal,0
 Hernando  Citrus,Hernando  Citrus,0
@@ -259,13 +259,13 @@ Hernando  Citrus,Tampa Central,379.34811
 Hernando  Citrus,USF  Hosp  Busch,4178.01956
 Hernando  Citrus,West Brandon,33.24174
 Hernando  Citrus,Westshore  Rocky Point,139.17247
-MacDill AFB,,0
 MacDill AFB,Apollo Beach  Ruskin,98.72257
 MacDill AFB,CZ2,2420.40171
 MacDill AFB,CZ4,0
 MacDill AFB,Citrus Park,0
 MacDill AFB,Downtown,1999.1118
 MacDill AFB,East Town,0
+MacDill AFB,External,0
 MacDill AFB,Gibsonton,1.17856
 MacDill AFB,Harney Canal,151.25935
 MacDill AFB,Hernando  Citrus,60.07968
@@ -285,13 +285,13 @@ MacDill AFB,Tampa Central,279.79809
 MacDill AFB,USF  Hosp  Busch,0
 MacDill AFB,West Brandon,0
 MacDill AFB,Westshore  Rocky Point,268.4634
-Manatee Spur,,0
 Manatee Spur,Apollo Beach  Ruskin,175.15969
 Manatee Spur,CZ2,0
 Manatee Spur,CZ4,0
 Manatee Spur,Citrus Park,0
 Manatee Spur,Downtown,0
 Manatee Spur,East Town,0
+Manatee Spur,External,0
 Manatee Spur,Gibsonton,229.72374
 Manatee Spur,Harney Canal,0
 Manatee Spur,Hernando  Citrus,0
@@ -311,13 +311,13 @@ Manatee Spur,Tampa Central,0
 Manatee Spur,USF  Hosp  Busch,0
 Manatee Spur,West Brandon,115.85562
 Manatee Spur,Westshore  Rocky Point,0
-NE Hilsborough,,0
 NE Hilsborough,Apollo Beach  Ruskin,116.01779
 NE Hilsborough,CZ2,267.57981
 NE Hilsborough,CZ4,4470.03389
 NE Hilsborough,Citrus Park,0
 NE Hilsborough,Downtown,10988.44162
 NE Hilsborough,East Town,6780.308
+NE Hilsborough,External,5284.575
 NE Hilsborough,Gibsonton,11225.58647
 NE Hilsborough,Harney Canal,4211.59225
 NE Hilsborough,Hernando  Citrus,0
@@ -337,13 +337,13 @@ NE Hilsborough,Tampa Central,42468.55216
 NE Hilsborough,USF  Hosp  Busch,20474.78257
 NE Hilsborough,West Brandon,15349.22562
 NE Hilsborough,Westshore  Rocky Point,2055.43577
-NW Hilsborough,,0
 NW Hilsborough,Apollo Beach  Ruskin,0
 NW Hilsborough,CZ2,712.92874
 NW Hilsborough,CZ4,907.33162
 NW Hilsborough,Citrus Park,13288.04423
 NW Hilsborough,Downtown,12761.09105
 NW Hilsborough,East Town,4391.68935
+NW Hilsborough,External,656.75975
 NW Hilsborough,Gibsonton,2428.72512
 NW Hilsborough,Harney Canal,1533.19306
 NW Hilsborough,Hernando  Citrus,5958.23769
@@ -363,13 +363,13 @@ NW Hilsborough,Tampa Central,134118.79444
 NW Hilsborough,USF  Hosp  Busch,10070.63811
 NW Hilsborough,West Brandon,903.20578
 NW Hilsborough,Westshore  Rocky Point,19080.94406
-New Tampa,,0
 New Tampa,Apollo Beach  Ruskin,0
 New Tampa,CZ2,658.10568
 New Tampa,CZ4,458.85084
 New Tampa,Citrus Park,30.21282
 New Tampa,Downtown,1087.17043
 New Tampa,East Town,265.07947
+New Tampa,External,0
 New Tampa,Gibsonton,0
 New Tampa,Harney Canal,772.36374
 New Tampa,Hernando  Citrus,0
@@ -389,13 +389,13 @@ New Tampa,Tampa Central,8552.92287
 New Tampa,USF  Hosp  Busch,445.3627
 New Tampa,West Brandon,180.49959
 New Tampa,Westshore  Rocky Point,1899.73728
-Pasco,,0
 Pasco,Apollo Beach  Ruskin,0
 Pasco,CZ2,70.8975
 Pasco,CZ4,0
 Pasco,Citrus Park,279.43772
 Pasco,Downtown,15433.97868
 Pasco,East Town,1448.169
+Pasco,External,0
 Pasco,Gibsonton,149.2189
 Pasco,Harney Canal,159.60534
 Pasco,Hernando  Citrus,0
@@ -415,13 +415,13 @@ Pasco,Tampa Central,28891.12519
 Pasco,USF  Hosp  Busch,9121.89256
 Pasco,West Brandon,2266.93989
 Pasco,Westshore  Rocky Point,9032.4223
-Pinellas,,0
 Pinellas,Apollo Beach  Ruskin,3563.93552
 Pinellas,CZ2,99.93077
 Pinellas,CZ4,1703.76159
 Pinellas,Citrus Park,3719.60506
 Pinellas,Downtown,12140.19253
 Pinellas,East Town,865.92488
+Pinellas,External,0
 Pinellas,Gibsonton,1030.20056
 Pinellas,Harney Canal,1324.2528
 Pinellas,Hernando  Citrus,0
@@ -441,13 +441,13 @@ Pinellas,Tampa Central,23219.96818
 Pinellas,USF  Hosp  Busch,20810.8332
 Pinellas,West Brandon,1302.83121
 Pinellas,Westshore  Rocky Point,13428.49159
-Plant City Area,,0
 Plant City Area,Apollo Beach  Ruskin,0
 Plant City Area,CZ2,0
 Plant City Area,CZ4,0
 Plant City Area,Citrus Park,0
 Plant City Area,Downtown,149.74685
 Plant City Area,East Town,0
+Plant City Area,External,3961.47305
 Plant City Area,Gibsonton,0
 Plant City Area,Harney Canal,0
 Plant City Area,Hernando  Citrus,0
@@ -467,13 +467,13 @@ Plant City Area,Tampa Central,4468.5097
 Plant City Area,USF  Hosp  Busch,0
 Plant City Area,West Brandon,0
 Plant City Area,Westshore  Rocky Point,0
-Port of Tampa  50th St Corridor,,0
 Port of Tampa  50th St Corridor,Apollo Beach  Ruskin,0
 Port of Tampa  50th St Corridor,CZ2,0
 Port of Tampa  50th St Corridor,CZ4,0
 Port of Tampa  50th St Corridor,Citrus Park,0
 Port of Tampa  50th St Corridor,Downtown,355.52226
 Port of Tampa  50th St Corridor,East Town,132.87903
+Port of Tampa  50th St Corridor,External,0
 Port of Tampa  50th St Corridor,Gibsonton,122.10132
 Port of Tampa  50th St Corridor,Harney Canal,0
 Port of Tampa  50th St Corridor,Hernando  Citrus,0
@@ -493,13 +493,13 @@ Port of Tampa  50th St Corridor,Tampa Central,524.69986
 Port of Tampa  50th St Corridor,USF  Hosp  Busch,0
 Port of Tampa  50th St Corridor,West Brandon,2217.61192
 Port of Tampa  50th St Corridor,Westshore  Rocky Point,3114.2695
-SE Hillsborough,,0
 SE Hillsborough,Apollo Beach  Ruskin,38596.02677
 SE Hillsborough,CZ2,21274.7963
 SE Hillsborough,CZ4,13552.16011
 SE Hillsborough,Citrus Park,138.89472
 SE Hillsborough,Downtown,20929.77041
 SE Hillsborough,East Town,20648.04942
+SE Hillsborough,External,2292.49231
 SE Hillsborough,Gibsonton,28556.34729
 SE Hillsborough,Harney Canal,4706.97604
 SE Hillsborough,Hernando  Citrus,131.59106
@@ -519,13 +519,13 @@ SE Hillsborough,Tampa Central,25496.9207
 SE Hillsborough,USF  Hosp  Busch,9174.2534
 SE Hillsborough,West Brandon,59646.11368
 SE Hillsborough,Westshore  Rocky Point,1667.1018
-SW Hillsborough,,0
 SW Hillsborough,Apollo Beach  Ruskin,0
 SW Hillsborough,CZ2,111.58628
 SW Hillsborough,CZ4,326.61305
 SW Hillsborough,Citrus Park,0
 SW Hillsborough,Downtown,40733.70289
 SW Hillsborough,East Town,2115.70315
+SW Hillsborough,External,5298.0094
 SW Hillsborough,Gibsonton,1373.34901
 SW Hillsborough,Harney Canal,1.73162
 SW Hillsborough,Hernando  Citrus,23.81993
@@ -545,13 +545,13 @@ SW Hillsborough,Tampa Central,42627.99633
 SW Hillsborough,USF  Hosp  Busch,15315.45882
 SW Hillsborough,West Brandon,314.3982
 SW Hillsborough,Westshore  Rocky Point,20657.62745
-TPA  Anderson Rd,,0
 TPA  Anderson Rd,Apollo Beach  Ruskin,0
 TPA  Anderson Rd,CZ2,87.67433
 TPA  Anderson Rd,CZ4,1368.09736
 TPA  Anderson Rd,Citrus Park,147.4538
 TPA  Anderson Rd,Downtown,1187.58667
 TPA  Anderson Rd,East Town,122.46892
+TPA  Anderson Rd,External,10873.74122
 TPA  Anderson Rd,Gibsonton,1326.47137
 TPA  Anderson Rd,Harney Canal,0
 TPA  Anderson Rd,Hernando  Citrus,382.9886
@@ -571,13 +571,13 @@ TPA  Anderson Rd,Tampa Central,22851.10538
 TPA  Anderson Rd,USF  Hosp  Busch,2657.44284
 TPA  Anderson Rd,West Brandon,0
 TPA  Anderson Rd,Westshore  Rocky Point,37813.05989
-Tampa Central,,0
 Tampa Central,Apollo Beach  Ruskin,1472.96413
 Tampa Central,CZ2,1037.69051
 Tampa Central,CZ4,5496.23119
 Tampa Central,Citrus Park,465.01634
 Tampa Central,Downtown,41431.56286
 Tampa Central,East Town,9106.44051
+Tampa Central,External,8835.411
 Tampa Central,Gibsonton,3027.30023
 Tampa Central,Harney Canal,3704.94143
 Tampa Central,Hernando  Citrus,447.18813
@@ -597,13 +597,13 @@ Tampa Central,Tampa Central,540040.69732
 Tampa Central,USF  Hosp  Busch,82022.67017
 Tampa Central,West Brandon,15026.94553
 Tampa Central,Westshore  Rocky Point,20489.59505
-USF  Hosp  Busch,,0
 USF  Hosp  Busch,Apollo Beach  Ruskin,53.31788
 USF  Hosp  Busch,CZ2,98.54778
 USF  Hosp  Busch,CZ4,1801.81923
 USF  Hosp  Busch,Citrus Park,0
 USF  Hosp  Busch,Downtown,4297.51123
 USF  Hosp  Busch,East Town,951.35582
+USF  Hosp  Busch,External,151.00017
 USF  Hosp  Busch,Gibsonton,98.1417
 USF  Hosp  Busch,Harney Canal,1599.93504
 USF  Hosp  Busch,Hernando  Citrus,3531.02327
@@ -623,13 +623,13 @@ USF  Hosp  Busch,Tampa Central,89696.43592
 USF  Hosp  Busch,USF  Hosp  Busch,153537.84568
 USF  Hosp  Busch,West Brandon,752.3889
 USF  Hosp  Busch,Westshore  Rocky Point,1065.93768
-West Brandon,,0
 West Brandon,Apollo Beach  Ruskin,2795.12371
 West Brandon,CZ2,932.68097
 West Brandon,CZ4,3182.73819
 West Brandon,Citrus Park,0
 West Brandon,Downtown,727.27378
 West Brandon,East Town,8517.98971
+West Brandon,External,437.14731
 West Brandon,Gibsonton,13418.9741
 West Brandon,Harney Canal,1245.79837
 West Brandon,Hernando  Citrus,0
@@ -649,13 +649,13 @@ West Brandon,Tampa Central,6595.46578
 West Brandon,USF  Hosp  Busch,359.62036
 West Brandon,West Brandon,25772.48068
 West Brandon,Westshore  Rocky Point,3646.47782
-Westshore  Rocky Point,,0
 Westshore  Rocky Point,Apollo Beach  Ruskin,158.10216
 Westshore  Rocky Point,CZ2,183.88486
 Westshore  Rocky Point,CZ4,1381.24026
 Westshore  Rocky Point,Citrus Park,1503.65779
 Westshore  Rocky Point,Downtown,14118.54393
 Westshore  Rocky Point,East Town,1564.44756
+Westshore  Rocky Point,External,1106.73199
 Westshore  Rocky Point,Gibsonton,1031.02815
 Westshore  Rocky Point,Harney Canal,252.15548
 Westshore  Rocky Point,Hernando  Citrus,749.36754

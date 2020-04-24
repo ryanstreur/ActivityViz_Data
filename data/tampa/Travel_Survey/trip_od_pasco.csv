@@ -1,29 +1,8 @@
 FROM,TO,TRIPS
-,,0
-,Citrus,0
-,Dade City,0
-,E New Port Richey,0
-,Hernando,0
-,Hillsborough  Manatee Spur,0
-,Hudson,0
-,I-75  SR 52,0
-,Lacoochie Ind Area,0
-,Land O Lakes  Connerton,0
-,NW Pasco,0
-,New Port Richey,0
-,Pasco Central,0
-,Pasco East,0
-,Pasco West,0
-,Pinellas,0
-,San Antonio,0
-,Seven Springs  Odessa,0
-,Suncoast  SR 54,0
-,Wesley Chapel  I-75 - SR56,0
-,Zephyrhills,0
-Citrus,,0
 Citrus,Citrus,0
 Citrus,Dade City,0
 Citrus,E New Port Richey,0
+Citrus,External,0
 Citrus,Hernando,0
 Citrus,Hillsborough  Manatee Spur,0
 Citrus,Hudson,1.1909
@@ -41,10 +20,10 @@ Citrus,Seven Springs  Odessa,0
 Citrus,Suncoast  SR 54,0
 Citrus,Wesley Chapel  I-75 - SR56,2883.63426
 Citrus,Zephyrhills,53.2122
-Dade City,,0
 Dade City,Citrus,0
 Dade City,Dade City,19834.42178
 Dade City,E New Port Richey,2752.67657
+Dade City,External,26.53765
 Dade City,Hernando,0
 Dade City,Hillsborough  Manatee Spur,151.07459
 Dade City,Hudson,0
@@ -62,10 +41,10 @@ Dade City,Seven Springs  Odessa,0
 Dade City,Suncoast  SR 54,0
 Dade City,Wesley Chapel  I-75 - SR56,121.94492
 Dade City,Zephyrhills,10257.01027
-E New Port Richey,,0
 E New Port Richey,Citrus,0
 E New Port Richey,Dade City,2967.74775
 E New Port Richey,E New Port Richey,4653.73801
+E New Port Richey,External,0
 E New Port Richey,Hernando,204.5057
 E New Port Richey,Hillsborough  Manatee Spur,22.72942
 E New Port Richey,Hudson,0
@@ -83,10 +62,31 @@ E New Port Richey,Seven Springs  Odessa,1963.10178
 E New Port Richey,Suncoast  SR 54,51.51793
 E New Port Richey,Wesley Chapel  I-75 - SR56,0
 E New Port Richey,Zephyrhills,0
-Hernando,,0
+External,Citrus,0
+External,Dade City,0
+External,E New Port Richey,0
+External,External,0
+External,Hernando,0
+External,Hillsborough  Manatee Spur,0
+External,Hudson,0
+External,I-75  SR 52,0
+External,Lacoochie Ind Area,0
+External,Land O Lakes  Connerton,0
+External,NW Pasco,0
+External,New Port Richey,0
+External,Pasco Central,98.27957
+External,Pasco East,745.668
+External,Pasco West,2094.50658
+External,Pinellas,0
+External,San Antonio,0
+External,Seven Springs  Odessa,0
+External,Suncoast  SR 54,0
+External,Wesley Chapel  I-75 - SR56,494.45702
+External,Zephyrhills,359.54662
 Hernando,Citrus,0
 Hernando,Dade City,39.52764
 Hernando,E New Port Richey,444.29659
+Hernando,External,0
 Hernando,Hernando,0
 Hernando,Hillsborough  Manatee Spur,0
 Hernando,Hudson,783.16085
@@ -104,10 +104,10 @@ Hernando,Seven Springs  Odessa,176.42229
 Hernando,Suncoast  SR 54,353.75572
 Hernando,Wesley Chapel  I-75 - SR56,71.43895
 Hernando,Zephyrhills,0
-Hillsborough  Manatee Spur,,0
 Hillsborough  Manatee Spur,Citrus,0
 Hillsborough  Manatee Spur,Dade City,207.31711
 Hillsborough  Manatee Spur,E New Port Richey,34.63474
+Hillsborough  Manatee Spur,External,0
 Hillsborough  Manatee Spur,Hernando,0
 Hillsborough  Manatee Spur,Hillsborough  Manatee Spur,0
 Hillsborough  Manatee Spur,Hudson,2364.16413
@@ -125,10 +125,10 @@ Hillsborough  Manatee Spur,Seven Springs  Odessa,7605.8162
 Hillsborough  Manatee Spur,Suncoast  SR 54,7139.53228
 Hillsborough  Manatee Spur,Wesley Chapel  I-75 - SR56,21608.49532
 Hillsborough  Manatee Spur,Zephyrhills,9811.20965
-Hudson,,0
 Hudson,Citrus,1.1909
 Hudson,Dade City,0
 Hudson,E New Port Richey,0
+Hudson,External,0
 Hudson,Hernando,532.64663
 Hudson,Hillsborough  Manatee Spur,2232.35196
 Hudson,Hudson,10052.44905
@@ -146,10 +146,10 @@ Hudson,Seven Springs  Odessa,0
 Hudson,Suncoast  SR 54,0
 Hudson,Wesley Chapel  I-75 - SR56,0
 Hudson,Zephyrhills,0
-I-75  SR 52,,0
 I-75  SR 52,Citrus,0
 I-75  SR 52,Dade City,0
 I-75  SR 52,E New Port Richey,0
+I-75  SR 52,External,0
 I-75  SR 52,Hernando,58.21103
 I-75  SR 52,Hillsborough  Manatee Spur,910.21848
 I-75  SR 52,Hudson,0
@@ -167,10 +167,10 @@ I-75  SR 52,Seven Springs  Odessa,0
 I-75  SR 52,Suncoast  SR 54,0
 I-75  SR 52,Wesley Chapel  I-75 - SR56,1055.67098
 I-75  SR 52,Zephyrhills,0
-Lacoochie Ind Area,,0
 Lacoochie Ind Area,Citrus,0
 Lacoochie Ind Area,Dade City,0
 Lacoochie Ind Area,E New Port Richey,0
+Lacoochie Ind Area,External,0
 Lacoochie Ind Area,Hernando,0
 Lacoochie Ind Area,Hillsborough  Manatee Spur,0
 Lacoochie Ind Area,Hudson,0
@@ -188,10 +188,10 @@ Lacoochie Ind Area,Seven Springs  Odessa,0
 Lacoochie Ind Area,Suncoast  SR 54,0
 Lacoochie Ind Area,Wesley Chapel  I-75 - SR56,0
 Lacoochie Ind Area,Zephyrhills,0
-Land O Lakes  Connerton,,0
 Land O Lakes  Connerton,Citrus,0
 Land O Lakes  Connerton,Dade City,65.38079
 Land O Lakes  Connerton,E New Port Richey,0
+Land O Lakes  Connerton,External,0
 Land O Lakes  Connerton,Hernando,2354.43956
 Land O Lakes  Connerton,Hillsborough  Manatee Spur,18566.17596
 Land O Lakes  Connerton,Hudson,52.7007
@@ -209,10 +209,10 @@ Land O Lakes  Connerton,Seven Springs  Odessa,242.4972
 Land O Lakes  Connerton,Suncoast  SR 54,3224.49244
 Land O Lakes  Connerton,Wesley Chapel  I-75 - SR56,575.69118
 Land O Lakes  Connerton,Zephyrhills,0
-NW Pasco,,0
 NW Pasco,Citrus,0
 NW Pasco,Dade City,0
 NW Pasco,E New Port Richey,0
+NW Pasco,External,0
 NW Pasco,Hernando,3303.57505
 NW Pasco,Hillsborough  Manatee Spur,39.72833
 NW Pasco,Hudson,81.98412
@@ -230,10 +230,10 @@ NW Pasco,Seven Springs  Odessa,0
 NW Pasco,Suncoast  SR 54,0
 NW Pasco,Wesley Chapel  I-75 - SR56,0
 NW Pasco,Zephyrhills,0
-New Port Richey,,0
 New Port Richey,Citrus,0
 New Port Richey,Dade City,0
 New Port Richey,E New Port Richey,4733.85364
+New Port Richey,External,0
 New Port Richey,Hernando,3778.56752
 New Port Richey,Hillsborough  Manatee Spur,5139.19681
 New Port Richey,Hudson,2323.93865
@@ -251,10 +251,10 @@ New Port Richey,Seven Springs  Odessa,9152.89961
 New Port Richey,Suncoast  SR 54,159.6615
 New Port Richey,Wesley Chapel  I-75 - SR56,6.09454
 New Port Richey,Zephyrhills,0
-Pasco Central,,0
 Pasco Central,Citrus,0
 Pasco Central,Dade City,346.67378
 Pasco Central,E New Port Richey,9681.28481
+Pasco Central,External,0
 Pasco Central,Hernando,19354.60974
 Pasco Central,Hillsborough  Manatee Spur,37735.1716
 Pasco Central,Hudson,889.18926
@@ -272,10 +272,10 @@ Pasco Central,Seven Springs  Odessa,14841.6611
 Pasco Central,Suncoast  SR 54,1844.09183
 Pasco Central,Wesley Chapel  I-75 - SR56,9054.8827
 Pasco Central,Zephyrhills,0
-Pasco East,,0
 Pasco East,Citrus,0
 Pasco East,Dade City,6401.05531
 Pasco East,E New Port Richey,0
+Pasco East,External,1512.49847
 Pasco East,Hernando,3241.15128
 Pasco East,Hillsborough  Manatee Spur,62767.33147
 Pasco East,Hudson,0
@@ -293,10 +293,10 @@ Pasco East,Seven Springs  Odessa,0.85073
 Pasco East,Suncoast  SR 54,11250.21107
 Pasco East,Wesley Chapel  I-75 - SR56,31901.3349
 Pasco East,Zephyrhills,30033.432
-Pasco West,,0
 Pasco West,Citrus,0
 Pasco West,Dade City,0
 Pasco West,E New Port Richey,18052.00612
+Pasco West,External,1346.75403
 Pasco West,Hernando,8188.37448
 Pasco West,Hillsborough  Manatee Spur,7754.01549
 Pasco West,Hudson,9291.0311
@@ -314,10 +314,10 @@ Pasco West,Seven Springs  Odessa,55565.38486
 Pasco West,Suncoast  SR 54,127.03524
 Pasco West,Wesley Chapel  I-75 - SR56,0
 Pasco West,Zephyrhills,2744.6131
-Pinellas,,0
 Pinellas,Citrus,0
 Pinellas,Dade City,0
 Pinellas,E New Port Richey,141.21286
+Pinellas,External,0
 Pinellas,Hernando,0
 Pinellas,Hillsborough  Manatee Spur,0
 Pinellas,Hudson,1.1909
@@ -335,10 +335,10 @@ Pinellas,Seven Springs  Odessa,12212.00344
 Pinellas,Suncoast  SR 54,1684.00058
 Pinellas,Wesley Chapel  I-75 - SR56,1593.22917
 Pinellas,Zephyrhills,139.19655
-San Antonio,,0
 San Antonio,Citrus,0
 San Antonio,Dade City,377.35422
 San Antonio,E New Port Richey,0
+San Antonio,External,60.80805
 San Antonio,Hernando,149.69904
 San Antonio,Hillsborough  Manatee Spur,155.17616
 San Antonio,Hudson,0
@@ -356,10 +356,10 @@ San Antonio,Seven Springs  Odessa,0
 San Antonio,Suncoast  SR 54,0
 San Antonio,Wesley Chapel  I-75 - SR56,0
 San Antonio,Zephyrhills,18.29127
-Seven Springs  Odessa,,0
 Seven Springs  Odessa,Citrus,0
 Seven Springs  Odessa,Dade City,0
 Seven Springs  Odessa,E New Port Richey,3066.02069
+Seven Springs  Odessa,External,2538.84005
 Seven Springs  Odessa,Hernando,135.79653
 Seven Springs  Odessa,Hillsborough  Manatee Spur,8694.18715
 Seven Springs  Odessa,Hudson,0
@@ -377,10 +377,10 @@ Seven Springs  Odessa,Seven Springs  Odessa,52474.59709
 Seven Springs  Odessa,Suncoast  SR 54,2248.49701
 Seven Springs  Odessa,Wesley Chapel  I-75 - SR56,266.7804
 Seven Springs  Odessa,Zephyrhills,0
-Suncoast  SR 54,,0
 Suncoast  SR 54,Citrus,0
 Suncoast  SR 54,Dade City,0
 Suncoast  SR 54,E New Port Richey,0
+Suncoast  SR 54,External,0
 Suncoast  SR 54,Hernando,489.01284
 Suncoast  SR 54,Hillsborough  Manatee Spur,10596.16796
 Suncoast  SR 54,Hudson,0
@@ -398,10 +398,10 @@ Suncoast  SR 54,Seven Springs  Odessa,2373.25989
 Suncoast  SR 54,Suncoast  SR 54,8212.58861
 Suncoast  SR 54,Wesley Chapel  I-75 - SR56,155.49498
 Suncoast  SR 54,Zephyrhills,0
-Wesley Chapel  I-75 - SR56,,0
 Wesley Chapel  I-75 - SR56,Citrus,2454.06016
 Wesley Chapel  I-75 - SR56,Dade City,1571.44284
 Wesley Chapel  I-75 - SR56,E New Port Richey,0
+Wesley Chapel  I-75 - SR56,External,145.00927
 Wesley Chapel  I-75 - SR56,Hernando,165.93648
 Wesley Chapel  I-75 - SR56,Hillsborough  Manatee Spur,19840.36788
 Wesley Chapel  I-75 - SR56,Hudson,0
@@ -419,10 +419,10 @@ Wesley Chapel  I-75 - SR56,Seven Springs  Odessa,25.41229
 Wesley Chapel  I-75 - SR56,Suncoast  SR 54,400.46612
 Wesley Chapel  I-75 - SR56,Wesley Chapel  I-75 - SR56,66639.14798
 Wesley Chapel  I-75 - SR56,Zephyrhills,391.93331
-Zephyrhills,,0
 Zephyrhills,Citrus,0
 Zephyrhills,Dade City,5946.94552
 Zephyrhills,E New Port Richey,0
+Zephyrhills,External,340.52045
 Zephyrhills,Hernando,53.2122
 Zephyrhills,Hillsborough  Manatee Spur,11014.97603
 Zephyrhills,Hudson,0

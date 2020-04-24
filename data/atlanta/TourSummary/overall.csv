@@ -1,0 +1,15 @@
+TOURS AND STOPS,OVERALL,COUNT,CHART
+"No Tours, No Stops",TRUE,225,OVERALL
+"1 Tour, No Stops",TRUE,373,OVERALL
+"1 Tour, 1 Stop",TRUE,234,OVERALL
+"1 Tour, 2 Stops",TRUE,68,OVERALL
+"1 Tour, 3 Stops",TRUE,26,OVERALL
+"1 Tour, 4+ Stops",TRUE,20,OVERALL
+"2 Tours, No Stops",TRUE,9,OVERALL
+"2 Tours, 1 Stop",TRUE,13,OVERALL
+"2 Tours, 2 Stops",TRUE,13,OVERALL
+"2 Tours, 3 Stops",TRUE,10,OVERALL
+"2 Tours, 4+ Stops",TRUE,5,OVERALL
+"3 Tours, 1 Stop",TRUE,1,OVERALL
+"3 Tours, 2 Stops",TRUE,2,OVERALL
+"4+ Tours, 4+ Stops",TRUE,1,OVERALL
