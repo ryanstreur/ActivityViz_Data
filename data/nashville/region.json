@@ -31,7 +31,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Day patterns by person type (e.g., employment status, student status, age)"
+                      "Vehicle trips by time of day."
                     ]
                   }
                 ]
@@ -65,8 +65,8 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Frequency of trips by mode by county.",
-                      "Sacramento county has the largest share of trips."
+                      "Vehicle trips by destination county.",
+                      "Davidson county has the largest share of vehicle trips for both residents and visitors."
                     ]
                   }
                 ]
@@ -102,7 +102,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Origins and destinations of daily trips by district."
+                      "Origins and destinations of daily vehicle trips by district."
                     ]
                   }
                 ]
@@ -114,6 +114,7 @@
                     "type": "unorderedList",
                     "content": [
                       "Hover mouse over graph to see detail.",
+                      "Click on bubble to select a specific segment.",
                       "The connections between districts depict bi-directional flows.",
                       "Turn on desire lines in the map layers to see district-to-district trip flow lines",
                       "Select \"Show Data\" to see tabulation."
@@ -135,7 +136,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Origins and destinations of daily trips by district."
+                      "Origins and destinations of daily vehicle trips by district."
                     ]
                   }
                 ]
@@ -147,6 +148,7 @@
                     "type": "unorderedList",
                     "content": [
                       "Hover mouse over graph to see detail.",
+                      "Click on bubble to select a specific segment.",
                       "The connections between districts depict bi-directional flows.",
                       "Turn on desire lines in the map layers to see district-to-district trip flow lines",
                       "Select \"Show Data\" to see tabulation."
@@ -168,7 +170,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Origins and destinations of daily trips by district."
+                      "Origins and destinations of daily vehicle trips by district."
                     ]
                   }
                 ]
@@ -181,7 +183,7 @@
                     "content": [
                       "Hover mouse over graph to see detail.",
                       "The connections between districts depict bi-directional flows.",
-                      "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+                      "The color of connections between districts depicts net travel.",
                       "Select \"Show Data\" to see tabulation."
                     ]
                   }
@@ -201,7 +203,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Origins and destinations of daily trips by district."
+                      "Origins and destinations of daily vehicle trips by district."
                     ]
                   }
                 ]
@@ -214,7 +216,7 @@
                     "content": [
                       "Hover mouse over graph to see detail.",
                       "The connections between districts depict bi-directional flows.",
-                      "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+                      "The color of connections between districts depicts net travel.",
                       "Select \"Show Data\" to see tabulation."
                     ]
                   }
@@ -234,7 +236,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Origins and destinations of daily trips by district."
+                      "Origins and destinations of daily vehicle trips by district."
                     ]
                   }
                 ]
@@ -247,7 +249,7 @@
                     "content": [
                       "Hover mouse over graph to see detail.",
                       "The connections between districts depict bi-directional flows.",
-                      "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+                      "The color of connections between districts depicts net travel.",
                       "Select \"Show Data\" to see tabulation."
                     ]
                   }
@@ -267,7 +269,7 @@
                   {
                     "type": "unorderedList",
                     "content": [
-                      "Origins and destinations of daily trips by district."
+                      "Origins and destinations of daily vehicle trips by district."
                     ]
                   }
                 ]
@@ -280,7 +282,7 @@
                     "content": [
                       "Hover mouse over graph to see detail.",
                       "The connections between districts depict bi-directional flows.",
-                      "Turn on desire lines in the map layers to see district-to-district trip flow lines",
+                      "The color of connections between districts depicts net travel.",
                       "Select \"Show Data\" to see tabulation."
                     ]
                   }
