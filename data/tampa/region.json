@@ -14,7 +14,7 @@
   "SideBarImage":"tampa.png",
   "scenarios":{
     "Executive_Summary": {
-      "title": "- Executive Summary: Surveys & O-D Data",
+      "title": "Executive Summary: Surveys & O-D Data",
       "visualizations": {
         "GroupedCharts": [
           {"name":"Typical Travel", "config":"Travel", "file":"trips_period.csv", "info":"This information shows the time of day people travel during a typical weekday.", 
@@ -176,7 +176,7 @@
       }
     },
     "Travel_Survey": {
-      "title": "- Household Travel Survey",
+      "title": "Household Travel Survey",
       "visualizations": {
         "BarMap": [
           {"name":"Trip Mode by County","config":"Default", "file":"trip_mode_zone.csv", "info":"Categorized by county, this shows what modes people are using to travel.", 
@@ -382,7 +382,7 @@
       }
     },
     "Passive_Data": {
-      "title": "- Origin-Destination Tables",
+      "title": "Origin-Destination Tables",
       "visualizations": {
         "Chord": [
             {"name":"Overall OD Flows","config":"Overall","file":"trip_daily_pod_overall.csv","info":"This graph show the origin and destination points by activity zone from passive data.",
