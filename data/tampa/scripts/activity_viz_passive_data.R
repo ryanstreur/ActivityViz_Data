@@ -106,14 +106,19 @@ taz_sf = geojson_sf(taz_file)
 taz_dt = data.table(taz_sf)
 agg_dt = fread(agg_file)
 agg_dt[,HILLSBOROUGH_LBL_3:=gsub("\\&|\\/","",HILLSBOROUGH_LBL_3)]
+agg_dt[,HILLSBOROUGH_LBL_3:=gsub("_"," ",HILLSBOROUGH_LBL_3)]
 # agg_dt[,HILLSBOROUGH_LBL_3:=gsub("\\s+","_",HILLSBOROUGH_LBL_3)]
 agg_dt[,PINELLAS_LBL:=gsub("\\&|\\/","",PINELLAS_LBL)]
+agg_dt[,PINELLAS_LBL:=gsub("_"," ",PINELLAS_LBL)]
 # agg_dt[,PINELLAS_LBL:=gsub("\\s+","_",PINELLAS_LBL)]
 agg_dt[,PASCO_LBL:=gsub("\\&|\\/","",PASCO_LBL)]
+agg_dt[,PASCO_LBL:=gsub("_"," ",PASCO_LBL)]
 # agg_dt[,PASCO_LBL:=gsub("\\s+","_",PASCO_LBL)]
 agg_dt[,HERNANDO_CITRUS_LBL_2:=gsub("\\&|\\/","",HERNANDO_CITRUS_LBL_2)]
+agg_dt[,HERNANDO_CITRUS_LBL_2:=gsub("_"," ",HERNANDO_CITRUS_LBL_2)]
 # agg_dt[,HERNANDO_CITRUS_LBL_2:=gsub("\\s+","_",HERNANDO_CITRUS_LBL_2)]
 agg_dt[,D7_ALL_LBL:=gsub("\\&|\\/","",D7_ALL_LBL)]
+agg_dt[,D7_ALL_LBL:=gsub("_"," ",D7_ALL_LBL)]
 # agg_dt[,D7_ALL_LBL:=gsub("\\s+","_",D7_ALL_LBL)]
 agg_sf = st_as_sf(merge(as.data.frame(agg_dt), taz_sf, by.x="TAZ", by.y="id",all.x = TRUE))
 
@@ -157,10 +162,11 @@ setkey(daily_overall_trip_dt, FROM, TO)
 daily_overall_trip_dt = daily_overall_trip_dt[CJ(c(agg_dt$D7_ALL_LBL,"External"),
                                                  c(agg_dt$D7_ALL_LBL,"External"), unique = TRUE)]
 daily_overall_trip_dt[is.na(TRIPS), TRIPS := 0]
+daily_overall_trip_dt[, TRIPS:=round(TRIPS, 2)]
 # daily_overall_trip_dt = daily_overall_trip_dt[TRIPS!=0]
 ## Residents/Visitors
-res_vis_overall_trip_dt         = trip_est_dt[,.(`RESIDENT TRIPS` = sum(Residents),
-                                                   `VISITOR TRIPS` = sum(Visitors)),.(FROM = D7_ALL_LBL_O,
+res_vis_overall_trip_dt         = trip_est_dt[,.(`RESIDENT TRIPS` = round(sum(Residents),2),
+                                                   `VISITOR TRIPS` = round(sum(Visitors),2)),.(FROM = D7_ALL_LBL_O,
                                                                      TO = D7_ALL_LBL_D)]
 res_vis_overall_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FROM),
                               TO   = ifelse(is.na(TO), "External", TO))]
@@ -180,12 +186,13 @@ daily_hillsborough_trip_dt = daily_hillsborough_trip_dt[CJ(c(HILLSBOROUGH_LBL_3)
                                                            c(HILLSBOROUGH_LBL_3),
                                                            unique = TRUE)]
 daily_hillsborough_trip_dt[is.na(TRIPS), TRIPS:=0]
+daily_hillsborough_trip_dt[, TRIPS:=round(TRIPS, 2)]
 # daily_hillsborough_trip_dt = daily_hillsborough_trip_dt[TRIPS>0]
 ## Residents/Visitors
 res_vis_hillsborough_trip_dt         = trip_est_dt[grepl("Hillsborough", COUNTY_NAME_O)|
                                                   grepl("Hillsborough", COUNTY_NAME_D),
-                                                  .(`RESIDENT TRIPS` = sum(Residents),
-                                                    `VISITOR TRIPS` = sum(Visitors)),
+                                                  .(`RESIDENT TRIPS` = round(sum(Residents),2),
+                                                    `VISITOR TRIPS` = round(sum(Visitors),2)),
                                                   .(FROM = HILLSBOROUGH_LBL_3_O,
                                                     TO = HILLSBOROUGH_LBL_3_D)]
 res_vis_hillsborough_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FROM),
@@ -204,11 +211,12 @@ daily_pinellas_trip_dt = daily_pinellas_trip_dt[CJ(c(PINELLAS_LBL),
                                                    c(PINELLAS_LBL),
                                                    unique = TRUE)]
 daily_pinellas_trip_dt[is.na(TRIPS), TRIPS:=0]
+daily_pinellas_trip_dt[, TRIPS:=round(TRIPS, 2)]
 ## Residents/Visitors
 res_vis_pinellas_trip_dt         = trip_est_dt[grepl("Pinellas", COUNTY_NAME_O)|
                                                        grepl("Pinellas", COUNTY_NAME_D),
-                                                 .(`RESIDENT TRIPS` = sum(Residents),
-                                                   `VISITOR TRIPS` = sum(Visitors)),
+                                                 .(`RESIDENT TRIPS` = round(sum(Residents),2),
+                                                   `VISITOR TRIPS` = round(sum(Visitors),2)),
                                                  .(FROM = PINELLAS_LBL_O,
                                                    TO = PINELLAS_LBL_D)]
 res_vis_pinellas_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FROM),
@@ -227,11 +235,12 @@ daily_pasco_trip_dt = daily_pasco_trip_dt[CJ(c(PASCO_LBL),
                                              c(PASCO_LBL),
                                              unique = TRUE)]
 daily_pasco_trip_dt[is.na(TRIPS), TRIPS:=0]
+daily_pasco_trip_dt[, TRIPS:=round(TRIPS, 2)]
 ## Residents/Visitors
 res_vis_pasco_trip_dt         = trip_est_dt[grepl("Pasco", COUNTY_NAME_O)|
                                                    grepl("Pasco", COUNTY_NAME_D),
-                                                 .(`RESIDENT TRIPS` = sum(Residents),
-                                                   `VISITOR TRIPS` = sum(Visitors)),
+                                                 .(`RESIDENT TRIPS` = round(sum(Residents),2),
+                                                   `VISITOR TRIPS` = round(sum(Visitors),2)),
                                                  .(FROM = PASCO_LBL_O,
                                                    TO = PASCO_LBL_D)]
 res_vis_pasco_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FROM),
@@ -252,13 +261,14 @@ daily_hernando_citrus_trip_dt = daily_hernando_citrus_trip_dt[CJ(c(HERNANDO_CITR
                                                                  c(HERNANDO_CITRUS_LBL_2),
                                                                  unique = TRUE)]
 daily_hernando_citrus_trip_dt[is.na(TRIPS), TRIPS:=0]
+daily_hernando_citrus_trip_dt[, TRIPS:=round(TRIPS, 2)]
 ## Residents/Visitors
 res_vis_hernando_citrus_trip_dt         = trip_est_dt[grepl("Hernando", COUNTY_NAME_O)|
                                                           grepl("Hernando", COUNTY_NAME_D)|
                                                           grepl("Citrus", COUNTY_NAME_O)|
                                                           grepl("Citrus", COUNTY_NAME_D),
-                                              .(`RESIDENT TRIPS` = sum(Residents),
-                                                `VISITOR TRIPS` = sum(Visitors)),
+                                              .(`RESIDENT TRIPS` = round(sum(Residents),2),
+                                                `VISITOR TRIPS` = round(sum(Visitors),2)),
                                               .(FROM = HERNANDO_CITRUS_LBL_2_O,
                                                 TO = HERNANDO_CITRUS_LBL_2_D)]
 res_vis_hernando_citrus_trip_dt[,":="(FROM = ifelse(is.na(FROM), "External", FROM),
