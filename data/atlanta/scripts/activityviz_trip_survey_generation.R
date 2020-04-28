@@ -223,6 +223,64 @@ ntour_labels = c("0No Tours", "1 Tour", "2 Tours", "3 Tours", "4+ Tours")
 tour_dt[ntours>3, ntours:=4L]
 tour_dt[,ntours:=ntour_labels[ntours+1L]]
 
+# Household Vehicles
+# person_dt[,.N,.(count_vh_hh)]
+setkey(person_dt, per_id)
+hh_veh_labels = c("0 VEH HH", "1+ VEH HH")
+tour_dt[person_dt,HH_VEH:=hh_veh_labels[pmin(i.count_vh_hh,1)+1L]]
+
+# Can Use Household Vehicles
+# person_dt[,.N,.(count_vh_hh)]
+setkey(person_dt, per_id)
+can_use_hh_veh_labels = c("1"="YES",
+                          "2"="NO",
+                          "98"="DON'T KNOW",
+                          "99"="REFUSE",
+                          "NA"="RESPONSE UNAVAILABLE")
+tour_dt[person_dt,CAN_USE_HHVEH:=can_use_hh_veh_labels[as.character(i.can_use_hhveh)]]
+tour_dt[HH_VEH=="0 VEH HH", CAN_USE_HHVEH:="ZERO VEH HH"]
+tour_dt[is.na(CAN_USE_HHVEH), CAN_USE_HHVEH:="RESPONSE UNAVAILABLE"]
+
+# Household Size
+hh_size_labels = c("1 PERSON",
+                   "2 PERSONS",
+                   "3 PERSONS",
+                   "4 PERSONS",
+                   "5 PERSONS",
+                   "6+ PERSONS")
+tour_dt[person_dt,HH_SIZE:=hh_size_labels[pmin(i.hh_size,6)]]
+
+# Gender
+gender_labels = c("MALE", "FEMALE", "OTHER")
+tour_dt[person_dt,GENDER:=gender_labels[i.gender]]
+
+# Age
+age_labels = c("UNDER 6", "6-15", "16-17", "18-24", "25-34", "35-44", "45-54",
+               "55-64", "65-75", "76 AND OLDER")
+tour_dt[person_dt,AGE:=age_labels[i.age]]
+
+# Income
+# writeClipboard(paste0("c(",
+#        paste0(
+#          paste0("\"", abmdd_dt[item=="income",code], "\"", " = ", "\"", abmdd_dt[item=="income", value]), "\"",
+#          collapse = ",\n"), 
+#        ")"))
+income_labels = c("1" = "Below $5,000",
+                  "2" = "$5,000 - $9,999",
+                  "3" = "$10,000 - $19,999",
+                  "4" = "$20,000 - $29,999",
+                  "5" = "$30,000 - $39,999",
+                  "6" = "$40,000 - $49,999",
+                  "7" = "$50,000 - $59,999",
+                  "8" = "$60,000 - $74,999",
+                  "9" = "$75,000 - $99,999",
+                  "10" = "$100,000 - $119,999",
+                  "11" = "$120,000 - $149,999",
+                  "12" = "More than $150,000",
+                  "98" = "No answer")
+
+tour_dt[person_dt,INCOME:=income_labels[as.character(i.income)]]
+
 output_ls[["tour_dt"]] = tour_dt
 
 ### Create Summaries #############################################################
@@ -232,7 +290,7 @@ summary_ls = list()
 
 # Home based Tours
 home_based_dt = tour_dt[,.(COUNT=.N,CHART="SURVEYED BY NUMBER OF TOURS"),.(NTOURS = ntours)]
-home_based_dt[,GROUP:= "PERSON TOUR"]
+home_based_dt[,GROUP:= "PARTICIPANTS"]
 setorder(home_based_dt, NTOURS)
 setcolorder(home_based_dt, "GROUP")
 summary_ls[["home_based_dt"]] = home_based_dt
@@ -281,8 +339,59 @@ summary_ls[["has_neither_dt"]] = has_neither_dt
 
 # OVERALL
 overall_dt = tour_dt[,.(COUNT=.N, CHART="OVERALL"),.(`TOURS AND STOPS` = paste0(ntours, ", ",nstops_label), `OVERALL`=as.character(overall))]
+overall_dt[,OVERALL:="PARTICIPANTS"]
 setorder(overall_dt, `TOURS AND STOPS`, `OVERALL`)
 summary_ls[["overall_dt"]] = overall_dt
+
+# Add Demographic data
+# Tours by household cars
+hh_veh_dt = tour_dt[,.(COUNT=.N, CHART="HOUSEHOLD VEHICLES"),
+                    .(`TOURS AND STOPS` = paste0(ntours, ", ",nstops_label), 
+                      `HOUSEHOLD VEH`=HH_VEH)]
+setorder(hh_veh_dt, `TOURS AND STOPS`, `HOUSEHOLD VEH`)
+summary_ls[["hh_veh_dt"]] = hh_veh_dt
+
+# Tours by availability of household vehicle
+can_use_hhveh_dt = tour_dt[,.(COUNT=.N, CHART="HOUSEHOLD VEHICLES AVAILABILITY"),
+                           .(`TOURS AND STOPS` = paste0(ntours, ", ",nstops_label), 
+                             `HOUSEHOLD VEH AVAILABLE`=CAN_USE_HHVEH)]
+setorder(can_use_hhveh_dt, `TOURS AND STOPS`, `HOUSEHOLD VEH AVAILABLE`)
+can_use_hhveh_dt = can_use_hhveh_dt[order(`TOURS AND STOPS`, 
+                                          match(`HOUSEHOLD VEH AVAILABLE`, can_use_hh_veh_labels))]
+summary_ls[["can_use_hhveh_dt"]] = can_use_hhveh_dt
+
+# Tour by household size
+hh_size_dt = tour_dt[, .(COUNT = .N, CHART = "HOUSEHOLD SIZE"),
+                     .(`TOURS AND STOPS` = paste0(ntours, ", ", nstops_label),
+                       `HOUSEHOLD SIZE` = HH_SIZE)]
+setorder(hh_size_dt, `TOURS AND STOPS`, `HOUSEHOLD SIZE`)
+summary_ls[["hh_size_dt"]] = hh_size_dt
+
+# Tour by gender
+gender_dt = tour_dt[, .(COUNT = .N, CHART = "GENDER"),
+                    .(`TOURS AND STOPS` = paste0(ntours, ", ", nstops_label),
+                      GENDER)]
+# setorder(gender_dt, `TOURS AND STOPS`, GENDER)
+gender_dt = gender_dt[order(`TOURS AND STOPS`,
+                            match(GENDER, gender_labels))]
+summary_ls[["gender_dt"]] = gender_dt
+
+# tour by age
+age_dt = tour_dt[, .(COUNT = .N, CHART = "AGE"),
+                 .(`TOURS AND STOPS` = paste0(ntours, ", ", nstops_label),
+                   AGE)]
+# setorder(age_dt, `TOURS AND STOPS`, AGE)
+age_dt = age_dt[order(`TOURS AND STOPS`,
+                      match(AGE, age_labels))]
+summary_ls[["age_dt"]] = age_dt
+
+# Tour by household income
+income_dt = tour_dt[, .(COUNT = .N, CHART = "INCOME"),
+                 .(`TOURS AND STOPS` = paste0(ntours, ", ", nstops_label),
+                   INCOME)]
+income_dt = income_dt[order(`TOURS AND STOPS`,
+                            match(INCOME, income_labels))]
+summary_ls[["income_dt"]] = income_dt
 
 # home_based_labels = c("NOT HOME BASED", "HOME BASED")
 lapply(summary_ls, function(temp_dt){
