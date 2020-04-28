@@ -30,10 +30,12 @@ library(tidyverse)
 # Input files
 data_dir   = file.path(getwd(), "data")
 
-od_AM_mx_file   = file.path(data_dir, "raw_data", "ODME_AM_i7.csv")
-od_MD_mx_file   = file.path(data_dir, "raw_data", "ODME_MD_i7.csv")
-od_PM_mx_file   = file.path(data_dir, "raw_data", "ODME_PM_i7.csv")
-od_OP_mx_file   = file.path(data_dir, "raw_data", "ODME_OP_i7.csv")
+# od_AM_mx_file   = file.path(data_dir, "raw_data", "ODME_AM_i7.csv")
+# od_MD_mx_file   = file.path(data_dir, "raw_data", "ODME_MD_i7.csv")
+# od_PM_mx_file   = file.path(data_dir, "raw_data", "ODME_PM_i7.csv")
+# od_OP_mx_file   = file.path(data_dir, "raw_data", "ODME_OP_i7.csv")
+od_mx_file   = file.path(data_dir, "raw_data", "ODME_i7.csv")
+
 
 
 # Geography input files
@@ -73,36 +75,38 @@ daily_tod_file                        = file.path(od_output_dir,
 ### Load required datasets #######################################################
 ##################################################################################
 
-od_AM_dt   = fread(od_AM_mx_file)
-od_MD_dt   = fread(od_MD_mx_file)
-od_PM_dt   = fread(od_PM_mx_file)
-od_OP_dt   = fread(od_OP_mx_file)
-
-
-od_AM_dt[Auto_Residents < 0, Auto_Residents:=0]
-od_MD_dt[Auto_Residents < 0, Auto_Residents:=0]
-od_PM_dt[Auto_Residents < 0, Auto_Residents:=0]
-od_OP_dt[Auto_Residents < 0, Auto_Residents:=0]
-
-od_AM_dt[Auto_Visitors < 0, Auto_Visitors:=0]
-od_MD_dt[Auto_Visitors < 0, Auto_Visitors:=0]
-od_PM_dt[Auto_Visitors < 0, Auto_Visitors:=0]
-od_OP_dt[Auto_Visitors < 0, Auto_Visitors:=0]
-
-od_AM_dt[, TYPE:="AM"]
-od_MD_dt[, TYPE:="MIDDAY"]
-od_PM_dt[, TYPE:="PM"]
-od_OP_dt[, TYPE:="OFFPEAK"]
-
-trip_dt = rbindlist(list(od_AM_dt, od_MD_dt, od_PM_dt, od_OP_dt),
-                    use.names = TRUE,
-                    fill = TRUE) 
+# od_AM_dt   = fread(od_AM_mx_file)
+# od_MD_dt   = fread(od_MD_mx_file)
+# od_PM_dt   = fread(od_PM_mx_file)
+# od_OP_dt   = fread(od_OP_mx_file)
+# 
+# 
+# od_AM_dt[Auto_Residents < 0, Auto_Residents:=0]
+# od_MD_dt[Auto_Residents < 0, Auto_Residents:=0]
+# od_PM_dt[Auto_Residents < 0, Auto_Residents:=0]
+# od_OP_dt[Auto_Residents < 0, Auto_Residents:=0]
+# 
+# od_AM_dt[Auto_Visitors < 0, Auto_Visitors:=0]
+# od_MD_dt[Auto_Visitors < 0, Auto_Visitors:=0]
+# od_PM_dt[Auto_Visitors < 0, Auto_Visitors:=0]
+# od_OP_dt[Auto_Visitors < 0, Auto_Visitors:=0]
+# 
+# od_AM_dt[, TYPE:="AM"]
+# od_MD_dt[, TYPE:="MIDDAY"]
+# od_PM_dt[, TYPE:="PM"]
+# od_OP_dt[, TYPE:="OFFPEAK"]
+# 
+# trip_dt = rbindlist(list(od_AM_dt, od_MD_dt, od_PM_dt, od_OP_dt),
+#                     use.names = TRUE,
+#                     fill = TRUE) 
+trip_dt = fread(od_mx_file)
 
 taz_sf       = st_read(taz_file)
 taz_dt       = data.table(taz_sf)
 ext_zones_sf = st_read(ext_zone_file)
 ext_zones_dt = data.table(ext_zones_sf)
 
+time_order = c("AM", "MIDDAY", "PM", "OFFPEAK")
 
 ### Create output data ###########################################################
 ##################################################################################
@@ -186,11 +190,11 @@ daily_dest_dt    = trip_dt[,.(#ALL      =round(sum(Auto_Residents+Auto_Visitors)
 setcolorder(daily_dest_dt, c("ZONE"))
 daily_dest_dt = melt.data.table(daily_dest_dt,
                                 id.vars = c("ZONE", "COUNTY"),
-                                variable.name = "RESIDENCY",
+                                variable.name = "PERSON GROUP",
                                 variable.factor = FALSE,
                                 value.name = "QUANTITY",
                                 value.factor = FALSE)
-daily_dest_dt = daily_dest_dt[order(ZONE, COUNTY, match(RESIDENCY,c("RESIDENTS", "VISITORS", "ALL")))]
+daily_dest_dt = daily_dest_dt[order(ZONE, COUNTY, match(`PERSON GROUP`,c("RESIDENTS", "VISITORS", "ALL")))]
 
 
 # Daily Total
@@ -282,6 +286,7 @@ tod_trips_dt = melt.data.table(tod_trips_dt, id.vars = c("TIME OF DAY"),
                                value.factor = FALSE)
 tod_trips_dt[,CHART:="TRIPS BY TIME OF DAY"]
 
+tod_trips_dt = tod_trips_dt[order(match(`TIME OF DAY`, time_order), `PERSON GROUP`)]
 
 ### Write output data ############################################################
 ##################################################################################

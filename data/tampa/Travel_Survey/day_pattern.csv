@@ -1,31 +1,37 @@
 PERSON GROUP,DAY ACTIVITY,PERSON DAYS,CHART
-ALL,Home All Day,465160.35517,Day Pattern
-ALL,Other Travel,1143741.35765,Day Pattern
-ALL,Work and/or School Travel,1266761.64079,Day Pattern
-CHILD AGE 0 TO 4,Home All Day,48160.14898,Day Pattern
-CHILD AGE 0 TO 4,Other Travel,62269.60102,Day Pattern
-CHILD AGE 0 TO 4,Work and/or School Travel,24321.36233,Day Pattern
-CHILD AGE 16 PLUS,Home All Day,30271.69794,Day Pattern
-CHILD AGE 16 PLUS,Other Travel,9839.7083,Day Pattern
-CHILD AGE 16 PLUS,Work and/or School Travel,24932.81067,Day Pattern
-CHILD AGE 5 TO 15,Home All Day,81007.27822,Day Pattern
-CHILD AGE 5 TO 15,Other Travel,112606.59475,Day Pattern
-CHILD AGE 5 TO 15,Work and/or School Travel,149728.16661,Day Pattern
-FULL TIME WORKER,Home All Day,88917.39414,Day Pattern
-FULL TIME WORKER,Other Travel,181477.73467,Day Pattern
-FULL TIME WORKER,Work and/or School Travel,813442.73777,Day Pattern
-NON WORKER AGE 65 PLUS,Home All Day,90260.5094,Day Pattern
-NON WORKER AGE 65 PLUS,Other Travel,360293.77415,Day Pattern
-NON WORKER AGE 65 PLUS,Work and/or School Travel,26549.03488,Day Pattern
-OTHER NON WORKING ADULT,Home All Day,79192.16744,Day Pattern
-OTHER NON WORKING ADULT,Other Travel,267071.27216,Day Pattern
-OTHER NON WORKING ADULT,Work and/or School Travel,66227.07928,Day Pattern
-PART TIME WORKER,Home All Day,25180.68929,Day Pattern
-PART TIME WORKER,Other Travel,58900.29921,Day Pattern
-PART TIME WORKER,Work and/or School Travel,99698.81537,Day Pattern
-SEASONAL RESIDENT,Home All Day,25422.34168,Day Pattern
-SEASONAL RESIDENT,Other Travel,84377.8009,Day Pattern
-SEASONAL RESIDENT,Work and/or School Travel,44687.93858,Day Pattern
-UNIVERSITY STUDENT,Home All Day,3602.19974,Day Pattern
-UNIVERSITY STUDENT,Other Travel,9340.89712,Day Pattern
-UNIVERSITY STUDENT,Work and/or School Travel,26837.59648,Day Pattern
+CHILD AGE 0 TO 4,Home All Day,27027.45,Day Pattern
+CHILD AGE 0 TO 4,Work and/or School Travel,24336.59,Day Pattern
+CHILD AGE 0 TO 4,Other Travel,65524.52,Day Pattern
+CHILD AGE 0 TO 4,Other (Missing),28816.97,Day Pattern
+CHILD AGE 5 TO 15,Home All Day,27335.74,Day Pattern
+CHILD AGE 5 TO 15,Work and/or School Travel,151190.31,Day Pattern
+CHILD AGE 5 TO 15,Other Travel,121322.67,Day Pattern
+CHILD AGE 5 TO 15,Other (Missing),65749,Day Pattern
+CHILD AGE 16 PLUS,Home All Day,10512.04,Day Pattern
+CHILD AGE 16 PLUS,Work and/or School Travel,24805.26,Day Pattern
+CHILD AGE 16 PLUS,Other Travel,10536.19,Day Pattern
+CHILD AGE 16 PLUS,Other (Missing),22318.44,Day Pattern
+FULL TIME WORKER,Home All Day,97154.75,Day Pattern
+FULL TIME WORKER,Work and/or School Travel,844421.98,Day Pattern
+FULL TIME WORKER,Other Travel,187402.42,Day Pattern
+FULL TIME WORKER,Other (Missing),9996.85,Day Pattern
+PART TIME WORKER,Home All Day,20492.21,Day Pattern
+PART TIME WORKER,Work and/or School Travel,120485.08,Day Pattern
+PART TIME WORKER,Other Travel,68596.37,Day Pattern
+PART TIME WORKER,Other (Missing),10001.97,Day Pattern
+NON WORKER AGE 65 PLUS,Home All Day,89406.01,Day Pattern
+NON WORKER AGE 65 PLUS,Work and/or School Travel,27706.04,Day Pattern
+NON WORKER AGE 65 PLUS,Other Travel,401185.3,Day Pattern
+NON WORKER AGE 65 PLUS,Other (Missing),16449.84,Day Pattern
+OTHER NON WORKING ADULT,Home All Day,88064.1,Day Pattern
+OTHER NON WORKING ADULT,Work and/or School Travel,78986.3,Day Pattern
+OTHER NON WORKING ADULT,Other Travel,293218.35,Day Pattern
+OTHER NON WORKING ADULT,Other (Missing),9670,Day Pattern
+SEASONAL RESIDENT,Home All Day,22292.43,Day Pattern
+SEASONAL RESIDENT,Work and/or School Travel,44687.94,Day Pattern
+SEASONAL RESIDENT,Other Travel,84611.25,Day Pattern
+SEASONAL RESIDENT,Other (Missing),6080.05,Day Pattern
+UNIVERSITY STUDENT,Home All Day,16527.06,Day Pattern
+UNIVERSITY STUDENT,Work and/or School Travel,98849.47,Day Pattern
+UNIVERSITY STUDENT,Other Travel,31134.69,Day Pattern
+UNIVERSITY STUDENT,Other (Missing),1669,Day Pattern
