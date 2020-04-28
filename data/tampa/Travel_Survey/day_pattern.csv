@@ -1,8 +1,4 @@
 PERSON GROUP,DAY ACTIVITY,PERSON DAYS,CHART
-ALL,Home All Day,359516.8,Day Pattern
-ALL,Work and/or School Travel,1266761.64,Day Pattern
-ALL,Other Travel,1147400.05,Day Pattern
-ALL,Other (Missing),157595.79,Day Pattern
 CHILD AGE 0 TO 4,Home All Day,27027.45,Day Pattern
 CHILD AGE 0 TO 4,Work and/or School Travel,24336.59,Day Pattern
 CHILD AGE 0 TO 4,Other Travel,65524.52,Day Pattern
