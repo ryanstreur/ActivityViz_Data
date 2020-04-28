@@ -106,6 +106,7 @@ taz_dt       = data.table(taz_sf)
 ext_zones_sf = st_read(ext_zone_file)
 ext_zones_dt = data.table(ext_zones_sf)
 
+time_order = c("AM", "MIDDAY", "PM", "OFFPEAK")
 
 ### Create output data ###########################################################
 ##################################################################################
@@ -189,11 +190,11 @@ daily_dest_dt    = trip_dt[,.(#ALL      =round(sum(Auto_Residents+Auto_Visitors)
 setcolorder(daily_dest_dt, c("ZONE"))
 daily_dest_dt = melt.data.table(daily_dest_dt,
                                 id.vars = c("ZONE", "COUNTY"),
-                                variable.name = "RESIDENCY",
+                                variable.name = "PERSON GROUP",
                                 variable.factor = FALSE,
                                 value.name = "QUANTITY",
                                 value.factor = FALSE)
-daily_dest_dt = daily_dest_dt[order(ZONE, COUNTY, match(RESIDENCY,c("RESIDENTS", "VISITORS", "ALL")))]
+daily_dest_dt = daily_dest_dt[order(ZONE, COUNTY, match(`PERSON GROUP`,c("RESIDENTS", "VISITORS", "ALL")))]
 
 
 # Daily Total
@@ -285,6 +286,7 @@ tod_trips_dt = melt.data.table(tod_trips_dt, id.vars = c("TIME OF DAY"),
                                value.factor = FALSE)
 tod_trips_dt[,CHART:="TRIPS BY TIME OF DAY"]
 
+tod_trips_dt = tod_trips_dt[order(match(`TIME OF DAY`, time_order), `PERSON GROUP`)]
 
 ### Write output data ############################################################
 ##################################################################################
