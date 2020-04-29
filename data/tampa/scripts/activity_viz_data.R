@@ -688,6 +688,7 @@ day_activity_order = c("Home All Day", "Work and/or School Travel", "Other Trave
 day_pattern_dt = day_pattern_dt[order(match(`PERSON GROUP`, person_group_order),
                                       match(`DAY ACTIVITY`, day_activity_order))]
 day_pattern_dt[, `PERSON DAYS`:=round(`PERSON DAYS`, 2)]
+day_pattern_dt = day_pattern_dt[`PERSON GROUP`!="ALL"]
 
 # Time Use
 
