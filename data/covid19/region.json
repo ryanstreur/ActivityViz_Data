@@ -20,7 +20,7 @@
             "name": "Location During the Day",
             "title": "Location During the Day",
             "config": "Default",
-            "file": "ny_covid_timeuse.csv",
+            "file": "time_use_04242020.csv",
             "info": "Displays activity estimates based on SafeGraph location data. The vertical axis displays the sum or percent of activity and the horizontal axis displays the period of the day.",
             "explanation": [
               {
@@ -56,7 +56,7 @@
           {
             "name": "Stay-at-Home by Week",
             "config": "Default",
-            "file": "ny_covid_barcharts.csv",
+            "file": "time_series_04242020.csv",
             "info": "The percent of time people spent at home, at work, or somewhere else, by week",
             "explanation": [
               {
@@ -87,7 +87,7 @@
         "BarMap": [
           {
             "name": "Devices at Home by County",
-            "file": "ny_covid_map.csv",
+            "file": "map_04242020.csv",
             "config": "Default",
             "aggregationMethod": "average",
             "barGroupSortMethod": "firstBar",
