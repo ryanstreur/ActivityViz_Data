@@ -665,5 +665,12 @@
       "ZoneFile":"tampa2020.json",
       "CycleMapTools": false 
     }
+  },
+  "TimeUse": {
+    "Default": {
+      "DisplayPercentagesByDefault": false,
+      "DisplayCountsByDefault": true,
+      "HideCountsPercentagesToggle": true
+    }
   }
 }
