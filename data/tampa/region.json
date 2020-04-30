@@ -304,7 +304,7 @@
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail and to display activity zone flows on the map.",
               "Select \"Show Data\" to see tabulation.",
-              "For the left graph: The color of connections between Districts depicts net travel (e.g., there were more trips from Hillsborough-Other to Tampa than there were in the opposite direction)."]
+              "For the left graph: Connections are colored based on activity zone with net outflow of trips."]
             }]
           }]},
             {"name":"Hillsborough OD Flows","config":"Hillsborough","file":"trip_od_hillsborough.csv","info":"This graph show the origin and destination points of Hillsborough County trips from survey data.", 
@@ -322,7 +322,7 @@
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail and to display District flows on the map.",
               "Select \"Show Data\" to see tabulation.",
-              "For the left graph: The color of connections between Districts depicts net travel."]
+              "For the left graph: Connections are colored based on activity zone with net outflow of trips."]
             }]
           }]},
             {"name":"Pinellas OD Flows","config":"Pinellas","file":"trip_od_pinellas.csv","info":"This graph show the origin and destination points of Pinellas County from survey data.", 
@@ -340,7 +340,7 @@
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail and to display District flows on the map.",
               "Select \"Show Data\" to see tabulation.",
-              "For the left graph: The color of connections between Districts depicts net travel."]
+              "For the left graph: Connections are colored based on activity zone with net outflow of trips."]
             }]
           }]},
             {"name":"Pasco OD Flows","config":"Pasco","file":"trip_od_pasco.csv","info":"This graph show the origin and destination points of Pasco County from survey data.",
@@ -358,7 +358,7 @@
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail and to display District flows on the map.",
               "Select \"Show Data\" to see tabulation.",
-              "For the left graph: The color of connections between Districts depicts net travel."]
+              "For the left graph: Connections are colored based on activity zone with net outflow of trips."]
             }]
           }]},
             {"name":"Hernando and Citrus OD Flows","config":"Hernando","file":"trip_od_hernando_citrus.csv","info":"This graph show the origin and destination points of Hernando and Citrus Counties from survey data.",
@@ -376,7 +376,7 @@
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail and to display District flows on the map.",
               "Select \"Show Data\" to see tabulation.",
-              "For the left graph: The color of connections between Districts depicts net travel."]
+              "For the left graph: Connections are colored based on activity zone with net outflow of trips."]
             }]
           }]}
             ]
@@ -401,7 +401,7 @@
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail and to display District flows on the map.",
               "Select \"Show Data\" to see tabulation.",
-              "For the left graph: The color of connections between Districts depicts net travel (e.g., there were more trips from Tampa to Hillsborough-Other than there were in the opposite direction)."]
+              "For the left graph: Connections are colored based on activity zone with net outflow of trips."]
             }]
           }]},
             {"name":"Hillsborough OD Flows","config":"Hillsborough","file":"trip_daily_pod_hillsborough.csv","info":"This graph show the origin and destination points of Hillsborough County from passive data.",
@@ -419,7 +419,7 @@
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail and to display District flows on the map.",
               "Select \"Show Data\" to see tabulation.",
-              "For the left graph: The color of connections between Districts depicts net travel."]
+              "For the left graph: Connections are colored based on activity zone with net outflow of trips."]
             }]
           }]},
             {"name":"Pinellas OD Flows","config":"Pinellas","file":"trip_daily_pod_pinellas.csv","info":"This graph show the origin and destination points of Pinellas County from passive data.",
@@ -437,7 +437,7 @@
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail and to display District flows on the map.",
               "Select \"Show Data\" to see tabulation.",
-              "For the left graph: The color of connections between Districts depicts net travel."]
+              "For the left graph: Connections are colored based on activity zone with net outflow of trips."]
             }]
           }]},
             {"name":"Pasco OD Flows","config":"Pasco","file":"trip_daily_pod_pasco.csv","info":"This graph show the origin and destination points of Pasco County from passive data.",
@@ -455,7 +455,7 @@
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail and to display District flows on the map.",
               "Select \"Show Data\" to see tabulation.",
-              "For the left graph: The color of connections between Districts depicts net travel."]
+              "For the left graph: Connections are colored based on activity zone with net outflow of trips."]
             }]
           }]},
             {"name":"Hernando and Citrus OD Flows","config":"Hernando","file":"trip_daily_pod_hernando_citrus.csv","info":"This graph show the origin and destination points of Hernando and Citrus Counties from passive data.",
@@ -473,7 +473,7 @@
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail and to display District flows on the map.",
               "Select \"Show Data\" to see tabulation.",
-              "For the left graph: The color of connections between Districts depicts net travel."]
+              "For the left graph: Connections are colored based on activity zone with net outflow of trips."]
             }]
           }]},
             {"name":"Overall OD Flows by Residency","config":"SideBySide","file":"trip_res_vis_pod_overall.csv","info":"These graphs show the origin and destination points by activity zones for residents and visitors from passive data.",
@@ -491,7 +491,7 @@
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail.",
               "Select \"Show Data\" to see tabulation.",
-              "The color of connections between Districts depicts net travel."]
+              "Connections are colored based on activity zone with net outflow of trips."]
             }]
           }]},
             {"name":"Hillsborough OD Flows by Residency","config":"SideBySide","file":"trip_res_vis_pod_hillsborough.csv","info":"These graphs show the origin and destination points of Hillsborough County for residents and visitors from passive data.",
@@ -510,7 +510,7 @@
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail.",
               "Select \"Show Data\" to see tabulation.",
-              "The color of connections between Districts depicts net travel."]
+              "Connections are colored based on activity zone with net outflow of trips."]
             }]
           }]},
             {"name":"Pinellas OD Flows by Residency","config":"SideBySide","file":"trip_res_vis_pod_pinellas.csv","info":"These graphs show the origin and destination points of Pinellas County for residents and visitors from passive data.",
@@ -528,7 +528,7 @@
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail.",
               "Select \"Show Data\" to see tabulation.",
-              "The color of connections between Districts depicts net travel."]
+              "Connections are colored based on activity zone with net outflow of trips."]
             }]
           }]},
             {"name":"Pasco OD Flows by Residency","config":"SideBySide","file":"trip_res_vis_pod_pasco.csv","info":"These graphs show the origin and destination points of Pasco County for residents and visitors from passive data.",
@@ -546,7 +546,7 @@
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail.",
               "Select \"Show Data\" to see tabulation.",
-              "The color of connections between Districts depicts net travel."]
+              "Connections are colored based on activity zone with net outflow of trips."]
             }]
           }]},
             {"name":"Hernando and Citrus OD Flows by Residency","config":"SideBySide","file":"trip_res_vis_pod_hernando_citrus.csv","info":"These graphs show the origin and destination points of Hernando and Citrus Counties for residents and visitors from passive data.",
@@ -564,7 +564,7 @@
               "type": "unorderedList",
               "content": ["Hover mouse over graph to see detail.",
               "Select \"Show Data\" to see tabulation.",
-              "The color of connections between Districts depicts net travel."]
+              "Connections are colored based on activity zone with net outflow of trips."]
             }]
           }]}
             ]
