@@ -561,6 +561,7 @@
     "ParticipantAge": {
       "NumberColsGrouped": 0,
       "RotateLabels": 90,
+      "RotateXLabels": 0,
       "SwapLegendByDefault": "N/A",
       "ShowAsPercentByDefault": true,
       "ShowAsVerticalByDefault": true,
