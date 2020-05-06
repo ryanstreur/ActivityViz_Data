@@ -55,6 +55,7 @@
         "GroupedCharts": [
           {
             "name": "Stay-at-Home by Week",
+            "title": "Stay-at-Home by Week",
             "config": "Default",
             "file": "time_series_04242020.csv",
             "info": "The percent of time people spent at home, at work, or somewhere else, by week",
