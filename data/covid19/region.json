@@ -156,7 +156,9 @@
     }
   },
   "TimeUse": {
-    "Default": {}
+    "Default": {
+      "HideCountsPercentagesToggle": true
+    }
   },
   "Sunburst": {
     "Default": {}
